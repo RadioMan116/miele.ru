@@ -1,6 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <g fill="none" fill-rule="evenodd">
-        <path d="M0 0h24v24H0z"/>
-        <path fill="#E5E5E5" d="M11.989 18.592L5.49 22l1.233-7.233-5.249-5.128 7.26-1.062L11.99 2l3.254 6.577 7.26 1.062-5.249 5.128L18.487 22z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <rect width="24" height="24" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="star" clip-path="url(#clip_1)">
+    <g id="star">
+      <path d="M0 0L24 0L24 24L0 24L0 0Z" id="Rectangle-2" fill="none" stroke="none" />
+      <path d="M10.5146 16.5921L4.01623 20L5.2492 12.7666L-1.4592e-16 7.63932L7.26042 6.5767L10.5146 0L13.7688 6.5767L21.0292 7.63932L15.78 12.7666L17.013 20L10.5146 16.5921Z" transform="translate(1.4742737 2)" id="Star" fill="#ECECEC" stroke="none" />
     </g>
+  </g>
 </svg>

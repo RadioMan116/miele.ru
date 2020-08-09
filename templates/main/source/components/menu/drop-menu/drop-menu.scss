@@ -6,9 +6,8 @@
 	// margin-bottom: auto;
 	flex-grow: 1;
 	justify-content: space-between;
+
 	// padding-left: 11px;
-
-
 	.container {
 		display: flex;
 	}
@@ -18,6 +17,11 @@
 		display: flex;
 		align-items: center;
 		margin-bottom: 4px;
+
+		&:not(:last-of-type) {
+			background: url("../images/menu-oval.svg") 100%/9px no-repeat;
+			padding-right: 41px;
+		}
 
 		&__list {
 			margin: 0;
@@ -31,12 +35,9 @@
 		}
 
 		&:not(.collection) {
-
-
 			.dropdown-menu__title {
 				display: flex;
 				align-items: center;
-
 				// &:before {
 				// 	width: 14px;
 				// 	height: 12px;
@@ -53,7 +54,6 @@
 			.dropdown-menu__link {
 				padding: 9px 32px 9px 64px;
 			}
-
 		}
 
 		&:nth-child(2) {}
@@ -61,18 +61,15 @@
 		&:nth-child(3) {}
 
 		&__title {
-
-
-			font-size: 16px;
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 14px;
 			font-weight: 400;
 			line-height: 39px;
-			text-transform: uppercase;
-			padding: 0px 50px 0px 0px;
+			padding: 0px 0px 0px 0px;
 			color: #333333;
 			box-shadow: 0 2px 21px 0 transparent;
 			letter-spacing: 0.1px;
 			cursor: pointer;
-			background: url("../images/menu-oval.svg") 100%/9px no-repeat;
 			white-space: nowrap;
 
 			&.last {
@@ -91,7 +88,6 @@
 			}
 
 			&:hover {
-
 				color: $base;
 				// background: url("https://icongr.am/entypo/chevron-down.svg?color=bb0000") 97%/14px no-repeat;
 			}
@@ -99,20 +95,18 @@
 			&.last {
 				padding: 9px 24px 9px 22px;
 			}
-
 		}
 
 		&__link {
 			color: #333333;
-
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 2;
 			color: #333333;
 			cursor: pointer;
 			padding: 9px 32px;
-			// background: #ffffff;
 
+			// background: #ffffff;
 			&:hover {
 				color: #666666;
 				text-decoration: underline;
@@ -120,14 +114,11 @@
 		}
 
 		&.active {
-
-
 			.dropdown-menu__list {
 				display: flex;
 				overflow-y: auto;
 				// margin-right: -16px;
 				// padding-right: 20px;
-
 			}
 
 			.dropdown-menu__item {
@@ -150,7 +141,7 @@
 				// background: url("https://icongr.am/entypo/chevron-up.svg?color=bb0000") 97%/14px no-repeat;
 				&:before {
 					content: '';
-					width: calc(100% - 50px);
+					width: 100%;
 					height: 2px;
 					position: absolute;
 					bottom: 0;
@@ -165,20 +156,17 @@
 				z-index: 99999;
 				top: 39px;
 			}
-
 		}
 
 		&.collection {
 			.dropdown-menu__title {
 				background: unset !important;
 				color: $base;
-
 				font-size: 16px;
 				font-weight: 700;
 				line-height: 39px;
 				padding: 0px 0px 0px 0px;
 			}
-
 
 			.sub-menu__list {
 				display: none;
@@ -245,7 +233,6 @@
 				&:hover {
 					img {
 						border: 1px solid $base;
-
 					}
 
 					+.dropdown-menu__subtitle .sub-menu__list {
@@ -262,7 +249,6 @@
 							top: -43px;
 							box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 						}
-
 					}
 				}
 			}
@@ -277,7 +263,6 @@
 					position: relative;
 					width: fit-content;
 					cursor: pointer;
-
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 29px;
@@ -305,7 +290,6 @@
 						// &:before {
 						// 	border-bottom: 1px dashed $base;
 						// }
-
 						& .sub-menu__list {
 							display: flex;
 
@@ -320,9 +304,7 @@
 								top: -43px;
 								box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 							}
-
 						}
-
 					}
 				}
 
@@ -360,13 +342,11 @@
 				line-height: 18px;
 				margin: 16px 0;
 				z-index: 4;
-
 			}
 
 			&.active {
 				.dropdown-menu__parent {
 					display: flex;
-
 				}
 
 				.dropdown-menu__title {
@@ -399,7 +379,6 @@
 		list-style: none;
 	}
 
-
 	.sub-menu__item {
 		display: flex;
 		padding-right: 16px;
@@ -408,7 +387,6 @@
 	.sub-menu__link,
 	.sub-menu__item {
 		color: #333333;
-
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 29px;
@@ -468,17 +446,14 @@
 
 			&:first-child {
 				background: url("../images/grohe.svg") no-repeat 0 10px;
-
 			}
 
 			&:nth-child(2) {
 				background: url("../images/sfera.svg") no-repeat 0 10px;
-
 			}
 
 			&:nth-child(3) {
 				background: url("../images/collections.svg") no-repeat -1px 14px;
-
 			}
 
 			&__service {
@@ -492,7 +467,6 @@
 			}
 
 			&__title {
-
 				font-size: 16px;
 				font-weight: 400;
 				line-height: 46px;
@@ -536,7 +510,6 @@
 					width: 100% !important;
 				}
 
-
 				&.new-collection {
 					>.dropdown-menu__parent {
 						width: 100% !important;
@@ -564,8 +537,6 @@
 						margin-bottom: 0;
 						border-bottom: 1px solid #f1f1f1;
 
-
-
 						.sub-menu__list {
 							display: none;
 						}
@@ -587,10 +558,7 @@
 									display: none;
 								}
 							}
-
-
 						}
-
 					}
 
 					.dropdown-menu__subtitle {
@@ -618,7 +586,6 @@
 					box-shadow: none !important;
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=ba1212") 97%/14px no-repeat !important;
 				}
-
 			}
 
 			&.collection {
@@ -635,7 +602,6 @@
 						.dropdown-menu__subtitle {
 							width: 100%;
 							color: #333333;
-
 							font-size: 14px;
 							font-weight: 400;
 							line-height: 1;
@@ -645,8 +611,6 @@
 					}
 				}
 
-
-
 				.sub-menu__list {
 					position: unset;
 				}
@@ -654,7 +618,6 @@
 				.dropdown-menu__subtitle {
 
 					// background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 10px/18px no-repeat !important;
-
 					&.active {
 						// background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat !important;
 					}
@@ -663,8 +626,6 @@
 						margin-bottom: 0;
 					}
 				}
-
-
 			}
 		}
 
@@ -714,7 +675,6 @@
 				left: 0;
 			}
 		}
-
 	}
 
 	.menu-480 {
@@ -742,7 +702,6 @@
 			// 	background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 100% 50%/18px no-repeat;
 			// 	background-color: #262626;
 			// }
-
 			span {
 				width: 100%;
 			}
@@ -752,7 +711,6 @@
 			order: 3;
 		}
 	}
-
 
 	.new-collection {
 		.dropdown-menu__item {
@@ -767,66 +725,47 @@
 			}
 		}
 	}
-
 }
-
 
 // @media (max-width: 1150px) {
 // 	.header__dropdown-menu {
 // 		margin-left: 1%;
-
 // 		.dropdown-menu__title {
 // 			padding: 2% 8% 2% 4%;
 // 			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 101%/14px no-repeat;
-
 // 			&:hover {
 // 				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 101%/14px no-repeat;
 // 			}
 // 		}
 // 	}
-
-
 // }
-
 // @media (max-width: 1000px) {
 // 	.header__dropdown-menu {
-
 // 		.dropdown-menu {
 // 			margin-left: 0;
-
 // 			&:nth-child(2) {
 // 				margin-left: 0;
 // 			}
-
 // 			&:nth-child(3) {
 // 				margin-left: 0;
 // 			}
 // 		}
-
 // 		.header__telephones {
 // 			margin-left: 0;
 // 		}
 // 	}
-
-
 // }
-
-
-
 // @media (max-width: 965px) {
 // 	.header__dropdown-menu {
 // 		flex-wrap: wrap;
 // 		margin-left: 0;
-
 // 		.container {
 // 			display: block;
-
 // 			.header__telephones {
 // 				display: flex;
 // 				width: 100%;
 // 				padding: 0 24px;
 // 			}
-
 // 			.header__phone {
 // 				font-size: 20px;
 // 				font-weight: 500;
@@ -837,26 +776,21 @@
 // 				text-align: left;
 // 				color: #eeeeee;
 // 			}
-
 // 			.header__call-phone-button {
 // 				background: unset;
 // 			}
 // 		}
-
 // 		.dropdown-menu {
 // 			width: 100%;
 // 			display: flex;
 // 			border-top: none;
 // 			flex-wrap: wrap;
-
 // 			&:nth-child(2) {
 // 				margin-left: 0;
 // 			}
-
 // 			&:nth-child(3) {
 // 				margin-left: 0;
 // 			}
-
 // 			&__back {
 // 				display: block;
 // 				text-transform: uppercase;
@@ -864,7 +798,6 @@
 // 				font-size: 14px;
 // 				font-weight: 500;
 // 				font-style: normal;
-
 // 				font-stretch: normal;
 // 				line-height: 4;
 // 				letter-spacing: normal;
@@ -875,20 +808,16 @@
 // 				text-align: right;
 // 				background: url("https://icongr.am/entypo/chevron-left.svg?color=eeeeee") 0/18px no-repeat;
 // 			}
-
 // 			&__list {
 // 				box-shadow: none;
 // 				margin-top: 0;
-
 // 				li:hover {
 // 					color: $base
 // 				}
 // 			}
-
 // 			&__item {
 // 				flex-basis: 100%;
 // 			}
-
 // 			&__link {
 // 				padding-left: 0;
 // 				font-size: 14px;
@@ -898,49 +827,36 @@
 // 				letter-spacing: normal;
 // 				color: #666666;
 // 			}
-
 // 			&__title {
 // 				padding: 15px 0;
 // 				width: 100%;
-
 // 				&:hover {
 // 					box-shadow: none;
-
 // 				}
 // 			}
-
 // 			&+.dropdown-menu {
 // 				border-top: 1px solid #f1f1f1;
 // 				border-bottom: 1px solid #f1f1f1;
-
-
 // 				&+.dropdown-menu {
 // 					border-top: none;
 // 					border-bottom: 1px solid #f1f1f1;
-
 // 				}
 // 			}
-
 // 			&:last-child {
 // 				border-bottom: 1px solid #f1f1f1;
 // 			}
 // 		}
-
 // 		.header__telephones {
 // 			display: none;
 // 		}
-
 // 		.active {
 // 			.dropdown-menu__list {
 // 				position: unset !important;
 // 			}
-
-
 // 			.dropdown-menu__title {
 // 				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 97%/18px no-repeat;
 // 				box-shadow: none !important;
 // 			}
-
 // 		}
 // 	}
 // }

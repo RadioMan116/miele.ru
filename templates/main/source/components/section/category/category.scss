@@ -1,22 +1,21 @@
 .category {
-	font-family: "Roboto Condensed";
+	font-family: "HelveticaNeueCyr-Roman";
 	width: 100%;
 	max-width: 100%;
 	position: relative;
+	margin-bottom: 63px;
 
 	* {
 		box-sizing: border-box;
 	}
 
 	// .category__items
-
 	.category__items {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	// .category__item
-
 	.category__item {
 		width: calc((100%/3)-20px);
 		display: flex;
@@ -25,12 +24,12 @@
 		background-position: calc(100%-5px) 10px;
 		padding: 22px 150px 16px 26px;
 		background-color: #f1f1f1;
-		height: 144px;
+		height: 151px;
 		text-decoration: none !important;
-		// position: relative;
 
+		// position: relative;
 		&:nth-child(-n+3) {
-			margin-bottom: 28px;
+			margin-bottom: 18px;
 		}
 
 		&:nth-child(3n+2) {
@@ -43,8 +42,7 @@
 		}
 
 		&:hover {
-
-			background-color: #ffdede;
+			background-color: $base;
 
 			// &:before {
 			// 	content: '';
@@ -56,11 +54,16 @@
 			// 	bottom: 0;
 			// 	// background-color: #C1C1C1;
 			// }
+			.category {
+				&__caption {
+					color: #ffffff;
+					text-decoration: underline !important;
+				}
 
-
-			.category__caption {
-				// color: $base;
-				text-decoration: underline !important;
+				&__price,
+				&__text {
+					color: #ffffff;
+				}
 			}
 
 			// .category__price {
@@ -75,35 +78,41 @@
 	}
 
 	// .category__caption
-
 	&__caption {
 		color: $base;
+		font-family: "HelveticaNeueCyr-Roman";
 		font-size: 18px;
 		font-weight: 400;
-		line-height: 26px;
-		margin-bottom: 23px;
+		line-height: 22px;
+		margin-bottom: 6px;
+	}
+
+	&__text {
+		color: #4b4b4b;
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		margin-bottom: 20px;
 	}
 
 	// .category__price
-
 	&__price {
-		color: #333333;
-		font-size: 16px;
-		font-weight: 700;
+		font-family: "HelveticaNeueCyr-Bold";
+		font-size: 14px;
+		font-weight: 400;
 		line-height: 24px;
 		margin-top: auto;
+		color: black;
 
 		br {
 			display: none;
 		}
 	}
 
-
 	.swiper-pagination {
 		display: none;
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 		padding-bottom: 0px;
@@ -127,7 +136,6 @@
 					background-color: $base;
 				}
 			}
-
 		}
 
 		.category__item {
@@ -148,12 +156,10 @@
 
 			// &:hover {
 			// 	background-color: $base;
-
 			// 	.category__caption {
 			// 		color: #ffffff;
 			// 		text-decoration: underline;
 			// 	}
-
 			// 	.category__price {
 			// 		color: #ffffff;
 			// 	}

@@ -1782,6 +1782,59 @@ $(document).ready(function() {
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
 	}
+	(() => {
+		let swiperHover = $(".special-offers .swiper");
+		if ($(".special-offers")) {
+			swiperHover.each(function(index, el) {
+				$(el).find(".swiper-container ").addClass("swiperHover-" + index);
+				$(el).find('.swiper-pagination').addClass("js-pagination-hover js-pagination-hover-" + index);
+				var swiperHoverInit = new Swiper(".swiperHover-" + index, {
+					spaceBetween: 25,
+					spaceBetween: 20,
+					slidesPerView: 1,
+					pagination: {
+						el: '.js-pagination-hover-' + index,
+						clickable: true,
+					},
+				});
+				let paginationHover = $('.js-pagination-hover .swiper-pagination-bullet')
+				$(paginationHover).hover(function() {
+					$(this).trigger("click");
+				});
+				$(el).mouseleave(function() {
+					let firstPagination = $(el).find('.swiper-pagination-bullet')
+					if (!$(firstPagination[0]).hasClass('active')) {
+						$(firstPagination)[0].click();
+					}
+				});
+			})
+		}
+	})();
+	tippy('[data-announcing]', {
+		// change these to your liking
+		trigger: 'click',
+		arrow: true,
+		placement: 'right', // top, right, bottom, left
+		// delay: 5, //ms
+		distance: 15, //px or string
+		maxWidth: 300, //px or string
+		// leave these as they are
+		// followCursor: true,
+		allowHTML: true,
+		theme: 'light',
+		ignoreAttributes: true,
+		content(reference) {
+			const title = reference.getAttribute('data-announcing');
+			reference.removeAttribute('data-announcing');
+			return title;
+		},
+	});
+	new tippy('.tooltip', {
+		position: 'top',
+		content: 'Tooltip',
+		arrow: 'true',
+		theme: 'light'
+	});
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
