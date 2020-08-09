@@ -1,21 +1,22 @@
 .menu {
+	display: flex;
+
 	* {
 		transition: 0.2s;
 	}
 
-
 	.header__telephones {
 		display: none;
 		align-items: center;
-
 	}
 
 	display: flex;
 	align-items: center;
 	flex-shrink: 1;
-	width:890px;
-	// flex-grow: 1;
+	// width:890px;
+	width: 100%;
 
+	// flex-grow: 1;
 	nav {
 		width: 100%;
 	}
@@ -26,11 +27,13 @@
 		list-style-type: none;
 		display: flex;
 		// justify-content: space-between;
-		width: 100%;
+		width: auto;
+		// flex-grow: 1;
+		margin-left: auto;
 	}
 
 	&__item {
-		margin-left: 39px;
+		margin-left: 36px;
 
 		&:hover {
 
@@ -57,9 +60,7 @@
 
 	&__link {
 		display: block;
-		color: #b2b6b8;
-		font-family: Arial,
-			sans-serif;
+		color: #a6a6a6;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 15px;
@@ -67,10 +68,11 @@
 
 	.city-change {
 		display: flex;
-		color: $base;
-		font-family: Arial, sans-serif;
+		color: #ffffff;
+		font-family: "HelveticaNeueCyr-Bold";
 		font-size: 13px;
-		line-height: 22px;
+		font-weight: 400;
+		line-height: 17px;
 		margin-right: 48px;
 		cursor: pointer;
 		position: relative;
@@ -83,14 +85,14 @@
 		}
 
 		&__title {
-			border-bottom: 1px dashed $base;
+			border-bottom: 1px dashed #ffffff;
 			margin-right: 10px;
 			white-space: nowrap;
 		}
 
 		&__bullet {
 			width: 14px;
-			background: url("https://icongr.am/entypo/chevron-down.svg?color=b0b0b0") 100%/14px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=a6a6a6") 100%/14px no-repeat;
 		}
 
 		&__link {
@@ -121,9 +123,7 @@
 				// box-shadow: 0 5px 9px 0 #000;
 			}
 		}
-
 	}
-
 
 	.abuse__button {
 		display: none;
@@ -135,8 +135,6 @@
 		nav {
 			display: flex;
 			flex-wrap: wrap;
-
-
 		}
 
 		.city-change {
@@ -150,19 +148,14 @@
 
 			&.active {
 				.city-change__popup {
-
 					min-width: unset !important;
 					left: 5px;
 				}
 			}
 
-
-
-
 			&__title {}
 
 			color: $base;
-			font-family: Arial;
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 22px;
@@ -246,7 +239,6 @@
 		.header__phone {
 			margin-bottom: 5px;
 			color: #333333;
-			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 26px;
@@ -254,7 +246,6 @@
 
 		.time-work {
 			color: #666;
-			font-family: Arial, sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
@@ -262,7 +253,6 @@
 
 			i {
 				color: #666;
-				font-family: Arial, sans-serif;
 				font-size: 13px;
 				line-height: 22px;
 				text-align: left;
@@ -273,7 +263,6 @@
 
 		.time-work__email {
 			color: $base;
-			font-family: Arial;
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 22px;
@@ -287,7 +276,6 @@
 
 		.abuse__button {
 			color: $base;
-			font-family: Roboto Condensed;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
@@ -317,13 +305,7 @@
 //     padding-right: unset;
 //   }
 // }
-
 @media screen and (max-width: 480px) {
-
-
-
-
-
 	// .header .header__block_top {
 	//   height: unset;
 	// }
