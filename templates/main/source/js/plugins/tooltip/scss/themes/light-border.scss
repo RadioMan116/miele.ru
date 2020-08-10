@@ -6,19 +6,19 @@ $transparent-light: rgba(0, 8, 16, 0.08);
 $transparent-dark: rgba(0, 8, 16, 0.15);
 $transparent-darker: rgba(0, 8, 16, 0.2);
 
-.#{$namespace-prefix}-box[data-theme~='light-border'] {
+.tippy-box[data-theme~='light-border'] {
   background-color: $color;
   background-clip: padding-box;
   border: 1px solid $transparent-dark;
   color: #333;
   box-shadow: 0 4px 14px -2px $transparent-light;
 
-  > .#{$namespace-prefix}-backdrop {
+  > .tippy-backdrop {
     background-color: $color;
   }
 
-  > .#{$namespace-prefix}-arrow,
-  > .#{$namespace-prefix}-svg-arrow {
+  > .tippy-arrow,
+  > .tippy-svg-arrow {
     &::after {
       content: '';
       position: absolute;
@@ -26,13 +26,13 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
     }
   }
 
-  > .#{$namespace-prefix}-arrow::after {
+  > .tippy-arrow::after {
     border-color: transparent;
     border-style: solid;
   }
 
   &[data-placement^='top'] {
-    > .#{$namespace-prefix}-arrow {
+    > .tippy-arrow {
       &::before {
         border-top-color: $color;
       }
@@ -45,7 +45,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
       }
     }
 
-    > .#{$namespace-prefix}-svg-arrow {
+    > .tippy-svg-arrow {
       > svg {
         top: $arrow-size;
       }
@@ -57,7 +57,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
   }
 
   &[data-placement^='bottom'] {
-    > .#{$namespace-prefix}-arrow {
+    > .tippy-arrow {
       &::before {
         border-bottom-color: $color;
         bottom: $arrow-size;
@@ -71,7 +71,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
       }
     }
 
-    > .#{$namespace-prefix}-svg-arrow {
+    > .tippy-svg-arrow {
       > svg {
         bottom: $arrow-size;
       }
@@ -83,7 +83,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
   }
 
   &[data-placement^='left'] {
-    > .#{$namespace-prefix}-arrow {
+    > .tippy-arrow {
       &::before {
         border-left-color: $color;
       }
@@ -96,7 +96,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
       }
     }
 
-    > .#{$namespace-prefix}-svg-arrow {
+    > .tippy-svg-arrow {
       > svg {
         left: 11px;
       }
@@ -108,7 +108,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
   }
 
   &[data-placement^='right'] {
-    > .#{$namespace-prefix}-arrow {
+    > .tippy-arrow {
       &::before {
         border-right-color: $color;
         right: $arrow-size;
@@ -122,7 +122,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
       }
     }
 
-    > .#{$namespace-prefix}-svg-arrow {
+    > .tippy-svg-arrow {
       > svg {
         right: 11px;
       }
@@ -133,7 +133,7 @@ $transparent-darker: rgba(0, 8, 16, 0.2);
     }
   }
 
-  > .#{$namespace-prefix}-svg-arrow {
+  > .tippy-svg-arrow {
     fill: white;
 
     &::after {

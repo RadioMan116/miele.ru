@@ -25,7 +25,7 @@
   }
 }
 
-.#{$namespace-prefix}-box {
+.tippy-box {
   &[data-animation='perspective-extreme'] {
     @each $placement in $placements {
       &[data-placement^='#{$placement}'] {

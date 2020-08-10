@@ -178,7 +178,6 @@
 	&__subtitle {
 		margin-bottom: 24px;
 		color: #333333;
-		font-family: "Roboto Condensed";
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 24px;
@@ -383,7 +382,7 @@
 			align-items: center;
 
 			&-bullet {
-				opacity: 0.5;
+				opacity: 1;
 				margin: 3px 8px !important;
 				background: #ffffff !important;
 			}
@@ -414,20 +413,21 @@
 		-webkit-box-align: start;
 		-ms-flex-align: start;
 		align-items: flex-start;
-		margin: 0 0 40px;
+		margin: 0 0 53px;
 		padding: 25px 0 20px;
 		background-color: #f1f1f1;
 	}
 
 	@media screen and (max-width: 767px) {
 		&__items {
-			padding: 16px !important;
+			padding: 24px 16px !important;
+			margin-bottom: 25px;
 
 			.gallery__el {
 				height: unset;
 				margin-left: unset;
 				width: 100%;
-				margin-bottom: 7px;
+				margin-bottom: 10px;
 				flex-basis: unset;
 
 				&:last-child {
@@ -435,6 +435,11 @@
 				}
 
 				.gallery__text {
+					color: #4b4b4b;
+					font-family: "HelveticaNeueCyr-Roman";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 19px;
 					margin-bottom: 0;
 				}
 			}
@@ -527,13 +532,15 @@
 			// 	display: flex;
 			// }
 			img {
-				max-width: unset;
-				height: 286px;
-				display: block;
-				position: absolute;
-				top: 0;
+				max-width: 100%;
+				height: auto;
+				transform: unset;
+				max-height: unset;
+				// display: block;
+				// position: absolute;
+				// top: 0;
+				// // right: 0px;
 				// right: 0px;
-				right: -144px;
 			}
 
 			picture {
@@ -545,15 +552,16 @@
 		.swiper__item {
 			position: static;
 			height: auto;
-			background-color: #394791;
+			background-color: #4b4b4b;
 			flex-grow: 1;
 			align-items: center;
 			flex-direction: column;
 			display: flex;
-			padding-top: 286px;
+			// padding-top: 286px;
 			justify-content: center;
 			z-index: 0;
 			padding-bottom: 0;
+			padding-top: 0;
 
 			.gallery__parent {
 				min-width: 212px;
@@ -561,39 +569,40 @@
 		}
 
 		.swiper__title {
-			padding: 34px 16px 16px;
+			padding: 17px 16px 16px;
 			flex-grow: 1;
 			width: 100% !important;
 			margin-left: 0;
-			background-color: $base;
+			background: #4b4b4b;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: center;
+			justify-content: flex-start;
 			max-width: unset;
 
 			.span__small {
 				margin-bottom: 8px;
 				color: #ffffff;
-				font-family: "Roboto Condensed";
-				font-size: 30px;
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 24px;
 				font-weight: 400;
-				line-height: 34px;
-				text-align: center;
+				line-height: 32px;
+				text-align: left;
 			}
 
 			.span__big {
-				margin-bottom: 13px;
+				margin-bottom: 19px;
 				color: #ffffff;
-				font-family: Arial;
+				font-family: "HelveticaNeueCyr-Roman";
 				font-size: 14px;
 				font-weight: 400;
-				line-height: 20px;
-				text-align: center;
+				line-height: 22px;
+				text-align: left;
 			}
 
 			.swiper__link {
-				margin: auto auto 0;
+				// margin: auto auto 0;
+				background-color: $base;
 			}
 
 			p {
@@ -606,7 +615,15 @@
 		}
 
 		.swiper-pagination {
-			top: 260px;
+			top: 225px;
+
+			&-bullet {
+				opacity: 0.5;
+			}
+		}
+
+		.gallery__items {
+			display: none;
 		}
 
 		&__items {
@@ -646,18 +663,18 @@
 		}
 
 		&__article {
-			color: #212121;
-			font-family: "Roboto Condensed";
-			font-size: 16px;
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 18px;
 			font-weight: 400;
-			line-height: 22px;
-			padding: 6px 12px 4px;
+			line-height: 24px;
+			padding: 2px 15px 6px;
 		}
 
 		&__text {
-			color: #666666;
-			font-family: Arial;
+			color: #4b4b4b;
+			font-family: "HelveticaNeueCyr-Roman";
 			font-size: 14px;
+			font-weight: 400;
 			line-height: 19px;
 			padding: 0px 12px 5px 12px;
 		}
@@ -673,7 +690,7 @@
 			height: unset;
 			margin-left: unset;
 			width: 100%;
-			margin-bottom: 7px;
+			margin-bottom: 10px;
 			flex-basis: unset;
 
 			&:last-child {
@@ -702,7 +719,6 @@
 
 				.gallery__article {
 					color: #212121;
-					font-family: "Roboto Condensed";
 					font-size: 18px;
 					font-weight: 400;
 					line-height: 28px;
@@ -710,7 +726,6 @@
 
 				.gallery__text {
 					color: #666666;
-					font-family: Arial;
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 19px;
@@ -724,22 +739,20 @@
 			align-items: center;
 
 			picture {
-				width: 21%;
+				width: 105px;
 				height: auto;
-				height: 100%;
-				position: relative;
-				top: 0;
-				overflow: hidden;
-				padding-top: 12%;
+				height: auto;
+				padding-top: 0;
+				flex-shrink: 0;
 			}
 
 			img {
-				height: auto;
-				max-width: unset;
-				min-height: 56px;
-				position: absolute;
-				top: 0;
-				left: 0;
+				// height: auto;
+				// max-width: unset;
+				// min-height: 56px;
+				// position: absolute;
+				// top: 0;
+				// left: 0;
 				// right: 0;
 			}
 		}

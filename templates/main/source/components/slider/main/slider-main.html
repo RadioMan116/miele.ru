@@ -5,7 +5,10 @@
 		<div class="swiper-wrapper">
 			<!-- Slides -->
 			<div class="swiper-slide">
-				<picture><img src='{{src}}main-1.jpeg' alt=""></picture>
+				<picture>
+					<source media="(max-width: 767px)" srcset="{{src}}main-mob.jpeg">
+					<img src='{{src}}main-1.jpeg' alt="" class="lazyload">
+				</picture>
 				<div class="swiper__item">
 					<div class="swiper__title">
 						<span class="span span__small">
@@ -19,7 +22,10 @@
 				</div>
 			</div>
 			<div class="swiper-slide">
-				<picture><img src='{{src}}main-1.jpeg' alt=""></picture>
+				<picture>
+					<source media="(max-width: 767px)" srcset="{{src}}main-mob.jpeg">
+					<img src='{{src}}main-1.jpeg' alt="" class="lazyload">
+				</picture>
 				<div class="swiper__item">
 					<div class="swiper__title">
 						<span class="span span__small">
@@ -33,7 +39,10 @@
 				</div>
 			</div>
 			<div class="swiper-slide">
-				<picture><img src='{{src}}main-1.jpeg' alt=""></picture>
+				<picture>
+					<source media="(max-width: 767px)" srcset="{{src}}main-mob.jpeg">
+					<img src='{{src}}main-1.jpeg' alt="" class="lazyload">
+				</picture>
 				<div class="swiper__item">
 					<div class="swiper__title">
 						<span class="span span__small">
@@ -60,7 +69,7 @@
 			<div class="gallery__el swiper-slide">
 				<a href="#" class="gallery__link">
 					<picture>
-						<img src="images/gallery-link_1.jpeg" alt="">
+						<img src="{{src}}gallery-link_1.jpeg" alt="">
 					</picture>
 					<div class="gallery__parent">
 						<span class="gallery__article">
@@ -80,7 +89,7 @@
 			<div class="gallery__el swiper-slide">
 				<a href="#" class="gallery__link">
 					<picture>
-						<img src="images/gallery-link_2.jpeg" alt="">
+						<img src="{{src}}gallery-link_2.jpeg" alt="">
 					</picture>
 					<div class="gallery__parent">
 						<span class="gallery__article">
@@ -100,7 +109,7 @@
 			<div class="gallery__el swiper-slide">
 				<a href="#" class="gallery__link">
 					<picture>
-						<img src="images/gallery-link_3.jpeg" alt="">
+						<img src="{{src}}gallery-link_3.jpeg" alt="">
 					</picture>
 					<div class="gallery__parent">
 						<span class="gallery__article">
@@ -120,7 +129,7 @@
 			<div class="gallery__el swiper-slide">
 				<a href="#" class="gallery__link">
 					<picture>
-						<img src="images/gallery-link_4.jpeg" alt="">
+						<img src="{{src}}gallery-link_4.jpeg" alt="">
 					</picture>
 					<div class="gallery__parent">
 						<span class="gallery__article">

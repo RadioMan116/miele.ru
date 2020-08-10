@@ -18,11 +18,11 @@
 	}
 
 	h2 {
-		color: #333333;
-		font-family: "Roboto Condensed";
-		font-size: 24px;
+		font-family: "HelveticaNeueCyr-Light";
+		font-size: 26px;
 		font-weight: 400;
-		line-height: 24px;
+		line-height: 32px;
+		//   text-align: center;
 		margin-bottom: 16px;
 		margin-top: 0px;
 
@@ -41,7 +41,6 @@
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 28px;
-
 	}
 
 	h4 {
@@ -106,7 +105,6 @@
 				text-align: left;
 				color: #262626;
 			}
-
 		}
 
 		span {
@@ -132,12 +130,10 @@
 
 		// img {
 		// 	margin: 0 auto;
-
 		// 	&:nth-last-child(2):first-child,
 		// 	&:nth-last-child(2):first-child~img {
 		// 		color: green;
 		// 	}
-
 		// }
 		img {
 			margin-right: 0;
@@ -145,9 +141,6 @@
 			margin-bottom: 0px;
 		}
 	}
-
-
-
 
 	ol {
 		color: #333333;
@@ -187,7 +180,6 @@
 		// li:first-child {
 		// 	margin-top: 16px;
 		// }
-
 		b {
 			margin-bottom: 16px
 		}
@@ -229,7 +221,6 @@
 		margin: 5px 0;
 	}
 
-
 	tr {
 		z-index: 99;
 		list-style: none;
@@ -253,7 +244,6 @@
 				font-size: 12px;
 				font-weight: 700;
 				padding: 11px 7px 13px;
-
 			}
 		}
 
@@ -310,7 +300,6 @@
 	// 	// flex-wrap: wrap;
 	// 	// justify-content: center;
 	// }
-
 	.table {
 		width: 100%;
 		margin-bottom: 22px;
@@ -337,7 +326,6 @@
 					text-align: right;
 					padding-right: 50px;
 				}
-
 			}
 		}
 	}
@@ -354,7 +342,6 @@
 		margin-bottom: 2rem;
 
 		b {
-
 			width: 100%;
 			margin-bottom: 13px;
 			color: #333333;
@@ -369,6 +356,7 @@
 
 		p {
 			margin: 0 0 14px;
+
 			b {
 				font-size: inherit;
 				line-height: inherit;
@@ -398,15 +386,16 @@
 			ul {
 				width: 33%;
 			}
-			.time{
+
+			.time {
 				margin-top: 14px;
-				br{
+
+				br {
 					display: none;
 				}
 			}
 		}
 	}
-
 
 	.maps {
 		padding-top: 18px;
@@ -435,9 +424,7 @@
 		display: block;
 	}
 
-
 	&.seo-text {
-
 		h2 {
 			color: #262626;
 			font-size: 26px;
@@ -461,7 +448,6 @@
 
 		p {
 			margin-bottom: 10px;
-
 		}
 
 		img {
@@ -469,7 +455,6 @@
 		}
 
 		// .official-dealers__link
-
 		&__link {
 			width: calc(50%-16px);
 			display: flex;
@@ -481,7 +466,6 @@
 
 			&:nth-of-type(1) {
 				margin-right: 29px;
-
 			}
 
 			&:after {
@@ -524,14 +508,11 @@
 	.about-store__button,
 	.seo-text__button,
 	.about-brand__button,
-	.switch {
-		display: none;
-	}
+	.switch {}
 
 	.mobile {
 		display: none;
 	}
-
 
 	.pic_left {
 		float: left;
@@ -545,7 +526,6 @@
 
 	.table_delivery {
 		tr {
-
 			td:last-child {
 				b {
 					font-family: Arial;
@@ -555,9 +535,7 @@
 				}
 			}
 
-
 			td {
-
 				padding: 11px 7px 13px;
 
 				&[colspan="2"] {
@@ -566,8 +544,6 @@
 						font-weight: 700;
 					}
 				}
-
-
 			}
 		}
 	}
@@ -595,7 +571,8 @@
 			margin-bottom: 23px;
 			padding-top: 0;
 		}
-		h5{
+
+		h5 {
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -604,7 +581,6 @@
 		p {
 			font-size: 14px;
 			line-height: 22px;
-
 			margin-bottom: 24px;
 
 			&+table+p {
@@ -612,14 +588,12 @@
 				margin-bottom: 35px;
 			}
 
-
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 
 		b {
-
 			width: 100%;
 			margin-bottom: 11px;
 			font-size: 16px;
@@ -640,7 +614,6 @@
 			margin-bottom: 0;
 
 			li {
-
 				margin-left: 25px;
 				line-height: 21px;
 			}
@@ -662,24 +635,36 @@
 		}
 
 		&.seo-text {
-
 			h2 {
-				color: #262626;
-				font-size: 22px;
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 20px;
 				font-weight: 400;
 				line-height: 26px;
-				margin-bottom: 16px;
+				margin-bottom: 8px;
+				order: -1;
 			}
 
 			img {
 				padding: 0 !important;
-				margin: 0 -15px;
+				margin: 18px -15px 14px;
 				width: calc(100% + 30px);
 				max-width: calc(100% + 30px);
+			}
+
+			.container {
+				&:not(.active) {
+					p {
+						&~* {
+							display: none;
+						}
+					}
+				}
 			}
 		}
 
 		.official-dealers {
+			margin-bottom: 3px;
+
 			&__link {
 				width: auto;
 				display: flex !important;
@@ -696,7 +681,6 @@
 
 				&:nth-of-type(1) {
 					margin-right: 0px;
-
 				}
 
 				.official-dealers__pic {
@@ -751,21 +735,18 @@
 				.mobile {
 					display: none;
 				}
-
 			}
 		}
 
-
 		tr {
-
 			&:first-child {
 				td {}
 			}
 		}
 
 		td {
-			// width: 50% !important;
 
+			// width: 50% !important;
 			&:first-child {
 				width: 120px !important;
 				padding-left: 0;
@@ -805,7 +786,6 @@
 					text-align: left;
 					width: unset !important;
 
-
 					&:first-child {
 						margin-bottom: 10px;
 					}
@@ -831,24 +811,26 @@
 				}
 			}
 
-
 			a {
 				margin-top: 22px;
 			}
-			&.column{
-				ul{
+
+			&.column {
+				ul {
 					width: 100%;
 					margin-bottom: 0;
-					&:last-of-type{
+
+					&:last-of-type {
 						margin-bottom: 16px;
 					}
 				}
-				.time{
-					b{
-						display: block;
 
+				.time {
+					b {
+						display: block;
 					}
-					br{
+
+					br {
 						display: block;
 					}
 				}
@@ -886,15 +868,13 @@
 
 				&:first-child {
 
-					:nth-child(5),
-					:nth-child(6) {
-						display: none;
-					}
-
-					:nth-child(-n+6) {
-						order: -1;
-					}
-
+					// :nth-child(5),
+					// :nth-child(6) {
+					// 	display: none;
+					// }
+					// :nth-child(-n+6) {
+					// 	order: -1;
+					// }
 					&.active {
 
 						:nth-child(5),
@@ -903,16 +883,18 @@
 						}
 					}
 				}
-
 			}
-
 		}
 
+		.about-store__button,
 		.seo-text__button,
+		.about-brand__button,
 		.switch {
 			color: $base;
-			font-family: Arial;
+			font-family: "HelveticaNeueCyr-Roman";
 			font-size: 14px;
+			font-weight: 400;
+			line-height: 19px;
 			// display: none;
 			padding-bottom: 2px;
 			border-bottom: 1px dashed $base;
@@ -930,7 +912,7 @@
 			opacity: 1;
 
 			&:after {
-				background: url('https://icongr.am/entypo/chevron-small-down.svg?color=2e2e2e&size=50') no-repeat;
+				background: url('https://icongr.am/entypo/chevron-small-down.svg?color=8c0014&size=50') no-repeat;
 				content: '';
 				width: 20px;
 				height: 20px;
@@ -942,11 +924,16 @@
 			}
 		}
 
-		&.active {
+		.active {
 			height: auto;
 
-			.about-store__button {
-				position: static;
+			.about-store__button,
+			.seo-text__button,
+			.about-brand__button,
+			.switch {
+				position: relative;
+				bottom: 0;
+				right: unset;
 
 				&:before {
 					width: 63px;
@@ -954,11 +941,10 @@
 
 				&:after {
 					content: '';
-					background: url("https://icongr.am/entypo/chevron-up.svg?color=666666") center/16px no-repeat;
-					left: 80px;
+					background: url("https://icongr.am/entypo/chevron-up.svg?color=8c0014&size=50") center/16px no-repeat;
+					right: -24px;
 				}
 			}
-
 		}
 	}
 }

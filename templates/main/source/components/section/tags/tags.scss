@@ -7,6 +7,7 @@
 	max-width: 1176px;
 	flex-direction: column;
 	width: 100%;
+	font-family: "HelveticaNeueCyr-Roman";
 
 	&__list {
 		display: flex;
@@ -77,9 +78,11 @@
 		}
 
 		&:hover {
-			border: 1px solid #ffe3e3;
-			// background-color: #F1F1F1;
-			background-color: #ffe3e3;
+			border: solid 1px $base;
+			color: $base;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 28px;
 
 			a {
 				color: $base;
@@ -103,10 +106,10 @@
 	}
 
 	&__title {
-		color: #212121;
-		font-family: "Roboto Condensed";
-		font-size: 30px;
+		font-family: "HelveticaNeueCyr-Light";
+		font-size: 26px;
 		font-weight: 400;
+		line-height: 32px;
 		margin-bottom: 30px;
 	}
 
@@ -114,7 +117,6 @@
 		border-radius: 3px;
 		border: 1px solid $base;
 		color: $base;
-		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
@@ -132,7 +134,7 @@
 	}
 
 	&.main-tags {
-		margin-bottom: 61px;
+		margin-bottom: 47px;
 		position: relative;
 
 		// width: 1176px;
@@ -177,11 +179,11 @@
 		}
 
 		&__title {
-			color: #212121;
-			font-family: "Roboto Condensed";
-			font-size: 5vw;
+			font-size: 20px;
 			font-weight: 400;
 			margin-bottom: 15px;
+			line-height: 28px;
+			max-width: 90%;
 		}
 
 		&__all {

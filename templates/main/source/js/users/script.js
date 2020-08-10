@@ -46,7 +46,7 @@ $(document).ready(function() {
 		let catalog = document.querySelector('.special-offers.catalog');
 		$(".special-offers .container").each(function(index, element) {
 			var $this = $(this);
-			$this.find('[class ^=swiper-pagination]').addClass("instance-pagination-" + index);
+			$this.find('.swiper-pagination_2').addClass("instance-pagination-" + index);
 		});
 		if (catalog) {
 			mainCollection.forEach(function(element, index) {
@@ -57,13 +57,13 @@ $(document).ready(function() {
 				var mySwiper33 = new Swiper(".instance-" + index, {
 					slidesPerView: 3,
 					spaceBetween: 25,
-					slidesPerGroup: 4,
+					slidesPerGroup: 1,
 					allowTouchMove: false,
 					// loop: true,
 					// loopFillGroupWithBlank: true,
 					pagination: {
 						el: ".instance-pagination-" + index,
-						clickable: true
+						// clickable: true
 					},
 					scrollbar: {
 						el: ".swiper-scrollbar",
@@ -111,13 +111,13 @@ $(document).ready(function() {
 				var mySwiper33 = new Swiper(".instance-" + index, {
 					slidesPerView: 4,
 					spaceBetween: 25,
-					slidesPerGroup: 4,
+					// slidesPerGroup: 4,
 					allowTouchMove: false,
 					// loop: true,
 					// loopFillGroupWithBlank: true,
 					pagination: {
 						el: ".instance-pagination-" + index,
-						clickable: true
+						// clickable: true
 					},
 					scrollbar: {
 						el: ".swiper-scrollbar",
@@ -592,22 +592,6 @@ $(document).ready(function() {
 		}
 		// $('.share__items').
 	});
-	// $(".labels>img").hover(function () {
-	// 	var alt = $(this).attr('alt');
-	// 	var handel = $(this).position().left - 25;
-	// 	console.log(handel)
-	// 	if ($('.labels .labels__popup').length) {
-	// 		if ($('.labels .labels__popup').text() == alt) {
-	// 			$(".labels .labels__popup").remove();
-	// 		} else {
-	// 			$(".labels .labels__popup").remove();
-	// 			$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
-	// 		}
-	// 	} else {
-	// 		$(".labels").append('<div class="labels__popup" title="' + alt + '">' + alt + '</div>');
-	// 	}
-	// 	$(".labels__popup").css('left', handel);
-	// });
 	$(".labels__sale").hover(function() {
 		$(this).toggleClass('active')
 	});
@@ -847,6 +831,61 @@ $(document).ready(function() {
 			}
 		});
 		$('.articles .articles__text').matchHeight();
+		(() => {
+			let swiperHover = $(".special-offers .swiper");
+			if ($(".special-offers")) {
+				swiperHover.each(function(index, el) {
+					$(el).find(".swiper-container ").addClass("swiperHover-" + index);
+					$(el).find('.swiper-pagination').addClass("js-pagination-hover js-pagination-hover-" + index);
+					var swiperHoverInit = new Swiper(".swiperHover-" + index, {
+						spaceBetween: 25,
+						spaceBetween: 20,
+						slidesPerView: 1,
+						effect: 'fade',
+						speed: 0,
+						pagination: {
+							el: '.js-pagination-hover-' + index,
+							clickable: true,
+						},
+					});
+					let paginationHover = $('.js-pagination-hover .swiper-pagination-bullet')
+					$(paginationHover).hover(function() {
+						$(this).trigger("click");
+					});
+					$(el).mouseleave(function() {
+						let firstPagination = $(el).find('.swiper-pagination-bullet')
+						if (!$(firstPagination[0]).hasClass('active')) {
+							$(firstPagination)[0].click();
+						}
+					});
+				})
+			}
+		})();
+		tippy('[data-announcing]', {
+			// change these to your liking
+			// trigger: 'click',
+			arrow: true,
+			placement: 'right', // top, right, bottom, left
+			// delay: 5, //ms
+			distance: 15, //px or string
+			maxWidth: 300, //px or string
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			theme: 'light',
+			ignoreAttributes: true,
+			content(reference) {
+				const title = reference.getAttribute('data-announcing');
+				reference.removeAttribute('data-announcing');
+				return title;
+			},
+		});
+		new tippy('.tooltip', {
+			position: 'top',
+			content: 'Tooltip',
+			arrow: true,
+			theme: 'light'
+		});
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
@@ -935,6 +974,33 @@ $(document).ready(function() {
 				},
 			}
 		});
+		var mySwiper237 = new Swiper(".articles .swiper-container", {
+			// navigation: {
+			// 	nextEl: ".practical-features__next",
+			// 	prevEl: ".practical-features__prev"
+			// },
+			pagination: {
+				el: ".articles__pagination",
+				clickable: true
+			},
+			breakpoints: {
+				600: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 12,
+				},
+				700: {
+					slidesPerView: 2,
+					slidesPerGroup: 1,
+					spaceBetween: 12,
+				},
+				767: {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+					spaceBetween: 16
+				},
+			}
+		});
 		var mySwiper233 = new Swiper(".gallery__items.swiper-container", {
 			// navigation: {
 			// 	nextEl: ".practical-features__next",
@@ -993,7 +1059,8 @@ $(document).ready(function() {
 			$(".header__block_top .menu").appendTo('#js-header__block_bottom .container');
 			$('.js-city-change').appendTo('#js-header__block_bottom .menu');
 			$('.header__telephones').appendTo('#js-header__block_bottom .menu');
-			$('.header__basket,.header__compare,.header__favorite').appendTo('.header .header__block_top .header__icons');
+			$('.header__mobile-tel').appendTo('.header .header__block_top .container');
+			$('.header__icons').appendTo('.header .header__block_top .container');
 			$('#js-menu').appendTo('#js-header__block_bottom .container');
 			$('.time-work').appendTo('.header__telephones');
 			firstDropdownMenu.classList.add("active");
@@ -1020,6 +1087,31 @@ $(document).ready(function() {
 				productHeaderBottom.append(favorite);
 			}
 		})();
+		tippy('[data-announcing]', {
+			// change these to your liking
+			// trigger: 'click',
+			arrow: true,
+			placement: 'top', // top, right, bottom, left
+			// delay: 5, //ms
+			distance: 15, //px or string
+			maxWidth: 240, //px or string
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			theme: 'light',
+			ignoreAttributes: true,
+			content(reference) {
+				const title = reference.getAttribute('data-announcing');
+				reference.removeAttribute('data-announcing');
+				return title;
+			},
+		});
+		new tippy('.tooltip', {
+			position: 'top',
+			content: 'Tooltip',
+			arrow: true,
+			theme: 'light'
+		});
 	}
 	if ($('.js-sidebar-articles').length > 0) {
 		var mySwiper15 = new Swiper(".js-sidebar-articles", {
@@ -1782,58 +1874,66 @@ $(document).ready(function() {
 	if ($('.page__title.content-top__title.content-top__title_top span').length > 0) {
 		$(".content-top").addClass("content-top__tags");
 	}
-	(() => {
-		let swiperHover = $(".special-offers .swiper");
-		if ($(".special-offers")) {
-			swiperHover.each(function(index, el) {
-				$(el).find(".swiper-container ").addClass("swiperHover-" + index);
-				$(el).find('.swiper-pagination').addClass("js-pagination-hover js-pagination-hover-" + index);
-				var swiperHoverInit = new Swiper(".swiperHover-" + index, {
+	$(function() {
+		$("#tabs").tabs();
+		// $(".benefits .swiper").each(function(index, element) {
+		// 	var $this = $(this);
+		// 	$this.find('[class ^=swiper-pagination]').addClass("benefits-pagination-" + index);
+		// });
+		let benefits = document.querySelector('.benefits');
+		let benefitsCollection = document.querySelectorAll('.benefits .swiper');
+		if (benefits) {
+			benefitsCollection.forEach(function(element, index) {
+				let $this = $(this);
+				element.querySelector('.swiper-container').classList.add("benefits-" + index);
+				element.querySelector('.swiper-button-next').classList.add("benefits-next-" + index);
+				element.querySelector('.swiper-button-prev').classList.add("benefits-prev-" + index);
+				element.querySelector('.swiper-pagination').classList.add("benefits-pagination-" + index);
+				var benef = new Swiper(".benefits-" + index, {
 					spaceBetween: 25,
-					spaceBetween: 20,
-					slidesPerView: 1,
+					slidesPerGroup: 1,
+					allowTouchMove: false,
+					// loop: true,
+					// loopFillGroupWithBlank: true,
 					pagination: {
-						el: '.js-pagination-hover-' + index,
-						clickable: true,
+						el: ".benefits-pagination-" + index,
+						// clickable: true
+					},
+					navigation: {
+						nextEl: ".benefits-next-" + index,
+						prevEl: ".benefits-prev-" + index
+					},
+					breakpoints: {
+						767: {
+							allowTouchMove: true,
+						}
 					},
 				});
-				let paginationHover = $('.js-pagination-hover .swiper-pagination-bullet')
-				$(paginationHover).hover(function() {
-					$(this).trigger("click");
-				});
-				$(el).mouseleave(function() {
-					let firstPagination = $(el).find('.swiper-pagination-bullet')
-					if (!$(firstPagination[0]).hasClass('active')) {
-						$(firstPagination)[0].click();
+				if (windowWidth2 > 767) {
+					if (element.querySelectorAll('.swiper-slide').length > 1) {
+						element.querySelector(".benefits-next-" + index).style.display = 'block';
+						element.querySelector(".benefits-prev-" + index).style.display = 'block';
+						element.querySelector(".benefits-pagination-" + index).style.display = 'flex';
+					} else {
+						element.querySelector(".benefits-next-" + index).style.display = 'none';
+						element.querySelector(".benefits-prev-" + index).style.display = 'none';
+						element.querySelector(".benefits-pagination-" + index).style.display = 'none';
 					}
-				});
+				}
 			})
 		}
-	})();
-	tippy('[data-announcing]', {
-		// change these to your liking
-		trigger: 'click',
-		arrow: true,
-		placement: 'right', // top, right, bottom, left
-		// delay: 5, //ms
-		distance: 15, //px or string
-		maxWidth: 300, //px or string
-		// leave these as they are
-		// followCursor: true,
-		allowHTML: true,
-		theme: 'light',
-		ignoreAttributes: true,
-		content(reference) {
-			const title = reference.getAttribute('data-announcing');
-			reference.removeAttribute('data-announcing');
-			return title;
-		},
-	});
-	new tippy('.tooltip', {
-		position: 'top',
-		content: 'Tooltip',
-		arrow: 'true',
-		theme: 'light'
+		if (windowWidth2 < 768) {
+			$('#tabs ul').click(function() {
+				$(this).toggleClass('active')
+			})
+			// $('#tabs ul li').click(function(e) {
+			// 	e.stopPropagation();
+			// 	$('.#tabs ul li').removeClass('active');
+			// 	$(this).addClass('active');
+			// 	// $(this).addClass('active')
+			// 	// $(this).parent().removeClass('active')
+			// })
+		}
 	});
 });
 $(window).on('load', function() {
@@ -1861,7 +1961,16 @@ $(window).on('load', function() {
 			scrollbar: {
 				el: ".swiper-scrollbar",
 				draggable: true
-			}
+			},
+			on: {
+				init: function() {
+					setTimeout(function() {
+						var offestpagination = $(".js-swiper-main .swiper-slide img").outerHeight() - 25;
+						console.log(offestpagination)
+						$(".js-swiper-main").find(".swiper-pagination").css('top', offestpagination + 'px')
+					}, 300);
+				},
+			},
 		});
 		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
 			spaceBetween: 9,
@@ -2263,7 +2372,7 @@ $(window).on('load', function() {
 					},
 					pagination: {
 						el: ".swiper-pagination-collection.instance-pagination-" + index,
-						clickable: true
+						// clickable: true
 					},
 					breakpoints: {
 						// when window width is <= 320px

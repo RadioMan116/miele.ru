@@ -3,31 +3,31 @@
 
 $color: #505355;
 
-.#{$namespace-prefix}-box[data-theme~='material'] {
+.tippy-box[data-theme~='material'] {
   background-color: $color;
   font-weight: 600;
 
-  &[data-placement^='top'] > .#{$namespace-prefix}-arrow::before {
+  &[data-placement^='top'] > .tippy-arrow::before {
     border-top-color: $color;
   }
 
-  &[data-placement^='bottom'] > .#{$namespace-prefix}-arrow::before {
+  &[data-placement^='bottom'] > .tippy-arrow::before {
     border-bottom-color: $color;
   }
 
-  &[data-placement^='left'] > .#{$namespace-prefix}-arrow::before {
+  &[data-placement^='left'] > .tippy-arrow::before {
     border-left-color: $color;
   }
 
-  &[data-placement^='right'] > .#{$namespace-prefix}-arrow::before {
+  &[data-placement^='right'] > .tippy-arrow::before {
     border-right-color: $color;
   }
 
-  > .#{$namespace-prefix}-backdrop {
+  > .tippy-backdrop {
     background-color: $color;
   }
 
-  > .#{$namespace-prefix}-svg-arrow {
+  > .tippy-svg-arrow {
     fill: $color;
   }
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="truck">
+    <path d="M25 10L28.75 10C29.4412 10 30 10.56 30 11.25L30 16.25C30 16.94 29.4412 17.5 28.75 17.5L27.5 17.5L27.5 31.25C27.5 31.94 26.9412 32.5 26.25 32.5L16.25 32.5L16.25 40L13.75 40L13.75 32.5L3.75 32.5C3.05875 32.5 2.5 31.94 2.5 31.25L2.5 17.5L1.25 17.5C0.55875 17.5 0 16.94 0 16.25L0 11.25C0 10.56 0.55875 10 1.25 10L5 10L5 1.25C5 0.56 5.55875 0 6.25 0L10 0C10.6912 0 11.25 0.56 11.25 1.25L11.25 10L18.75 10L18.75 1.25C18.75 0.56 19.3088 0 20 0L23.75 0C24.4412 0 25 0.56 25 1.25L25 10ZM8.75 10L7.5 10L7.5 2.5L8.75 2.5L8.75 10ZM21.25 10L22.5 10L22.5 2.5L21.25 2.5L21.25 10ZM27.5 15L2.5 15L2.5 12.5L27.5 12.5L27.5 15ZM5 30L25 30L25 17.5L5 17.5L5 30Z" transform="translate(5 1.5625E-05)" id="Fill-1" fill="#8C0014" fill-rule="evenodd" stroke="none" />
+    <path d="M0 2.5L12.5 2.5L12.5 0L0 0L0 2.5Z" transform="translate(13.75 20)" id="Fill-4" fill="#A6A6A6" stroke="none" />
+    <path d="M0 2.5L12.5 2.5L12.5 0L0 0L0 2.5Z" transform="translate(13.75 25)" id="Fill-6" fill="#A6A6A6" stroke="none" />
+  </g>
+</svg>

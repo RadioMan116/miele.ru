@@ -13,7 +13,7 @@
   }
 }
 
-.#{$namespace-prefix}-box {
+.tippy-box {
   &[data-animation='shift-toward'][data-state='hidden'] {
     opacity: 0;
 

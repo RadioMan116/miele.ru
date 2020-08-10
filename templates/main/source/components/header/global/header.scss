@@ -562,10 +562,11 @@
 
 			&__block_top {
 				// order: -3;
-				height: 60px;
-				border-bottom: 1px solid #f6f6f6;
+				height: 40px;
+				background: #ffffff;
+				box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.14);
 				align-items: flex-start;
-				padding-top: 16px;
+				padding-top: 0px;
 				background: white;
 				box-shadow: none;
 
@@ -598,17 +599,22 @@
 					position: absolute;
 					top: 60px;
 				}
+
+				.container {
+					height: 100%;
+				}
 			}
 
 			&__icons {
 				flex: unset;
 				flex-basis: unset;
-				margin-left: auto;
+				margin-left: 0;
 				justify-content: flex-end;
-				min-width: 116px;
+				min-width: unset;
 				align-self: unset;
 				margin-right: 0px;
 				flex-grow: 0;
+				flex-direction: row-reverse;
 			}
 
 			&__favorite,
@@ -634,12 +640,14 @@
 				justify-content: flex-start;
 				white-space: nowrap;
 				padding-left: 2px;
+				margin-right: 0;
+				background: white;
 
 				&:before {
 					width: 100%;
 					height: 100%;
 					background-size: 20px !important;
-					margin-right: 22px;
+					margin-right: 0;
 				}
 
 				// &:hover {
@@ -726,12 +734,13 @@
 				display: flex;
 				justify-content: flex-start;
 				align-items: center;
-				margin: 0 18px 0 23px;
+				margin: 0 18px 0 0px;
 				width: auto;
 				width: 22px;
 				height: 22px;
 				padding: 0;
 				overflow: hidden;
+				background: white;
 
 				&:before {
 					background-size: 22px !important;
@@ -776,13 +785,13 @@
 			// }
 			&__mobile-tel {
 				width: 24px;
-				height: 100%;
+				height: 24px;
 				display: flex;
 				background: url('../images/Fill_1.svg') no-repeat;
 				background-position: center center;
 				margin-right: 0px;
-				order: -1;
-				background-size: 17px !important;
+				order: -2;
+				background-size: 22px !important;
 				align-items: center;
 			}
 
@@ -880,7 +889,7 @@
 
 		.hamburger {
 			display: block;
-			margin-right: 16px;
+			margin-right: 22px;
 			margin-top: 5px;
 
 			&__img {
