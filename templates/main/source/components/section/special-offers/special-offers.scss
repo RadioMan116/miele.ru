@@ -352,6 +352,10 @@
 		// position: relative;
 		margin-bottom: 14px;
 
+		* {
+			transition: 0s !important;
+		}
+
 		.swiper {
 			&-slide {
 				height: 228px;
