@@ -4,13 +4,12 @@
 	font-size: 12px;
 	line-height: 24px;
 	text-align: left;
-	margin-top: 14px;
+	margin-top: 16px;
 	width: 100%;
 
 	div {
 		display: flex;
 		flex-wrap: wrap;
-
 	}
 
 	&__link {
@@ -35,6 +34,4 @@
 			margin: 0 3px;
 		}
 	}
-
-
 }
