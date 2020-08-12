@@ -35,7 +35,7 @@
 
 		&__subtitle {
 			color: #333333;
-			font-family: "Roboto Condensed";
+
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -129,7 +129,7 @@
 			font-weight: 400;
 			text-transform: uppercase;
 			margin: 0;
-			border-radius: 2px;
+			border-radius: 3px;
 			line-height: 1;
 			display: flex;
 			align-items: center;
@@ -162,7 +162,7 @@
 
 		&__description {
 			color: #2e2e2e;
-			font-family: "Roboto Condensed";
+
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 22px;
@@ -225,7 +225,7 @@
 			background-color: #ffffff;
 			padding: 4px 8px 4px 15px;
 			color: #2e2e2e;
-			font-family: "Roboto Condensed";
+
 			font-size: 20px;
 			font-weight: 700;
 			letter-spacing: 7px;
@@ -242,7 +242,7 @@
 		// .marking__title
 		&__title {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
+
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 28px;
@@ -252,7 +252,7 @@
 		// .marking__subtitle
 		&__subtitle {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
+
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -267,7 +267,7 @@
 		// .articles__title
 		&__title {
 			color: #212121;
-			font-family: "Roboto Condensed";
+
 			font-size: 24px;
 			font-weight: 400;
 			margin-top: 0px;
@@ -359,7 +359,7 @@
 
 			span {
 				color: #394791;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 20px;
@@ -378,7 +378,7 @@
 			width: 100%;
 			margin-left: auto;
 			padding: 9px 12px;
-			border-radius: 2px;
+			border-radius: 3px;
 			border: 1px solid #394791;
 			font-size: 14px;
 			line-height: normal;
@@ -557,7 +557,7 @@
 //       text-transform: uppercase;
 //       color: #394791;
 //       padding: 4px 27px;
-//       border-radius: 2px;
+//       border-radius: 3px;
 //       border: solid 1px #394791;
 //       text-decoration: none !important;
 //       white-space: nowrap;
@@ -567,7 +567,7 @@
 //   }
 // }
 .yandex {
-	padding: 20px 15px !important;
+	padding: 26px 15px 20px!important;
 	margin-bottom: 30px;
 	height: auto !important;
 	width: 100%;
@@ -594,17 +594,15 @@
 }
 
 .yandex__button {
-	font-size: 12px;
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 2;
-	letter-spacing: normal;
+	font-family: "HelveticaNeueCyr-Roman";
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
 	text-align: center;
 	text-transform: uppercase;
 	color: $base;
-	padding: 7px 13px 5px 14px;
-	border-radius: 2px;
+	padding: 5px 14px 5px 14px;
+	border-radius: 3px;
 	border: 1px solid $base;
 	text-decoration: none !important;
 	margin-bottom: 7px;
@@ -654,9 +652,9 @@
 
 .yandex__logo {
 	// background: url("../images/yamarket.svg") no-repeat;
-	width: 160px;
+	width: 145px;
 	// height: 106px;
-	margin-bottom: 22px;
+	margin:0 auto 24px;
 }
 
 .quality {
@@ -736,7 +734,7 @@
 		text-transform: uppercase;
 		color: $base;
 		padding: 7px 13px 5px 14px;
-		border-radius: 2px;
+		border-radius: 3px;
 		border: solid 1px $base;
 		text-decoration: none !important;
 		width: 150px !important;
@@ -751,7 +749,7 @@
 
 	&__title {
 		color: #333333;
-		font-family: "Roboto Condensed";
+
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 36px;
@@ -791,7 +789,7 @@
 
 	&__text {
 		color: #394791;
-		font-family: "Roboto Condensed";
+
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;

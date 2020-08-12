@@ -36,8 +36,8 @@
 	}
 
 	h3 {
-		color: #333333;
-		font-family: "Roboto Condensed";
+
+
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 28px;
@@ -56,8 +56,8 @@
 	}
 
 	h5 {
-		color: #333333;
-		font-family: "Roboto Condensed";
+
+
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 28px;
@@ -71,21 +71,21 @@
 	b {
 		width: 100%;
 		margin-bottom: 13px;
-		color: #333333;
-		font-family: "Roboto Condensed";
+
+
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 24px;
 		// text-align: left;
-		color: #333333;
+
 		margin-top: 18px;
 	}
 
 	p {
 		// display: block;
 		width: 100%;
-		color: #333333;
-		font-family: Arial;
+
+
 		font-size: 14px;
 		line-height: 22px;
 		text-align: left;
@@ -110,7 +110,7 @@
 		span {
 			width: 100%;
 			padding: 5px 0;
-			font-family: Arial;
+
 			font-weight: 700;
 		}
 
@@ -143,8 +143,8 @@
 	}
 
 	ol {
-		color: #333333;
-		font-family: Arial;
+
+
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
@@ -159,13 +159,13 @@
 	ul {
 		z-index: 99;
 		list-style: disc;
-		color: #333333;
-		font-family: "Roboto Condensed";
+
+
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 24px;
 		text-align: left;
-		color: #333333;
+
 		padding-left: 0;
 		width: 100%;
 		margin-bottom: 12px;
@@ -202,8 +202,8 @@
 	}
 
 	li {
-		color: #333333;
-		font-family: Arial;
+
+
 		font-size: 14px;
 		line-height: 20px;
 		text-align: left;
@@ -213,8 +213,8 @@
 	}
 
 	strong {
-		color: #333333;
-		font-family: Arial;
+
+
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
@@ -232,7 +232,7 @@
 		line-height: 1.5;
 		letter-spacing: normal;
 		text-align: left;
-		color: #333333;
+
 		padding-left: 0;
 		width: 100%;
 		border-bottom: 1px solid #e8e8e8;
@@ -240,7 +240,7 @@
 		&:first-child {
 			td {
 				color: #666666;
-				font-family: Arial;
+
 				font-size: 12px;
 				font-weight: 700;
 				padding: 11px 7px 13px;
@@ -262,8 +262,8 @@
 	}
 
 	td {
-		font-family: "Arial";
-		color: #333333;
+
+
 		font-size: 14px;
 		display: flex;
 		flex-direction: row;
@@ -280,14 +280,14 @@
 
 		i {
 			color: #666666;
-			font-family: Arial;
+
 			font-size: 14px;
 			font-style: normal;
 		}
 
 		b {
 			color: #666666;
-			font-family: Arial;
+
 			font-size: 12px;
 			font-weight: 700;
 			padding: 0;
@@ -311,8 +311,8 @@
 			}
 
 			.table_td {
-				color: #333333;
-				font-family: Arial;
+
+
 				font-size: 14px;
 				font-weight: 400;
 				padding: 8px 0 7px 13px;
@@ -344,13 +344,13 @@
 		b {
 			width: 100%;
 			margin-bottom: 13px;
-			color: #333333;
-			font-family: "Roboto Condensed";
+
+
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 24px;
 			text-align: left;
-			color: #333333;
+
 			margin-top: 18px;
 		}
 
@@ -414,7 +414,7 @@
 
 		a {
 			color: $base;
-			font-family: Arial;
+
 			font-size: 12px;
 			margin-right: 26px;
 		}
@@ -489,8 +489,8 @@
 			}
 
 			span {
-				color: #333333;
-				font-family: "Roboto Condensed";
+
+
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 26px;
@@ -528,7 +528,7 @@
 		tr {
 			td:last-child {
 				b {
-					font-family: Arial;
+
 					color: #333;
 					font-size: 14px;
 					font-weight: 400;
@@ -603,8 +603,8 @@
 		}
 
 		h2 {
-			color: #333333;
-			font-family: "Roboto Condensed";
+
+
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 30px;
@@ -689,8 +689,8 @@
 				}
 
 				span {
-					color: #333333;
-					font-family: "Roboto Condensed";
+
+
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 26px;
@@ -715,7 +715,7 @@
 			.mobile {
 				display: block;
 				color: #262626;
-				font-family: Arial;
+
 				font-size: 14px;
 				line-height: 22px;
 				margin-bottom: 16px;
@@ -773,13 +773,13 @@
 				}
 
 				.table_td {
-					font-family: Arial;
+
 					font-size: 14px;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
 					letter-spacing: normal;
-					color: #333333;
+
 					width: unset;
 					flex-shrink: 1;
 					padding: 0;
