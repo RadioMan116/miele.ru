@@ -1,7 +1,7 @@
 .new-items {
 	background: #f6f6f6;
 	margin: 0 auto;
-	padding-top: 52px;
+	padding-top: 48px;
 
 	&__caption {
 		display: flex;
@@ -45,7 +45,7 @@
 		font-weight: 400;
 		line-height: 19px;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		white-space: nowrap;
 
 		&:before {
@@ -61,7 +61,7 @@
 	}
 
 	&__link {
-		padding: 7px;
+		padding: 8px 15px;
 		border-radius: 3px;
 		border: solid 1px $base;
 		font-size: 14px;
@@ -80,10 +80,10 @@
 	@media screen and (max-width: 767px) {
 		margin-top: 0;
 		padding-top: 0px;
-		margin-bottom: 0 !important;
+		margin-bottom: 14px !important;
 
 		.new-items__link {
-			margin: 23px auto 27px;
+			margin: 27px auto 9px;
 			order: 4;
 		}
 
@@ -98,9 +98,10 @@
 		.new-items__title {
 			margin-top: 31px;
 			margin-right: 20px;
-			margin-bottom: 5px !important;
+			margin-bottom: 1px !important;
 			font-size: 20px;
 			line-height: 28px;
+			padding-left: 0;
 		}
 
 		.special-offers__text {
@@ -109,12 +110,12 @@
 		}
 
 		.special-offers__sale {
-			align-items: flex-end !important;
+			// align-items: flex-end !important;
 			padding-top: 0;
 		}
 
 		.special-offers__slide {
-			padding-bottom: 19px !important;
+			padding-bottom: 13px !important;
 		}
 
 		.swiper-pagination_3 {
@@ -153,6 +154,10 @@
 			font-size: 14px;
 			margin-right: -3px;
 			margin-top: 0px;
+
+			a {
+				padding: 0 3px;
+			}
 		}
 
 		.announcing {
@@ -162,6 +167,10 @@
 
 		.swiper-container {
 			margin-bottom: 0;
+		}
+
+		.swiper {
+			margin-bottom: 18px;
 		}
 	}
 }

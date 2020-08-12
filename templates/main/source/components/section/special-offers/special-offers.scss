@@ -1,5 +1,5 @@
 .special-offers {
-	margin: 44px 0;
+	margin: 44px 0 47px;
 	display: flex;
 	flex-direction: column;
 	max-width: 1436px;
@@ -20,9 +20,10 @@
 		font-size: 30px;
 		font-weight: 400;
 		line-height: 36px;
-		margin-bottom: 40px;
+		margin-bottom: 38px;
 		white-space: nowrap;
 		width: 100%;
+		padding-left: 4px;
 	}
 
 	&__slide {
@@ -225,7 +226,7 @@
 	.swiper-pagination,
 	.swiper-pagination_2,
 	.swiper-pagination_3 {
-		top: 14px;
+		top: 23px;
 		right: 124px;
 		display: flex;
 		justify-content: flex-end;
@@ -235,19 +236,33 @@
 		margin-left: 16px;
 	}
 
+	&.new-items {
+		margin-bottom: 46px;
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			top: 21px;
+		}
+
+		.swiper-pagination,
+		.swiper-pagination_2,
+		.swiper-pagination_3 {
+			top: 14px;
+		}
+	}
+
 	.swiper-button-prev,
 	.new-items_prev {
 		background: url("../images/special-offers_prev.svg") 0/34px no-repeat;
 		position: absolute;
-		top: 22px;
+		top: 30px;
 		right: 48px;
 		left: unset;
 		width: 34px;
 		height: 34px;
-
-		&:hover {
-			background: url("../images/swiper-button-color-prev.svg") 0/34px no-repeat;
-		}
+		// &:hover {
+		// 	background: url("../images/swiper-button-color-prev.svg") 0/34px no-repeat;
+		// }
 	}
 
 	.new-items_prev {
@@ -257,14 +272,13 @@
 	.swiper-button-next,
 	.new-items_next {
 		background: url("../images/special-offers_next.svg") 0/34px no-repeat;
-		top: 22px;
+		top: 30px;
 		right: 3px;
 		width: 34px;
 		height: 34px;
-
-		&:hover {
-			background: url("../images/swiper-button-color-next.svg") 0/34px no-repeat;
-		}
+		// &:hover {
+		// 	background: url("../images/swiper-button-color-next.svg") 0/34px no-repeat;
+		// }
 	}
 
 	.new-items_next {
@@ -595,6 +609,10 @@
 		line-height: 20px;
 		margin-top: 9px;
 		color: black;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+		overflow: hidden;
 	}
 
 	&__fav,
@@ -611,7 +629,7 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		margin: 27px 0 34px;
+		margin: 27px 0 36px;
 		padding-bottom: 24px;
 
 		.announcing {
@@ -659,6 +677,7 @@
 			font-weight: 400;
 			white-space: normal;
 			line-height: 34px;
+			padding-left: 0;
 		}
 
 		.new-items_prev,
@@ -757,10 +776,16 @@
 			}
 		}
 
-		.ratings__star {
-			width: 21px;
-			height: 21px;
-			background-size: 21px;
+		.ratings {
+			&__star {
+				width: 21px;
+				height: 21px;
+				background-size: 21px;
+			}
+
+			&__number {
+				margin-left: 6px;
+			}
 		}
 
 		&.promotional-goods {

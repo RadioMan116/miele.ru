@@ -23,7 +23,7 @@
 		align-items: flex-start;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 22px 33px;
+		padding: 24px 33px;
 		width: 100%;
 
 		&.swiper-container {
@@ -416,6 +416,11 @@
 		margin: 0 0 53px;
 		padding: 25px 0 20px;
 		background-color: #f1f1f1;
+
+		.gallery__article,
+		.gallery__text {
+			padding-left: 29px;
+		}
 	}
 
 	@media screen and (max-width: 767px) {
@@ -517,7 +522,7 @@
 
 @media screen and (max-width: 767px) {
 	.gallery {
-		margin-bottom: 28px;
+		margin-bottom: 24px;
 		max-width: 100%;
 
 		.swiper-slide {

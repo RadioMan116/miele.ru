@@ -20,7 +20,7 @@
 
 		&:not(:last-of-type) {
 			background: url("../images/menu-oval.svg") 100%/9px no-repeat;
-			padding-right: 41px;
+			padding-right: 0px;
 		}
 
 		&__list {
@@ -38,6 +38,10 @@
 			.dropdown-menu__title {
 				display: flex;
 				align-items: center;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 46px;
+				text-transform: uppercase;
 				// &:before {
 				// 	width: 14px;
 				// 	height: 12px;
@@ -61,7 +65,7 @@
 		&:nth-child(3) {}
 
 		&__title {
-			font-family: "HelveticaNeueCyr-Roman";
+			font-family: "HelveticaNeueCyr-Medium";
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 39px;
@@ -134,6 +138,7 @@
 
 			.dropdown-menu__title {
 				// box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
+				color: $base;
 				z-index: 999;
 				position: relative;
 
@@ -408,7 +413,7 @@
 
 @media (max-width: 767px) {
 	.menu.active {
-		height: auto;
+		display: none;
 	}
 
 	.header__dropdown-menu {
@@ -438,6 +443,7 @@
 			flex-wrap: wrap;
 			padding-left: 0px;
 			border-bottom: 1px solid #f1f1f1;
+			background: unset !important;
 
 			&__three {
 				margin-bottom: 0;

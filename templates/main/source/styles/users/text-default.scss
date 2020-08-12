@@ -13,7 +13,7 @@
 
 		// margin-bottom: 28px;
 		+p {
-			margin-top: 28px;
+			margin-top: 18px;
 		}
 	}
 
@@ -36,8 +36,6 @@
 	}
 
 	h3 {
-
-
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 28px;
@@ -56,8 +54,6 @@
 	}
 
 	h5 {
-
-
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 28px;
@@ -71,21 +67,16 @@
 	b {
 		width: 100%;
 		margin-bottom: 13px;
-
-
 		font-size: 18px;
 		font-weight: 700;
 		line-height: 24px;
 		// text-align: left;
-
 		margin-top: 18px;
 	}
 
 	p {
 		// display: block;
 		width: 100%;
-
-
 		font-size: 14px;
 		line-height: 22px;
 		text-align: left;
@@ -110,7 +101,6 @@
 		span {
 			width: 100%;
 			padding: 5px 0;
-
 			font-weight: 700;
 		}
 
@@ -143,8 +133,6 @@
 	}
 
 	ol {
-
-
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
@@ -159,13 +147,10 @@
 	ul {
 		z-index: 99;
 		list-style: disc;
-
-
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 24px;
 		text-align: left;
-
 		padding-left: 0;
 		width: 100%;
 		margin-bottom: 12px;
@@ -202,8 +187,6 @@
 	}
 
 	li {
-
-
 		font-size: 14px;
 		line-height: 20px;
 		text-align: left;
@@ -213,8 +196,6 @@
 	}
 
 	strong {
-
-
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 22px;
@@ -232,7 +213,6 @@
 		line-height: 1.5;
 		letter-spacing: normal;
 		text-align: left;
-
 		padding-left: 0;
 		width: 100%;
 		border-bottom: 1px solid #e8e8e8;
@@ -240,7 +220,6 @@
 		&:first-child {
 			td {
 				color: #666666;
-
 				font-size: 12px;
 				font-weight: 700;
 				padding: 11px 7px 13px;
@@ -262,8 +241,6 @@
 	}
 
 	td {
-
-
 		font-size: 14px;
 		display: flex;
 		flex-direction: row;
@@ -280,14 +257,12 @@
 
 		i {
 			color: #666666;
-
 			font-size: 14px;
 			font-style: normal;
 		}
 
 		b {
 			color: #666666;
-
 			font-size: 12px;
 			font-weight: 700;
 			padding: 0;
@@ -311,8 +286,6 @@
 			}
 
 			.table_td {
-
-
 				font-size: 14px;
 				font-weight: 400;
 				padding: 8px 0 7px 13px;
@@ -344,13 +317,10 @@
 		b {
 			width: 100%;
 			margin-bottom: 13px;
-
-
 			font-size: 18px;
 			font-weight: 700;
 			line-height: 24px;
 			text-align: left;
-
 			margin-top: 18px;
 		}
 
@@ -414,7 +384,6 @@
 
 		a {
 			color: $base;
-
 			font-size: 12px;
 			margin-right: 26px;
 		}
@@ -430,6 +399,7 @@
 			font-size: 26px;
 			font-weight: 400;
 			line-height: 24px;
+			margin-bottom: 24px;
 		}
 	}
 
@@ -437,7 +407,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
-		margin-bottom: 29px;
+		margin-bottom: 22px;
 
 		h2 {
 			text-align: center;
@@ -464,6 +434,10 @@
 			margin-top: 14px;
 			flex-direction: column;
 
+			* {
+				transition: 0.3s;
+			}
+
 			&:nth-of-type(1) {
 				margin-right: 29px;
 			}
@@ -489,8 +463,6 @@
 			}
 
 			span {
-
-
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 26px;
@@ -508,7 +480,9 @@
 	.about-store__button,
 	.seo-text__button,
 	.about-brand__button,
-	.switch {}
+	.switch {
+		display: none;
+	}
 
 	.mobile {
 		display: none;
@@ -516,19 +490,18 @@
 
 	.pic_left {
 		float: left;
-		margin: 1px 30px 35px 0;
+		margin: 1px 30px 24px 0;
 	}
 
 	.pic_right {
 		float: right;
-		margin: 1px 0 30px 35px;
+		margin: 1px 0 30px 24px;
 	}
 
 	.table_delivery {
 		tr {
 			td:last-child {
 				b {
-
 					color: #333;
 					font-size: 14px;
 					font-weight: 400;
@@ -588,9 +561,9 @@
 				margin-bottom: 35px;
 			}
 
-			&:last-child {
-				margin-bottom: 0;
-			}
+			// &:last-child {
+			// 	margin-bottom: 0;
+			// }
 		}
 
 		b {
@@ -603,8 +576,6 @@
 		}
 
 		h2 {
-
-
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 30px;
@@ -635,6 +606,8 @@
 		}
 
 		&.seo-text {
+			padding-bottom: 32px;
+
 			h2 {
 				font-family: "HelveticaNeueCyr-Light";
 				font-size: 20px;
@@ -646,18 +619,30 @@
 
 			img {
 				padding: 0 !important;
-				margin: 18px -15px 14px;
+				margin: 18px -15px 8px;
 				width: calc(100% + 30px);
 				max-width: calc(100% + 30px);
 			}
 
 			.container {
+				overflow: hidden;
+				max-height: 80000px;
+				transition: max-height .5s;
+
+				* {
+					transition: max-height .5s,
+						opacity .5s;
+				}
+
 				&:not(.active) {
-					p {
-						&~* {
-							display: none;
-						}
-					}
+					// p {
+					// 	margin-bottom: 12px;
+					// 	// &~* {
+					// 	// 	max-height: 0;
+					// 	// 	opacity: 0;
+					// 	// 	margin: 0;
+					// 	// }
+					// }
 				}
 			}
 		}
@@ -689,8 +674,6 @@
 				}
 
 				span {
-
-
 					font-size: 16px;
 					font-weight: 400;
 					line-height: 26px;
@@ -715,7 +698,6 @@
 			.mobile {
 				display: block;
 				color: #262626;
-
 				font-size: 14px;
 				line-height: 22px;
 				margin-bottom: 16px;
@@ -773,13 +755,11 @@
 				}
 
 				.table_td {
-
 					font-size: 14px;
 					font-weight: normal;
 					font-style: normal;
 					font-stretch: normal;
 					letter-spacing: normal;
-
 					width: unset;
 					flex-shrink: 1;
 					padding: 0;
@@ -899,17 +879,20 @@
 			padding-bottom: 2px;
 			border-bottom: 1px dashed $base;
 			width: fit-content !important;
-			position: relative;
-			// left: 16px;
-			// bottom: 13px;
+			position: absolute;
+			left: 16px;
+			bottom: 16px;
 			// width: 100%;
 			// padding: 0 16px;
 			height: auto;
-			opacity: 1;
+			opacity: 1 !important;
+			max-height: unset !important;
 			display: block !important;
-			margin: 0 16px 14px 0;
+			margin: 0 0 0px 0;
 			height: auto;
 			opacity: 1;
+			cursor: pointer;
+			z-index: 8;
 
 			&:after {
 				background: url('https://icongr.am/entypo/chevron-small-down.svg?color=8c0014&size=50') no-repeat;
@@ -922,19 +905,13 @@
 				transform: translateY(-50%);
 				right: -22px;
 			}
-		}
 
-		.active {
-			height: auto;
+			&.active {
 
-			.about-store__button,
-			.seo-text__button,
-			.about-brand__button,
-			.switch {
-				position: relative;
-				bottom: 0;
-				right: unset;
-
+				// position: relative;
+				// bottom: 0;
+				// right: unset;
+				// margin-top: 16px;
 				&:before {
 					width: 63px;
 				}
@@ -945,6 +922,26 @@
 					right: -24px;
 				}
 			}
+
+			&:not(.active)+.container {
+				max-height: unset;
+
+				p {
+
+					// margin-bottom: 12px;
+					&~* {
+						max-height: 0;
+						opacity: 0;
+						margin: 0;
+					}
+				}
+			}
 		}
+
+		// .active {
+		// 	height: auto;
+		// }
 	}
 }
+
+.about-brand {}

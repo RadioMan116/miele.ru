@@ -19,10 +19,12 @@
 	&__pic {
 		display: flex;
 		align-items: baseline;
-		width: 458px;
+		width: 463px;
 		height: 396px;
 		flex-shrink: 0;
-		margin-right: 45px;
+		margin-right: 40px;
+		padding-left: 3px;
+		padding-top: 4px;
 
 		img {}
 	}
@@ -39,7 +41,7 @@
 			flex-wrap: wrap;
 			padding-top: 21px;
 			justify-content: space-between;
-			margin-bottom: 38px;
+			margin-bottom: 34px;
 
 			li {
 				width: calc(50% - 12px);
@@ -180,7 +182,7 @@
 		margin-bottom: 14px;
 
 		&__title {
-			font-family: "HelveticaNeueCyr-Light";
+			// font-family: "HelveticaNeueCyr-medium";
 			font-size: 20px;
 			font-weight: 400;
 			line-height: 26px;
@@ -189,14 +191,20 @@
 
 		&__item {
 			flex-direction: column;
+			flex-grow: 1;
+			height: 100%;
 		}
 
 		&__pic {
 			height: auto;
 			width: 100%;
+			margin-right: 0;
+			margin-bottom: 3px;
 		}
 
 		&__icon {
+			flex-grow: 1;
+
 			ul {
 				flex-direction: column;
 				padding-top: 16px;
@@ -243,8 +251,7 @@
 				width: 100%;
 				padding: 0;
 				overflow: hidden;
-				margin-bottom: 6px;
-				background: url("https://icongr.am/entypo/triangle-down.svg") 98%/10px no-repeat;
+				margin-bottom: 2px;
 				align-items: center;
 
 				&.active {
@@ -266,6 +273,22 @@
 					li {
 						z-index: 9999;
 					}
+
+					~.ui-tabs-panel {
+						opacity: 0;
+					}
+
+					.ui-tabs-tab[aria-selected=true]:after {
+						content: "";
+						background: url(../images/triangle-down.svg) 50% no-repeat;
+						transform: rotate(180deg);
+						background-size: 24px;
+						width: 24px;
+						height: 24px;
+						position: absolute;
+						right: 6px;
+						bottom: 10px;
+					}
 				}
 			}
 
@@ -276,7 +299,7 @@
 				border-radius: 2px;
 				border: 1px solid #d6d6d6;
 				background-color: #fff;
-				padding: 9px 12px 12px;
+				padding: 9px 12px 10px;
 				margin-bottom: 13px;
 
 				&.ui-tabs-active {
@@ -285,6 +308,18 @@
 
 				&[aria-selected="true"] {
 					order: -1;
+					position: relative;
+
+					&:after {
+						content: '';
+						background: url("../images/triangle-down.svg")center no-repeat;
+						background-size: 24px;
+						width: 24px;
+						height: 24px;
+						position: absolute;
+						right: 6px;
+						bottom: 10px;
+					}
 
 					a {
 						pointer-events: none;
@@ -314,6 +349,7 @@
 				display: flex;
 				justify-content: center;
 
+				// position: static;
 				.swiper-pagination-bullet {
 					&:first-of-type {
 						margin-left: 0px;
@@ -329,6 +365,7 @@
 			font-weight: 400;
 			line-height: 20px;
 			text-align: center;
+			margin-top: auto;
 		}
 	}
 }
