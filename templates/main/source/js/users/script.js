@@ -164,7 +164,7 @@ $(document).ready(function() {
 		let newCatalog = document.querySelector('.special-offers.catalog');
 		if (productCard) {
 			var mySwiper13 = new Swiper(".js-recently-watched .swiper-container", {
-				slidesPerView: 6,
+				slidesPerView: 5,
 				slidesPerGroup: 1,
 				spaceBetween: 25,
 				touchRatio: 1,
@@ -862,7 +862,7 @@ $(document).ready(function() {
 			content: 'Tooltip',
 			arrow: true,
 			theme: 'light',
-			trigger: 'click'
+			// trigger: 'click'
 		});
 	}
 	if (windowWidth2 <= 767) {
@@ -2039,7 +2039,6 @@ $(document).ready(function() {
 			}
 		})();
 	}, 100);
-
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
