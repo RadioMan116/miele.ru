@@ -634,6 +634,10 @@
 						opacity .5s;
 				}
 
+				.official-dealers {
+					margin-bottom: 3px !important;
+				}
+
 				&:not(.active) {
 					// p {
 					// 	margin-bottom: 12px;
@@ -648,7 +652,10 @@
 		}
 
 		.official-dealers {
-			margin-bottom: 3px;
+			margin-bottom: 22px !important;
+			display: flex !important;
+			opacity: 1 !important;
+			max-height: unset !important;
 
 			&__link {
 				width: auto;
@@ -683,6 +690,10 @@
 
 				&:after {
 					// height: calc(105% - 36px)
+				}
+
+				* {
+					transition: 0.5s !important;
 				}
 			}
 

@@ -5947,7 +5947,8 @@
 			&__text {}
 
 			// .recently-watched__close
-			&__close,.recently-watched__buy {
+			&__close,
+			.recently-watched__buy {
 				opacity: 1;
 			}
 
@@ -6187,8 +6188,8 @@
 			.newsletter__pic {
 				margin-right: 0;
 				width: 100%;
-				// overflow: hidden;
 
+				// overflow: hidden;
 				img {
 					// margin-top: -14%;
 				}
@@ -6204,7 +6205,8 @@
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 18px;
-				&::placeholder{
+
+				&::placeholder {
 					color: #4b4b4b;
 					font-family: "HelveticaNeueCyr-Roman";
 					font-size: 13px;
@@ -6215,7 +6217,6 @@
 
 			input[type=text] {
 				margin-bottom: 10px;
-
 			}
 
 			input[type=submit] {
@@ -6233,6 +6234,7 @@
 				margin-left: 5px;
 				margin-right: 5px;
 			}
+
 			.checkbox__icon {
 				left: 2px;
 				top: 6px;
