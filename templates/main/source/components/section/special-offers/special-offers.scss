@@ -53,6 +53,7 @@
 		padding: 7px 0 17px;
 		display: block;
 		flex-shrink: 0;
+		text-decoration: unset !important;
 
 		p {
 			color: #4b4b4b;
@@ -755,6 +756,10 @@
 		.special-offers__text {
 			font-size: 18px;
 			padding: 19px 0 37px;
+
+			span {
+				display: block;
+			}
 		}
 
 		.special-offers__content {
