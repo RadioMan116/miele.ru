@@ -403,7 +403,7 @@
 				}
 			}
 
-			a[iframe] {
+			a[data-fancybox="iframe"] {
 				display: flex;
 				flex-direction: column;
 				position: relative;
