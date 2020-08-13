@@ -174,13 +174,13 @@ $(document).ready(function() {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 2.5,
+						slidesPerView:"auto",
 						slidesPerGroup: 1,
 						spaceBetween: 8,
 					},
 					767: {
 						allowTouchMove: true,
-						slidesPerView: 3.5,
+						slidesPerView: "auto",
 						slidesPerGroup: 1,
 						spaceBetween: 24
 					},
@@ -1963,12 +1963,13 @@ $(document).ready(function() {
 							// },
 							600: {
 								allowTouchMove: true,
-								slidesPerView: 1.4,
+								slidesPerView: "auto",
+								spaceBetween: 8,
 							},
 							767: {
 								allowTouchMove: true,
-								slidesPerView: 2,
-								spaceBetween: 1,
+								slidesPerView: "auto",
+								spaceBetween: 8,
 							}
 						}
 						// Navigation arrows
@@ -2055,7 +2056,7 @@ $(window).on('load', function() {
 			},
 		});
 		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-			spaceBetween: 9,
+			spaceBetween: 6,
 			slidesPerView: 6,
 			freeMode: true,
 			// direction: "vertical",
