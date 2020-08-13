@@ -13,7 +13,6 @@
 
 	&-popup {
 		&__text {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -49,13 +48,15 @@
 
 			label {
 				display: flex;
-				color: #666666;
-				font-family: Arial, sans-serif;
+				color: #4b4b4b;
+				font-family: "HelveticaNeueCyr-Roman";
 				font-size: 12px;
 				line-height: 18px;
+
+				a {
+					margin: 4px;
+				}
 			}
-
-
 		}
 
 		&__name {
@@ -116,7 +117,6 @@
 			font-size: 24px;
 		}
 
-
 		@media screen and (max-width: 375px) {
 			&-container {
 				overflow-x: scroll;
@@ -153,7 +153,6 @@
 			&__name {
 				width: 100%;
 				height: 32px;
-
 			}
 
 			&__input,
@@ -172,5 +171,4 @@
 			width: 90%;
 		}
 	}
-
 }

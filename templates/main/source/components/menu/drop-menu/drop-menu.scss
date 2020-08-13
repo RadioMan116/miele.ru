@@ -20,7 +20,9 @@
 
 		&:not(:last-of-type) {
 			background: url("../images/menu-oval.svg") 100%/9px no-repeat;
-			padding-right: 0px;
+			background-position-x: calc(100% + -31px);
+			flex-grow: 1;
+			padding-right: 16px;
 		}
 
 		&__list {
@@ -444,6 +446,7 @@
 			padding-left: 0px;
 			border-bottom: 1px solid #f1f1f1;
 			background: unset !important;
+			padding-right: 0 !important;
 
 			&__three {
 				margin-bottom: 0;

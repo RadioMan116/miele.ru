@@ -121,6 +121,7 @@
 			i {
 				font-weight: inherit;
 				font-style: inherit;
+				margin-left: 4px;
 			}
 		}
 
@@ -206,6 +207,7 @@
 			bottom: 14px;
 			opacity: 0;
 			z-index: 3;
+			background-size: contain;
 		}
 
 		@media screen and (max-width: 767px) {}
@@ -401,7 +403,7 @@
 				}
 			}
 
-			a[data-fancybox="iframe"] {
+			a[iframe] {
 				display: flex;
 				flex-direction: column;
 				position: relative;
@@ -807,7 +809,7 @@
 
 	&__presence {
 		width: auto;
-		height: 24px;
+		height: auto;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		color: #31b64b;
@@ -854,13 +856,14 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
+		text-transform: unset !important;
 
 		&:before {
 			content: '';
 			background-image: url('../images/shopping-cart-white.svg');
-			background-size: 16px;
-			width: 16px;
-			height: 16px;
+			background-size: 20px;
+			width: 20px;
+			height: 20px;
 			margin-right: 5px;
 		}
 
@@ -869,7 +872,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
-			text-transform: capitalize;
+			// text-transform: capitalize;
 		}
 
 		@include button($margin: 0, $padding:12px 16px);
@@ -906,9 +909,11 @@
 			display: flex;
 			font-size: 14px;
 			line-height: 18px;
-			// padding-right: 1r;
-			// text-transform: capitalize;
-			// flex-basis: 170px;
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 18px;
+			color: black;
 			align-items: center;
 			margin-bottom: 8px;
 
@@ -949,7 +954,7 @@
 		.announcing__link {
 			color: $base;
 			padding-bottom: 1px;
-			border-bottom: 1px dashed $base;
+			border-bottom: 1px dotted $base;
 			text-decoration: none !important;
 		}
 
@@ -2262,6 +2267,7 @@
 			line-height: 24px;
 			margin: 0 auto;
 			border-bottom: 1px dashed $base;
+			text-decoration: unset !important;
 		}
 	}
 
@@ -2365,6 +2371,10 @@
 			margin-bottom: 27px;
 		}
 
+		&__text {
+			text-decoration: unset !important;
+		}
+
 		.swiper .swiper-pagination-bullet {
 			&:not(:last-of-type) {
 				margin: 0 4px 0 0 !important;
@@ -2375,6 +2385,7 @@
 	.product__header {
 		display: flex;
 		width: 100%;
+		align-items: center;
 
 		.ratings {
 			display: flex;
@@ -3912,7 +3923,7 @@
 			.collection__next {
 				position: static;
 				margin-top: 0;
-				opacity: 0;
+				// opacity: 0;
 			}
 
 			.swiper {
@@ -4286,6 +4297,10 @@
 			line-height: 32px;
 			margin-bottom: 14px !important;
 			margin-top: 15px;
+
+			span {
+				display: block;
+			}
 		}
 
 		.product-card__price {
@@ -4618,10 +4633,11 @@
 
 					.item {
 						background-size: unset;
-						background: unset;
+						background: unset !important;
 						justify-content: flex-start;
 						height: 24px;
 						margin: 0;
+						color: black;
 
 						&:before {
 							content: "";
@@ -4639,6 +4655,20 @@
 						&:before {
 							background: url(../images/fav.svg)
 						}
+
+						&:hover {
+							color: $base;
+
+							&:before {
+								background: url(../images/fav-c.svg)
+							}
+						}
+
+						&.active {
+							&:before {
+								background: url(../images/fav-a.svg)
+							}
+						}
 					}
 
 					.item.compare {
@@ -4647,6 +4677,14 @@
 
 						&:before {
 							background: url(../images/com.svg)
+						}
+
+						&:hover {
+							color: $base;
+
+							&:before {
+								background: url(../images/com-c.svg)
+							}
 						}
 					}
 
@@ -4860,7 +4898,7 @@
 
 			&__link {
 				padding-left: 0;
-				font-family: "HelveticaNeueCyr-Light";
+				font-family: "HelveticaNeueCyr-Medium";
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 24px;
@@ -4913,7 +4951,12 @@
 
 					&.active {
 						display: flex;
+						padding-bottom: 7px;
 						margin-bottom: 7px;
+					}
+
+					&:nth-child(odd) {
+						background: #f6f6f6;
 					}
 				}
 
@@ -5501,6 +5544,10 @@
 				border-top: 1px solid #eeeeee;
 				margin-top: 32px;
 				padding: 23px 0 14px;
+
+				span {
+					display: block;
+				}
 			}
 
 			p {
@@ -5687,7 +5734,7 @@
 					&:after {
 						content: '';
 						width: 100%;
-						height: 300px;
+						// height: 300px;
 						position: absolute;
 						top: 0;
 						left: 0;
@@ -6313,6 +6360,7 @@
 
 		.product-card__collection {
 			margin-top: 6px;
+			overflow: unset;
 
 			.swiper-pagination-collection {
 				display: none !important;
@@ -6405,6 +6453,7 @@
 				height: 30px;
 				border-radius: 3px;
 				bottom: 17px;
+				right: 10px;
 			}
 
 			.tags__title {
@@ -6429,7 +6478,7 @@
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 24px;
-					color: black;
+					color: black !important;
 					display: flex;
 					padding-bottom: 0;
 					white-space: nowrap;
@@ -6457,7 +6506,7 @@
 						&:after {
 							content: '';
 							width: 100%;
-							height: 300px;
+							// height: 300px;
 							position: absolute;
 							top: 0;
 							left: 0;

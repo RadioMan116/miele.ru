@@ -1,6 +1,6 @@
 .breadcrumbs {
-	color: #999999;
-	font-family: Arial, sans-serif;
+	color: #a6a6a6;
+	font-family: "HelveticaNeueCyr-Roman";
 	font-size: 12px;
 	line-height: 24px;
 	text-align: left;
@@ -13,13 +13,20 @@
 	}
 
 	&__link {
-		color: #999999;
+		color: #a6a6a6;
 	}
 
-	&__link>a {
+	&__link {
+
 		// color: #394791;
-		color: #999999;
-		text-decoration: none;
+		&>a {
+			color: #a6a6a6;
+			text-decoration: none;
+		}
+
+		&>span {
+			color: #000000;
+		}
 	}
 
 	&__sep {

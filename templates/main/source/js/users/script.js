@@ -174,7 +174,7 @@ $(document).ready(function() {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView:"auto",
+						slidesPerView: "auto",
 						slidesPerGroup: 1,
 						spaceBetween: 8,
 					},
