@@ -50,7 +50,6 @@
 		}
 	}
 
-
 	&_ie10 {
 		display: none;
 	}
@@ -102,6 +101,7 @@
 		position: relative;
 		background: #fff;
 		border-radius: 5px;
+
 		// overflow: hidden;
 		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2) {
 			transform: scale(1.3);
@@ -127,8 +127,8 @@
 	&__close {
 		display: none;
 		position: absolute;
-		top: 7px;
-		right: 10px;
+		top: 0px;
+		right: 0px;
 		height: 40px;
 		width: 40px;
 		cursor: pointer;
