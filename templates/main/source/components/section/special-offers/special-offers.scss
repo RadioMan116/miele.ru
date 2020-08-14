@@ -402,7 +402,7 @@
 			}
 
 			&-pagination {
-				height: 228px;
+				height: 250px;
 				display: flex;
 				width: auto;
 				left: 8px;
@@ -418,6 +418,7 @@
 					height: 100%;
 					background: unset !important;
 					display: flex;
+					opacity: 0;
 
 					&:not(:last-of-type) {
 						margin-right: 4px;
@@ -623,10 +624,19 @@
 		background-repeat: no-repeat;
 	}
 
-	&__slide:hover &__fav,
-	&__slide:hover &__compare,
-	&__slide:hover &__buy {
-		opacity: 1;
+	&__slide:hover {
+		.special-offers {
+
+			&__fav,
+			&__compare,
+			&__buy {
+				opacity: 1;
+			}
+		}
+
+		.swiper-pagination-bullet {
+			opacity: 1;
+		}
 	}
 
 	@media screen and (max-width: 767px) {

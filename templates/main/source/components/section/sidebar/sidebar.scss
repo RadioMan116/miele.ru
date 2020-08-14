@@ -35,7 +35,6 @@
 
 		&__subtitle {
 			color: #333333;
-
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -162,7 +161,6 @@
 
 		&__description {
 			color: #2e2e2e;
-
 			font-size: 13px;
 			font-weight: 400;
 			line-height: 22px;
@@ -225,7 +223,6 @@
 			background-color: #ffffff;
 			padding: 4px 8px 4px 15px;
 			color: #2e2e2e;
-
 			font-size: 20px;
 			font-weight: 700;
 			letter-spacing: 7px;
@@ -242,7 +239,6 @@
 		// .marking__title
 		&__title {
 			color: #ffffff;
-
 			font-size: 22px;
 			font-weight: 400;
 			line-height: 28px;
@@ -252,7 +248,6 @@
 		// .marking__subtitle
 		&__subtitle {
 			color: #ffffff;
-
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 18px;
@@ -267,7 +262,6 @@
 		// .articles__title
 		&__title {
 			color: #212121;
-
 			font-size: 24px;
 			font-weight: 400;
 			margin-top: 0px;
@@ -359,7 +353,6 @@
 
 			span {
 				color: #394791;
-
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 20px;
@@ -567,7 +560,7 @@
 //   }
 // }
 .yandex {
-	padding: 26px 15px 20px!important;
+	padding: 26px 15px 20px !important;
 	margin-bottom: 30px;
 	height: auto !important;
 	width: 100%;
@@ -605,7 +598,7 @@
 	border-radius: 3px;
 	border: 1px solid $base;
 	text-decoration: none !important;
-	margin-bottom: 5px;
+	margin-bottom: 6px;
 
 	&:first-child {
 		margin-top: auto;
@@ -654,7 +647,7 @@
 	// background: url("../images/yamarket.svg") no-repeat;
 	width: 145px;
 	// height: 106px;
-	margin:0 auto 24px;
+	margin: 0 auto 24px;
 }
 
 .quality {
@@ -694,8 +687,7 @@
 		line-height: 1.67;
 		letter-spacing: normal;
 		text-align: left;
-
-		margin:5px 0;
+		margin: 5px 0;
 	}
 
 	&__number {
@@ -706,7 +698,7 @@
 		line-height: 1.2;
 		letter-spacing: normal;
 		text-align: left;
-color: black;
+		color: black;
 	}
 
 	&__worktime {
@@ -748,7 +740,6 @@ color: black;
 
 	&__title {
 		color: #333333;
-
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 36px;
@@ -788,7 +779,6 @@ color: black;
 
 	&__text {
 		color: #394791;
-
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
