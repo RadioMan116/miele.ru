@@ -432,15 +432,15 @@
 	&__number {
 		position: absolute;
 		/* Style for "Oval" */
-		top: -9px;
-		left: 26px;
+		top: -6px;
+		left: 27px;
 		min-width: 20px;
-		min-height: 20px;
+		min-height: 19px;
 		padding: 1px 3px;
 		color: #ffffff;
 		font-size: 13px;
 		font-weight: 400;
-		line-height: 17px;
+		line-height: 1.1;
 		text-align: center;
 		background-color: $base;
 		border-radius: 50%;
