@@ -1524,14 +1524,14 @@
 
 			&__item {
 				display: flex;
-				padding-top: 10px;
+				padding-top: 7px;
 				padding-bottom: 10px;
 				padding-right: 4px;
 				// border-bottom: 1px solid #f1f1f1;
 				max-width: 100%;
 				flex-wrap: wrap;
 				margin-top: 0 !important;
-				margin-bottom: 22px;
+				margin-bottom: 25px;
 				position: relative;
 
 				&:last-child {
@@ -1667,8 +1667,8 @@
 
 			.swiper-pagination-upsale {
 				position: absolute;
-				bottom: 17px;
-				left: 19px;
+				bottom: 20px;
+				left: 17px;
 				width: auto;
 
 				.swiper-pagination-bullet {
