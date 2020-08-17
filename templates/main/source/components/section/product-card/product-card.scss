@@ -1473,7 +1473,7 @@
 			display: flex;
 			margin: 0 0 18px 0;
 			width: 100%;
-			padding: 15px 18px 47px 18px;
+			padding: 15px 18px 44px 18px;
 			background-color: #ffffff;
 			border: solid 1px #eeeeee;
 			display: flex;
@@ -1783,8 +1783,9 @@
 			// .articles__link
 			&__link {
 				order: 5;
-				width: 100%;
+				width: auto;
 				text-align: center;
+				padding: 9px 43px;
 			}
 
 			// .articles__items
