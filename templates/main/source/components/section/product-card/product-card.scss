@@ -1406,7 +1406,7 @@
 	}
 
 	.sidebar-right {
-		width: calc(25% - 16px);
+		width: calc(25% - 18px);
 		margin-left: auto;
 		padding: 51px 0 0 0;
 
@@ -1866,7 +1866,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-content: baseline;
-		width: calc(75% - 12px);
+		width: calc(75% - 10px);
 		margin-bottom: 0px;
 		height: fit-content;
 
@@ -1896,6 +1896,7 @@
 			text-align: left;
 			display: flex;
 			align-items: center;
+			letter-spacing: -0.4px;
 			// padding-left: 0;
 		}
 
