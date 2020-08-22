@@ -53,7 +53,7 @@
 			margin-left: 10px;
 			padding: 0;
 			color: $base;
-			background: url('/images/round-3.svg') no-repeat 100% 50%/15px;
+			background: url('/images/round-bottom.svg') no-repeat 100% 50%/15px;
 			background-color: transparent !important;
 			border: 0 !important;
 
@@ -65,7 +65,7 @@
 		}
 
 		&.active {
-			border: solid 1px $base;
+			border: solid 1px #ba1212;
 			background: #fff4f4;
 
 			a {

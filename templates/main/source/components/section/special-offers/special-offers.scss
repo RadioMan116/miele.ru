@@ -624,7 +624,8 @@
 		background-repeat: no-repeat;
 	}
 
-	&__slide:hover {
+	&__slide:hover,
+	.catalog__item:hover {
 		.special-offers {
 
 			&__fav,
