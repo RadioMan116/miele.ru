@@ -101,7 +101,38 @@ $(document).ready(function() {
 						element.querySelector(".instance-pagination-" + index).style.display = 'none';
 					}
 				}
-			})
+			});
+			(() => {
+				let swiperHover = document.querySelectorAll("[data-swiper]");
+				if (document.querySelector("[data-swiper]")) {
+					swiperHover.forEach(function(el, index) {
+						$(el).find(".swiper-container ").addClass("swiperHover-" + index);
+						$(el).find('.swiper-pagination').addClass("js-pagination-hover js-pagination-hover-" + index);
+						var swiperHoverInit = new Swiper(".swiperHover-" + index, {
+							spaceBetween: 20,
+							slidesPerView: 1,
+							effect: 'fade',
+							speed: 0,
+							pagination: {
+								el: '.js-pagination-hover-' + index,
+								clickable: true,
+							},
+						});
+						// $(el).mouseleave(function() {
+						// 	let firstPagination = $(el).find('.swiper-pagination-bullet')
+						// 	if (!$(firstPagination[0]).hasClass('active')) {
+						// 		swiperHoverInit.slideTo($(this).index(0));
+						// 	}
+						// });
+						$(el).find('.js-pagination-hover').on("click", function(e) {
+							window.open($(this).attr('href'));
+						})
+						// $(el).find('.swiper-pagination-bullet').hover(function() {
+						// 	swiperHoverInit.slideTo($(this).index());
+						// });
+					})
+				}
+			})();
 		} else {
 			mainCollection.forEach(function(element, index) {
 				let $this = $(this);
@@ -209,12 +240,12 @@ $(document).ready(function() {
 				},
 				breakpoints: {
 					480: {
-						slidesPerView: 2.5,
+						slidesPerView: "auto",
 						slidesPerGroup: 1,
 						spaceBetween: 8,
 					},
 					767: {
-						slidesPerView: 3.5,
+						slidesPerView: "auto",
 						slidesPerGroup: 1,
 						spaceBetween: 24
 					},
@@ -386,8 +417,6 @@ $(document).ready(function() {
 				init: function() {
 					console.log('slide init');
 					$first.clone().appendTo('.product-card .js-diagram__slider .swiper-container').addClass('swiper-transform');
-					// $first.addClass('swiper-transform');
-					// mySwiper12.prependSlide('<div class="swiper-slide-virtual">Slide 0"</div>');
 				},
 			},
 		});
@@ -905,6 +934,7 @@ $(document).ready(function() {
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
+		$('.catalog-view').appendTo('.bx-filter-section');
 		$('.labels').appendTo('.product-card .product__header_top');
 		$('.product-card__key').appendTo('.product-card .product__header_middle');
 		$('.sidebar-right').appendTo('.product-card');
@@ -2399,17 +2429,17 @@ $(window).on('load', function() {
 				// 	nextEl: ".practical-features__next",
 				// 	prevEl: ".practical-features__prev"
 				// },
-				slidesPerView: 2.5,
+				slidesPerView: 'auto',
 				// slidesPerGroup: 1,
-				spaceBetween: 12,
+				spaceBetween: 7,
 				pagination: {
 					el: ".swiper-pagination-instructions",
 					clickable: true
 				},
 				breakpoints: {
-					550: {
-						slidesPerView: 1.5
-					},
+					// 550: {
+					// 	slidesPerView: 1.5
+					// },
 				}
 			});
 			console.log($(this))
@@ -2437,11 +2467,11 @@ $(window).on('load', function() {
 				let button = document.createElement('div');
 				let openText = 'Читать подробнее',
 					closeText = 'Свернуть';
-				moreText.append(button);
+				moreText.prepend(button);
 				button.classList.add('js-switch', 'description__switch');
 				button.innerHTML = openText
 				button.onclick = function() {
-					this.parentElement.classList.toggle('active');
+					this.classList.toggle('active');
 					button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
 				};
 			}

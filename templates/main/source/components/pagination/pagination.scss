@@ -108,7 +108,33 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		padding: 0;
+
+		&__prev {
+			width: 22px;
+
+			&:after {
+				margin: 0;
+			}
+		}
+
+		&__next {
+			width: 22px;
+
+			&:after {
+				margin: 0;
+			}
+		}
+
+		&__item {
+			// margin-right: 0;
+			width: 16px;
+		}
+	}
+
 	@media screen and (max-width: 480px) {
-		margin: 15px auto !important;
+		// margin: 15px auto !important;
 	}
 }

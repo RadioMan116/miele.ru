@@ -501,6 +501,12 @@
 			background: url(../images/star.svg) no-repeat;
 			background-position: 50%;
 			background-size: 16px 16px;
+
+			&.ratings__none {
+				background: url(../images/rectangle-2.svg) no-repeat;
+				background-position: 50%;
+				background-size: 16px 16px;
+			}
 		}
 
 		&__number {
@@ -824,6 +830,15 @@
 
 			.special-offers__slide {
 				padding: 30px 21px 15px;
+			}
+		}
+
+		.swiper {
+			.swiper {
+				&-pagination {
+					height: auto;
+					bottom: unset;
+				}
 			}
 		}
 	}

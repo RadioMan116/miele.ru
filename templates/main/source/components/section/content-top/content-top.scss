@@ -28,7 +28,6 @@
 
 		.content-top__title_top {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
 			font-size: 30px;
 			font-weight: 400;
 			line-height: 37px;
@@ -41,14 +40,12 @@
 		.content-top__title_bottom,
 		span {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
 			font-size: 16px;
 			font-weight: 400;
 		}
 	}
 
 	.container {
-
 		padding: 0;
 		display: flex;
 		flex-direction: column;
@@ -58,7 +55,6 @@
 	&__aside {
 		border-radius: 3px;
 		background-color: $base;
-
 		padding: 32px 65px 32px 32px;
 		max-width: 572px;
 		margin-bottom: 32px;
@@ -67,10 +63,8 @@
 	&__title {
 		width: 100%;
 
-
 		&_top {
 			color: #ffffff;
-			font-family: "Roboto Condensed";
 			font-size: 32px;
 			font-weight: 400;
 			line-height: 1.1;
@@ -79,7 +73,6 @@
 
 			span {
 				color: #ffffff;
-				font-family: "Roboto Condensed";
 				font-size: 16px;
 				font-weight: 400;
 			}
@@ -101,17 +94,19 @@
 
 	.breadcrumbs {
 		width: fit-content;
+		color: #ffffff;
+		font-family: "HelveticaNeueCyr-Roman";
 		font-size: 12px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
+		font-weight: 400;
+		line-height: 24px;
 		line-height: 2;
 		letter-spacing: normal;
 		color: #ffffff;
 		margin-bottom: 10px;
 		margin-top: 25px;
 		padding: 0 14px;
-		background: rgba(0, 0, 0, 0.21);
+		border-radius: 2px;
+		background: rgba(0, 0, 0, 0.6);
 
 		div {
 			align-items: center;
@@ -121,7 +116,6 @@
 			color: #ffffff;
 		}
 	}
-
 
 	@media screen and (max-width: 767px) {
 		height: auto;
@@ -158,21 +152,21 @@
 			width: 100%;
 			padding: 0;
 			max-width: unset !important;
+			margin-bottom: 53px;
 		}
 
-
 		&__title_top {
+			// color: #ffffff;
 			color: #ffffff;
-			font-family: "Roboto Condensed";
-			font-size: 30px;
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 24px;
 			font-weight: 400;
-			line-height: 39px;
-			text-transform: uppercase;
+			line-height: 32px;
 			// word-spacing: 60rem;
 			text-align: center;
 			width: 100%;
 			background: none;
-
+			text-transform: unset;
 		}
 
 		&__title_bottom {
@@ -184,9 +178,12 @@
 		}
 
 		.breadcrumbs {
-			margin-top: 30px;
+			margin-top: 16px;
 			text-align: center;
 			padding: 0px;
+			width: 100%;
+			background: unset;
+			margin-bottom: 29px;
 
 			div[itemtype="http://schema.org/BreadcrumbList"] {
 				justify-content: center;
@@ -205,12 +202,13 @@
 
 			.content-top__title_top {
 				color: #ffffff;
-				font-family: "Roboto Condensed";
-				font-size: 30px;
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 24px;
 				font-weight: 400;
-				line-height: 39px;
-				text-transform: uppercase;
+				line-height: 32px;
+				text-align: center;
 				margin-bottom: 14px;
+				text-transform: unset;
 			}
 
 			.content-top__title_bottom {

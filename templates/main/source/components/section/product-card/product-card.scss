@@ -252,10 +252,13 @@
 				position: unset;
 				width: 100%;
 				order: 5;
-				margin: 62px 0 0px;
+				margin: 3px 0 0px;
 				display: flex;
-				justify-content: center;
+				justify-content: flex-start;
 				white-space: nowrap;
+				text-align: left;
+				width: fit-content;
+				border-bottom: 1px dashed $base;
 			}
 
 			// .recently-watched__pic
@@ -279,8 +282,7 @@
 				width: 100%;
 				display: flex;
 				justify-content: center;
-				margin-bottom: 0;
-				position: absolute;
+				display: none;
 			}
 
 			.swiper-pagination-bullet {
@@ -290,15 +292,9 @@
 				margin-left: 0;
 			}
 
-			// .swiper-slide {
-			// 	display: flex;
-			// 	padding: 24px 10px 16px 6px;
-			// 	position: relative;
-			// 	border: 1px solid #f1f1f1;
-			// 	background-color: #ffffff;
-			// 	flex-direction: row;
-			// 	align-items: flex-start;
-			// }
+			.swiper-slide {
+				width: 209px;
+			}
 		}
 	}
 }
