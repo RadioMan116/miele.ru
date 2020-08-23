@@ -151,7 +151,7 @@
 
 		.close__filter {
 			color: $base;
-			font-family: "Roboto Condensed";
+
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
@@ -163,7 +163,7 @@
 	&__title {
 		display: flex;
 		color: #333333;
-		font-family: "Roboto Condensed";
+
 		font-size: 16px;
 		margin-bottom: 16px;
 		font-weight: 400;
@@ -436,7 +436,7 @@
 		}
 
 		color: $base;
-		font-family: "Roboto Condensed";
+
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
@@ -593,7 +593,7 @@
 				right: 20px;
 				bottom: -100%;
 				color: $base;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -728,7 +728,7 @@
 
 			span {
 				color: $base;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -907,17 +907,16 @@
 		max-width: 235px;
 
 		span {
-			color: #333333;
-			font-family: "Roboto Condensed";
+
 			font-weight: 400;
 			line-height: 24px;
 			width: auto;
 			display: flex;
 			justify-content: space-between;
 
-			&:hover {
-				border-bottom: 1px solid transparent;
-			}
+			// &:hover {
+			// 	border-bottom: 1px solid transparent;
+			// }
 		}
 
 		i[data-role="prop_angle"] {
@@ -966,7 +965,7 @@
 
 			&[name="del_filter"] {
 				color: $base;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1170,7 +1169,7 @@
 
 			&:checked+.bx-filter-param-text {
 				color: #ffffff;
-				background: #d82300;
+				background: $base;
 
 				span {
 					color: #ffffff;
@@ -1308,7 +1307,7 @@
 
 		.filter-glossary__link {
 			color: $base;
-			font-family: "Roboto Condensed";
+
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 20px;
@@ -1469,7 +1468,7 @@
 
 			span {
 				color: $base;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1542,7 +1541,7 @@
 			&:before {
 				content: 'Фильтр';
 				color: $base;
-				font-family: "Roboto Condensed";
+
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1575,7 +1574,7 @@
 
 				span {
 					color: $base;
-					font-family: "Roboto Condensed";
+
 					font-size: 14px;
 					font-weight: 400;
 					line-height: 24px;
@@ -1624,7 +1623,7 @@
 
 					span {
 						color: #ffffff;
-						font-family: "Roboto Condensed";
+
 						font-size: 14px;
 						font-weight: 400;
 						line-height: 24px;
