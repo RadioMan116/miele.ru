@@ -138,10 +138,10 @@
 			.price__absolute {
 				position: absolute;
 				left: 0;
-				color: #999999;
-				font-size: 13px;
+				color: #a6a6a6;
+				font-size: 11px;
 				font-weight: 400;
-				line-height: 1;
+				line-height: 15px;
 				// text-decoration: line-through;
 				left: 0;
 				top: unset;
@@ -155,10 +155,10 @@
 
 		.price__absolute {
 			position: absolute;
-			color: #b0b0b0;
-			font-size: 12px;
-			font-weight: 500;
-			line-height: 24px;
+			color: #a6a6a6;
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 15px;
 			// text-decoration: line-through;
 			left: 0;
 			top: -20px;
@@ -190,6 +190,7 @@
 		height: 30px;
 		font-size: 0;
 		background: url("../images/buy02.svg");
+
 		// @media screen and (max-width: 1128px) {
 		//     font-size: 11px;
 		//     padding: 0;
@@ -197,14 +198,9 @@
 		//     text-align: center;
 		//     justify-content: center;
 		// }
-		// &:before {
-		// 	content: '';
-		// 	background-image: url(../images/shopping-cart.png);
-		// 	width: 12px;
-		// 	height: 12px;
-		// 	background-size: 12px;
-		// 	margin-right: 8px;
-		// }
+		&:before {
+			display: none;
+		}
 	}
 
 	&__pic {
@@ -366,6 +362,7 @@
 		display: flex;
 		// position: relative;
 		margin-bottom: 14px;
+		max-width: 100%;
 
 		* {
 			transition: 0s !important;
@@ -473,6 +470,8 @@
 			img {
 				width: 24px;
 				height: 24px;
+				border-radius: 50%;
+				overflow: hidden;
 			}
 		}
 
@@ -501,7 +500,7 @@
 			height: 16px;
 			background: url(../images/star.svg) no-repeat;
 			background-position: 50%;
-			background-size: 14px 14px;
+			background-size: 16px 16px;
 		}
 
 		&__number {
@@ -509,7 +508,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
-			margin: 0 6px 0 8px;
+			margin: 0 2px 0 8px;
 		}
 
 		&__link {
@@ -571,6 +570,7 @@
 		font-weight: 400;
 		line-height: 26px;
 		margin-bottom: 8px;
+		margin-top: 4px;
 	}
 
 	&__desc {
@@ -589,7 +589,7 @@
 			font-size: 12px;
 			font-weight: 400;
 			line-height: 14px;
-			margin-bottom: 10px;
+			margin-bottom: 8px;
 			display: flex;
 			align-items: flex-end;
 
@@ -609,7 +609,7 @@
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 20px;
-		margin-top: 9px;
+		margin-top: 13px;
 		color: black;
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
@@ -622,6 +622,7 @@
 	&__buy {
 		opacity: 0;
 		background-repeat: no-repeat;
+		background-size: contain !important;
 	}
 
 	&__slide:hover,

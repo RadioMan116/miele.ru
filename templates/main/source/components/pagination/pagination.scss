@@ -5,7 +5,7 @@
 	justify-content: center;
 
 	&__prev {
-		margin-right: 8px;
+		margin-right: 14px;
 		position: relative;
 		display: flex;
 		justify-content: center;
@@ -13,27 +13,24 @@
 		width: 32px;
 		height: 32px;
 
-
 		&:after {
 			content: '';
-			border-left: 2px solid #eeeeee;
-			border-bottom: 2px solid #eeeeee;
+			border-left: 2px solid #a6a6a6;
+			border-bottom: 2px solid #a6a6a6;
 			display: block;
-			width: 10px;
-			height: 10px;
-			margin: 0 -3px 0 0;
+			width: 9px;
+			height: 9px;
+			margin: 0 19px 0 0;
 			transform: rotate(45deg)
 		}
 
 		&.active {
 			&:after {
 				content: '';
-				border-left: 2px solid #2e2e2e;
-				border-bottom: 2px solid #2e2e2e;
-
+				border-left: 2px solid #a6a6a6;
+				border-bottom: 2px solid #a6a6a6;
 			}
 		}
-
 	}
 
 	&__item {
@@ -46,7 +43,6 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #333333;
-
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -64,7 +60,7 @@
 			height: 32px;
 			border-radius: 2px;
 			// border: 1px solid #394791;
-			background-color: #ffe3e3;
+			background: #ececec;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -82,7 +78,6 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: #333333;
-
 	}
 
 	&__next {
@@ -92,27 +87,26 @@
 		align-items: center;
 		width: 32px;
 		height: 32px;
+		margin-left: 6px;
 
 		&:after {
 			content: '';
-			border-top: 2px solid #eeeeee;
-			border-right: 2px solid #eeeeee;
+			border-top: 2px solid #a6a6a6;
+			border-right: 2px solid #a6a6a6;
 			display: block;
-			width: 10px;
-			height: 10px;
-			margin: 0 0 0 -3px;
+			width: 9px;
+			height: 9px;
+			margin: 0 0 0 19px;
 			transform: rotate(45deg)
 		}
 
 		&.active {
 			&:after {
-				border-top: 2px solid #2e2e2e;
-				border-right: 2px solid #2e2e2e;
+				border-top: 2px solid #a6a6a6;
+				border-right: 2px solid #a6a6a6;
 			}
 		}
-
 	}
-
 
 	@media screen and (max-width: 480px) {
 		margin: 15px auto !important;
