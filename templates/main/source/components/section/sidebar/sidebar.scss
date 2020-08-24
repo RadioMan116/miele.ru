@@ -561,7 +561,7 @@
 // }
 .yandex {
 	padding: 26px 15px 20px !important;
-	margin-bottom: 30px;
+	margin-bottom: 14px;
 	height: auto !important;
 	width: 100%;
 	background-color: #ffffff;
@@ -594,7 +594,7 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: $base;
-	padding: 4px 20px 4px 20px;
+	padding: 4px 14px;
 	border-radius: 3px;
 	border: 1px solid $base;
 	text-decoration: none !important;
@@ -606,6 +606,10 @@
 
 	&:last-child {
 		margin-bottom: 6px;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding: 4px 18px;
 	}
 }
 
@@ -654,7 +658,7 @@
 	width: 100%;
 	background-color: #ffffff;
 	border: solid 1px #eeeeee;
-	padding: 16px;
+	padding: 22px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -687,7 +691,11 @@
 		line-height: 1.67;
 		letter-spacing: normal;
 		text-align: left;
-		margin: 5px 0;
+		margin: 8px 0 4px;
+
+		@media screen and (max-width: 767px) {
+			margin: 8px 0 4px;
+		}
 	}
 
 	&__number {
@@ -724,11 +732,16 @@
 		text-align: left;
 		text-transform: uppercase;
 		color: $base;
-		padding: 7px 13px 5px 14px;
+		padding: 7px 14px 5px 14px;
 		border-radius: 3px;
 		border: solid 1px $base;
 		text-decoration: none !important;
 		width: 150px !important;
+
+		@media screen and (max-width: 767px) {
+			padding: 4px 46px;
+			width: fit-content !important;
+		}
 	}
 }
 

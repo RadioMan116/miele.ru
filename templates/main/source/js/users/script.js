@@ -988,7 +988,7 @@ $(document).ready(function() {
 			},
 			breakpoints: {
 				767: {
-					slidesPerView: 1,
+					slidesPerView: "auto",
 					slidesPerGroup: 1,
 					spaceBetween: 12,
 				},
