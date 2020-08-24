@@ -87,4 +87,32 @@ $color: #333;
 	padding: 11px 18px;
 	z-index: 1;
 	font-family: HelveticaNeueCyr-Medium;
+
+	.popup-gloss {
+		width: 226px;
+
+		.filter-glossary__title {
+			font-family: "HelveticaNeueCyr-Bold";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 19px;
+			margin: 10px 0;
+		}
+
+		.filter-glossary__text {
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 18px;
+			margin-bottom: 10px;
+		}
+
+		.filter-glossary__link {
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			text-decoration: none;
+		}
+	}
 }
