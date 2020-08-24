@@ -4042,7 +4042,7 @@
 	@media screen and (max-width: 767px) {
 		.catalog-view {
 			position: absolute;
-			top: 0px;
+			top: 55px;
 			right: 0px;
 			width: 92px;
 			height: 55px;
@@ -4061,6 +4061,7 @@
 			.catalog-view {
 				right: -100px;
 				height: 49px;
+				top: 0px;
 			}
 		}
 	}
