@@ -115,4 +115,14 @@ $color: #333;
 			text-decoration: none;
 		}
 	}
+
+	.announcing & {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			display: block;
+			margin-top: 6px;
+		}
+	}
 }

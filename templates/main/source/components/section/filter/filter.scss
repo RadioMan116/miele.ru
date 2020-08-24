@@ -10,8 +10,8 @@
 		font-weight: 400;
 		font-size: 14px;
 		margin-bottom: 22px;
-		margin-top: 28px;
-		padding-left: 20px;
+		margin-top: 26px;
+		padding-left: 16px;
 		color: #cccccc;
 		display: flex;
 
@@ -112,7 +112,7 @@
 
 			&:checked+.checkbox-custom+.checkbox-close {
 				color: #ffffff;
-				background: #d82300;
+				background: $base;
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
@@ -125,7 +125,7 @@
 
 			&:checked+.checkbox-custom {
 				color: #ffffff;
-				background: #d82300;
+				background: $base;
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
@@ -313,9 +313,10 @@
 			display: flex;
 			margin-right: 12px;
 
-			// &:last-child {
-			// 	margin-bottom: 0;
-			// }
+			&:last-child {
+				margin-right: 0;
+			}
+
 			.filter-tip {
 				position: absolute;
 				right: -20px;
@@ -353,7 +354,13 @@
 
 			&.active {
 				color: #fff;
-				background: #d82300;
+				background: $base;
+
+				&::after {
+					content: '×';
+					margin-left: 4px;
+					font-size: 21px;
+				}
 			}
 		}
 
@@ -1089,7 +1096,7 @@
 	.bx-ft-sub {
 		position: absolute;
 		padding-bottom: 0 !important;
-		bottom: 1px;
+		bottom: 8px;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 19px;

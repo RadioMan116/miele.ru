@@ -2,9 +2,9 @@
 .seach-found {
 	width: calc((100% / 12) * 9) !important;
 	margin-left: auto;
-	padding-top: 14px;
+	padding-top: 12px;
 	margin: 0 !important;
-	padding-left: 7px;
+	padding-left: 9px;
 
 	* {
 		transition: 0.4s;
@@ -405,6 +405,7 @@
 				background: $base;
 				color: #ffffff;
 				padding: 8px 26px;
+				text-decoration: unset !important;
 			}
 		}
 	}
@@ -1745,6 +1746,7 @@
 
 			&__items {
 				overflow: visible;
+				z-index: 9;
 			}
 
 			.catalog {
@@ -2215,6 +2217,7 @@
 		.special-offers__compare,
 		.special-offers__fav {
 			opacity: 1;
+			text-decoration: none !important;
 		}
 
 		.special-offers__compare,
@@ -2278,7 +2281,7 @@
 		padding-top: 20px;
 		display: flex;
 		flex-direction: column;
-		overflow: hidden;
+		// overflow: hidden;
 		margin-bottom: 39px;
 		max-width: 135%;
 
@@ -2479,6 +2482,7 @@
 
 			&:hover {
 				text-decoration: unset !important;
+				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 
 				.catalog-category__text {
 					color: $base;

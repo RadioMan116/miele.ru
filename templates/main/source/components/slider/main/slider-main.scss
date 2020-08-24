@@ -167,12 +167,16 @@
 		// display: flex;
 		align-items: baseline;
 		// justify-content: center;
-		padding-top: 49px;
+		padding-top: 16px;
 		justify-content: center;
 		z-index: -1;
 
 		img {
 			margin-bottom: 24px;
+		}
+
+		picture {
+			width: auto !important;
 		}
 	}
 
