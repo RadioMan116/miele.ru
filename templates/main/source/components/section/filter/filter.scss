@@ -1504,8 +1504,12 @@
 		&.active {
 			.bx-filter-section.container-fluid {
 				max-height: 0;
-				overflow: hidden;
+				// overflow: hidden;
 				padding: 0;
+
+				form {
+					display: none;
+				}
 			}
 		}
 
