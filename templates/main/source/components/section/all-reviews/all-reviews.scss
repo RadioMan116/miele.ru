@@ -1067,6 +1067,8 @@
 			font-weight: 400;
 			line-height: 26px;
 			margin-bottom: 20px;
+			display: flex;
+			flex-direction: column;
 		}
 
 		.swiper-button-prev {
