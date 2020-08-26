@@ -718,6 +718,24 @@ $(document).ready(function() {
 			content: el.querySelector('.popup-gloss')
 		});
 	});
+	$('.js-characteristic-glossary').each(function(i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: 'top', // top, right, bottom, left
+			// trigger: 'click',
+			distance: 15, //px or string
+			// maxWidth: 300, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			hideOnClick: true,
+			theme: 'light',
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content: el.querySelector('.popup-gloss')
+		});
+	});
 	$('.price__dashed').each(function(i, el) {
 		tippy(el, {
 			arrow: true,
@@ -973,6 +991,7 @@ $(document).ready(function() {
 			})
 		}
 		$(function() {
+			$(".hide-tabs .js-characteristic__title:eq(0)").addClass('active').nextUntil('.characteristic__title').addClass('active');
 			$(".hide-tabs .js-characteristic__title").click(function(e) {
 				$(this).toggleClass('active').nextUntil('.characteristic__title').toggleClass('active');
 			})
@@ -1965,6 +1984,26 @@ $(document).ready(function() {
 			// }
 		})();
 	}, 100);
+	tippy('.link-pop-glossary .icons-prop-item', {
+		// change these to your liking
+		arrow: true,
+		placement: 'top', // top, right, bottom, left
+		// trigger: 'click',
+		distance: 15, //px or string
+		// maxWidth: 300, //px or string
+		interactive: true,
+		// leave these as they are
+		// followCursor: true,
+		allowHTML: true,
+		theme: 'light',
+		appendTo: () => document.body,
+		// ignoreAttributes: true,
+		content(reference) {
+			const title = reference.getAttribute('title');
+			reference.removeAttribute('title');
+			return title;
+		},
+	});
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
