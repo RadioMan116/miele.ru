@@ -805,6 +805,10 @@
 				order: -2;
 				background-size: 22px !important;
 				align-items: center;
+
+				.header__mobile-tel {
+					display: none;
+				}
 			}
 
 			&__block_bottom .header__mobile-tel {
