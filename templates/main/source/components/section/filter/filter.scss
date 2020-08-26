@@ -334,7 +334,7 @@
 		.filter-collections {
 			border-radius: 2px;
 			background-color: #ececec;
-			padding: 3px 8px;
+			padding: 3px 7px;
 			height: 26px;
 			text-decoration: none !important;
 
@@ -1531,6 +1531,12 @@
 			}
 		}
 
+		&.more {
+			.more-text {
+				left: 28px;
+			}
+		}
+
 		.bx-filter-button-box {
 			.bx-filter-parameters-box-container {
 				display: flex;
@@ -1838,6 +1844,16 @@
 		.bx-filter-section {
 			padding-left: 28px;
 			padding-right: 28px;
+		}
+
+		.bx-ui-slider-track-container {
+			padding-top: 17px;
+			margin-left: 15px;
+			width: calc(100% - 33px);
+		}
+
+		.bx-ft-sub {
+			left: 7px;
 		}
 	}
 }
