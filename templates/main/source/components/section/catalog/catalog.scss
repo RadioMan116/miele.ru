@@ -1970,7 +1970,7 @@
 
 			.price__cheaper {
 				border-radius: 11px;
-				background: #ff6060;
+				background: #f59b00;
 				padding: 2px 4px;
 				color: #ffffff;
 				font-size: 12px;
@@ -3705,6 +3705,10 @@
 
 			.catalog__item.banner {
 				display: none;
+			}
+
+			.swiper .swiper-pagination-bullet {
+				opacity: 1;
 			}
 		}
 
