@@ -1,90 +1,186 @@
 <div class="d-flex flex-column-reverse flex-md-row">
-    <div class="col-md-3">
-        {% include 'section/sidebar/sidebar.html' %}
-    </div>
-    <div class="col-md-9">
-        <div class="breadcrumbs">
-            <a href="#" class="breadcrumbs__link">Liebherr</a>
-            <span class="breadcrumbs__sep">/</span>
-            <span class="breadcrumbs__text">подключение</span>
-        </div>
-        <h1 class="title">
-            Официальная гарантия
-        </h1>
-        <div class="text-default">
-            <img src="{{src}}баннер.png" alt="" class="shipping-payment__pic">
-            <h3>
-                Для размещения заявок на ремонт холодильного оборудования необходимо воспользоваться телефоном
-                бесплатной горячей линии: 8 (800) 100-34-55. Или же обратиться напрямую в один из ближайших к Вам
-                авторизованных сервисных центров.
-            </h3>
-            <p>
-                <b>При доставке техники</b>
-                Проверьте правильность заполнения гарантийного свидетельства. В нем должны быть указана дата продажи и
-                проставлен штамп магазина. Если такая информация отсутствует, началом срока гарантии считается время
-                изготовления прибора.
-            </p>
-            <p>
-                Обратите внимание на отсутствие у товара механических повреждений и на наличие комплектующих. Технику
-                должны устанавливать специалисты сервисного центра. Гарантия не распространяется на недостатки в работе
-                прибора, которые возникли вследствие неправильной установки.
-            </p>
-            <p>
-                <b>Условия гарантии</b>
-                На технику Liebherr распространяется гарантия в течение двух лет с момента продажи. Гарантия действует
-                только на приборы, которые эксплуатировались в домашних условиях.
-            </p>
-            <p>
-                Срок гарантии на комплектующие — три месяца. Комплектующими считаются изделия, которые можно
-                демонтировать без использования инструментов: полки, корзины, ящики, решетки, насадки, шланги. Такой же
-                срок — 3 месяца — действует на новые комплектующие, которые были установлены при проведении
-                гарантийного либо платного ремонта.
-            </p>
-            <ul>
-                Снятие с гарантии
-                <p>Гарантия производителя не распространяется, если:</p>
-                <li>
-                    не были соблюдены требования, прописанные в инструкции;
-                </li>
-                <li>
-                    товар был поврежден при неправильной транспортировке, установке либо эксплуатации;
-                </li>
-                <li>
-                    неисправности возникли при перегрузке;
-                </li>
-                <li>
-                    в конструкцию товара были внесены изменения неуполномоченными лицами;
-                </li>
-                <li>
-                    продуктовых или серийных номеров нет либо они читаются неразборчиво;
-                </li>
-                <li>
-                    недостатки были вызваны причинами, которые не зависят от производителя, в том числе: перепадами
-                    напряжения в электросети (по ГОСТу 13109-97 и локальным государственным стандартам), стихийными
-                    бедствиями и пожарами, действиями домашних и диких животных, а также попадания внутрь посторонних
-                    предметов и жидкостей;
-                </li>
-                <li>
-                    повреждения деталей и комплектующих произошли из-за естественного износа, например, перегорела
-                    лампа или был загрязнен фильтр.
-                </li>
-            </ul>
-            <p>
-                Согласно законодательству, на технику установлен срок службы 10 лет с момента продажи. Перед
-                эксплуатацией товара необходимо ознакомиться с приложенной документацией. Правила безопасного и
-                эффективного использования товаров изложены в инструкции по эксплуатации.
-            </p>
-            <div class="maps">
-                <h2>
-                    Сервисные центры Liebherr по обслуживанию бытовой техники в Москве:
-                </h2>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f1b05c361c1e26b8254ea41b64bd72bc9426743f38c95247c3c30359a2d8079&amp;source=constructor"
-                    width="100%" height="440" frameborder="0"></iframe>
-            </div>
-            <h2>
-                Сервисные центры Liebherr по обслуживанию бытовой техники в регионах РФ:
-            </h2>
-            <a data-url="ajax/warranty.html" data-ajax class="warranty__button" href="#">Посмотреть сервисные центры</a>
-        </div>
-    </div>
+	<div class="col-md-3">
+		{% include 'section/sidebar/sidebar.html' %}
+	</div>
+	<div class="col-md-9">
+		<div class="breadcrumbs">
+			<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem">
+					<a href="/" title="Главная" itemprop="item">
+						<span itemprop="name">
+							Miele
+						</span>
+					</a>
+					<meta itemprop="position" content="1">
+				</div>
+				<div class="breadcrumbs__sep">»</div>
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem">
+					<span itemprop="name">Доставка и оплата</span>
+					<a itemprop="item" href="/delivery-and-payment/" title="Доставка и оплата"></a>
+					<meta itemprop="position" content="2">
+				</div>
+			</div>
+		</div>
+		<h1 class="title">
+			Доставка и оплата
+		</h1>
+		<div class="text-default">
+			<div class="shipping-payment">
+				<picture>
+					<source media="(max-width: 767px)" srcset="{{src}}shipping-payment-767.png">
+					<img src="{{src}}warranty.png" alt="" class="shipping-payment__banner lazyload">
+				</picture>
+				<div class="shipping-payment__row">
+					<div class="shipping-payment__caption">
+						<img src="{{src}}ustanovka.svg" alt=""> Установка техники
+					</div>
+					<!-- /.shipping-payment__caption -->
+					<div class="shipping-payment__text">
+						<p>
+							По предварительному согласованию покупатели нашего интернет-магазина могут заказать
+							установку крупногабаритной техники в
+							день доставки.
+						</p>
+						<b>
+							Стоимость установки бытовой техники Miele рассчитывается в соответствии с <a
+								href="#">официально действующими тарифами.</a>
+						</b>
+					</div>
+					<!-- /.shipping-payment__text -->
+				</div>
+				<!-- /.shipping-payment__row -->
+				<div class="shipping-payment__row">
+					<div class="shipping-payment__caption">
+						<img src="{{src}}servisnoe-obsl.svg" alt="">Сервисное обслуживание
+					</div>
+					<div class="shipping-payment__text">
+						<p>
+							По всем вопросам, связанным с организацией сервисного обслуживания Miele в России, Вы можете
+							обращаться в контактный
+							центр.
+						</p>
+						<div class="shipping-payment__info">
+							Телефон контактного центра: <a href="tel:+8(800)2002900">8 (800) 200 2900</a>. Звонок по
+							России бесплатный.
+						</div>
+						<!-- /.shipping-payment__info -->
+					</div>
+					<!-- /.shipping-payment__text -->
+					<div class="shipping-payment__column">
+						<div class="shipping-payment__col">
+							<div class="shipping-payment__subtitle">Москва</div>
+							<!-- /.shipping-payment__subtitle -->
+							<a href="#" class="shipping-payment__link">Магазин Сервиса (Miele Service Point)</a>
+							<!-- /.shipping-payment__link -->
+							<div class="shipping-payment__desc">
+								<span>
+									<b>Адрес:</b>
+									25284, Москва, Ленинградский проспект, д.31а, стр.1.
+								</span>
+								<i>
+									Проезд до станции метро «Динамо», далее по 1-му Боткинскому проезду до Бизнес-Центра
+									«Монарх», вход в торговый центр со
+									стороны 2-го Боткинского проезда — 1 этаж, налево. Магазин осуществляет продажу
+									запасных частей, аксессуаров и средств
+									по уходу. Сервисное обслуживание пылесосов и настольных кофемашин.
+								</i>
+								<span>
+									<b>Часы работы:</b>
+									пн-вс, с 10.00 до 20.00
+								</span>
+								<span>
+									<b>
+										Тел.:
+									</b>
+									+7(495) 745-89-90
+								</span>
+								<span>
+									<b>
+										Телефон контактного центра:
+									</b>
+									8(800) 200 2900 (по РФ бесплатно)
+								</span>
+							</div>
+							<!-- /.shipping-payment__desc -->
+						</div>
+						<!-- /.shipping-payment__col -->
+						<div class="shipping-payment__col">
+							<div class="shipping-payment__subtitle"></div>
+							<!-- /.shipping-payment__subtitle -->
+							<a href="#" class="shipping-payment__link"></a>
+							<!-- /.shipping-payment__link -->
+							<div class="shipping-payment__desc">
+								<span>
+									<b></b>
+								</span>
+							</div>
+							<!-- /.shipping-payment__desc -->
+						</div>
+						<!-- /.shipping-payment__col -->
+						<div class="shipping-payment__col"></div>
+						<!-- /.shipping-payment__col -->
+					</div>
+					<!-- /.shipping-payment__column -->
+				</div>
+				<div class="shipping-payment__row">
+					<div class="shipping-payment__caption">
+						<img src="{{src}}sroki-dostavki.svg" alt="">Время доставки
+					</div>
+					<div class="shipping-payment__text">
+						<p>
+							Бытовая техника, которая есть в наличии, доставляются в течение 4 рабочих дней по
+							согласованию с менеджером. Информацию
+							о возможности и сроках доставки товаров со статусом «Под заказ» можно уточнить у менеджера.
+						</p>
+						<p>
+							Подробную информацию об условиях доставки, приема и возврата товара можно прочитать на
+							странице описания сотрудничества
+							с <a href="#">Миле СНГ</a>.
+						</p>
+					</div>
+					<!-- /.shipping-payment__text -->
+				</div>
+				<div class="shipping-payment__row">
+					<div class="shipping-payment__caption">
+						<img src="{{src}}m.svg" alt=""> Стоимость услуг и дополнительная информация
+					</div>
+					<div class="shipping-payment__text">
+						<div class="shipping-payment__table">
+							<div class="shipping-payment__item">
+								<span>Прайс-лист на услуги ООО Миле СНГ для Покупателей MCA</span>
+								<div class="documentation">
+									<a href="#" class="doc_loading doc_loading_first" title="">
+										<i class="icon_doc"></i>
+										<span>Скачать</span>
+										PDF, 1.24 Мб
+									</a>
+								</div>
+							</div>
+							<!-- /.shipping-payment__item -->
+							<div class="shipping-payment__item">
+								<span>
+									Памятка по доставке и установке холодильников MasterCool и отдельно стоящих
+									комбинаций
+									Side-by-Side
+								</span>
+								<div class="documentation">
+									<a href="#" class="doc_loading doc_loading_first" title="">
+										<i class="icon_doc"></i>
+										<span>Скачать</span>
+										PDF, 1.24 Мб
+									</a>
+								</div>
+							</div>
+							<!-- /.shipping-payment__item -->
+						</div>
+						<!-- /.shipping-payment__table -->
+					</div>
+					<!-- /.shipping-payment__text -->
+				</div>
+			</div>
+			<!-- /.shipping-payment -->
+		</div>
+	</div>
 </div>

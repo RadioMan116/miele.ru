@@ -4,7 +4,6 @@
 	z-index: 1;
 	max-width: 100%;
 
-
 	.sidebar {
 		padding: 0;
 	}
@@ -15,104 +14,393 @@
 
 	h1.title {
 		width: 100%;
-		text-transform: uppercase;
+		text-transform: unset;
 	}
 
 	.shipping-payment {
+		display: flex;
+		flex-direction: column;
 
-		&__item {
-			width: 100%;
+		a {
+			text-decoration: none !important;
 		}
 
-		&__header {
-			margin-right: auto;
-			color: #333333;
-			font-family: "Roboto Condensed";
-			font-size: 18px;
+		&__banner {
+			margin-bottom: 24px;
+			margin-top: 6px;
+		}
+
+		// .shipping-payment__row
+		&__row {
+			padding-left: 3px;
+			width: calc(100% + 70px);
+			margin-bottom: 14px;
+
+			&:not(:first-of-type) {
+				margin-bottom: 35px;
+			}
+
+			b {
+				font-family: "HelveticaNeueCyr-Bold";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 28px;
+			}
+		}
+
+		// .shipping-payment__caption
+		&__caption {
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 26px;
 			font-weight: 400;
-			line-height: 24px;
+			line-height: 32px;
+			margin-bottom: 4px;
+
+			img {
+				margin-right: 24px;
+			}
+		}
+
+		// .shipping-payment__ul
+		&__ul {
+			list-style: none;
+
+			li {
+				position: relative;
+				display: flex;
+				// flex-direction: column;
+				flex-wrap: wrap;
+				font-family: "HelveticaNeueCyr-Roman";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 28px;
+				margin-bottom: 25px;
+				padding-right: 8px;
+
+				&:before {
+					position: absolute;
+					content: '';
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background: #f59b00;
+					display: inline-flex;
+					left: -18px;
+					top: 12px;
+				}
+
+				img {
+					margin-top: 10px;
+
+					&:nth-of-type(even) {
+						margin: 10px 16px 0;
+					}
+				}
+
+				b {
+					margin-top: 0;
+					margin-bottom: 0px;
+					width: 100%;
+				}
+			}
+		}
+
+		// .shipping-payment__table
+		&__table {}
+
+		// .shipping-payment__item
+		&__item {
+			height: 56px;
+			border: solid 1px #ececec;
+			background: #ffffff;
+			display: flex;
+			align-items: center;
+			padding-left: 24px;
+			justify-content: space-between;
+
+			span {
+				max-width: 400px;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 20px;
+				font-family: "HelveticaNeueCyr-Medium";
+				max-width: 483px;
+			}
+
+			&:not(:last-of-type) {
+				border-bottom: unset;
+			}
+		}
+
+		//.shipping-payment__text
+		&__text {
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 28px;
+			padding-left: 74px;
+			display: flex;
+			flex-direction: column;
+
+			p {
+				margin-top: 0;
+				font-family: "HelveticaNeueCyr-Roman";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 28px;
+			}
+
+			b {
+				margin: 9px 0 0px;
+			}
+
+			strong {
+				max-width: 550px;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 28px;
+				margin: 0px 0 7px;
+				letter-spacing: 0.6px;
+
+				a {
+					letter-spacing: 0;
+				}
+			}
 		}
 	}
 
+	.documentation {
+		margin: 0 0 0px 0;
+		width: auto;
+		background-color: #ffffff;
+		display: flex;
+		flex-wrap: wrap;
 
-	@media screen and (max-width: 768px) {
+		&__title {
+			width: 100%;
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			padding: 1px 0 0 1px;
+		}
 
+		.doc_loading {
+			width: 200px;
+			display: flex;
+			flex-wrap: wrap;
+			color: #a6a6a6;
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+			padding: 9px 8px 9px 55px;
+			border-left: 1px solid #eeeeee;
+			align-items: center;
+			position: relative;
+			margin-left: 21px;
 
-		// .sidebar {
-		//   display: flex;
-		//   align-items: stretch;
+			.icon_doc {
+				background: url("../images/documentation__pic.svg") no-repeat 14px 50%/30px;
+				width: 44px;
+				height: 44px;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 
-		//   .work-link,
-		//   .yandex,
-		//   .quality {
-		//     width: calc(((100%/12)*4)-10px);
-		//     height: auto;
-		//   }
+			span {
+				color: black;
+				font-family: "HelveticaNeueCyr-Roman";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 20px;
+				width: 100%;
+				// margin-bottom: 3px;
+			}
 
-		//   .yandex {
-		//     margin: 0 15px;
-		//     padding: 3%;
-		//     align-items: baseline;
+			&_first {}
 
-		//     &__link_form {
-		//       margin-top: auto;
-		//       font-size: 10px;
-		//       margin-left: auto;
-		//       margin-right: auto;
-		//     }
-		//   }
+			&+.doc_loading {
+				border-top: 0 !important;
+			}
+		}
+	}
 
-		//   .work-link {
-		//     margin: 0;
-		//     display: flex;
-		//     flex-wrap: wrap;
+	@media screen and (max-width: 767px) {
+		.shipping-payment {
+			color: black;
 
+			// .shipping-payment__banner
+			&__banner {
+				margin-left: -16px;
+				margin-right: -16px;
+				max-width: unset;
+				margin-bottom: 44px;
+			}
 
-		//     &__item {
-		//       height: unset;
-		//     }
+			// .shipping-payment__row
+			&__row {
+				padding-left: 0;
+				width: 100%;
 
-		//     &__a {
-		//       color: #333333;
-		//       font-size: 14px;
-		//     }
-		//   }
+				&:nth-child(2) {
+					.shipping-payment__caption {
+						img {
+							width: 47px;
+						}
+					}
+				}
 
-		//   .quality {
-		//     &__number {
-		//       color: #333333;
+				&:nth-child(3) {
+					.shipping-payment__caption {
+						img {
+							width: 50px;
+							margin-bottom: 5px;
+						}
+					}
+				}
 
-		//       font-size: 18px;
-		//       font-weight: 500;
-		//       line-height: 24px;
-		//       text-transform: uppercase;
-		//     }
+				&:nth-child(4) {
+					.shipping-payment__caption {
+						margin-bottom: 15px;
 
-		//     &__title {
-		//       color: #333333;
-		//       font-size: 16px;
-		//       font-weight: 500;
-		//       line-height: 24px;
-		//     }
+						img {
+							width: 54px;
+						}
+					}
+				}
 
-		//     &__text {
-		//       color: #333333;
-		//       font-size: 12px;
-		//     }
-		//   }
-		// }
+				&:nth-child(5) {
+					.shipping-payment__caption {
+						img {
+							width: 50px;
+						}
+					}
+				}
 
-		// h1.title {
-		//   color: #262626;
-		//   font-size: 30px;
-		//   font-weight: 500;
-		//   line-height: 36px;
-		//   margin-bottom: 1rem;
-		// }
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
 
-		// &__items {
-		//   width: 100%;
-		// }
+			// .shipping-payment__caption
+			&__caption {
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 26px;
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 9px;
+
+				img {
+					margin-bottom: 8px;
+				}
+			}
+
+			// .shipping-payment__text
+			&__text {
+				padding-left: 0;
+
+				b {
+					margin: 2px 0 0;
+				}
+
+				p {
+					margin-bottom: 0;
+
+					&:not(:last-of-type) {
+						margin-bottom: 15px;
+					}
+
+					+strong {
+						margin-top: 15px;
+					}
+				}
+
+				strong {
+					max-width: calc(100% - 4px);
+				}
+			}
+
+			// .shipping-payment__ul
+			&__ul {
+				margin-bottom: 4px;
+
+				li {
+					color: black;
+					margin-left: 22px;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 22px;
+					margin-bottom: 20px;
+
+					b {
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 22px;
+					}
+
+					&:before {
+						left: -14px;
+						top: 8px;
+					}
+
+					img {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			// .shipping-payment__table
+			&__table {}
+
+			// .shipping-payment__item
+			&__item {
+				flex-direction: column;
+				align-items: baseline;
+				height: auto;
+				padding: 16px 8px 14px 16px;
+
+				&:not(:last-of-type) {
+					margin-top: 6px;
+				}
+
+				span {
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 20px
+				}
+			}
+		}
+
+		.documentation {
+			.doc {
+
+				// .doc_loading
+				&_loading {
+					border-left: unset;
+					margin-left: 0;
+					padding-left: 43px;
+					padding-bottom: 0;
+
+					.icon {
+
+						// .icon_doc
+						&_doc {
+							width: 32px;
+							height: 32px;
+							background-position: 0 50%;
+						}
+					}
+				}
+
+				// .doc_loading
+				&_loading {}
+			}
+		}
 	}
 
 	@media screen and (max-width: 480px) {}

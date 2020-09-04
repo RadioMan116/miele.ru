@@ -2,14 +2,14 @@
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
   <desc>Created with Lunacy</desc>
   <g id="quality">
-    <path d="M23.25 0L0.75 0C0.336 0 0 0.336 0 0.75L0 17.25C0 17.664 0.336 18 0.75 18L10.5 18L10.5 16.5L1.5 16.5L1.5 1.5L22.5 1.5L22.5 16.5L21 16.5L21 18L23.25 18C23.664 18 24 17.664 24 17.25L24 0.75C24 0.336 23.664 0 23.25 0" transform="translate(0 1.000009)" id="Fill-1" fill="#BA1212" stroke="none" />
-    <path d="M0 4.5C0 2.01825 2.01825 0 4.5 0C6.98175 0 9 2.01825 9 4.5C9 5.4172 8.72325 6.27 8.25 6.9825L8.25 14.2485C8.25 14.5327 8.0895 14.7922 7.83525 14.9198C7.7295 14.9722 7.614 14.9985 7.5 14.9985C7.341 14.9985 7.18275 14.9475 7.05 14.8485L4.5 12.936L1.95 14.8485C1.722 15.018 1.41825 15.0465 1.16475 14.9198C0.9105 14.7922 0.75 14.5327 0.75 14.2485L0.75 6.9825C0.27675 6.27 0 5.4172 0 4.5ZM1.5 4.5C1.5 6.1545 2.8455 7.5 4.5 7.5C6.1545 7.5 7.5 6.1545 7.5 4.5C7.5 2.8455 6.1545 1.5 4.5 1.5C2.8455 1.5 1.5 2.8455 1.5 4.5ZM6.75 12.7485L4.95 11.3985C4.68375 11.1982 4.31625 11.1982 4.05 11.3985L2.25 12.7485L2.25 8.391C2.913 8.77575 3.68025 9 4.5 9C5.31975 9 6.087 8.77575 6.75 8.391L6.75 12.7485Z" transform="translate(11.25 8.501519)" id="Fill-3" fill="#BA1212" fill-rule="evenodd" stroke="none" />
-    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 4)" id="Fill-6" fill="#666666" stroke="none" />
-    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(3 7)" id="Fill-8" fill="#666666" stroke="none" />
-    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(6 7)" id="Fill-9" fill="#666666" stroke="none" />
-    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 10.75)" id="Fill-10" fill="#666666" stroke="none" />
-    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 13.75)" id="Fill-11" fill="#666666" stroke="none" />
-    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(19.5 4)" id="Fill-12" fill="#666666" stroke="none" />
-    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(16.5 4)" id="Fill-13" fill="#666666" stroke="none" />
+    <path d="M23.25 0L0.75 0C0.336 0 0 0.336 0 0.75L0 17.25C0 17.664 0.336 18 0.75 18L10.5 18L10.5 16.5L1.5 16.5L1.5 1.5L22.5 1.5L22.5 16.5L21 16.5L21 18L23.25 18C23.664 18 24 17.664 24 17.25L24 0.75C24 0.336 23.664 0 23.25 0" transform="translate(0 1.0000094)" id="Fill-1" fill="#8C0014" stroke="none" />
+    <path d="M0 4.5C0 2.01825 2.01825 0 4.5 0C6.98175 0 9 2.01825 9 4.5C9 5.4172 8.72325 6.27 8.25 6.9825L8.25 14.2485C8.25 14.5327 8.0895 14.7922 7.83525 14.9198C7.7295 14.9722 7.614 14.9985 7.5 14.9985C7.341 14.9985 7.18275 14.9475 7.05 14.8485L4.5 12.936L1.95 14.8485C1.722 15.018 1.41825 15.0465 1.16475 14.9198C0.9105 14.7922 0.75 14.5327 0.75 14.2485L0.75 6.9825C0.27675 6.27 0 5.4172 0 4.5ZM4.5 7.5C2.8455 7.5 1.5 6.1545 1.5 4.5C1.5 2.8455 2.8455 1.5 4.5 1.5C6.1545 1.5 7.5 2.8455 7.5 4.5C7.5 6.1545 6.1545 7.5 4.5 7.5ZM6.75 12.7485L4.95 11.3985C4.68375 11.1982 4.31625 11.1982 4.05 11.3985L2.25 12.7485L2.25 8.391C2.913 8.77575 3.68025 9 4.5 9C5.31975 9 6.087 8.77575 6.75 8.391L6.75 12.7485Z" transform="translate(11.25 8.501519)" id="Fill-3" fill="#8C0014" fill-rule="evenodd" stroke="none" />
+    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 4)" id="Fill-6" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(3 7)" id="Fill-8" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(6 7)" id="Fill-9" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 10.75)" id="Fill-10" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L6 1.5L6 0L0 0L0 1.5Z" transform="translate(3 13.75)" id="Fill-11" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(19.5 4)" id="Fill-12" fill="#A6A6A6" stroke="none" />
+    <path d="M0 1.5L1.5 1.5L1.5 0L0 0L0 1.5Z" transform="translate(16.5 4)" id="Fill-13" fill="#A6A6A6" stroke="none" />
   </g>
 </svg>

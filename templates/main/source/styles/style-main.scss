@@ -85,11 +85,10 @@ img {
 }
 
 h1.title {
-	color: #333333;
-	font-family: "Roboto Condensed";
+	font-family: HelveticaNeueCyr-Light;
 	font-size: 30px;
 	font-weight: 400;
-	line-height: 44px;
+	line-height: 36px;
 	text-transform: uppercase;
 	width: 75%;
 	margin-bottom: 20px;
@@ -227,16 +226,14 @@ input:required {
 
 @media screen and (max-width: 767px) {
 	h1.title {
-		font-size: 30px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: 42px;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
 		letter-spacing: normal;
 		text-align: left;
-		color: #262626;
 		width: 100%;
 		background: none;
+		margin: 14px 0 10px;
 
 		&.shipping-payment__title {
 			padding: 15px 0;

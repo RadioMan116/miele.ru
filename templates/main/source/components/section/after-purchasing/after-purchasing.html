@@ -1,0 +1,83 @@
+<div class="d-flex flex-column-reverse flex-md-row">
+	<div class="col-md-3">
+		{% include 'section/sidebar/sidebar.html' %}
+	</div>
+	<div class="col-md-9">
+		<div class="breadcrumbs">
+			<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem">
+					<a href="/" title="Главная" itemprop="item">
+						<span itemprop="name">
+							Miele
+						</span>
+					</a>
+					<meta itemprop="position" content="1">
+				</div>
+				<div class="breadcrumbs__sep">»</div>
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem">
+					<span itemprop="name">После приобретения</span>
+					<a itemprop="item" href="/delivery-and-payment/" title="После приобретения"></a>
+					<meta itemprop="position" content="2">
+				</div>
+			</div>
+		</div>
+		<h1 class="title">
+			После приобретения
+		</h1>
+		<div class="text-default">
+			<div class="after-purchasing">
+				<div class="after-purchasing__item">
+					<picture>
+						<source media="(max-width: 767px)" srcset="{{src}}after-purchasing-767.jpeg">
+						<img src="{{src}}after-purchasing.jpeg" alt="" class="after-purchasing__banner lazyload">
+					</picture>
+					<div class="after-purchasing__desc">
+						<div class="after-purchasing__caption">Доставка на дом</div>
+						<!-- /.after-purchasing__caption -->
+						<div class="after-purchasing__ul">
+							<li>Мы можем доставить бытовую технику с понедельника по субботу в согласованное с вами
+								время.</li>
+							<li>Квалифицированная команда доставит продукцию Miele к месту установки.</li>
+							<li>Мы распакуем технику и уберём все упаковочные материалы, чтобы приборами Miele можно
+								было сразу же начать пользоваться.</li>
+						</div>
+						<!-- /.after-purchasing__ul -->
+						<div class="after-purchasing__link">
+							Подробнее о доставке
+						</div>
+						<!-- /.after-purchasing__link -->
+					</div>
+					<!-- /.after-purchasing__desc -->
+				</div>
+				<!-- /.after-purchasing__item -->
+				<div class="after-purchasing__item">
+					<picture>
+						<source media="(max-width: 767px)" srcset="{{src}}after-purchasing-2-767.jpeg">
+						<img src="{{src}}after-purchasing-2.jpeg" alt="" class="after-purchasing__banner lazyload">
+					</picture>
+					<div class="after-purchasing__desc">
+						<div class="after-purchasing__caption">Установка и подключение техники Miele</div>
+						<!-- /.after-purchasing__caption -->
+						<div class="after-purchasing__text">
+							Мы предлагаем услугу профессиональной установки техники Miele — вы сможете быть уверены в
+							том, что техника Miele
+							прослужит долго. Сервисный специалист установит и подключит технику, а затем расскажет, как
+							с ней обращаться, что
+							позволит эффективнее использовать её возможности.
+						</div>
+						<!-- /.after-purchasing__text -->
+						<div class="after-purchasing__link">
+							Подробнее о доставке
+						</div>
+						<!-- /.after-purchasing__link -->
+					</div>
+					<!-- /.after-purchasing__desc -->
+				</div>
+				<!-- /.after-purchasing__item -->
+			</div>
+			<!-- /.after-purchasing -->
+		</div>
+	</div>
+</div>
