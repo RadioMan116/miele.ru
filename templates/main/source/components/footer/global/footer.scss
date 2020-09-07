@@ -550,6 +550,10 @@
 				// display: flex;
 				// flex-wrap: wrap;
 				font-size: 13px;
+
+				&:first-of-type {
+					margin-bottom: 16px;
+				}
 			}
 
 			&_first {
@@ -570,6 +574,7 @@
 
 			&:first-of-type {
 				margin-top: 19px;
+				margin-bottom: 6px;
 			}
 		}
 

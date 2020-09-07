@@ -514,10 +514,15 @@
 
 	@media screen and (max-width: 767px) {
 		.yandex {
+			padding-top: 21px !important;
 
 			// padding: 10% 5% 9% !important;
 			.yandex__pic {
 				margin-bottom: 22px !important;
+			}
+
+			&__logo {
+				width: 157px;
 			}
 		}
 
@@ -528,6 +533,14 @@
 			&__worktime {
 				margin: 5px 0 15px;
 			}
+		}
+
+		.work-link__a {
+			margin-left: 50px;
+		}
+
+		.d-flex & {
+			margin-bottom: 33px;
 		}
 	}
 
