@@ -1,6 +1,4 @@
 .return-exchange {
-
-
 	&__form {
 		margin-top: 22px;
 		margin-right: auto;
@@ -35,11 +33,11 @@
 		height: 46px;
 		border-radius: 2px;
 		background-color: #ffffff;
-		border: solid 1px #cbcbcb;
+		border: solid 1px #ececec;
 		max-width: 372px;
 		flex-grow: 1;
 		padding-left: 15px;
-		color: #2e2e2e;
+		color: #4b4b4b;
 		font-family: Arial;
 		font-size: 14px;
 		font-weight: 400;
@@ -51,10 +49,11 @@
 		height: 124px;
 		border-radius: 2px;
 		background-color: #ffffff;
-		border: solid 1px #cbcbcb;
+		border: solid 1px #ececec;
 		resize: none;
 		flex-grow: 1;
 		padding-left: 15px;
+		color: #4b4b4b;
 	}
 
 	&__required {
@@ -99,7 +98,6 @@
 		flex-direction: column;
 
 		label {
-
 			&.return-exchange__label {
 				margin-left: 25px;
 			}
@@ -126,7 +124,6 @@
 		justify-content: center;
 		align-self: baseline;
 		max-width: 100%;
-
 
 		input[type=file] {
 			opacity: 0;
@@ -173,7 +170,6 @@
 			margin-bottom: 5px;
 
 			// padding: 5px;
-
 			span {
 				display: inline-block;
 				height: 28px;
@@ -204,12 +200,7 @@
 			flex-direction: column;
 			align-items: baseline;
 		}
-
 	}
-
-
-
-
 
 	@media screen and (max-width: 767px) {
 		&__form {
@@ -219,8 +210,6 @@
 				width: unset;
 			}
 		}
-
-
 	}
 
 	@media screen and (max-width: 767px) {
@@ -269,7 +258,6 @@
 				max-width: 230px;
 				overflow: hidden;
 			}
-
 		}
 
 		&__input {
@@ -291,6 +279,5 @@
 			height: 81px;
 			resize: none;
 		}
-
 	}
 }

@@ -1,32 +1,348 @@
-.warranty {
+.service {
+	.shipping-payment {
 
+		// .shipping-payment__banner
+		&__banner {}
 
-  &__button {
-    @include button($padding: 12px 18px);
-    color: #ffffff !important;
-    font-family: "Roboto Condensed";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 22px !important;
-    width: 260px;
+		// .shipping-payment__row
+		&__row {
+			margin-bottom: 39px;
 
-  }
+			&:first-of-type {
+				max-width: 95%;
+			}
 
-  @media screen and (max-width: 768px) {
-    &__button {
-      @include button($padding: 12px 18px);
+			&.info {
+				margin-top: 15px;
+			}
+		}
 
-      margin-bottom: 0 !important;
+		// .shipping-payment__caption
+		&__caption {}
 
+		// .shipping-payment__text
+		&__text {
+			b {
+				margin-top: 2px;
+			}
+		}
 
-    }
-  }
+		// .shipping-payment__info
+		&__info {
+			font-size: 17px;
+			font-weight: 700;
+			line-height: 28px;
+			margin: 0 0 26px;
+			letter-spacing: .6px;
+		}
 
-  @media screen and (max-width: 480px) {
-    iframe {
-      height: 270px;
-    }
-  }
+		// .shipping-payment__column
+		&__column {
+			display: flex;
+		}
+
+		// .shipping-payment__col
+		&__col {
+			display: flex;
+			flex-direction: column;
+			background: #f6f6f6;
+			padding: 24px;
+			width: calc(50% - 11px);
+			margin-right: 22px;
+			max-width: 424px;
+		}
+
+		// .shipping-payment__subtitle
+		&__subtitle {
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			margin-bottom: 16px;
+		}
+
+		// .shipping-payment__link
+		&__link {
+			font-family: "HelveticaNeueCyr-Bold";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			margin-bottom: 8px;
+		}
+
+		// .shipping-payment__desc
+		&__desc {
+			display: flex;
+			flex-direction: column;
+
+			i {
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0.2px;
+				margin-bottom: 14px;
+			}
+
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-bottom: 6px;
+
+				b {
+					line-height: 22px;
+					font-family: "HelveticaNeueCyr-Bold";
+					margin: 0;
+				}
+
+				&:first-of-type {
+					margin-bottom: 18px;
+				}
+
+				&:last-of-type {
+					b {
+						display: block;
+					}
+				}
+			}
+		}
+
+		// .shipping-payment__table
+		&__table {}
+
+		// .shipping-payment__item
+		&__item {}
+
+		// .shipping-payment__service
+		&__service {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 15px;
+			max-width: 870px;
+			margin-bottom: 38px;
+		}
+
+		// .shipping-payment__top
+		&__top {
+			background: #f6f6f6;
+			display: flex;
+		}
+
+		// .shipping-payment__service-name
+		&__service-name {
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			padding: 23px 4px 25px 21px;
+		}
+
+		// .shipping-payment__bottom
+		&__bottom {
+			background: #ececec;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 16px;
+		}
+
+		// .shipping-payment__service-text
+		&__service-text {
+			color: #8c0014;
+			font-family: "HelveticaNeueCyr-Bold";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 22px;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		// .shipping-payment__service-tel
+		&__service-tel {
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 36px;
+			text-align: center;
+			margin-right: 18px;
+			margin-bottom: 8px;
+		}
+
+		// .shipping-payment__map
+		&__map {
+			margin-top: 33px;
+			max-width: 872px;
+			margin-bottom: 8px;
+
+			.warranty {
+
+				// .warranty__map
+				&__map {
+					height: 440px;
+				}
+
+				// .warranty__map-point
+				&__map-point {}
+			}
+
+			.map-popup {
+				display: flex;
+				flex-direction: column;
+
+				// .map-popup__title
+				&__title {
+					font-family: "HelveticaNeueCyr-Roman";
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 24px;
+					margin-bottom: 4px;
+				}
+
+				// .map-popup__text
+				&__text {
+					font-family: "HelveticaNeueCyr-Roman";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 22px;
+					display: flex;
+					flex-direction: column;
+					margin-bottom: 6px;
+				}
+			}
+
+			ymaps[class$="balloon__content"] {
+				width: 270px;
+				background: #ffffff;
+				box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+				margin-right: 0;
+				padding: 16px 24px 16px 16px;
+
+				ymaps {
+					max-width: 100%;
+					width: 100%;
+				}
+			}
+
+			ymaps[class$="balloon__close"] {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+
+		.lazyload {}
+
+		.documentation {}
+
+		.doc {
+
+			// .doc_loading
+			&_loading {}
+
+			// .doc_loading
+			&_loading {}
+		}
+
+		.icon {
+
+			// .icon_doc
+			&_doc {}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-top: -9px;
+
+		.shipping-payment {
+			&__banner {
+				margin-bottom: 30px;
+			}
+
+			&__text {
+				&:first-of-type {}
+			}
+
+			&__row {
+				&:first-of-type {
+					max-width: 100%;
+
+					.shipping-payment__text {
+						p {
+							line-height: 22px;
+						}
+
+						b {
+							line-height: 22px;
+							margin: 14px 0 0;
+						}
+					}
+				}
+
+				&:not(:first-of-type) {
+					margin-bottom: 5px;
+				}
+			}
+
+			&__info {
+				display: flex;
+				flex-direction: column;
+				margin: 16px 0;
+			}
+
+			&__column {
+				flex-direction: column;
+				margin-left: -16px;
+				margin-right: -16px;
+			}
+
+			&__col {
+				width: 100%;
+				margin-bottom: 6px;
+			}
+
+			&__top {
+				flex-wrap: wrap;
+				padding-top: 9px;
+				padding-bottom: 23px;
+			}
+
+			&__service {
+				margin-left: -16px;
+				margin-right: -16px;
+				width: auto;
+				margin-bottom: 27px;
+
+				&-name {
+					padding: 16px 2px 0 24px;
+				}
+
+				&-text {
+					margin-bottom: 13px;
+				}
+
+				&-tel {
+					font-size: 30px;
+					margin-right: 0;
+					margin-bottom: 5px;
+				}
+			}
+
+			&__map {
+				margin-top: 24px;
+
+				.warranty__map {
+					height: 270px;
+					overflow: hidden;
+					margin-bottom: 31px;
+				}
+			}
+
+			&__item {
+				padding: 13px 8px 8px 16px;
+			}
+		}
+	}
 }

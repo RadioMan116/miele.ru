@@ -623,7 +623,7 @@
 				justify-content: flex-end;
 				min-width: unset;
 				align-self: unset;
-				margin-right: 0px;
+				margin-right: -4px;
 				flex-grow: 0;
 				flex-direction: row-reverse;
 				padding-right: 0;
@@ -805,6 +805,7 @@
 				order: -2;
 				background-size: 22px !important;
 				align-items: center;
+				margin-right: 4px;
 
 				+.header__mobile-tel {
 					display: none;

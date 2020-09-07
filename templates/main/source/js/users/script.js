@@ -705,7 +705,6 @@ $(document).ready(function() {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
 			// trigger: 'click',
-			distance: 15, //px or string
 			// maxWidth: 300, //px or string
 			interactive: true,
 			// leave these as they are
@@ -723,7 +722,6 @@ $(document).ready(function() {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
 			// trigger: 'click',
-			distance: 15, //px or string
 			// maxWidth: 300, //px or string
 			interactive: true,
 			// leave these as they are
@@ -741,7 +739,6 @@ $(document).ready(function() {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
 			// trigger: 'click',
-			distance: 15, //px or string
 			// maxWidth: 300, //px or string
 			interactive: true,
 			// leave these as they are
@@ -807,7 +804,6 @@ $(document).ready(function() {
 			arrow: true,
 			placement: 'right', // top, right, bottom, left
 			// trigger: 'click',
-			distance: 15, //px or string
 			maxWidth: 300, //px or string
 			interactive: true,
 			// leave these as they are
@@ -822,7 +818,7 @@ $(document).ready(function() {
 			},
 		});
 		new tippy('.tooltip', {
-			position: 'top',
+			placement: 'top',
 			content: 'Tooltip',
 			arrow: true,
 			theme: 'light',
@@ -1038,7 +1034,6 @@ $(document).ready(function() {
 			arrow: true,
 			placement: 'top', // top, right, bottom, left
 			// delay: 5, //ms
-			distance: 15, //px or string
 			maxWidth: 240, //px or string
 			// leave these as they are
 			// followCursor: true,
@@ -1052,7 +1047,7 @@ $(document).ready(function() {
 			},
 		});
 		new tippy('.tooltip', {
-			position: 'top',
+			placement: 'top',
 			content: 'Tooltip',
 			arrow: true,
 			theme: 'light'
@@ -1989,7 +1984,6 @@ $(document).ready(function() {
 		arrow: true,
 		placement: 'top', // top, right, bottom, left
 		// trigger: 'click',
-		distance: 15, //px or string
 		// maxWidth: 300, //px or string
 		interactive: true,
 		// leave these as they are
