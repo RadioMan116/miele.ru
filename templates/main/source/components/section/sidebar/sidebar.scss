@@ -418,6 +418,14 @@
 			&:nth-child(3) {
 				background: url("../images/work-3.svg") 11px 50%/24px no-repeat;
 			}
+
+			&:first-of-type {
+				@media screen and (min-width: 768px) {
+					a {
+						margin-bottom: 4px;
+					}
+				}
+			}
 		}
 
 		&:hover {
@@ -481,7 +489,7 @@
 			}
 
 			&__logo {
-				margin-bottom: 22px;
+				margin-bottom: 23px;
 			}
 
 			&__button:last-child {

@@ -124,6 +124,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		margin-right: 4px;
 	}
 
 	&__text {
@@ -384,6 +385,7 @@
 			margin: 0px;
 			width: 100%;
 			max-width: unset;
+			padding-left: 0;
 
 			.l-abuse,
 			.footer__button {
@@ -397,6 +399,7 @@
 			text-align: center;
 			justify-content: center;
 			padding: 7px 14px;
+			margin-right: 0;
 		}
 
 		.footer {

@@ -80,7 +80,7 @@
 	&__telephones {
 		display: flex;
 		align-items: center;
-		margin-right: 84px;
+		margin-right: 83px;
 		margin-left: 0px;
 
 		.telephones {
@@ -587,6 +587,7 @@
 					max-width: 225px;
 					margin-left: 0;
 					margin-right: 0;
+					margin-right: -3px;
 				}
 
 				.menu__list {
@@ -623,7 +624,6 @@
 				justify-content: flex-end;
 				min-width: unset;
 				align-self: unset;
-				margin-right: -4px;
 				flex-grow: 0;
 				flex-direction: row-reverse;
 				padding-right: 0;
@@ -746,7 +746,7 @@
 				display: flex;
 				justify-content: flex-start;
 				align-items: center;
-				margin: 0 22px 0 0px;
+				margin: 0 20px 0 0px;
 				width: auto;
 				width: 22px;
 				height: 22px;

@@ -6,6 +6,7 @@
 	text-align: left;
 	margin-top: 16px;
 	width: 100%;
+	padding-left: 3px;
 
 	div {
 		display: flex;
@@ -30,15 +31,16 @@
 	}
 
 	&__sep {
-		margin: 0 5px;
+		margin: 0 7px;
 	}
 
 	@media screen and (max-width: 767px) {
 		line-height: 17px;
 		margin-top: 18px;
+		padding-left: 0;
 
 		&__sep {
-			margin: 0 3px;
+			margin: 0px 5px;
 		}
 	}
 }

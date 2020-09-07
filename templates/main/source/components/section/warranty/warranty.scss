@@ -12,8 +12,26 @@
 				max-width: 95%;
 			}
 
+			&:not(:first-of-type) {
+				margin-bottom: 35px;
+			}
+
+			&:nth-child(3) {
+				.shipping-payment__caption span img {
+					position: static;
+				}
+
+				p {
+					max-width: 606px;
+				}
+			}
+
+			&:last-of-type {
+				margin-bottom: 0px;
+			}
+
 			&.info {
-				margin-top: 15px;
+				margin-top: 18px;
 			}
 		}
 
@@ -81,7 +99,7 @@
 				font-weight: 400;
 				line-height: 22px;
 				letter-spacing: 0.2px;
-				margin-bottom: 14px;
+				margin-bottom: 11px;
 			}
 
 			span {
@@ -98,6 +116,7 @@
 
 				&:first-of-type {
 					margin-bottom: 18px;
+					margin-top: 2px;
 				}
 
 				&:last-of-type {
@@ -258,7 +277,7 @@
 
 		.shipping-payment {
 			&__banner {
-				margin-bottom: 30px;
+				margin-bottom: 25px;
 			}
 
 			&__text {
@@ -268,6 +287,7 @@
 			&__row {
 				&:first-of-type {
 					max-width: 100%;
+					margin-bottom: 33px;
 
 					.shipping-payment__text {
 						p {
@@ -283,6 +303,10 @@
 
 				&:not(:first-of-type) {
 					margin-bottom: 5px;
+				}
+
+				&:last-of-type {
+					margin-bottom: 0;
 				}
 			}
 
@@ -301,12 +325,19 @@
 			&__col {
 				width: 100%;
 				margin-bottom: 6px;
+				padding: 24px 20px 20px 24px;
 			}
 
 			&__top {
 				flex-wrap: wrap;
 				padding-top: 9px;
 				padding-bottom: 23px;
+			}
+
+			&__desc {
+				i {
+					margin-bottom: 15px;
+				}
 			}
 
 			&__service {
@@ -341,7 +372,11 @@
 			}
 
 			&__item {
-				padding: 13px 8px 8px 16px;
+				padding: 13px 8px 10px 16px;
+			}
+
+			&__table {
+				margin-bottom: 0;
 			}
 		}
 	}

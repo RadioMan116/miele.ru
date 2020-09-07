@@ -1,5 +1,6 @@
 .after-purchasing {
 	padding-top: 5px;
+	padding-left: 1px;
 
 	// .after-purchasing__item
 	&__item {
@@ -121,6 +122,7 @@
 			font-size: 20px;
 			font-weight: 400;
 			line-height: 26px;
+			margin-bottom: 17px;
 		}
 
 		// .after-purchasing__ul
@@ -131,10 +133,10 @@
 				line-height: 22px;
 				color: #ffffff;
 				margin-left: 18px;
-				max-width: 91%;
+				max-width: 92%;
 
 				&:not(:last-of-type) {
-					margin-bottom: 18px;
+					margin-bottom: 17px;
 				}
 			}
 		}
@@ -149,6 +151,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 22px;
+			max-width: 100%;
 		}
 
 		.lazyload {}
