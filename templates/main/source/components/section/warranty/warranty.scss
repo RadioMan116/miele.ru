@@ -50,8 +50,9 @@
 			font-size: 17px;
 			font-weight: 700;
 			line-height: 28px;
-			margin: 0 0 26px;
+			margin:2px 0 24px;
 			letter-spacing: .6px;
+			a{margin-right: 3px;}
 		}
 
 		// .shipping-payment__column
@@ -128,7 +129,9 @@
 		}
 
 		// .shipping-payment__table
-		&__table {}
+		&__table {
+			margin-top: 11px;
+		}
 
 		// .shipping-payment__item
 		&__item {}

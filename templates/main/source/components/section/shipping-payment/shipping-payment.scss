@@ -175,6 +175,9 @@
 
 			b {
 				margin: 9px 0 0px;
+				a{
+					font-family: HelveticaNeueCyr-Roman;
+				}
 			}
 
 			strong {
@@ -189,6 +192,9 @@
 					letter-spacing: 0;
 				}
 			}
+		}
+		&__number{
+			margin-bottom: 0;
 		}
 	}
 
