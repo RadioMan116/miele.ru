@@ -310,6 +310,13 @@
 
 				&:last-of-type {
 					margin-bottom: 0;
+					.shipping-payment__caption{
+				
+						margin-bottom: 12px;
+						span{
+							margin-bottom: -4px
+						}
+					}
 				}
 
 				&:nth-child(3) .shipping-payment__caption span img {
