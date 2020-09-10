@@ -50,9 +50,12 @@
 			font-size: 17px;
 			font-weight: 700;
 			line-height: 28px;
-			margin:2px 0 24px;
+			margin: 2px 0 24px;
 			letter-spacing: .6px;
-			a{margin-right: 3px;}
+
+			a {
+				margin-right: 3px;
+			}
 		}
 
 		// .shipping-payment__column
@@ -80,13 +83,14 @@
 			margin-bottom: 16px;
 		}
 
-		// .shipping-payment__link
-		&__link {
+		// .shipping-payment__name
+		&__name {
 			font-family: "HelveticaNeueCyr-Bold";
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 22px;
 			margin-bottom: 8px;
+			color: $base;
 		}
 
 		// .shipping-payment__desc
@@ -310,10 +314,11 @@
 
 				&:last-of-type {
 					margin-bottom: 0;
-					.shipping-payment__caption{
-				
+
+					.shipping-payment__caption {
 						margin-bottom: 12px;
-						span{
+
+						span {
 							margin-bottom: -4px
 						}
 					}
