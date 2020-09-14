@@ -5972,6 +5972,7 @@
 
 				&__sale {
 					justify-content: space-between;
+					margin-bottom: 0;
 				}
 
 				&__pic {
@@ -5986,8 +5987,13 @@
 
 			.special-offers__text {
 				padding: 0 !important;
-				margin-top: 14px;
-				margin-bottom: 38px;
+				margin-top: 17px;
+				margin-bottom: 18px;
+				font-size: 14px;
+
+				p {
+					margin-bottom: 0;
+				}
 			}
 
 			.special-offers__buy {
@@ -6014,6 +6020,7 @@
 
 			.swiper {
 				max-height: 233px;
+				margin-bottom: 0;
 
 				.swiper-container {
 					margin-bottom: 0 !important;
