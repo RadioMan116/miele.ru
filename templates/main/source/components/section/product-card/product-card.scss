@@ -5825,7 +5825,7 @@
 
 			.diagram__tabs {
 				border-radius: 3px;
-				border: 1px solid #a6a6a6;
+				border: 1px solid #c4c4c4;
 				background-color: #ffffff;
 				color: #2e2e2e;
 				font-size: 14px;
@@ -5912,9 +5912,9 @@
 
 		.special-offers {
 			margin: 35px 0 0px;
-			padding-bottom: 37px;
+			// padding-bottom: 37px;
 			padding-top: 0;
-			padding-bottom: 32px;
+			padding-bottom: 12px;
 
 			.container {
 				margin: 0;
@@ -5959,8 +5959,25 @@
 				font-weight: 400;
 			}
 
-			.special-offers__slide {
-				padding: 16px 19px 15px;
+			.special-offers {
+				&__slide {
+					padding: 8px 8px 16px;
+					width: 209px;
+				}
+
+				&__fav,
+				&__compare {
+					display: none;
+				}
+
+				&__sale {
+					justify-content: space-between;
+				}
+
+				&__pic {
+					width: 193px;
+					height: 136px;
+				}
 			}
 
 			.catalog__pic {
@@ -5992,6 +6009,7 @@
 				right: unset;
 				margin-top: 2rem;
 				top: unset;
+				display: none;
 			}
 
 			.swiper {
@@ -6002,12 +6020,20 @@
 
 					.swiper-slide {
 						height: auto;
+
+						&:not(:first-of-type) {
+							display: none;
+						}
 					}
 				}
 
-				// .special-offers__text {
-				// 	margin-bottom: 38px;
-				// }
+				.special-offers__text {
+					margin-bottom: 17px;
+				}
+			}
+
+			.announcing {
+				display: none;
 			}
 		}
 
@@ -6622,13 +6648,13 @@
 					width: 100%;
 					margin-right: 0;
 					border-radius: 2px;
-					border: 1px solid #a6a6a6;
+					border: 1px solid #c4c4c4;
 					background-color: #fff;
 					padding: 9px 23px 10px 12px;
 					margin-bottom: 13px;
 
 					&.ui-tabs-active {
-						border: 1px solid #a6a6a6;
+						border: 1px solid #c4c4c4;
 					}
 
 					&[aria-selected="true"] {
