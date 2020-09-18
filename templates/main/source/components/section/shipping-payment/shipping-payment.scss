@@ -23,7 +23,7 @@
 		flex-direction: column;
 
 		a {
-			text-decoration: none !important;
+			// text-decoration: none !important;
 		}
 
 		&__banner {
@@ -175,8 +175,9 @@
 
 			b {
 				margin: 9px 0 0px;
-				a{
-					font-family: HelveticaNeueCyr-Roman;
+
+				a {
+					// font-family: HelveticaNeueCyr-Roman;
 				}
 			}
 
@@ -190,10 +191,15 @@
 
 				a {
 					letter-spacing: 0;
+
+					&:hover {
+						text-decoration: underline !important;
+					}
 				}
 			}
 		}
-		&__number{
+
+		&__number {
 			margin-bottom: 0;
 		}
 	}
@@ -253,6 +259,12 @@
 
 			&+.doc_loading {
 				border-top: 0 !important;
+			}
+
+			&:hover {
+				span {
+					text-decoration: underline;
+				}
 			}
 		}
 	}

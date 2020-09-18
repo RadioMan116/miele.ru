@@ -83,6 +83,14 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: 16px;
+		color: #ffffff;
+
+		&:hover {
+			background-color: #b90c24;
+			-webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .16);
+			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .16);
+			text-decoration: none;
+		}
 	}
 
 	// .after-purchasing__text
