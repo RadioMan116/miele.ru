@@ -1,34 +1,34 @@
-let gulp = require('gulp');
-let gulpLoadPlugins = require('gulp-load-plugins');
+let gulp = require("gulp");
+let gulpLoadPlugins = require("gulp-load-plugins");
 let imagemin = require("gulp-imagemin");
 let imageminPngquant = require("imagemin-pngquant");
 let imageminZopfli = require("imagemin-zopfli");
 let imageminMozjpeg = require("imagemin-mozjpeg");
 let imageminGiflossy = require("imagemin-giflossy");
-let mqPacker = require('css-mqpacker');
+let mqPacker = require("css-mqpacker");
 let plugins = gulpLoadPlugins();
-let browserSync = require('browser-sync').create();
+let browserSync = require("browser-sync").create();
 
-var args = require('yargs').argv;
-var config = require('./' + (args.template ? args.template : 'main') + '.config.json').config;
+var args = require("yargs").argv;
+var config = require("./" + (args.template ? args.template : "main") + ".config.json").config;
 
 var configWebserver = {
 	server: {
 		baseDir: config.src.server
 	},
 	open: false,
-	host: 'localhost',
-	logPrefix: 'FrontEnd Builder'
+	host: "localhost",
+	logPrefix: "FrontEnd Builder"
 };
 
-gulp.task('webserver', () => {
+gulp.task("webserver", () => {
 	browserSync.init(configWebserver);
 });
 
-gulp.task('mergeJson', () => {
+gulp.task("mergeJson", () => {
 	gulp.src(config.src.source.json.src)
 		.pipe(plugins.mergeJson({
-			fileName: 'data.json',
+			fileName: "data.json",
 			edit: (parsedJson, file) => {
 				if (parsedJson.someValue) {
 					delete parsedJson.otherValue;
@@ -40,7 +40,7 @@ gulp.task('mergeJson', () => {
 		.pipe(gulp.dest(config.src.source.json.dest));
 });
 
-gulp.task('js', () => {
+gulp.task("js", () => {
 
 	gulp.src(config.src.source.js.src)
 		.pipe(plugins.plumber({
@@ -49,25 +49,25 @@ gulp.task('js', () => {
 			}
 		}))
 		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.concat('script.js'))
-		.pipe(plugins.rename('script.min.js'))
+		.pipe(plugins.concat("script.js"))
+		.pipe(plugins.rename("script.min.js"))
 		.pipe(plugins.if(config.compress.js, plugins.uglify()))
-		.pipe(plugins.sourcemaps.write('.'))
+		.pipe(plugins.sourcemaps.write("."))
 		.pipe(gulp.dest(config.src.build.js.dest))
-		.on('end', browserSync.reload);
+		.on("end", browserSync.reload);
 
 	gulp.src(config.src.source.js.copy)
 		.pipe(gulp.dest(config.src.build.js.dest));
 
 });
 
-gulp.task('css', () => {
+gulp.task("css", () => {
 
-	var cssnano = require('cssnano');
-	var inlineSvg = require('postcss-inline-svg');
-	var svgo = require('postcss-svgo');
-	var cssnext = require('postcss-cssnext');
-	var imageInliner = require('postcss-image-inliner');
+	var cssnano = require("cssnano");
+	var inlineSvg = require("postcss-inline-svg");
+	var svgo = require("postcss-svgo");
+	var cssnext = require("postcss-cssnext");
+	var imageInliner = require("postcss-image-inliner");
 
 
 
@@ -81,14 +81,14 @@ gulp.task('css', () => {
 		}),
 
 		imageInliner({
-			assetPaths: ['https://icongr.am']
+			assetPaths: ["https://icongr.am"]
 		}),
 		svgo,
 		mqPacker({
 			sort: sortMediaQueries
 		}),
 		cssnano({
-			'zindex': false
+			"zindex": false
 		})
 	];
 
@@ -101,8 +101,8 @@ gulp.task('css', () => {
 		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.sassGlob({
 			ignorePaths: [
-				'./templates/main/source/styles/base/variables.scss',
-				'./templates/main/source/styles/base/mixins.scss'
+				"./templates/main/source/styles/base/variables.scss",
+				"./templates/main/source/styles/base/mixins.scss"
 			]
 		}))
 		.pipe(plugins.sass())
@@ -110,17 +110,17 @@ gulp.task('css', () => {
 		// .pipe(plugins.cssUrlChange({
 		// 	prepend: '../images/'
 		// }))
-		.pipe(plugins.sourcemaps.write('.'))
+		.pipe(plugins.sourcemaps.write("."))
 		.pipe(gulp.dest(config.src.build.css.dest))
 		.pipe(browserSync.reload({ stream: true }));
 });
 
 var configHtml = {
-	'indent_size': 1,
-	'indent_char': '\t',
-	'max_char': 78,
-	'brace_style': 'expand',
-	'unformatted': ['sub', 'sup', 'b', 'u']
+	"indent_size": 1,
+	"indent_char": "\t",
+	"max_char": 78,
+	"brace_style": "expand",
+	"unformatted": ["sub", "sup", "b", "u"]
 };
 
 // De-caching for Data files
@@ -129,7 +129,7 @@ function requireUncached($module) {
 	return require($module);
 }
 
-gulp.task('ajax', () => {
+gulp.task("ajax", () => {
 	return gulp.src(config.src.source.ajax.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
@@ -152,7 +152,7 @@ gulp.task('ajax', () => {
 
 });
 
-gulp.task('nunjucks', () => {
+gulp.task("nunjucks", () => {
 
 	return gulp.src(config.src.source.html.src)
 		.pipe(plugins.plumber({
@@ -173,11 +173,11 @@ gulp.task('nunjucks', () => {
 		}))
 		.pipe(plugins.htmlPrettify(configHtml))
 		.pipe(gulp.dest(config.src.build.dest))
-		.on('end', browserSync.reload);
+		.on("end", browserSync.reload);
 
 });
 
-gulp.task('fonts', () => {
+gulp.task("fonts", () => {
 	return gulp.src(config.src.source.fonts.src)
 		.pipe(plugins.changedInPlace())
 		.pipe(plugins.plumber({
@@ -188,7 +188,7 @@ gulp.task('fonts', () => {
 		.pipe(gulp.dest(config.src.build.fonts.dest));
 });
 
-gulp.task('data', () => {
+gulp.task("data", () => {
 	return gulp.src(config.src.source.data.src)
 		.pipe(plugins.changedInPlace())
 		.pipe(plugins.plumber({
@@ -199,7 +199,7 @@ gulp.task('data', () => {
 		.pipe(gulp.dest(config.src.build.data.dest));
 });
 
-gulp.task('images', () => {
+gulp.task("images", () => {
 
 	return gulp.src(config.src.source.images.src)
 		.pipe(plugins.plumber({
@@ -238,10 +238,10 @@ gulp.task('images', () => {
 			})
 		])))
 		.pipe(gulp.dest(config.src.build.images.dest))
-		.on('end', browserSync.reload);
+		.on("end", browserSync.reload);
 });
 
-gulp.task('svg', () => {
+gulp.task("svg", () => {
 	return gulp.src(config.src.source.svg.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
@@ -264,95 +264,95 @@ var configSvg = {
 	}
 };
 
-gulp.task('svgSprite', () => {
-	return gulp.src(config.src.source.svg.sprite.src, { cwd: '' })
+gulp.task("svgSprite", () => {
+	return gulp.src(config.src.source.svg.sprite.src, { cwd: "" })
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
 				console.log(err);
 			}
 		}))
 		.pipe(plugins.svgSprite(configSvg))
-		.on('error', function (error) {
+		.on("error", function (error) {
 			console.log(error);
 		})
 
 		.pipe(gulp.dest(config.src.source.svg.sprite.dest));
 });
 
-gulp.task('watch:nunjucks', () => {
+gulp.task("watch:nunjucks", () => {
 	plugins.watch(config.src.watch.html, () => {
-		gulp.start('nunjucks');
+		gulp.start("nunjucks");
 	});
 });
 
-gulp.task('watch:ajax', () => {
+gulp.task("watch:ajax", () => {
 	plugins.watch(config.src.watch.ajax, () => {
-		gulp.start('ajax');
+		gulp.start("ajax");
 	});
 });
 
-gulp.task('watch:css', () => {
+gulp.task("watch:css", () => {
 	plugins.watch(config.src.watch.css, () => {
-		gulp.start('css');
+		gulp.start("css");
 	});
 });
 
-gulp.task('watch:js', () => {
+gulp.task("watch:js", () => {
 	plugins.watch(config.src.watch.js, () => {
-		gulp.start('js');
+		gulp.start("js");
 	});
 });
 
-gulp.task('watch:images', () => {
+gulp.task("watch:images", () => {
 	plugins.watch(config.src.watch.images, () => {
-		gulp.start('images');
+		gulp.start("images");
 	});
 });
 
-gulp.task('watch:mergeJson', () => {
+gulp.task("watch:mergeJson", () => {
 	plugins.watch(config.src.source.json.src, () => {
-		gulp.start('mergeJson');
+		gulp.start("mergeJson");
 	});
 });
 
-gulp.task('watch', () => {
+gulp.task("watch", () => {
 	plugins.watch(config.src.watch.json.src, () => {
-		gulp.start('mergeJson');
+		gulp.start("mergeJson");
 	});
 	plugins.watch(config.src.watch.json.dest, () => {
-		gulp.start('nunjucks');
-		gulp.start('ajax');
+		gulp.start("nunjucks");
+		gulp.start("ajax");
 	});
 	plugins.watch(config.src.watch.data, () => {
-		gulp.start('data');
+		gulp.start("data");
 	});
 	plugins.watch(config.src.watch.images, () => {
-		gulp.start('images');
+		gulp.start("images");
 	});
 	plugins.watch(config.src.source.svg.src, () => {
-		gulp.start('svg');
+		gulp.start("svg");
 	});
 	plugins.watch(config.src.watch.html, () => {
-		gulp.start('nunjucks');
+		gulp.start("nunjucks");
 	});
 	plugins.watch(config.src.watch.ajax, () => {
-		gulp.start('ajax');
+		gulp.start("ajax");
 	});
 	plugins.watch(config.src.watch.css, () => {
-		gulp.start('css');
+		gulp.start("css");
 	});
 	plugins.watch(config.src.watch.js, () => {
-		gulp.start('js');
+		gulp.start("js");
 	});
 });
 
-gulp.task('build:clean', () => {
+gulp.task("build:clean", () => {
 	gulp.src(config.src.build.dest)
 		.pipe(plugins.clean());
 });
 
-gulp.task('default', ['watch', 'webserver']);
-gulp.task('build', ['svg', 'fonts', 'images', 'js', 'nunjucks', 'css', 'ajax', 'data']);
+gulp.task("default", ["watch", "webserver"]);
+gulp.task("build", ["svg", "fonts", "images", "js", "nunjucks", "css", "ajax", "data"]);
 
 
 function isMax(mq) {
@@ -369,9 +369,9 @@ function isMin(mq) {
 
 function sortMediaQueries(a, b) {
 
-	let A = a.replace(/\D/g, '');
+	let A = a.replace(/\D/g, "");
 
-	let B = b.replace(/\D/g, '');
+	let B = b.replace(/\D/g, "");
 
 	if (isMax(a) && isMax(b)) {
 
