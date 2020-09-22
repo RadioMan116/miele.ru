@@ -1,12 +1,13 @@
-var gulp = require('gulp');
-var gulpLoadPlugins = require('gulp-load-plugins');
-var pngquant = require('imagemin-pngquant');
-var MozJpeg = require('imagemin-mozjpeg');
-var gifsicle = require('imagemin-gifsicle');
-var imageminSvgo = require('imagemin-svgo');
-var mqPacker = require('css-mqpacker');
-var plugins = gulpLoadPlugins();
-var browserSync = require('browser-sync').create();
+let gulp = require('gulp');
+let gulpLoadPlugins = require('gulp-load-plugins');
+let imagemin = require("gulp-imagemin");
+let imageminPngquant = require("imagemin-pngquant");
+let imageminZopfli = require("imagemin-zopfli");
+let imageminMozjpeg = require("imagemin-mozjpeg");
+let imageminGiflossy = require("imagemin-giflossy");
+let mqPacker = require('css-mqpacker');
+let plugins = gulpLoadPlugins();
+let browserSync = require('browser-sync').create();
 
 var args = require('yargs').argv;
 var config = require('./' + (args.template ? args.template : 'main') + '.config.json').config;
@@ -27,16 +28,16 @@ gulp.task('webserver', () => {
 gulp.task('mergeJson', () => {
 	gulp.src(config.src.source.json.src)
 		.pipe(plugins.mergeJson({
-	        fileName: 'data.json',
-	        edit: (parsedJson, file) => {
-	            if (parsedJson.someValue) {
-	                delete parsedJson.otherValue;
-	            }
+			fileName: 'data.json',
+			edit: (parsedJson, file) => {
+				if (parsedJson.someValue) {
+					delete parsedJson.otherValue;
+				}
 
-	            return parsedJson;
-	        },
-	    }))
-	    .pipe(gulp.dest(config.src.source.json.dest));
+				return parsedJson;
+			},
+		}))
+		.pipe(gulp.dest(config.src.source.json.dest));
 });
 
 gulp.task('js', () => {
@@ -44,7 +45,7 @@ gulp.task('js', () => {
 	gulp.src(config.src.source.js.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(plugins.sourcemaps.init())
@@ -68,6 +69,8 @@ gulp.task('css', () => {
 	var cssnext = require('postcss-cssnext');
 	var imageInliner = require('postcss-image-inliner');
 
+
+
 	var processors = [
 		cssnext({
 			warnForDuplicates: false
@@ -76,6 +79,7 @@ gulp.task('css', () => {
 			path: config.src.source.svg.dest,
 			removeFill: true
 		}),
+
 		imageInliner({
 			assetPaths: ['https://icongr.am']
 		}),
@@ -91,7 +95,7 @@ gulp.task('css', () => {
 	return gulp.src(config.src.source.css.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(plugins.sourcemaps.init())
@@ -117,23 +121,23 @@ var configHtml = {
 	'max_char': 78,
 	'brace_style': 'expand',
 	'unformatted': ['sub', 'sup', 'b', 'u']
-}
+};
 
 // De-caching for Data files
-function requireUncached( $module ) {
-    delete require.cache[require.resolve( $module )];
-    return require( $module );
+function requireUncached($module) {
+	delete require.cache[require.resolve($module)];
+	return require($module);
 }
 
 gulp.task('ajax', () => {
 	return gulp.src(config.src.source.ajax.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(
-			plugins.data(function() {
+			plugins.data(function () {
 				return requireUncached(config.src.source.json.file);
 			})
 		)
@@ -144,7 +148,7 @@ gulp.task('ajax', () => {
 			}
 		}))
 		.pipe(plugins.htmlPrettify(configHtml))
-		.pipe(gulp.dest(config.src.build.ajax.dest))
+		.pipe(gulp.dest(config.src.build.ajax.dest));
 
 });
 
@@ -153,11 +157,11 @@ gulp.task('nunjucks', () => {
 	return gulp.src(config.src.source.html.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(
-			plugins.data(function() {
+			plugins.data(function () {
 				return requireUncached(config.src.source.json.file);
 			})
 		)
@@ -178,7 +182,7 @@ gulp.task('fonts', () => {
 		.pipe(plugins.changedInPlace())
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(gulp.dest(config.src.build.fonts.dest));
@@ -189,7 +193,7 @@ gulp.task('data', () => {
 		.pipe(plugins.changedInPlace())
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(gulp.dest(config.src.build.data.dest));
@@ -200,21 +204,37 @@ gulp.task('images', () => {
 	return gulp.src(config.src.source.images.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(plugins.cache(plugins.imagemin([
-			plugins.imagemin.gifsicle({
-				interlaced: true
+			imageminGiflossy({
+				optimizationLevel: 3,
+				optimize: 3,
+				lossy: 2
 			}),
-			MozJpeg({
+			imageminPngquant({
+				speed: 5,
+				quality: [0.6, 0.8]
+			}),
+			imageminZopfli({
+				more: true
+			}),
+			imageminMozjpeg({
+				progressive: true,
 				quality: 90
 			}),
-			plugins.imagemin.optipng({
-				optimizationLevel: 5
-			}),
-			plugins.imagemin.svgo({
-				plugins: [{ removeViewBox: true }]
+			imagemin.svgo({
+				plugins: [
+					{ removeViewBox: false },
+					{ removeUnusedNS: false },
+					{ removeUselessStrokeAndFill: false },
+					{ cleanupIDs: false },
+					{ removeComments: true },
+					{ removeEmptyAttrs: true },
+					{ removeEmptyText: true },
+					{ collapseGroups: true }
+				]
 			})
 		])))
 		.pipe(gulp.dest(config.src.build.images.dest))
@@ -225,7 +245,7 @@ gulp.task('svg', () => {
 	return gulp.src(config.src.source.svg.src)
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(plugins.svgmin())
@@ -248,12 +268,12 @@ gulp.task('svgSprite', () => {
 	return gulp.src(config.src.source.svg.sprite.src, { cwd: '' })
 		.pipe(plugins.plumber({
 			errorHandler: (err) => {
-				console.log(err)
+				console.log(err);
 			}
 		}))
 		.pipe(plugins.svgSprite(configSvg))
 		.on('error', function (error) {
-			console.log(error)
+			console.log(error);
 		})
 
 		.pipe(gulp.dest(config.src.source.svg.sprite.dest));
@@ -328,7 +348,7 @@ gulp.task('watch', () => {
 
 gulp.task('build:clean', () => {
 	gulp.src(config.src.build.dest)
-	.pipe(plugins.clean());
+		.pipe(plugins.clean());
 });
 
 gulp.task('default', ['watch', 'webserver']);
