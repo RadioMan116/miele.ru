@@ -623,7 +623,7 @@
 
 .yandex__button {
 	border: 1px solid $base;
-	padding: 5px 14px;
+	padding: 4px 14px;
 	font-family: "HelveticaNeueCyr-Roman";
 	font-size: 14px;
 	font-weight: 400;
@@ -640,7 +640,7 @@
 	}
 
 	&:last-child {
-		margin-bottom: 6px;
+		margin-bottom: 3px;
 	}
 
 	@media screen and (max-width: 767px) {
@@ -686,7 +686,7 @@
 	// background: url("../images/yamarket.svg") no-repeat;
 	width: 145px;
 	// height: 106px;
-	margin: 0 auto 28px;
+	margin: 0 auto 24px;
 }
 
 .quality {
@@ -718,7 +718,7 @@
 	}
 
 	&__text {
-		margin: 8px 0 7px;
+		margin: 8px 0 4px;
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -745,7 +745,7 @@
 
 	&__worktime {
 		width: 100%;
-		margin: 7px 0 17px;
+		margin: 4px 0 15px;
 		font-size: 12px;
 		font-weight: normal;
 		font-style: normal;
@@ -777,6 +777,9 @@
 			padding: 2px 40px;
 			font-size: 14px;
 		}
+	}
+	@media screen and (max-width: 767px){
+
 	}
 }
 
