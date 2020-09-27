@@ -940,6 +940,9 @@
 		margin: 0 auto;
 		padding: 5px 21px;
 		text-decoration: none !important;
+		&:hover{
+			background: #fff4f4;
+		}
 	}
 
 	.js-reviews-main {}

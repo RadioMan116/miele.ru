@@ -134,6 +134,9 @@
 			&:hover {
 				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 				border: solid 1px transparent;
+				.service__title{
+					text-decoration: underline;
+				}
 			}
 
 			&:not(:nth-last-child(-n+2)) {

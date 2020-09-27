@@ -658,7 +658,7 @@
 				&:before {
 					width: 100%;
 					height: 100%;
-					background-size: 20px !important;
+					background-size: 24px !important;
 					margin-right: 0;
 				}
 
@@ -748,14 +748,14 @@
 				align-items: center;
 				margin: 0 20px 0 0px;
 				width: auto;
-				width: 22px;
-				height: 22px;
+				width: 24px;
+				height: 24px;
 				padding: 0;
 				overflow: hidden;
 				background: white;
 
 				&:before {
-					background-size: 22px !important;
+					background-size: 24px !important;
 					flex-shrink: 0;
 					margin-right: 0;
 					background: url(../images/musica-searcher-2.svg) no-repeat;
@@ -803,7 +803,7 @@
 				background-position: center center;
 				margin-right: 0px;
 				order: -2;
-				background-size: 22px !important;
+				background-size: 24px !important;
 				align-items: center;
 				margin-right: 4px;
 
@@ -910,9 +910,9 @@
 			margin-top: 0px;
 
 			&__img {
-				width: 18px;
-				height: 18px;
-				background: url('../images/rectangle-6.svg') 0/18px;
+				width: 22px;
+				height: 22px;
+				background: url('../images/rectangle-6.svg') 0/22px;
 			}
 		}
 

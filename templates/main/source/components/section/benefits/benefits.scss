@@ -153,6 +153,9 @@
 			width: 24px;
 			height: 24px;
 			position: absolute;
+			&:hover  {
+				background: url(../images/swiper-button-color-next.svg) 0/24px no-repeat;
+			}
 		}
 
 		.benefits-prev {
@@ -163,6 +166,9 @@
 			left: unset;
 			width: 24px;
 			height: 24px;
+			&:hover  {
+				background: url(../images/swiper-button-color-prev.svg) 0/24px no-repeat;
+			}
 		}
 
 		.benefits-pagination {

@@ -861,7 +861,7 @@ $(document).ready(function () {
 	}
 	if (windowWidth2 <= 767) {
 		$(".logo").appendTo(".header__block_top .container");
-		$(".catalog-view").appendTo(".bx-filter-section");
+		// $(".catalog-view").appendTo(".bx-filter-section");
 		$(".labels").appendTo(".product-card .product__header_top");
 		$(".product-card__key").appendTo(".product-card .product__header_middle");
 		$(".sidebar-right").appendTo(".product-card");
@@ -1011,9 +1011,9 @@ $(document).ready(function () {
 				// $(this).parent().toggleClass('active')
 				if ($(this).parent().hasClass("active")) {
 					$(this).parent().removeClass("active");
-					$(".filter-new__button span").text("закрыть");
+					// $(".filter-new__button span").text("закрыть");
 				} else {
-					$(".filter-new__button span").text("фильтр");
+					// $(".filter-new__button span").text("фильтр");
 					$(this).parent().addClass("active");
 				}
 			});

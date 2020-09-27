@@ -230,7 +230,7 @@
 
 		&__date {
 			margin-top: 6px;
-			margin-bottom: 18px;
+			margin-bottom: 13px;
 			order: -2;
 			padding-left: 0;
 		}
@@ -318,7 +318,8 @@
 			}
 
 			/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
-			&-custom, .label {
+			&-custom,
+			.label {
 				display: inline-block;
 				vertical-align: middle;
 			}
@@ -528,7 +529,7 @@
 			// }
 			&:hover {
 				color: #fff;
-				background: $base !important;
+				background: $base;
 
 				&:after {
 					margin-left: 10px;
@@ -538,6 +539,11 @@
 			&.active {
 				color: #fff;
 				background: $base;
+
+				&:hover {
+					background-color: #b90c24;
+					text-decoration: none;
+				}
 
 				&::after {
 					content: "×";
@@ -578,7 +584,8 @@
 			}
 		}
 
-		label, a {
+		label,
+		a {
 			display: flex;
 			position: relative;
 			width: unset;
@@ -839,6 +846,8 @@
 				display: flex;
 				justify-content: flex-start;
 			}
+
+			.bx-filter-parameters-box-container {}
 		}
 
 		.filter-new__button {
@@ -913,39 +922,42 @@
 		.new-catalog & {
 			position: relative;
 
-			&:before {
-				content: "Фильтр";
-				display: flex;
-				align-items: center;
-				z-index: 1;
-				width: calc(100% - 90px);
-				height: 54px;
-				color: $base;
-				font-size: 14px;
-				font-weight: 400;
-				line-height: 24px;
-				text-transform: uppercase;
-				background: url("../images/open-filter.svg") no-repeat 23px 50% #f8f8f8;
-				padding-left: 51px;
-				border-left: solid 1px #eeeeee;
-				border-top: solid 1px #eeeeee;
-			}
-
+			// &:before {
+			// 	content: "Фильтр";
+			// 	display: flex;
+			// 	align-items: center;
+			// 	z-index: 1;
+			// 	width: calc(100% - 90px);
+			// 	height: 54px;
+			// 	color: $base;
+			// 	font-size: 14px;
+			// 	font-weight: 400;
+			// 	line-height: 24px;
+			// 	text-transform: uppercase;
+			// 	background: url("../images/open-filter.svg") no-repeat 23px 50% #f8f8f8;
+			// 	padding-left: 51px;
+			// 	border-left: solid 1px #eeeeee;
+			// 	border-top: solid 1px #eeeeee;
+			// }
 			.filter-new__button {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				order: unset;
-				position: absolute;
-				right: 31px;
-				bottom: 17px;
-				width: 88px;
-				height: 40px;
-				border: solid 1px $base;
+				position: relative;
+				// position: absolute;
+				// right: 31px;
+				// bottom: 17px;
+				width: 100%;
+				height: 50px;
+				// border: solid 1px $base;
+				border: 1px solid #ececec;
+				border-bottom: 0;
 				padding: 0;
-				background-color: #f8f8f8;
-				border-radius: 3px;
+				transition: .3s;
+				cursor: pointer;
 
+				// background-color: #f8f8f8;
+				// border-radius: 3px;
 				span {
 					width: auto;
 					height: auto;
@@ -956,12 +968,33 @@
 					text-transform: uppercase;
 					border-bottom: none;
 				}
+
+				&:before {
+					content: "";
+					width: 20px;
+					height: 16px;
+					background: url("../images/open-filter.svg") no-repeat 50%;
+					margin-right: 10px;
+				}
+
+				&:after {
+					content: "";
+					position: absolute;
+					right: 22px;
+					width: 12px;
+					height: 12px;
+					background: url("https://icongr.am/entypo/chevron-small-up.svg?color=8c0014&size=50");
+					background-size: 22px;
+					background-position: center;
+					background-repeat: no-repeat;
+					margin-left: auto;
+				}
 			}
 
 			&.active {
-				width: calc(100% - 100px);
-				min-width: 188px;
+				width: 100%;
 
+				// min-width: 188px;
 				&:before {
 					display: none;
 				}
@@ -970,38 +1003,24 @@
 					display: flex;
 					align-items: center;
 					position: static;
-					width: auto;
+					width: 100%;
 					min-height: 48px;
 					padding: 11px 22px;
 					background-color: $base;
 
 					&:before {
-						content: "";
-						width: 20px;
-						height: 16px;
-						background: url("../images/close-filter.svg");
-						margin-right: 10px;
+						background: url("../images/close-filter.svg") no-repeat 50%;
 					}
 
 					&:after {
-						content: "";
-						width: 12px;
-						height: 12px;
 						background: url("https://icongr.am/entypo/chevron-small-down.svg?color=ffffff&size=50");
 						background-size: 22px;
 						background-position: center;
 						background-repeat: no-repeat;
-						margin-left: auto;
 					}
 
 					span {
-						width: auto;
-						height: auto;
 						color: #ffffff;
-						font-size: 14px;
-						font-weight: 400;
-						line-height: 24px;
-						text-transform: uppercase;
 					}
 				}
 
@@ -1065,7 +1084,54 @@
 			// margin-left: -8px;
 		}
 
-		.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		.col-xs-1,
+		.col-sm-1,
+		.col-md-1,
+		.col-lg-1,
+		.col-xs-2,
+		.col-sm-2,
+		.col-md-2,
+		.col-lg-2,
+		.col-xs-3,
+		.col-sm-3,
+		.col-md-3,
+		.col-lg-3,
+		.col-xs-4,
+		.col-sm-4,
+		.col-md-4,
+		.col-lg-4,
+		.col-xs-5,
+		.col-sm-5,
+		.col-md-5,
+		.col-lg-5,
+		.col-xs-6,
+		.col-sm-6,
+		.col-md-6,
+		.col-lg-6,
+		.col-xs-7,
+		.col-sm-7,
+		.col-md-7,
+		.col-lg-7,
+		.col-xs-8,
+		.col-sm-8,
+		.col-md-8,
+		.col-lg-8,
+		.col-xs-9,
+		.col-sm-9,
+		.col-md-9,
+		.col-lg-9,
+		.col-xs-10,
+		.col-sm-10,
+		.col-md-10,
+		.col-lg-10,
+		.col-xs-11,
+		.col-sm-11,
+		.col-md-11,
+		.col-lg-11,
+		.col-xs-12,
+		.col-sm-12,
+		.col-md-12,
+		.col-lg-12 {
 			position: relative;
 			min-height: 1px;
 			padding-right: 0 !important;
@@ -1152,7 +1218,54 @@
 	// .bx-filter-param-label {}
 	// .disabled {}
 	// .bx-filter-popup-result {}
-	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	.col-xs-1,
+	.col-sm-1,
+	.col-md-1,
+	.col-lg-1,
+	.col-xs-2,
+	.col-sm-2,
+	.col-md-2,
+	.col-lg-2,
+	.col-xs-3,
+	.col-sm-3,
+	.col-md-3,
+	.col-lg-3,
+	.col-xs-4,
+	.col-sm-4,
+	.col-md-4,
+	.col-lg-4,
+	.col-xs-5,
+	.col-sm-5,
+	.col-md-5,
+	.col-lg-5,
+	.col-xs-6,
+	.col-sm-6,
+	.col-md-6,
+	.col-lg-6,
+	.col-xs-7,
+	.col-sm-7,
+	.col-md-7,
+	.col-lg-7,
+	.col-xs-8,
+	.col-sm-8,
+	.col-md-8,
+	.col-lg-8,
+	.col-xs-9,
+	.col-sm-9,
+	.col-md-9,
+	.col-lg-9,
+	.col-xs-10,
+	.col-sm-10,
+	.col-md-10,
+	.col-lg-10,
+	.col-xs-11,
+	.col-sm-11,
+	.col-md-11,
+	.col-lg-11,
+	.col-xs-12,
+	.col-sm-12,
+	.col-md-12,
+	.col-lg-12 {
 		position: relative;
 		min-height: 1px;
 		padding-right: 19px;
@@ -1494,6 +1607,12 @@
 			padding-top: 0;
 			cursor: pointer;
 		}
+
+		.bx-filter-parameters-box-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
 
 	.bx-filter-parameters-box {
@@ -1709,29 +1828,70 @@
 	}
 
 	.bx-filter-button-box .btn.btn-link {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		// margin-left: -8px;
 		justify-content: center;
-		width: 100%;
+		width: 102px;
 		height: 40px;
+		border: 1px solid $base;
 		padding: 9px 16px 8px 16px;
 		border-radius: 3px;
 		// background: $base;
-		color: #ffffff;
+		color: $base;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 24px;
 		text-transform: uppercase;
-		background: $base;
+		background: transparent;
 		text-decoration: none !important;
 
-		&:after {
-			content: "";
-			width: 20px;
-			height: 20px;
-			background: url("../images/close-filter.svg") no-repeat 50% $base;
-			margin-left: 13px;
+		// &:after {
+		// 	content: "";
+		// 	width: 20px;
+		// 	height: 20px;
+		// 	background: url("../images/close-filter.svg") no-repeat 50% $base;
+		// 	margin-left: 13px;
+		// }
+		&:hover {
+			background-color: #ffe3e3;
+		}
+	}
+
+	.filter__info {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-bottom: 16px;
+		width: 100%;
+
+		span {
+			color: $base;
+			font-family: "HelveticaNeueCyr-Bold";
+			margin: 0 2px;
+		}
+	}
+
+	.filter__button-submit {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 122px;
+		height: 40px;
+		border: unset;
+		background: $base;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		text-transform: uppercase;
+		border-radius: 3px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #b90c24;
+			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .16);
+			text-decoration: none;
 		}
 	}
 
@@ -1757,6 +1917,10 @@
 		text-transform: uppercase;
 		background: url("../images/close-filter.svg") no-repeat calc(100% - 15px) 50% $base;
 		margin-left: 0;
+
+		&:hover {
+			background-color: #ffe3e3;
+		}
 	}
 }
 

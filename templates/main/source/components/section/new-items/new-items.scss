@@ -3,97 +3,23 @@
 	margin: 0 auto;
 	padding-top: 48px;
 
-	&__caption {
-		display: flex;
-		margin-bottom: 32px;
-
-		span {}
-	}
-
-	.container {
-		padding-top: 0 !important;
-	}
-
-	&__title.special-offers__title {
-		font-family: "HelveticaNeueCyr-Light";
-		font-size: 26px;
-		font-weight: 400;
-		line-height: 32px;
-		margin-bottom: 0 !important;
-		margin-right: 23px;
-	}
-
-	.new-items__slide {
-		min-height: unset;
-	}
-
-	// .special-offers__text {
-	// 	padding-bottom: 0;
-	// 	color: #333333;
-	// 	font-family: "Roboto Condensed";
-	// 	font-size: 18px;
-	// 	font-weight: 400;
-	// 	line-height: 26px;
-	// 	// padding-top: 24px;
-	// }
-	// .special-offers__sale {
-	// 	padding-top: 14px;
-	// }
-	&__how {
-		font-family: "HelveticaNeueCyr-Roman";
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 19px;
-		display: flex;
-		align-items: flex-end;
-		white-space: nowrap;
-		margin-bottom: 3px;
-
-		&:before {
-			content: 'В разделе'
-		}
-
-		a,
-		i {
-			color: $base;
-			font-style: initial;
-			padding: 0 5px;
-		}
-	}
-
-	&__link {
-		padding: 8px 15px;
-		border-radius: 3px;
-		border: solid 1px $base;
-		font-size: 14px;
-		font-weight: 500;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: left;
-		color: $base;
-		margin: 41px auto;
-		text-transform: uppercase;
-		text-decoration: none !important;
-	}
-
 	@media screen and (max-width: 767px) {
 		margin-top: 0;
-		padding-top: 0px;
+		padding-top: 0;
 		margin-bottom: 14px !important;
 
 		.new-items__link {
-			margin: 27px auto 9px;
+			display: none;
 			order: 4;
+			margin: 27px auto 9px;
 		}
 
 		.new-items__caption {
-			margin-bottom: 15px;
-			width: 100%;
 			display: flex;
 			// flex-wrap: wrap;
 			flex-direction: column;
+			width: 100%;
+			margin-bottom: 15px;
 		}
 
 		.new-items__title {
@@ -120,12 +46,12 @@
 		}
 
 		.swiper-pagination_3 {
+			position: relative;
 			top: unset;
 			right: unset;
-			transform: translateX(-50%);
-			left: 50%;
 			bottom: 0;
-			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
 			margin-top: 24px;
 		}
 
@@ -139,13 +65,12 @@
 
 		.container {
 
-			.new-items_prev,
-			.new-items_next {
+			.new-items_prev, .new-items_next {
 				top: 47px;
 			}
 
 			.new-items_next {
-				right: 0px;
+				right: 0;
 			}
 		}
 
@@ -153,8 +78,8 @@
 			color: #2e2e2e;
 			// font-family: Arial, sans-serif;
 			font-size: 14px;
-			margin-right: 0px;
-			margin-top: 0px;
+			margin-right: 0;
+			margin-top: 0;
 
 			a {
 				padding: 0 5px;
@@ -172,6 +97,83 @@
 
 		.swiper {
 			margin-bottom: 18px;
+		}
+	}
+
+	.container {
+		padding-top: 0 !important;
+	}
+
+	.new-items__slide {
+		min-height: unset;
+	}
+
+	&__caption {
+		display: flex;
+		margin-bottom: 32px;
+
+		span {}
+	}
+
+	&__title.special-offers__title {
+		font-family: "HelveticaNeueCyr-Light";
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 32px;
+		margin-bottom: 0 !important;
+		margin-right: 23px;
+	}
+
+	// .special-offers__text {
+	// 	padding-bottom: 0;
+	// 	color: #333333;
+	// 	font-family: "Roboto Condensed";
+	// 	font-size: 18px;
+	// 	font-weight: 400;
+	// 	line-height: 26px;
+	// 	// padding-top: 24px;
+	// }
+	// .special-offers__sale {
+	// 	padding-top: 14px;
+	// }
+	&__how {
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19px;
+		display: flex;
+		align-items: flex-end;
+		white-space: nowrap;
+		margin-bottom: 3px;
+
+		&:before {
+			content: "В разделе";
+		}
+
+		a, i {
+			color: $base;
+			font-style: initial;
+			padding: 0 5px;
+		}
+	}
+
+	&__link {
+		margin: 41px auto;
+		border: solid 1px $base;
+		padding: 8px 15px;
+		border-radius: 3px;
+		font-size: 14px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: $base;
+		text-transform: uppercase;
+		text-decoration: none !important;
+		&:hover {
+			background: #fff4f4;
 		}
 	}
 }
