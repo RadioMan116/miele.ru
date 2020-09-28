@@ -3642,7 +3642,7 @@
 			text-transform: uppercase;
 			text-decoration: none !important;
 			&:hover {
-				background-color: #ffe3e3;
+				background-color: #ececec;
 			}
 		}
 
@@ -3922,7 +3922,7 @@
 
 			p {
 				margin: 0;
-				color: #000;
+				color: #a6a6a6;
 				white-space: nowrap;
 			}
 
@@ -5175,6 +5175,7 @@
 				border: 1px solid #eeeeee;
 				background-color: #ffffff;
 
+
 				&:hover {
 					box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
 
@@ -5234,7 +5235,7 @@
 					&-slide {
 						max-width: 100%;
 						border: unset;
-						// height: 228px;
+						height: 228px;
 						// opacity: 0 !important;
 						// // position: unset;
 						// transform: unset !important;
@@ -6155,7 +6156,7 @@
 
 	&__icons {
 		width: 136px;
-		height: 40;
+		height: 40px;
 		border: 1px solid $base;
 		padding: 7px 13px;
 		color: $base;
@@ -6167,7 +6168,7 @@
 		margin-right: 8px;
 		text-decoration: none !important;
 		&:hover {
-			background-color: #ffe3e3;
+			background-color: #ececec;
 		}
 	}
 
