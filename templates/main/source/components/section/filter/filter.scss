@@ -844,7 +844,7 @@
 		.bx-filter-button-box {
 			.bx-filter-parameters-box-container {
 				display: flex;
-				justify-content: flex-start;
+				// justify-content: flex-start;
 			}
 
 			.bx-filter-parameters-box-container {}
@@ -1053,33 +1053,33 @@
 		}
 
 		.bx-filter-button-box .btn.btn-link {
-			display: flex;
-			align-items: center;
-			width: calc(100% - 103px);
-			height: 40px;
-			border-radius: 3px;
-			padding: 9px 16px 8px 16px;
-			// background: $base;
-			color: #ffffff;
-			font-size: 0;
-			font-weight: 400;
-			line-height: 24px;
-			text-transform: uppercase;
-			background: $base;
+			// display: flex;
+			// align-items: center;
+			// width: calc(100% - 103px);
+			// height: 40px;
+			// border-radius: 3px;
+			// padding: 9px 16px 8px 16px;
+			// // background: $base;
+			// color: #ffffff;
+			// font-size: 0;
+			// font-weight: 400;
+			// line-height: 24px;
+			// text-transform: uppercase;
+			// // background: $base;
 
-			&:after {
-				content: "";
-				display: none;
-				width: 20px;
-				height: 20px;
-				background: url("../images/close-filter.svg") no-repeat 50% $base;
-				margin-left: 13px;
-			}
+			// &:after {
+			// 	content: "";
+			// 	display: none;
+			// 	width: 20px;
+			// 	height: 20px;
+			// 	background: url("../images/close-filter.svg") no-repeat 50% $base;
+			// 	margin-left: 13px;
+			// }
 
-			&:before {
-				content: "Сбросить";
-				font-size: 14px;
-			}
+			// &:before {
+			// 	content: "Сбросить";
+			// 	font-size: 14px;
+			// }
 
 			// margin-left: -8px;
 		}

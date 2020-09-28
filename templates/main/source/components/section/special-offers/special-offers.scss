@@ -673,7 +673,7 @@
 		background: url("../images/com.svg");
 		cursor: pointer;
 
-		&:hover {
+		&:hover,&.active {
 			background: url("../images/com-c.svg");
 		}
 	}
