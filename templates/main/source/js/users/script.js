@@ -1895,6 +1895,13 @@ $(document).ready(function () {
 			// })
 		}
 	});
+	$(function () {
+		if (windowWidth2 < 768) {
+			$(".benefits-slider-thumbs").click(function () {
+				$(this).toggleClass("active");
+			});
+		}
+	});
 	setTimeout(function () {
 		(function () {
 			let collection = document.querySelector(".product-card__collection");
@@ -2133,6 +2140,27 @@ $(window).on("load", function () {
 			},
 			thumbs: {
 				swiper: practicalThumbs
+			}
+		});
+		var benefitsSliderThumbs = new Swiper(".benefits-slider-thumbs", {
+			spaceBetween: 28,
+			slidesPerView: 'auto',
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+		});
+		var benefitsSliderTop = new Swiper(".benefits-slider-top", {
+			spaceBetween: 0,
+			navigation: {
+				nextEl: ".benefits-slider-next",
+				prevEl: ".benefits-slider-prev"
+			},
+			pagination: {
+				el: ".benefits-slider-pagination",
+				clickable: true
+			},
+			thumbs: {
+				swiper: benefitsSliderThumbs
 			}
 		});
 	}, 100);

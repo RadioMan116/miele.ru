@@ -95,10 +95,11 @@
 
 				option {
 					&:checked {
-						background: red linear-gradient(0deg, red 0%, red 100%);
+						background: transparent;
 					}
-					&[selected]{
-						background: green;
+
+					&:hover {
+						background: $base;
 					}
 				}
 			}

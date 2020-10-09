@@ -1,0 +1,334 @@
+.benefits-slider {
+	margin-bottom: 36px;
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 14px;
+
+		.swiper {
+			.benefits-slider-pagination {
+				display: flex;
+				justify-content: center;
+				top: unset;
+				right: unset;
+				bottom: 62px;
+				width: 100%;
+
+				// position: static;
+				.swiper-pagination-bullet {
+					&:first-of-type {
+						margin-left: 0;
+					}
+				}
+			}
+
+			.benefits-slider-next, .benefits-slider-prev {
+				display: none;
+			}
+
+			.benefits-slider-thumbs {
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				height: 46px;
+				overflow: hidden;
+				padding: 0;
+				background: #ffffff;
+				margin-bottom: 2px;
+				border-bottom: 0;
+
+				&:after {
+					content: "";
+					position: absolute;
+					z-index: 9;
+					right: 6px;
+					bottom: 10px;
+					width: 24px;
+					height: 24px;
+					background: url(../images/triangle-down.svg) 50% no-repeat;
+					background-size: 24px;
+				}
+
+				.swiper-wrapper {
+					display: flex;
+					flex-direction: column;
+				}
+
+				.swiper-slide {
+					width: 100%;
+					border: 1px solid #d6d6d6;
+					padding: 9px 12px 10px;
+					font-family: HelveticaNeueCyr-Roman;
+					margin-right: 0;
+					border-radius: 2px;
+					background-color: #fff;
+					margin-bottom: 13px;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 24px;
+					color: #000 !important;
+
+					// padding-bottom: 0;
+					&-thumb-active {
+						order: -1;
+					}
+				}
+
+				&.active {
+					position: relative;
+					z-index: 999;
+					overflow: visible;
+					background: #fff;
+
+					&:after {
+						// content: "";
+						// background: url(../images/triangle-down.svg) 50% no-repeat;
+						// -webkit-transform: rotate(180deg);
+						transform: rotate(180deg);
+						// background-size: 24px;
+						// width: 24px;
+						// height: 24px;
+						// position: absolute;
+						// right: 6px;
+						// bottom: 10px;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 230px;
+						background: #fff;
+					}
+				}
+			}
+		}
+
+		&__title {
+			// font-family: "HelveticaNeueCyr-medium";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 26px;
+			margin-bottom: 18px;
+		}
+
+		&__item {
+			flex-direction: column;
+			flex-grow: 1;
+			height: 100%;
+		}
+
+		&__pic {
+			width: 100%;
+			height: auto;
+			margin-right: 0;
+			margin-bottom: 3px;
+		}
+
+		&__icon {
+			flex-grow: 1;
+
+			ul {
+				flex-direction: column;
+				padding-top: 16px;
+
+				li {
+					display: -webkit-box;
+					width: 100%;
+					width: 100%;
+					overflow: hidden;
+					margin-bottom: 22px;
+					margin-bottom: 22px;
+					-webkit-box-orient: vertical;
+					-webkit-line-clamp: 4;
+
+					&:not(:nth-last-child(-n+2)) {
+						margin-bottom: 22px;
+					}
+				}
+			}
+		}
+
+		&__caption {
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 24px;
+		}
+
+		&__link {
+			text-align: center;
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+			text-align: center;
+			margin-top: auto;
+		}
+	}
+
+	.container {}
+
+	.swiper {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		max-width: 100%;
+
+		.swiper-container {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.swiper-wrapper {
+			width: 100%;
+		}
+
+		.swiper-slide {
+			width: auto;
+		}
+
+		.benefits-slider-next {
+			position: absolute;
+			top: 32px;
+			right: 3px;
+			width: 24px;
+			height: 24px;
+			background: url(../images/special-offers_next.svg) 0/24px no-repeat;
+
+			&:hover {
+				background: url(../images/swiper-button-color-next.svg) 0/24px no-repeat;
+			}
+		}
+
+		.benefits-slider-prev {
+			position: absolute;
+			top: 32px;
+			right: 36px;
+			left: unset;
+			width: 24px;
+			height: 24px;
+			background: url(../images/special-offers_prev.svg) 0/24px no-repeat;
+
+			&:hover {
+				background: url(../images/swiper-button-color-prev.svg) 0/24px no-repeat;
+			}
+		}
+
+		.benefits-slider-pagination {
+			top: 9px;
+			right: 76px;
+
+			.swiper-pagination-bullet {
+				margin-left: 16px;
+			}
+		}
+	}
+
+	.benefits-slider-thumbs {
+		list-style: none;
+		padding-left: 0;
+		border-bottom: 1px solid #ececec;
+		padding-bottom: 0;
+
+		.swiper-wrapper {
+			transform: unset !important;
+		}
+
+		.swiper-slide {
+			margin-right: 26px;
+			padding-bottom: 8px;
+			border-bottom: 2px solid transparent;
+			font-family: HelveticaNeueCyr-Light;
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 24px;
+			color: #000;
+			cursor: pointer;
+
+			&-thumb-active {
+				border-color: #8c0014;
+				color: $base;
+			}
+		}
+	}
+
+	.benefits-slider-top {}
+
+	// .benefits-slider__title
+	&__title {
+		font-family: "HelveticaNeueCyr-Light";
+		font-size: 26px;
+		font-weight: 400;
+		line-height: 32px;
+		margin-bottom: 30px;
+	}
+
+	// .benefits-slider__item
+	&__item {
+		display: flex;
+	}
+
+	// .benefits-slider__pic
+	&__pic {
+		display: flex;
+		flex-shrink: 0;
+		align-items: baseline;
+		width: 463px;
+		height: 396px;
+		margin-right: 40px;
+		padding-left: 3px;
+		padding-top: 4px;
+
+		img {}
+	}
+
+	// .benefits-slider__icon
+	&__icon {
+		display: flex;
+		flex-direction: column;
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			display: flex;
+			flex-wrap: wrap;
+			padding-top: 21px;
+			justify-content: space-between;
+			margin-bottom: 34px;
+
+			li {
+				width: calc(50% - 12px);
+				font-family: "HelveticaNeueCyr-Roman";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 22px;
+
+				&:not(:nth-last-child(-n+2)) {
+					margin-bottom: 39px;
+				}
+
+				img {
+					max-width: 32px;
+					margin-right: 16px;
+				}
+			}
+		}
+	}
+
+	// .benefits-slider__caption
+	&__caption {
+		margin-bottom: 16px;
+		font-family: "HelveticaNeueCyr-Light";
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	&__link {
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+	}
+}
