@@ -823,7 +823,8 @@ $(document).ready(function () {
 				$(".header__overlay").removeClass("header__overlay-open");
 			}
 		});
-		$(".articles").not('.swiper-container').find('.articles__text').matchHeight();
+		$(".articles .articles__text").matchHeight();
+		// $(".articles").not('.swiper-container').find('.articles__text').matchHeight();
 		$(".catalog .instructions .catalog__item").matchHeight();
 		(() => {
 			let swiperHover = document.querySelectorAll("[data-swiper]");
@@ -1831,16 +1832,31 @@ $(document).ready(function () {
 	$(function () {
 		$("[data-fancybox=\"gallery\"]").fancybox({});
 		$("[data-fancybox=\"certificat\"]").fancybox({});
-		$("[data-scroll]").click(function () {
-			event.preventDefault();
-			var id = $(this).attr("href"),
-				top = $(id).offset().top;
-			$("body,html").animate({
-				scrollTop: top
-			}, 1500);
-			return false;
-		});
+
+
 	});
+	(()=>{
+		$("[data-scroll]").each(function(){
+			var id = $(this).attr("href"),
+			top = $(id).offset().top;
+			if($(id).lenght){
+				console.log(id)
+				$(this).click(function (event) {
+					event.preventDefault();
+
+					$("body,html").animate({
+						scrollTop: top
+					}, 1500);
+					return false;
+				});
+			}
+			else(
+				$(this).hide();
+			)
+
+		})
+
+	})();
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
 		setTimeout(function () {
 			$("[title=Телефон],.js-phone_mask").attr("type", "tel");
