@@ -559,16 +559,16 @@ $(document).ready(function () {
 	// 	}
 	// });
 	// header search
-	(function() {
+	(function () {
 		var inputSearch = document.querySelector(".js-header-search__input");
-		[].forEach.call(document.querySelectorAll(".js-form__hint"), function(item) {
-			item.addEventListener("click", function() {
+		[].forEach.call(document.querySelectorAll(".js-form__hint"), function (item) {
+			item.addEventListener("click", function () {
 				inputSearch.value = this.innerHTML;
 				inputSearch.parentNode.submit();
 			});
 		});
-		[].forEach.call(document.querySelectorAll(".js-header__search"), function(element, index) {
-			element.addEventListener("click", function() {
+		[].forEach.call(document.querySelectorAll(".js-header__search"), function (element, index) {
+			element.addEventListener("click", function () {
 				document.body.classList.toggle("header-search-show");
 				document.body.classList.remove("menu-open");
 				inputSearch.focus();
@@ -576,7 +576,7 @@ $(document).ready(function () {
 		});
 		var $closeElement = document.querySelector(".js-header-search__close");
 		if ($closeElement) {
-			$closeElement.addEventListener("click", function() {
+			$closeElement.addEventListener("click", function () {
 				document.body.classList.remove("header-search-show");
 			});
 		}
@@ -1835,12 +1835,13 @@ $(document).ready(function () {
 
 
 	});
-	(()=>{
-		$("[data-scroll]").each(function(){
-			var id = $(this).attr("href"),
-			top = $(id).offset().top;
-			if($(id).lenght){
-				console.log(id)
+	(() => {
+		$("[data-scroll]").each(function () {
+			var id = $(this).attr("href");
+
+			if ($(id).length) {
+				var top = $(id).offset().top;
+
 				$(this).click(function (event) {
 					event.preventDefault();
 
@@ -1850,10 +1851,9 @@ $(document).ready(function () {
 					return false;
 				});
 			}
-			else(
-				$(this).hide();
+			else (
+				$(this).hide()
 			)
-
 		})
 
 	})();
