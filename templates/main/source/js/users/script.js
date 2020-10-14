@@ -823,7 +823,7 @@ $(document).ready(function () {
 				$(".header__overlay").removeClass("header__overlay-open");
 			}
 		});
-		$(".articles .articles__text").matchHeight();
+		$(".articles").not('.swiper-container').find('.articles__text').matchHeight();
 		$(".catalog .instructions .catalog__item").matchHeight();
 		(() => {
 			let swiperHover = document.querySelectorAll("[data-swiper]");
