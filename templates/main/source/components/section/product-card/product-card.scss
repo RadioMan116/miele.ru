@@ -355,6 +355,12 @@
 				bottom: 0;
 				left: unset;
 				font-size: 15px;
+				position: relative;
+				order: 4;
+			}
+			.product-card__cheaper{
+				position: relative;
+				order: 5;
 			}
 
 			b {}
@@ -363,6 +369,12 @@
 				color: #d82300;
 				// position: relative;
 				padding-bottom: 20px;
+				flex-wrap: wrap;
+				&:after{
+					content: '';
+					order: 3;
+					width: 100%;
+				}
 			}
 
 			&.specify-price {
@@ -3501,6 +3513,9 @@
 			span {
 				margin-top: 22px;
 			}
+			+.reviews{
+				margin-top: 24px;
+			}
 		}
 
 		.tabs__title {
@@ -6211,6 +6226,7 @@
 				width: 40px;
 				height: 40px;
 				margin-right: 12px;
+				border-radius: 50%;
 			}
 
 			&:not(:last-of-type) {
