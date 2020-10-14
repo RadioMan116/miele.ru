@@ -878,10 +878,14 @@ $(document).ready(function () {
 		});
 		new tippy(".tooltip", {
 			placement: "top",
-			content: "Tooltip",
+			// content: "Tooltip",
 			arrow: true,
 			theme: "light",
 			// trigger: 'click'
+			dynamicTitle: true,
+			onShow(instance) {
+				instance.setContent(instance.reference.dataset.tippyContent);
+			}
 		});
 	}
 	if (windowWidth2 <= 767) {
