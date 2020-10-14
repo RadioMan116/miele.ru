@@ -790,7 +790,8 @@ $(document).ready(function () {
 			content: el.querySelector(".popup-gloss")
 		});
 	});
-	$(".price__dashed").each(function (i, el) {
+	$(".catalog__price.price__dashed").each(function (i, el) {
+
 		tippy(el, {
 			arrow: true,
 			placement: "top", // top, right, bottom, left
@@ -882,7 +883,7 @@ $(document).ready(function () {
 			arrow: true,
 			theme: "light",
 			// trigger: 'click'
-			dynamicTitle: true,
+			// dynamicTitle: true,
 			onShow(instance) {
 				instance.setContent(instance.reference.dataset.tippyContent);
 			}
