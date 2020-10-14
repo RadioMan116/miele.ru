@@ -121,6 +121,8 @@
 			margin-right: auto;
 			text-decoration: none !important;
 			margin-top: 17px;
+			padding-left: 10px;
+			width: 100%;
 
 			i {
 				font-weight: inherit;
@@ -203,7 +205,7 @@
 		.special-offers__sale {
 			margin-bottom: 0;
 			margin-top: 8px;
-			margin-left: 21px;
+			padding-left: 10px;
 			justify-content: unset;
 			&.active{
 				.special-offers__buy,.special-offers__compare, .special-offers__fav  {
@@ -267,7 +269,7 @@
 			align-items: baseline;
 			justify-content: space-between;
 			width: 100%;
-			margin-left: 21px;
+			padding-left: 10px;
 			font-family: "HelveticaNeueCyr-Roman";
 			font-size: 14px;
 			font-weight: 400;
@@ -4449,6 +4451,7 @@
 				align-items: center;
 				padding: 16px 14px;
 				background: #ffffff;
+				cursor: pointer;
 
 				&-thumb-active {
 					box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
