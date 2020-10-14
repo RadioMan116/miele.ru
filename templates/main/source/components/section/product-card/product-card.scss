@@ -335,7 +335,7 @@
 
 		.product-card__price {
 			display: flex;
-			justify-content: flex-start;
+			justify-content: center;
 			width: auto;
 			// width: 100%;
 			// justify-content: center;
@@ -886,6 +886,7 @@
 						font-size: 14px !important;
 						font-weight: 700 !important;
 						margin-top: 6px;
+						text-align: right;
 					}
 
 					&:nth-child(3) {
