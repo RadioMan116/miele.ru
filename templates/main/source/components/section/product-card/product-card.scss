@@ -357,6 +357,11 @@
 				font-size: 15px;
 				position: relative;
 				order: 4;
+				&:before {
+
+					width: calc(100% - 30px);
+
+				}
 			}
 			.product-card__cheaper{
 				position: relative;
@@ -366,7 +371,7 @@
 			b {}
 
 			&.price__dashed {
-				color: #d82300;
+				color: $base;
 				// position: relative;
 				padding-bottom: 20px;
 				flex-wrap: wrap;
@@ -376,6 +381,7 @@
 					width: 100%;
 				}
 			}
+
 
 			&.specify-price {
 				font-size: 18px;
@@ -6052,7 +6058,7 @@
 				content: "";
 				position: absolute;
 				bottom: 10px;
-				width: calc(100% - 49px);
+				width: calc(100% - 41px);
 				height: 1px;
 				-webkit-transform: rotate(-12deg);
 				-moz-transform: rotate(-12deg);
