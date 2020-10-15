@@ -6039,7 +6039,7 @@
 
 		.price__absolute {
 			position: absolute;
-			bottom: -19px;
+			bottom: -23px;
 			left: 1px;
 			color: #999999;
 			font-size: 20px;
@@ -6212,14 +6212,15 @@
 			display: flex;
 			align-items: center;
 			height: 40px;
-			font-size: 14px;
-			line-height: 18px;
+
+
 			font-family: "HelveticaNeueCyr-Roman";
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 18px;
 			color: black;
 			margin-bottom: 8px;
+			position: relative;
 
 			img {
 				flex-basis: 40px;
@@ -6232,6 +6233,14 @@
 
 			&:not(:last-of-type) {
 				margin-right: auto;
+			}
+			img:before{
+				content: '';
+				width: 102%;
+				height: 102%;
+				display: flex;
+				position: absolute;
+				background: red;
 			}
 
 			// &:nth-child(2) {
@@ -6701,7 +6710,7 @@
 	&__cheaper {
 		display: flex;
 		flex-direction: column;
-		align-self: flex-start;
+		align-self: center;
 		height: 28px;
 		padding: 4px 12px;
 		border-radius: 17px;
