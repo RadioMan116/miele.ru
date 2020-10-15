@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 28px;
-	margin-top: 28px;
+	margin-top: 24px;
 
 	@media screen and (max-width: 767px) {
 		display: flex;
@@ -601,8 +601,8 @@
 	width: 100%;
 	height: auto !important;
 	border: solid 1px #eeeeee;
-	padding: 26px 15px 20px !important;
-	margin-bottom: 18px;
+	padding: 24px 15px 21px !important;
+	margin-bottom: 16px;
 	background-color: #ffffff;
 
 	&:hover {
@@ -633,7 +633,7 @@
 	color: $base;
 	border-radius: 3px;
 	text-decoration: none !important;
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 	&:hover{
 		background-color: #ececec;
 	}
@@ -643,7 +643,7 @@
 	}
 
 	&:last-child {
-		margin-bottom: 3px;
+		margin-bottom: 2px;
 	}
 
 	@media screen and (max-width: 767px) {
@@ -687,9 +687,9 @@
 
 .yandex__logo {
 	// background: url("../images/yamarket.svg") no-repeat;
-	width: 145px;
-	// height: 106px;
-	margin: 0 auto 24px;
+	width: 150px;
+	height: 29px;
+	margin: 0 auto 22px;
 }
 
 .quality {
@@ -698,7 +698,7 @@
 	justify-content: center;
 	width: 100%;
 	border: solid 1px #eeeeee;
-	padding: 29px 22px 24px;
+	padding: 22px 22px 24px;
 	background-color: #ffffff;
 
 	&:hover {
