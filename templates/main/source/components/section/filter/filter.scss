@@ -258,24 +258,25 @@
 	// margin-right: 28px;
 	&__date {
 		display: flex;
-		display: flex;
+		justify-content: center;
+		align-items: center;
 		height: 28px;
 		color: #cccccc;
 		font-size: 14px;
 		font-weight: 400;
-		font-size: 14px;
 		margin-bottom: 22px;
 		margin-top: 26px;
-		padding-left: 16px;
-		color: #cccccc;
+		padding-left: 0px;
 
 		&::before {
-			content: url("../images/price_updated.svg");
+			content: '';
+			background: url("../images/price_updated.svg") no-repeat;
+			background-size: 14px;
 			flex-shrink: 0;
 			width: 14px;
 			height: 14px;
-			margin-right: 9px;
-			margin-top: 3px;
+			margin-right: 8px;
+			// margin-top: 3px;
 		}
 	}
 
@@ -1066,7 +1067,6 @@
 			// line-height: 24px;
 			// text-transform: uppercase;
 			// // background: $base;
-
 			// &:after {
 			// 	content: "";
 			// 	display: none;
@@ -1075,12 +1075,10 @@
 			// 	background: url("../images/close-filter.svg") no-repeat 50% $base;
 			// 	margin-left: 13px;
 			// }
-
 			// &:before {
 			// 	content: "Сбросить";
 			// 	font-size: 14px;
 			// }
-
 			// margin-left: -8px;
 		}
 
@@ -1394,9 +1392,7 @@
 				text-decoration: none !important;
 			}
 
-			&[name="set_filter"] {
-				display: none;
-			}
+
 		}
 
 		&.more {
@@ -1873,7 +1869,7 @@
 		}
 	}
 
-	.filter__button-submit {
+	.filter__button-submit,#set_filter  {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
@@ -1888,6 +1884,7 @@
 		text-transform: uppercase;
 		border-radius: 3px;
 		cursor: pointer;
+		padding: 0;
 
 		&:hover {
 			background-color: #b90c24;

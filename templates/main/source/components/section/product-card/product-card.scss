@@ -6046,7 +6046,7 @@
 			font-weight: 400;
 			line-height: 20px;
 			// text-decoration: line-through;
-			text-transform: uppercase;
+			text-transform: lowercase;
 
 			&:before {
 				content: "";
@@ -6096,7 +6096,7 @@
 			display: flex;
 			align-items: baseline;
 			position: relative;
-			color: #d82300;
+			color: $base;
 			// padding-bottom: 20px;
 			margin-bottom: 24px;
 			line-height: 30px;

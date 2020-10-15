@@ -2079,9 +2079,10 @@
 		}
 
 		&__price {
-			width: 110px;
+			width: auto;
 			height: 36px;
 			padding-top: 10px;
+			letter-spacing: -.2px;
 
 			&.price__dashed {
 				padding-top: 0;
@@ -3847,6 +3848,9 @@
 		.special-offers__fav {
 			opacity: 1;
 			text-decoration: none !important;
+		}
+		.special-offers__compare{
+			margin: 0 12px;
 		}
 
 		.special-offers__compare,
