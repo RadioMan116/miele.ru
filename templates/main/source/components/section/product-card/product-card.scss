@@ -6059,7 +6059,7 @@
 				-ms-transform: rotate(-12deg);
 				-o-transform: rotate(-12deg);
 				transform: rotate(-12deg);
-				background: #f70000;
+				background: $base;
 			}
 		}
 
@@ -6234,14 +6234,7 @@
 			&:not(:last-of-type) {
 				margin-right: auto;
 			}
-			img:before{
-				content: '';
-				width: 102%;
-				height: 102%;
-				display: flex;
-				position: absolute;
-				background: red;
-			}
+
 
 			// &:nth-child(2) {
 			// 	margin-right: 16px;
