@@ -155,8 +155,15 @@ h1.title {
 	margin-right: 0 !important;
 }
 
-body.fancybox-active {
-	overflow: unset !important;
+body {
+	&.fancybox-active {
+		overflow: unset !important;
+	}
+
+	&.header-search-show {
+		overflow: hidden;
+		height: 100vh;
+	}
 }
 
 .docs-frame {

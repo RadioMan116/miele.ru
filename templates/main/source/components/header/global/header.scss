@@ -905,6 +905,10 @@
 			position: unset;
 			flex-wrap: wrap;
 		}
+		.header-search-show &{
+			box-shadow: 0px 2px 25px rgba(0,0,0,0.14);
+			// overflow: auto;
+		}
 
 		.hamburger {
 			display: block;
@@ -921,8 +925,8 @@
 		.opened {
 			.hamburger__img {
 				background: url('https://icongr.am/entypo/cross.svg?color=7d8082') 0/18px center;
-				width: 18px;
-				height: 18px;
+				width: 22px;
+				height: 22px;
 			}
 		}
 	}
