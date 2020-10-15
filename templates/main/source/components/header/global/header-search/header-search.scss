@@ -1,6 +1,6 @@
 .header-search {
 	position: fixed;
-	z-index: 99;
+	z-index: 1000;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -46,6 +46,7 @@
 		background: #fff;
 		// height: 100%;
 		overflow: auto;
+		z-index: 998;
 
 		.available {
 			line-height: 20px;
@@ -506,6 +507,9 @@
 						line-height: 26px;
 						color: #000000;
 						text-decoration: unset !important;
+						&:hover{
+							color: $base;
+						}
 					}
 				}
 
@@ -562,7 +566,7 @@
 					-ms-transform: rotate(-14deg);
 					-o-transform: rotate(-14deg);
 					transform: rotate(-14deg);
-					background: #f70000;
+					background: $base;
 				}
 			}
 

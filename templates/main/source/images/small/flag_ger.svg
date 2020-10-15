@@ -7,12 +7,14 @@
       <use xlink:href="#path_1" />
     </clipPath>
   </defs>
-  <g id="flag">
-    <path d="M12 0C18.6274 3.33067e-16 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 8.32667e-16 18.6274 0 12C-8.32667e-16 5.37258 5.37258 1.16573e-15 12 0Z" id="Path" fill="#FFFFFF" stroke="none" />
-    <g clip-path="url(#mask_1)">
-      <path d="M0 0L24 0L24 8L0 8L0 0Z" id="Rectangle" fill="#000000" stroke="none" />
-      <path d="M0 0L24 0L24 8L0 8L0 0Z" transform="translate(0 8)" id="Rectangle" fill="#D80027" stroke="none" />
-      <path d="M0 0L24 0L24 8L0 8L0 0Z" transform="translate(0 16)" id="Rectangle" fill="#FFDA44" stroke="none" />
+  <g id="gift-smeg">
+    <g id="flag">
+      <path d="M12 0C18.6274 3.33067e-16 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 8.32667e-16 18.6274 0 12C-8.32667e-16 5.37258 5.37258 1.16573e-15 12 0Z" id="Path" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <path d="M0 0L24 0L24 8L0 8L0 0Z" id="Rectangle" fill="#000000" fill-rule="evenodd" stroke="none" />
+        <path d="M0 0L24 0L24 8L0 8L0 0Z" transform="translate(0 8)" id="Rectangle" fill="#D80027" fill-rule="evenodd" stroke="none" />
+        <path d="M0 0L24 0L24 8L0 8L0 0Z" transform="translate(0 16)" id="Rectangle" fill="#FFDA44" fill-rule="evenodd" stroke="none" />
+      </g>
     </g>
   </g>
 </svg>
