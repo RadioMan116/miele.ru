@@ -266,7 +266,9 @@
 		font-weight: 400;
 		margin-bottom: 22px;
 		margin-top: 26px;
-		padding-left: 0px;
+		padding-left: 12px;
+		padding-bottom: 6px;
+		white-space: nowrap;
 
 		&::before {
 			content: '';
@@ -1391,8 +1393,6 @@
 				padding-left: 0;
 				text-decoration: none !important;
 			}
-
-
 		}
 
 		&.more {
@@ -1869,7 +1869,8 @@
 		}
 	}
 
-	.filter__button-submit,#set_filter  {
+	.filter__button-submit,
+	#set_filter {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
