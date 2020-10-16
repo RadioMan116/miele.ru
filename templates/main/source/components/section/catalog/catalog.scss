@@ -335,7 +335,7 @@
 					}
 
 					&__compare {
-						margin: 0 12px;
+						// margin: 0 12px;
 					}
 
 					&__new {
@@ -3850,7 +3850,7 @@
 			text-decoration: none !important;
 		}
 		.special-offers__compare{
-			margin: 0 12px;
+			margin: 0 12px 0 5px;
 		}
 
 		.special-offers__compare,
@@ -3861,6 +3861,7 @@
 
 		.special-offers__fav {
 			margin-right: 15px;
+			margin-left: unset;
 		}
 
 		.catalog__simile {

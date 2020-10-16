@@ -107,7 +107,7 @@
 		}
 
 		.special-offers__compare {
-			margin: 0 20px 0 7px;
+			// margin: 0 20px 0 7px;
 			background-size: 24px;
 		}
 
@@ -375,6 +375,7 @@
 		width: 100%;
 		background-size: cover;
 		background-position: -4px 0;
+		align-items: flex-end;
 
 		&__item {
 			display: block;
@@ -638,6 +639,7 @@
 		height: 30px;
 		font-size: 0;
 		background: url("../images/buy02.svg");
+		margin-left: 8px;
 
 		// @media screen and (max-width: 1128px) {
 		//     font-size: 11px;
@@ -687,6 +689,7 @@
 		background: url("../images/fav.svg");
 		cursor: pointer;
 		margin-left: auto;
+		margin-right: 8px;
 
 		&:hover {
 			background: url("../images/fav-c.svg");
@@ -702,7 +705,7 @@
 		height: 30px;
 		background: url("../images/com.svg");
 		cursor: pointer;
-		margin: 0 8px;
+
 
 		&:hover, &.active {
 			background: url("../images/com-c.svg");
