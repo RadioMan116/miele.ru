@@ -197,6 +197,9 @@
 		.special-offers__compare, .special-offers__fav {
 			opacity: 0;
 		}
+		.special-offers__fav{
+			margin-left: unset;
+		}
 
 		.special-offers__compare {
 			margin: 0 25px;
