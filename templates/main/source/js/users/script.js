@@ -1335,7 +1335,7 @@ $(document).ready(function () {
 			Inputmask("customAlias").mask("[type=tel]");
 		});
 	});
-	$(".load-items").click(function () {
+	$("#load-items").click(function () {
 		//upon clicking of the button do an ajax post
 		$(document).ajaxSuccess(function () {
 

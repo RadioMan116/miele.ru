@@ -97,6 +97,9 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		&:nth-last-child(2){
+			margin-bottom: 24px;
+		}
 
 		.load-more {
 			margin-top: 31px;
@@ -116,9 +119,9 @@
 				border-color: $base;
 			}
 		}
-		+.sidebar{
-			margin-bottom: 24px;
-		}
+		// +.sidebar{
+		// 	margin-bottom: 24px;
+		// }
 	}
 
 	@media screen and (max-width: 767px) {
