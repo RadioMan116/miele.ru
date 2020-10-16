@@ -3,10 +3,22 @@
 		{% include 'section/sidebar/sidebar.html' %}
 	</div>
 	<div class="col-md-9">
+
 		<div class="breadcrumbs">
-			<a href="#" class="breadcrumbs__link">Miele</a>
-			<span class="breadcrumbs__sep">/</span>
-			<span class="breadcrumbs__text">Контакты</span>
+			<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem"><a href="/" title="Главная" itemprop="item"><span
+							itemprop="name">Miele</span></a>
+				</div>
+				<div class="breadcrumbs__sep">/</div>
+				<div class="breadcrumbs__link" itemprop="itemListElement" itemscope=""
+					itemtype="http://schema.org/ListItem">
+					<span itemprop="name">
+						Поиск
+					</span>
+					<a itemprop="item" href=''></a>
+				</div>
+			</div>
 		</div>
 		<h1 class="title">
 			Результаты поиска
@@ -15,8 +27,7 @@
 			<div class="search-found__item">
 				<form class="search-found__form" action="" method="get">
 					<input type="text" name="q" placeholder="Евгений" value="">
-					<input type="submit" value="Найти"
-						class="btn-sub3 abuse-popup__submit" name="">
+					<input type="submit" value="Найти" class="btn-sub3 abuse-popup__submit" name="">
 				</form>
 			</div>
 			<div class="search-found__item">
@@ -232,8 +243,7 @@
 								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
 							</div>
 							<!-- /.announcing__item -->
-							<div class="announcing__item"
-								data-announcing="Cделано в Германия">
+							<div class="announcing__item" data-announcing="Cделано в Германия">
 								<img data-src="images/small/flag_ger.svg" src="images/small/flag_ger.svg">
 							</div>
 							<!-- /.announcing__item -->
