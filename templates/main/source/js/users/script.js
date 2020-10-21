@@ -2528,7 +2528,15 @@ $(window).on("load", function () {
 				};
 			}
 		})();
-
+		(() => {
+			let select = $(".js-mob-sort");
+			if (select.length) {
+				select.selectric({
+					disableOnMobile: false,
+					nativeOnMobile: false
+				});
+			}
+		})();
 	}
 	if ($(".MultiFile-intercepted").length) {
 		// Убрать прикрепленный файл после отправки рекламации
@@ -2580,8 +2588,6 @@ $(window).on("load", function () {
 	// 		})
 	// 	}
 	// });
-	$(".js-mob-sort").selectric({
-		disableOnMobile: false,
-		nativeOnMobile: false
-	  });
+
+
 });
