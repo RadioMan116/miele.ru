@@ -1900,8 +1900,8 @@ $(document).ready(function () {
 			}
 			else (
 				$(this).hide()
-			)
-		})
+			);
+		});
 
 	})();
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
@@ -2580,4 +2580,8 @@ $(window).on("load", function () {
 	// 		})
 	// 	}
 	// });
+	$(".js-mob-sort").selectric({
+		disableOnMobile: false,
+		nativeOnMobile: false
+	  });
 });
