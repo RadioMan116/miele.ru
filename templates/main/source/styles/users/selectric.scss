@@ -88,7 +88,7 @@ $selectric-font-size: 12px !default; // Font size
 		color: darken($selectric-secondary-color, 10%);
 
 		&:after {
-			border-top-color: darken($selectric-secondary-color, 10%);
+			// border-top-color: darken($selectric-secondary-color, 10%);
 		}
 	}
 }
@@ -102,6 +102,13 @@ $selectric-font-size: 12px !default; // Font size
 
 	.selectric-items {
 		display: block;
+	}
+	.button {
+
+		&:after {
+			// border-top-color: darken($selectric-secondary-color, 10%);
+			transform: rotate(180deg);
+		}
 	}
 }
 
