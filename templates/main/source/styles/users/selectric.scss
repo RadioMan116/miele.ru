@@ -1,20 +1,21 @@
-$selectric-main-color:      #ddd !default;                                              // Color used in border
-$selectric-secondary-color: #bbb !default;                                              // Color used in button
-$selectric-text-color:      #444 !default;                                              // Color used in label
-$selectric-bg-color:        #f8f8f8 !default;                                           // Background color
-$selectric-btn-bg-color:    #f8f8f8 !default;                                           // Button background color
-$selectric-height:          46px !default;                                              // Outer height
-$selectric-spacing:         10px !default;                                              // Label left padding
-$selectric-border-width:    1px !default;                                               // Outer border width
-$selectric-border-radius:   0 !default;                                               // Border radius
-$selectric-inner-height:    $selectric-height - ($selectric-border-width * 2) !default; // Inner height
-$selectric-font-size:       12px !default;                                              // Font size
+$selectric-main-color: #ddd !default; // Color used in border
+$selectric-secondary-color: #bbb !default; // Color used in button
+$selectric-text-color: #444 !default; // Color used in label
+$selectric-bg-color: #f8f8f8 !default; // Background color
+$selectric-btn-bg-color: #f8f8f8 !default; // Button background color
+$selectric-height: 46px !default; // Outer height
+$selectric-spacing: 10px !default; // Label left padding
+$selectric-border-width: 1px !default; // Outer border width
+$selectric-border-radius: 0 !default; // Border radius
+$selectric-inner-height: $selectric-height - ($selectric-border-width * 2) !default; // Inner height
+$selectric-font-size: 12px !default; // Font size
 
 .selectric-wrapper {
-	position: relative;
-	cursor: pointer;
-	width: 100%;
 	display: flex;
+	position: relative;
+	width: 100%;
+	cursor: pointer;
+	top: 0;
 }
 
 .selectric-responsive {
@@ -23,11 +24,11 @@ $selectric-font-size:       12px !default;                                      
 
 .selectric {
 	position: relative;
-	overflow: hidden;
 	// border: $selectric-border-width solid $selectric-main-color;
 	// border-radius: $selectric-border-radius;
 	// background: $selectric-bg-color;
 	width: 100%;
+	overflow: hidden;
 
 	.label {
 		display: block;
@@ -54,7 +55,9 @@ $selectric-font-size:       12px !default;                                      
 		color: $selectric-secondary-color;
 		text-align: center;
 		font: 0/0 a;
-		*font: 20px/#{$selectric-inner-height} Lucida Sans Unicode, Arial Unicode MS, Arial;
+		*font: 20px/#{$selectric-inner-height} Lucida Sans Unicode,
+			Arial Unicode MS,
+			Arial;
 
 		&:after {
 			content: " ";
@@ -66,9 +69,10 @@ $selectric-font-size:       12px !default;                                      
 			width: 0;
 			height: 0;
 			margin: auto;
-			border: 4px solid transparent;
-			border-top-color: $selectric-secondary-color;
-			border-bottom: none;
+			border-style: solid;
+			border-width: 5px 5px 0;
+			border-color: #4b4b4b transparent transparent;
+			border-radius: 40%;
 		}
 	}
 }
