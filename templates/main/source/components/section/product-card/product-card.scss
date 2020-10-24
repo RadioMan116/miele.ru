@@ -4308,6 +4308,10 @@
 			margin-left: 2px;
 			cursor: pointer;
 			margin-right: 14px;
+		    border: 2px solid #8c0014;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
 
 			&:last-child {
 				margin-right: 0;
@@ -4321,11 +4325,14 @@
 		}
 
 		.icons-prop-item {
-			width: 48px;
-			height: 48px;
+			width: auto;
+			height: auto;
 			padding: 0;
-			border-radius: 3px;
-			margin-bottom: 5px;
+			margin: -2px;
+			max-width:  calc(100% + 4px);;
+			max-height:  calc(100% + 4px);;
+
+			margin-bottom: 0px;
 		}
 
 		.popup-prop {
