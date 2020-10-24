@@ -4308,10 +4308,9 @@
 			margin-left: 2px;
 			cursor: pointer;
 			margin-right: 14px;
-		    border: 2px solid #8c0014;
-    overflow: hidden;
-    border-radius: 12px;
-    display: flex;
+			border: 2px solid #8c0014;
+			overflow: hidden;
+			border-radius: 12px;
 
 			&:last-child {
 				margin-right: 0;
@@ -4325,14 +4324,13 @@
 		}
 
 		.icons-prop-item {
-			width: auto;
+			width: 48px;
 			height: auto;
 			padding: 0;
-			margin: -2px;
-			max-width:  calc(100% + 4px);;
-			max-height:  calc(100% + 4px);;
+			border-radius: 3px;
+			margin-bottom: 0;
+			clip-path: polygon(21% 5%, 81% 5%, 95% 19%, 95% 81%, 79% 96%, 20% 96%, 5% 80%, 5% 21%);
 
-			margin-bottom: 0px;
 		}
 
 		.popup-prop {
