@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="shopping-cart">
+    <g id="compare">
+      <path d="M0 0L18 0L18 18L0 18L0 0Z" id="Rectangle-5" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M9 9L9 7.5L10.5 7.5L10.5 9L12 9L12 10.5L10.5 10.5L10.5 12L9 12L9 10.5L7.5 10.5L7.5 9L9 9ZM0 9L6 9L6 10.5L0 10.5L0 9ZM0 0L12 0L12 1.5L0 1.5L0 0ZM0 4.5L12 4.5L12 6L0 6L0 4.5Z" transform="translate(3 3)" id="Shape" fill="#8C0014" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

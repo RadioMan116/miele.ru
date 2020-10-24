@@ -1074,7 +1074,17 @@ $(document).ready(function () {
 			$(".header__icons").appendTo(".header .header__block_top .container");
 			$("#js-menu").appendTo("#js-header__block_bottom .container");
 			$(".time-work").appendTo(".header__telephones");
-			firstDropdownMenu.classList.add("active");
+			// firstDropdownMenu.classList.add("active");
+			let favComParent = $("<div/>", {
+				"class": "dropdown-menu__fav-com"
+			});
+			let fav = $(".header__favorite");
+			let com = $(".header__compare");
+			favComParent.append(com);
+			favComParent.append(fav);
+
+			$(".header__dropdown-menu").append(favComParent);
+			if(fav.hasClass("active") || com.hasClass("active")){favComParent.addClass("active");}
 		})();
 		(function () {
 			let catalogList = document.querySelector(".catalog__list");

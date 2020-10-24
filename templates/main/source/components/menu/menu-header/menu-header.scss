@@ -6,11 +6,17 @@
 	// width:890px;
 	width: 100%;
 
+	&-mobile {
+		display: none;
+	}
+
 	@media (max-width: 767px) {
 		display: none;
 
 		.city-change {
-			order: 2;
+			display: flex;
+			align-items: center;
+			order: -2;
 			z-index: 9;
 			width: 100%;
 			border-top: 1px solid #f1f1f1;
@@ -21,16 +27,40 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 22px;
-			text-align: right;
+			text-align: left;
 
-			&__title {}
+			&:before {
+				content: "";
+				width: 24px;
+				height: 24px;
+				background: url("../images/location.svg");
+				margin-right: 8px;
+			}
 
-			&__bullet {}
+			&__title {
+				color: #4b4b4b;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-right: 5px;
+			}
 
-			&__link {}
+			&__bullet {
+				background: url("https://icongr.am/entypo/chevron-right.svg?color=a6a6a6") 100%/14px no-repeat;
+				display: flex;
+				height: 14px;
+			}
+
+			&__link {
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-right: 5px;
+			}
 
 			&.active {
 				.city-change__popup {
+					top: calc(100% + 3px);
 					left: 5px;
 					min-width: unset !important;
 				}
@@ -47,6 +77,7 @@
 
 		.header__telephones {
 			display: flex;
+			display: none;
 			flex-wrap: wrap;
 			align-items: baseline;
 			order: 3;
@@ -134,9 +165,11 @@
 		}
 
 		&__list {
+			display: none;
 			flex-wrap: wrap;
 			flex-direction: row;
 			justify-content: space-between;
+			order: 9;
 			width: calc(100% + 32px);
 			padding: 7px 16px 24px;
 			background-color: #f1f1f1;
@@ -162,6 +195,10 @@
 
 		&.active {
 			display: flex;
+			width: inherit;
+			margin: 0 -16px;
+			padding: 0 16px 10vh;
+			background: #f6f6f6;
 			// transform: scale(1);
 			// z-index: 10;
 			// background-color: #262626;
@@ -169,6 +206,117 @@
 
 		&+.menu {
 			display: none;
+		}
+
+		&-mobile {
+			display: flex;
+			flex-direction: column;
+			background: #f6f6f6;
+			min-width: unset;
+			margin-top: 18px;
+
+			// .menu-mobile__tel
+			&__tel {
+				font-family: "HelveticaNeueCyr-Light";
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 26px;
+				text-align: center;
+				color: #000000;
+				margin-bottom: 4px;
+			}
+
+			// .menu-mobile__text
+			&__text {
+				display: flex;
+				color: #4b4b4b;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 22px;
+				text-align: center;
+				margin-bottom: 16px;
+				justify-content: center;
+			}
+
+			// .menu-mobile__call-phone-button
+			&__call-phone-button {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-bottom: 14px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: unset !important;
+
+				&:before {
+					content: "";
+					width: 14px;
+					height: 14px;
+					background: url(../images/footer__call.svg);
+					margin-right: 4px;
+					background-size: contain;
+				}
+
+				span {
+					border-bottom: 1px dashed #8c0014;
+				}
+			}
+
+			// .menu-mobile__col
+			&__col {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				height: auto;
+			}
+
+			// .menu-mobile__title
+			&__title {
+				width: 100%;
+				padding: 8px 16px;
+				font-family: HelveticaNeueCyr-Medium;
+				font-size: 16px;
+				line-height: 36px;
+				margin-bottom: 0;
+				cursor: pointer;
+				text-align: center;
+				cursor: pointer;
+				text-align: center;
+				color: #000000;
+			}
+
+			// .menu-mobile__list
+			&__list {
+				display: block;
+				flex-grow: 1;
+				width: 50%;
+				height: unset !important;
+				margin: 0;
+				padding: 0;
+				padding-bottom: 20px;
+				list-style-type: none;
+			}
+
+			// .menu-mobile__item
+			&__item {
+				display: flex;
+				width: 100%;
+				max-width: 100%;
+				padding: 0;
+				cursor: pointer;
+				color: #8c0014;
+				margin-bottom: 10px;
+			}
+
+			// .menu-mobile__link
+			&__link {
+				color: #4b4b4b;
+				font-family: HelveticaNeueCyr-Roman;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 16px;
+			}
 		}
 	}
 
@@ -261,8 +409,7 @@
 		&:hover {
 
 			// margin-left: 40px;
-			a,
-			span {
+			a, span {
 				// color: $base;
 				text-shadow: 0 0 0.9px #fff, 0 0 0.9px #fff, 0 0 0.9px #fff;
 				text-decoration: none;
