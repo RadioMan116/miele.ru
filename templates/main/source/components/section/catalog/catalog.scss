@@ -2861,11 +2861,18 @@
 			width: calc(100%/5 - 12px);
 			margin-right: 8px;
 			margin-bottom: 8px;
+			border: 2px solid #8c0014;
+			overflow: hidden;
+			border-radius: 12px;
 		}
 
 		.icons-prop-item {
-			width: 100%;
+			width: auto;
 			height: auto;
+			clip-path: polygon(21% 5%,81% 5%,95% 19%,95% 81%,79% 96%,20% 96%,5% 80%,5% 21%);
+			margin: -2px;
+			max-width: calc(100% + 4px);
+			max-height: calc(100% + 4px);
 			// padding: 0 4px 4px 0;
 		}
 	}
