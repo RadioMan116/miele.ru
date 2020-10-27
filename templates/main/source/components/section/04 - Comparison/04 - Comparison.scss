@@ -14,21 +14,22 @@
 		.fixed-header {
 			max-width: 100%;
 			height: unset;
-
 			// display: none;
+
 			.title {
 				display: none;
 			}
 
 			.swiper-slide {
 				flex: 1 0 auto !important;
+				padding-left: 5px;
 				flex-wrap: nowrap;
 				flex-direction: column;
-				padding-left: 5px;
 
 				.special-offers__sale {
-					flex-direction: row;
 					width: 100%;
+					flex-direction: row;
+
 				}
 
 				.catalog__presence {
@@ -37,40 +38,44 @@
 			}
 
 			.swiper-wrapper {
-				width: 100%;
 				height: 100%;
 				margin-top: 20px;
 				padding-bottom: 15px;
+				width: 100%;
+			}
+
+			&__pic {
+				display: none;
 			}
 
 			.swiper-container {
-				max-width: 100%;
 				margin-top: 30px;
 				padding-right: 0 !important;
+				max-width: 100%;
 			}
 
 			.fixed-header-next {
-				top: 30px;
 				right: 0;
 				left: unset;
+				top: 30px;
 			}
 
 			.fixed-header-prev {
-				top: 30px;
 				left: 0;
+				top: 30px;
 			}
 
 			.swiper-pagination {
-				justify-content: center;
-				z-index: 9999;
 				top: 1px;
+				transform: translateX(-50%);
+				height: 39px;
+				background: white;
 				left: 50%;
 				width: 80%;
+				justify-content: center;
 				max-width: unset;
-				height: 39px;
-				transform: translateX(-50%);
-				background: white;
 				padding-top: 8px;
+				z-index: 9999;
 
 				* {
 					margin: 0 16px !important;
@@ -78,22 +83,251 @@
 			}
 
 			.fixed-header__text {
-				width: 100%;
 				color: $base;
 				font-family: Arial, sans-serif;
 				font-size: 14px;
 				line-height: 20px;
+				width: 100%;
 				margin-bottom: 10px;
 			}
 
-			&__pic {
-				display: none;
-			}
 		}
 
-		.swiper-container-comparison .comparison__diagram, &__main .comparison__diagram {
+		.swiper-container-comparison .comparison__diagram,
+		&__main .comparison__diagram {
 			height: 350px;
 			margin-bottom: 60px;
+		}
+
+		&__middle {}
+
+		thead {
+			position: absolute;
+			width: 100% !important;
+			// z-index: 999;
+			padding-top: 0;
+			display: flex;
+			flex-direction: column;
+
+
+			tr {
+				position: relative;
+				background: unset !important;
+				width: 100%;
+
+				&:first-child {
+					height: unset;
+					display: flex;
+				}
+
+				&:hover {
+					background-color: unset !important;
+
+					td {
+						background-color: unset !important;
+					}
+				}
+
+				&.characteristic__title {
+					background-color: #f8f8f8 !important;
+
+					td {
+						width: unset;
+						align-items: center !important;
+						color: #2e2e2e;
+
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 24px;
+						display: flex;
+						justify-content: center;
+
+						&:after {
+							display: none;
+						}
+					}
+
+					&:before {
+						top: 10px;
+						background-size: 18px !important;
+					}
+				}
+
+				&.characteristic__row {
+
+					// border-bottom: none;
+					td {
+						padding: 0 0 0px 0 !important;
+						border: 0 !important;
+						font-family: Arial, sans-serif;
+						font-size: 14px;
+						font-weight: 700;
+						line-height: 1.2;
+
+
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+
+			td {
+				width: 100% !important;
+				align-items: flex-start !important;
+				border: 0;
+				background: transparent;
+				width: 100%;
+				// height: unset !important;
+				font-size: 12px;
+				font-weight: 500;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1;
+				letter-spacing: normal;
+				text-align: left;
+				color: #2e2e2e;
+				top: unset;
+				padding: 10px 0 0px 5px !important;
+
+
+				.swiper__comparison_first.js-comparison-height {
+					width: 100%;
+					height: auto !important;
+					padding-bottom: 60px;
+				}
+
+
+			}
+
+			.comparison__inner {
+				width: 100%;
+				padding: 15px 0;
+				margin-bottom: 10px;
+			}
+
+			.thead__comparison {
+
+				// margin-bottom: 330px;
+				td {
+					padding: 0 !important;
+
+				}
+			}
+
+			.diagram {
+				box-shadow: unset;
+				z-index: 999999;
+				padding-left: 0 !important;
+
+				&__title {
+					color: #212121;
+
+					font-size: 22px;
+					font-weight: 400;
+					text-align: center;
+					margin-bottom: 21px;
+					line-height: 26px;
+				}
+
+				.diagram__next,
+				.diagram__prev,
+				.diagram__maxvalue {
+					display: none;
+				}
+
+				.diagram__items {
+					flex-direction: column;
+				}
+
+				.diagram__sidebar {
+					width: 100%;
+					height: 46px;
+					padding: 0;
+					overflow: hidden;
+					margin-bottom: 16px;
+
+
+
+					&.active {
+						overflow: visible;
+						z-index: 999;
+						background: white;
+						position: relative;
+
+						&:after {
+							content: '';
+							width: 100%;
+							height: 300px;
+							position: absolute;
+							top: 0;
+							left: 0;
+							background: white;
+						}
+
+						.diagram__tabs {
+							z-index: 9999;
+						}
+					}
+				}
+
+				.diagram__tabs {
+					border-radius: 2px;
+					border: 1px solid #d6d6d6;
+					background-color: #ffffff;
+					color: #2e2e2e;
+					font-family: Arial, sans-serif;
+					font-size: 14px;
+					text-align: left;
+					justify-content: flex-start;
+					padding: 9px 12px 12px;
+					height: unset;
+					min-height: unset;
+					align-items: baseline;
+					flex-shrink: 0;
+
+					&.active {
+						order: -1;
+						background: url("https://icongr.am/entypo/triangle-down.svg") 98%/10px no-repeat;
+					}
+				}
+
+				.diagram__slider {
+					width: 100%;
+					margin-left: 0;
+					height: 100%;
+					padding-left: 0;
+					background-size: 100% 10%;
+
+					&:before {
+						display: none;
+					}
+				}
+
+				.diagram__pic {
+					height: 0;
+					width: 0;
+					opacity: 0;
+				}
+
+				.diagram__item {
+					padding-top: 25px;
+					display: flex;
+				}
+
+				.diagram__name {
+					text-align: center;
+					color: $base;
+					font-family: Arial, sans-serif;
+					font-size: 14px;
+					line-height: 20px;
+					padding: 0 6px;
+				}
+
+				.swiper-wrapper {
+					padding-bottom: 30px;
+				}
+			}
 		}
 
 		.swiper-container {
@@ -101,9 +335,9 @@
 			flex-wrap: nowrap;
 			flex-direction: column;
 			justify-content: center;
-			z-index: 9999;
 			width: 100% !important;
 			padding: 0 !important;
+			z-index: 9999;
 
 			.characteristic__row {
 				&.level {
@@ -123,8 +357,8 @@
 		.characteristic__row {
 			position: relative;
 			padding-top: 1px;
-
 			// margin-top: 10px;
+
 			&.level {
 				min-height: 69px;
 			}
@@ -136,17 +370,27 @@
 
 		.characteristic__title {
 			height: 40px;
+			background: unset;
+
 
 			td {
 				padding: 0 !important;
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		&__item {
+			width: calc(100% + 2px);
+
+			&.order {
+				background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 4px) 11px/15px no-repeat;
 			}
 		}
 
 		.swiper-block {
-			flex: 1 0 calc(50% - 8px) !important;
-			justify-content: flex-start !important;
-			width: 50%;
-			height: 100%;
 			padding-top: 28px;
 			font-size: 12px !important;
 			font-weight: normal;
@@ -155,18 +399,19 @@
 			letter-spacing: normal;
 			text-align: left;
 			color: #2e2e2e;
+			flex: 1 0 calc(50% - 8px) !important;
+			width: 50%;
 			padding-left: 5px;
+			height: 100%;
 			margin-right: 16px;
+			justify-content: flex-start !important;
 		}
 
 		.swiper-pagination {
 			display: block;
-			right: unset;
 			// top: 375px;
 			bottom: unset;
-			left: 50%;
 			height: unset;
-			transform: translateX(-50%);
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -174,6 +419,10 @@
 			line-height: 2;
 			letter-spacing: normal;
 			color: #2e2e2e;
+			right: unset;
+			transform: translateX(-50%);
+			left: 50%;
+
 		}
 
 		.swiper-pagination span:nth-child(2n) {
@@ -190,12 +439,13 @@
 			right: 0;
 		}
 
+
+
 		.special-offers__buy {
+			background-image: none;
 			@include button;
 			display: flex;
 			align-items: center;
-			width: 100%;
-			background-image: none;
 			font-size: 12px;
 			font-weight: 500;
 			font-style: normal;
@@ -204,6 +454,7 @@
 			letter-spacing: normal;
 			text-align: left;
 			color: #ffffff;
+			width: 100%;
 		}
 
 		.special-offers__sale {
@@ -216,10 +467,10 @@
 
 		.characteristic__title {
 			.swiper-block {
-				display: flex;
-				justify-content: center;
 				position: absolute;
 				width: 100%;
+				display: flex;
+				justify-content: center;
 				padding-left: 0;
 				background: transparent;
 			}
@@ -228,8 +479,8 @@
 		.comparison__list {
 			margin-top: 0;
 			margin-bottom: 18px;
-
 			// height: 50px;
+
 			&.active {
 				overflow: unset;
 			}
@@ -250,12 +501,12 @@
 		}
 
 		.products-line {
-			position: relative;
 			z-index: 999999;
+			position: relative;
 
 			.swiper-slide {
-				flex: 1 0 calc(50% - 8px) !important;
 				height: unset;
+				flex: 1 0 calc(50% - 8px) !important;
 				padding: 0;
 			}
 		}
@@ -265,12 +516,12 @@
 		}
 
 		.swiper__comparison {
-			align-content: unset;
 			width: 100%;
-			min-height: unset !important;
+			padding: 23px 12px 12px;
 			// height: 100%;
 			max-height: 100%;
-			padding: 23px 12px 12px;
+			min-height: unset !important;
+			align-content: unset;
 
 			.special-offers__pic {
 				width: 100%;
@@ -284,32 +535,34 @@
 			}
 
 			.special-offers__text {
-				height: unset;
 				color: #333333;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 20px;
+				height: unset;
 				padding-top: 16px;
 				padding-bottom: 9px;
 			}
 
 			.special-offers__price {
-				flex-wrap: nowrap;
-				width: 100%;
 				color: #333333;
 				font-size: 16px;
 				font-weight: 700;
 				line-height: 24px;
+				width: 100%;
 				margin-top: 0;
+				flex-wrap: nowrap;
 				margin-bottom: 10px;
 
 				.special-offers__rub {
 					color: #333333;
+
 					font-size: 16px;
 					font-weight: 700;
 					line-height: 24px;
 				}
 			}
+
 		}
 
 		.modal__close {
@@ -330,17 +583,23 @@
 			font-size: 14px;
 		}
 
+		&__main tr.thead__comparison:before {
+			// height: 239%;
+			height: calc(200% + 40px);
+			display: none;
+		}
+
 		.comparison-menu__title {
 			line-height: 1;
 			margin-bottom: 19px;
 		}
 
 		.comparison__link {
-			display: flex;
-			align-items: center;
 			padding: 11px 12px;
 			line-height: 1;
 			text-decoration: none !important;
+			display: flex;
+			align-items: center;
 		}
 
 		.comparison__text {
@@ -356,236 +615,6 @@
 			}
 		}
 
-		&__middle {}
-
-		&__item {
-			width: calc(100% + 2px);
-
-			&.order {
-				background: url("https://icongr.am/entypo/triangle-down.svg") white calc(100% - 4px) 11px/15px no-repeat;
-			}
-		}
-
-		&__main tr.thead__comparison:before {
-			display: none;
-			// height: 239%;
-			height: calc(200% + 40px);
-		}
-
-		thead {
-			display: flex;
-			flex-direction: column;
-			position: absolute;
-			width: 100% !important;
-			// z-index: 999;
-			padding-top: 0;
-
-			.comparison__inner {
-				width: 100%;
-				padding: 15px 0;
-				margin-bottom: 10px;
-			}
-
-			.thead__comparison {
-
-				// margin-bottom: 330px;
-				td {
-					padding: 0 !important;
-				}
-			}
-
-			.diagram {
-				z-index: 999999;
-				box-shadow: unset;
-				padding-left: 0 !important;
-
-				.diagram__next, .diagram__prev, .diagram__maxvalue {
-					display: none;
-				}
-
-				.diagram__items {
-					flex-direction: column;
-				}
-
-				.diagram__sidebar {
-					width: 100%;
-					height: 46px;
-					overflow: hidden;
-					padding: 0;
-					margin-bottom: 16px;
-
-					&.active {
-						position: relative;
-						z-index: 999;
-						overflow: visible;
-						background: white;
-
-						&:after {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 100%;
-							height: 300px;
-							background: white;
-						}
-
-						.diagram__tabs {
-							z-index: 9999;
-						}
-					}
-				}
-
-				.diagram__tabs {
-					flex-shrink: 0;
-					align-items: baseline;
-					justify-content: flex-start;
-					height: unset;
-					min-height: unset;
-					border: 1px solid #d6d6d6;
-					padding: 9px 12px 12px;
-					border-radius: 2px;
-					background-color: #ffffff;
-					color: #2e2e2e;
-					font-family: Arial, sans-serif;
-					font-size: 14px;
-					text-align: left;
-
-					&.active {
-						order: -1;
-						background: url("https://icongr.am/entypo/triangle-down.svg") 98%/10px no-repeat;
-					}
-				}
-
-				.diagram__slider {
-					width: 100%;
-					height: 100%;
-					margin-left: 0;
-					padding-left: 0;
-					background-size: 100% 10%;
-
-					&:before {
-						display: none;
-					}
-				}
-
-				.diagram__pic {
-					width: 0;
-					height: 0;
-					opacity: 0;
-				}
-
-				.diagram__item {
-					display: flex;
-					padding-top: 25px;
-				}
-
-				.diagram__name {
-					padding: 0 6px;
-					text-align: center;
-					color: $base;
-					font-family: Arial, sans-serif;
-					font-size: 14px;
-					line-height: 20px;
-				}
-
-				.swiper-wrapper {
-					padding-bottom: 30px;
-				}
-
-				&__title {
-					color: #212121;
-					font-size: 22px;
-					font-weight: 400;
-					text-align: center;
-					margin-bottom: 21px;
-					line-height: 26px;
-				}
-			}
-
-			tr {
-				position: relative;
-				width: 100%;
-				background: unset !important;
-
-				&:hover {
-					background-color: unset !important;
-
-					td {
-						background-color: unset !important;
-					}
-				}
-
-				&:first-child {
-					display: flex;
-					height: unset;
-				}
-
-				&.characteristic__title {
-					background-color: #f8f8f8 !important;
-
-					&:before {
-						top: 10px;
-						background-size: 18px !important;
-					}
-
-					td {
-						display: flex;
-						align-items: center !important;
-						justify-content: center;
-						width: unset;
-						color: #2e2e2e;
-						font-size: 14px;
-						font-weight: 400;
-						line-height: 24px;
-
-						&:after {
-							display: none;
-						}
-					}
-				}
-
-				&.characteristic__row {
-					td {
-						border: 0 !important;
-						padding: 0 0 0 0 !important;
-						font-family: Arial, sans-serif;
-						font-size: 14px;
-						font-weight: 700;
-						line-height: 1.2;
-
-						&:after {
-							display: none;
-						}
-					}
-				}
-			}
-
-			td {
-				align-items: flex-start !important;
-				top: unset;
-				width: 100% !important;
-				width: 100%;
-				border: 0;
-				padding: 10px 0 0 5px !important;
-				background: transparent;
-				// height: unset !important;
-				font-size: 12px;
-				font-weight: 500;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1;
-				letter-spacing: normal;
-				text-align: left;
-				color: #2e2e2e;
-
-				.swiper__comparison_first.js-comparison-height {
-					width: 100%;
-					height: auto !important;
-					padding-bottom: 60px;
-				}
-			}
-		}
 	}
 
 	@media screen and (max-width: 320px) {
