@@ -14,7 +14,7 @@ var compareArray = {
 			zebra: o.zebra || false, // Включение зебры таблцы при переключении кнопок
 			zebraClass: o.zebraClass || "odd", // Класс строки для фона зебры таблицы
 			callback: o.callback || function () {} // Обратная функция
-		}
+		};
 
 		if (!o.table || o.button.length == 0) {
 			return false;
@@ -33,31 +33,31 @@ var compareArray = {
 				}
 				_this.addClass(this, o.activeClass);
 				_this.hideShowRows(this.getAttribute("compare"));
-				var visible = $('.swiper-container-comparison tr.characteristic__row');
-				var visibleMain = $('.comparison__main .characteristic__row');
+				var visible = $(".swiper-container-comparison tr.characteristic__row");
+				var visibleMain = $(".comparison__main .characteristic__row");
 				var visibleArrIndex = [];
 				var visibleMainArrIndex = [];
 				$(visible).each(function (index, el) {
-					if ($(el).css('display') != 'none') {
+					if ($(el).css("display") != "none") {
 
 						// $(el).prev().prev('.characteristic__title').show();
-						$(el).prevAll('.characteristic__title').first().show();
+						$(el).prevAll(".characteristic__title").first().show();
 						visibleArrIndex.push(index);
 					}
-				})
+				});
 				$(visibleMain).each(function (index, el) {
 					visibleMainArrIndex.push(index, el);
 					$(visibleArrIndex).each(function (indexInner, elInner) {
 						if (index == elInner) {
 							$(el).show();
 							// $(el).prev().prev('.characteristic__title').show();
-							$(el).prevAll('.characteristic__title').first().show();
+							$(el).prevAll(".characteristic__title").first().show();
 
 						}
 					});
 
 
-				})
+				});
 
 
 				// console.log(visibleArrIndex);
@@ -65,7 +65,7 @@ var compareArray = {
 
 				return false;
 
-			}
+			};
 		}
 
 	},
@@ -76,7 +76,7 @@ var compareArray = {
 			for (i = this.o.indexRows, l = this.tr.length; i < l; i += 1) {
 				td = this.tr[i].getElementsByTagName("td");
 				for (j = this.o.indexCols, n = td.length; j < n; j += 1) {
-					text.push(td[j].innerHTML.toLowerCase().replace(/\s+/g, ""))
+					text.push(td[j].innerHTML.toLowerCase().replace(/\s+/g, ""));
 					// console.log(text)
 
 				}
@@ -118,7 +118,7 @@ var compareArray = {
 	},
 	removeClass: function (o, cls) {
 		if (this.hasClass(o, cls)) {
-			o.className = o.className.replace(new RegExp("(\\s|^)" + cls + "(\\s|$)"), " ").replace(/^\s+|\s+$/g, "")
+			o.className = o.className.replace(new RegExp("(\\s|^)" + cls + "(\\s|$)"), " ").replace(/^\s+|\s+$/g, "");
 		}
 	},
 	zebraTable: function () {
@@ -133,7 +133,7 @@ var compareArray = {
 			}
 		}
 	}
-}
+};
 
 
 // comparison end
