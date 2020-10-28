@@ -627,11 +627,12 @@
 		flex-grow: unset;
 		margin-top: 0;
 
+
 		.special-offers__price {
-			color: #333333;
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 24px;
+			font-family: "HelveticaNeueCyr-Medium";
+			font-size: 18px;
+			// font-weight: 700;
+			line-height: 21px;
 		}
 	}
 
@@ -696,6 +697,11 @@
 			align-items: baseline;
 			height: auto;
 			padding-left: 0;
+			&:hover{
+				.special-offers__buy, .special-offers__compare, .special-offers__fav{
+					opacity: 1;
+				}
+			}
 		}
 
 		.swiper__comparison_first {
@@ -707,7 +713,7 @@
 	.comparison__filter {
 		display: block !important;
 		padding: 0 16px 16px 45px;
-		background: url("../images/comparison-delete.svg") 21px 4px/12px no-repeat;
+		background: url("../images/comparison-delete.svg") 21px 1px/12px no-repeat;
 		color: $base;
 		margin-top: 16px;
 
@@ -1490,7 +1496,8 @@
 			.schedule {
 				width: 100%;
 				margin-top: auto;
-				background-image: linear-gradient(to top, #f3a49e 0%, $base 100%);
+				// background-image: linear-gradient(to top, #f3a49e 0%, $base 100%);
+				background: linear-gradient(180deg, #4B4B4B, #A6A6A6);
 			}
 
 			.diagram__maxvalue {
@@ -1532,12 +1539,12 @@
 				height: 46px;
 				border: 1px solid #eeeeee;
 				padding: 4px 10%;
-				color: $base;
+				color: #000;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 18px;
 				border-radius: 4px;
-				background-color: #f8f8f8;
+				background: #f6f6f6;
 				text-align: center;
 				margin-bottom: 13px;
 				cursor: pointer;
