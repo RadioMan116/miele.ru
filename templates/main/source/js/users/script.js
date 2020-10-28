@@ -141,9 +141,15 @@ $(document).ready(function () {
 		} else {
 			mainCollection.forEach(function (element, index) {
 				let $this = $(this);
+
+
 				element.querySelector(".swiper-container").classList.add("instance-" + index);
 				element.querySelector(".swiper-button-next").classList.add("instance-next-" + index);
 				element.querySelector(".swiper-button-prev").classList.add("instance-prev-" + index);
+				if (windowWidth2 > 767 &&  element.hasAttribute("data-swiper-mobile")) {
+
+					return;
+				}
 				if ($(element.closest(".product-card"))) {
 					let mySwiper33 = new Swiper(".instance-" + index, {
 						slidesPerView: 4,
@@ -179,6 +185,7 @@ $(document).ready(function () {
 						}
 					});
 				} else {
+
 					let mySwiper33 = new Swiper(".instance-" + index, {
 						slidesPerView: 4,
 						spaceBetween: 25,
@@ -2426,7 +2433,7 @@ $(window).on("load", function () {
 				$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").addClass("hide").nextUntil(".characteristic__title").addClass("hide");
 
 				$(".comparison thead .js-characteristic__title").each(function (index, el) {
-					$(this).find('td').click(function () {
+					$(this).find("td").click(function () {
 
 						$(this).parent().toggleClass("hide shadow").nextUntil(".characteristic__title").toggleClass("hide shadow");
 						$(".comparison tbody .js-characteristic__title").eq(index).toggleClass("hide shadow").nextUntil(".characteristic__title").toggleClass("hide shadow");
@@ -2440,14 +2447,14 @@ $(window).on("load", function () {
 						// 	// $('.wrap1').unwrap()
 						// }
 						// console.log($(this).closest('.wrap1'))
-					})
-				})
+					});
+				});
 				$(".comparison tbody .js-characteristic__title").each(function (index, el) {
-					$(this).find('td').click(function () {
+					$(this).find("td").click(function () {
 						$(this).parent().toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
-						$('.comparison thead .js-characteristic__title').eq(index).toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
-					})
-				})
+						$(".comparison thead .js-characteristic__title").eq(index).toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
+					});
+				});
 
 			});
 		}, 500);

@@ -43,6 +43,13 @@
 
 		.special-offers__slide {
 			padding-bottom: 13px !important;
+			width: 100%;
+			margin-bottom: 0;
+			margin-right: 0px;
+		}
+
+		.swiper-wrapper{
+			flex-wrap: nowrap;
 		}
 
 		.swiper-pagination_3 {
@@ -65,7 +72,8 @@
 
 		.container {
 
-			.new-items_prev, .new-items_next {
+			.new-items_prev,
+			.new-items_next {
 				top: 47px;
 			}
 
@@ -108,11 +116,28 @@
 		min-height: unset;
 	}
 
+	.special-offers__slide {
+		width: calc((100% / 4) - 18.74px);
+		margin-right: 25px;
+		margin-bottom: 24px;
+
+		&:nth-child(4n+4) {
+			margin-right: 0;
+		}
+	}
+
 	&__caption {
 		display: flex;
 		margin-bottom: 32px;
 
 		span {}
+	}
+
+	.swiper-wrapper {
+		flex-wrap: wrap;
+		.swiper-wrapper{
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__title.special-offers__title {
@@ -150,7 +175,8 @@
 			content: "В разделе";
 		}
 
-		a, i {
+		a,
+		i {
 			color: $base;
 			font-style: initial;
 			padding: 0 5px;
@@ -172,8 +198,12 @@
 		color: $base;
 		text-transform: uppercase;
 		text-decoration: none !important;
+
 		&:hover {
 			background: #ececec;
 		}
+	}
+	.swiper-button-next, .swiper-button-prev {
+		display: none;
 	}
 }
