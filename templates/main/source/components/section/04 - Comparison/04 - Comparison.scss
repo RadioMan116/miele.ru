@@ -713,7 +713,7 @@
 	.comparison__filter {
 		display: block !important;
 		padding: 0 16px 16px 45px;
-		background: url("../images/comparison-delete.svg") 21px 1px/12px no-repeat;
+		background: url("../images/comparison-delete.svg") 18px 1px/12px no-repeat;
 		color: $base;
 		margin-top: 16px;
 
@@ -731,6 +731,8 @@
 		font-size: 14px;
 		line-height: 20px;
 		margin-top: auto;
+		padding: 17px 16px;
+		cursor: pointer;
 
 		&:before {
 			content: "Открыть все параметры";
@@ -739,11 +741,11 @@
 		&:after {
 			content: "";
 			width: 20px;
-			background: url("https://icongr.am/entypo/chevron-small-down.svg?color=394791") 50% 50%/20px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-small-down.svg?color=8c0014") 50% 50%/20px no-repeat;
 		}
 
 		&.active {
-			color: #666666;
+			// color: #666666;
 
 			&:before {
 				content: "Закрыть все параметры";
@@ -751,7 +753,7 @@
 
 			&:after {
 				content: "";
-				background: url("https://icongr.am/entypo/chevron-small-up.svg?color=666666") 50% 50%/20px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-small-up.svg?color=8c0014") 50% 50%/20px no-repeat;
 			}
 		}
 	}
@@ -1341,14 +1343,14 @@
 		padding: 17px 16px;
 
 		.comparison__select {
-			background: url("../images/mamka.png") 0 /15px no-repeat;
+			background: url("../images/mamka.svg") 0 /15px no-repeat;
 			padding-top: 1px;
 			padding-bottom: 1px;
 			text-decoration: none !important;
 		}
 
 		.comparison__select.active {
-			background: url("../images/papka.png") 0 /15px no-repeat;
+			background: url("../images/papka.svg") 0 /15px no-repeat;
 		}
 
 		a {
@@ -1458,6 +1460,7 @@
 			&.thead__comparison {
 				td {
 					align-items: flex-start;
+					height: 100%;
 				}
 			}
 		}

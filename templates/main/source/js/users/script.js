@@ -2455,6 +2455,10 @@ $(window).on("load", function () {
 						$(".comparison thead .js-characteristic__title").eq(index).toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
 					});
 				});
+				$('.js-open-all').click(function(){
+					$(this).toggleClass('active')
+					$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
+				})
 
 			});
 		}, 500);
