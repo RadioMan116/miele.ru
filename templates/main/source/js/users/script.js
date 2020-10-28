@@ -2529,6 +2529,7 @@ $(window).on("load", function () {
 			// }
 		});
 		$('.instructions-category__item').matchHeight()
+		$('.instructions-main__list').matchHeight()
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
 			allowTouchMove: true,
