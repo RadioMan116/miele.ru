@@ -2528,6 +2528,7 @@ $(window).on("load", function () {
 			// 	el: ".swiper-scrollbar"
 			// }
 		});
+		$('.instructions-category__item').matchHeight()
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
 			allowTouchMove: true,
