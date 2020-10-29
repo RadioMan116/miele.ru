@@ -2433,13 +2433,13 @@ $(window).on("load", function () {
 		}, 200);
 		setTimeout(function () {
 			$(function () {
-				$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").addClass("hide").nextUntil(".characteristic__title").addClass("hide");
+				$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").addClass("hide-tab").nextUntil(".characteristic__title").addClass("hide-tab");
 
 				$(".comparison thead .js-characteristic__title").each(function (index, el) {
 					$(this).find("td").click(function () {
 
-						$(this).parent().toggleClass("hide shadow").nextUntil(".characteristic__title").toggleClass("hide shadow");
-						$(".comparison tbody .js-characteristic__title").eq(index).toggleClass("hide shadow").nextUntil(".characteristic__title").toggleClass("hide shadow");
+						$(this).parent().toggleClass("hide-tab shadow").nextUntil(".characteristic__title").toggleClass("hide-tab shadow");
+						$(".comparison tbody .js-characteristic__title").eq(index).toggleClass("hide-tab shadow").nextUntil(".characteristic__title").toggleClass("hide-tab shadow");
 
 						// if ($(this).hasClass('shadow') ) {
 						// 	if(!$(this).closest('.wrap1')){}
@@ -2459,8 +2459,15 @@ $(window).on("load", function () {
 					});
 				});
 				$('.js-open-all').click(function () {
-					$(this).toggleClass('active')
-					$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
+
+					if ($(this).hasClass('active')) {
+						$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").addClass("hide-tab").nextUntil(".characteristic__title").addClass("hide-tab");
+						$(this).removeClass('active')
+					}
+					else {
+						$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").removeClass("hide-tab shadow").nextUntil(".characteristic__title").removeClass("hide-tab shadow");
+						$(this).addClass('active')
+					}
 				})
 
 			});
