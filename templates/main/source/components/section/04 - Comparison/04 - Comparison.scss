@@ -409,6 +409,11 @@
 			right: unset;
 			transform: translateX(-50%);
 			left: 50%;
+
+			.swiper-pagination-total {
+				margin-right: 0px !important;
+				margin-left: 16px !important;
+			}
 		}
 
 		.swiper-pagination span:nth-child(2n) {
@@ -426,23 +431,32 @@
 		}
 
 		.special-offers__buy {
-			background-image: none;
-			@include button;
-			display: flex;
-			align-items: center;
-			font-size: 12px;
-			font-weight: 500;
-			font-style: normal;
-			font-stretch: normal;
-			line-height: 2;
-			letter-spacing: normal;
-			text-align: left;
-			color: #ffffff;
-			width: 100%;
+			// background-image: none;
+			// @include button;
+			// display: flex;
+			// align-items: center;
+			// font-size: 12px;
+			// font-weight: 500;
+			// font-style: normal;
+			// font-stretch: normal;
+			// line-height: 2;
+			// letter-spacing: normal;
+			// text-align: left;
+			// color: #ffffff;
+			// width: 100%;
+			margin: 0;
+		}
+
+		.special-offers__compare {
+			margin: 0 auto;
+		}
+
+		.special-offers__fav {
+			margin: 0;
 		}
 
 		.special-offers__sale {
-			flex-direction: column;
+			flex-direction: row;
 		}
 
 		.comparison .swiper__comparison {
@@ -693,6 +707,7 @@
 			max-width: 300px;
 			padding: 0;
 		}
+
 		+.characteristic__title {
 			margin-top: 36px;
 		}
@@ -1400,7 +1415,8 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 				}
-				+.characteristic__title{
+
+				+.characteristic__title {
 					margin-top: 36px;
 				}
 			}
