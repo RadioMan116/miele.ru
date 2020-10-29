@@ -141,6 +141,7 @@
 
 				.service__title {
 					text-decoration: underline;
+					color: $base;
 				}
 			}
 
@@ -173,6 +174,7 @@
 			font-weight: 400;
 			line-height: 24px;
 			margin-bottom: 7px;
+			color:#000;
 		}
 
 		// .service__text
@@ -250,11 +252,12 @@
 
 		&:nth-of-type(6) {
 			padding-bottom: 0;
+			margin-bottom: 0;
 		}
 
 		.service {
 			display: flex !important;
-			margin-top: -4px;
+			margin-top: 0;
 
 			// .service__item
 			&__item {
