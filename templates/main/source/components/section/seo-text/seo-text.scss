@@ -111,8 +111,9 @@
 			margin-bottom: 26px;
 		}
 	}
+
 	&:nth-of-type(6) {
-		margin-bottom:22px;
+		margin-bottom: 22px;
 	}
 
 	.about-store {
@@ -137,7 +138,8 @@
 			&:hover {
 				box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
 				border: solid 1px transparent;
-				.service__title{
+
+				.service__title {
 					text-decoration: underline;
 				}
 			}
@@ -232,6 +234,10 @@
 
 		&:nth-of-type(4) {
 			margin-bottom: 18px;
+
+			p:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 
 		&:nth-of-type(5) {
@@ -240,6 +246,10 @@
 			.seo-text__title {
 				margin-bottom: 10px;
 			}
+		}
+
+		&:nth-of-type(6) {
+			padding-bottom: 0;
 		}
 
 		.service {

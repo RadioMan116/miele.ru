@@ -61,7 +61,7 @@ $(document).ready(function () {
 				};
 			});
 			console.log(center);
-			createMaps(map, coords, center, 9);
+			createMaps(map, coords, center, 10);
 			// createMaps(map, coords, tmp, 14);
 		})();
 	}
