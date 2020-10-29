@@ -101,15 +101,18 @@
 	}
 
 	&:nth-of-type(4) {
-		margin-bottom: 40px;
+		margin-bottom: 0px;
 	}
 
 	&:nth-of-type(5) {
-		margin-bottom: 57px;
+		margin-bottom: 36px;
 
 		.seo-text__title {
 			margin-bottom: 26px;
 		}
+	}
+	&:nth-of-type(6) {
+		margin-bottom:22px;
 	}
 
 	.about-store {
@@ -119,7 +122,7 @@
 	.service {
 		display: flex;
 		flex-wrap: wrap;
-		margin-top: 22px;
+		margin-top: 0px;
 		justify-content: space-between;
 
 		// .service__item
