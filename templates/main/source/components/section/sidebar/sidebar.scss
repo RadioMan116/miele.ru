@@ -13,7 +13,9 @@
 		justify-content: center !important;
 		margin-top: 0;
 
-		.work-link, .yandex, .quality {
+		.work-link,
+		.yandex,
+		.quality {
 			// width: calc(((100% / 12) * 4)-16px);
 			height: unset !important;
 			height: auto;
@@ -21,7 +23,8 @@
 			margin-right: 0 !important;
 		}
 
-		.work-link, .yandex {
+		.work-link,
+		.yandex {
 			margin-right: 24px;
 		}
 
@@ -544,8 +547,8 @@
 			font-stretch: normal;
 			letter-spacing: normal;
 			text-align: left;
-			color: #333333;
-			margin-left: 47px;
+			color: #000;
+			margin-left: 36px;
 		}
 	}
 
@@ -634,7 +637,8 @@
 	border-radius: 3px;
 	text-decoration: none !important;
 	margin-bottom: 8px;
-	&:hover{
+
+	&:hover {
 		background-color: #ececec;
 	}
 
@@ -705,7 +709,8 @@
 		box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
 	}
 
-	span, a {
+	span,
+	a {
 		width: 100%;
 		text-align: center;
 	}
@@ -774,7 +779,8 @@
 		color: $base;
 		border-radius: 3px;
 		text-decoration: none !important;
-		&:hover{
+
+		&:hover {
 			background-color: #ececec;
 		}
 
@@ -784,9 +790,8 @@
 			font-size: 14px;
 		}
 	}
-	@media screen and (max-width: 767px){
 
-	}
+	@media screen and (max-width: 767px) {}
 }
 
 .download-catalogs {

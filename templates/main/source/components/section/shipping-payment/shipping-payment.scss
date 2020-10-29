@@ -231,7 +231,8 @@
 		// .shipping-payment__row
 		&__row {
 			padding-left: 3px;
-			width: calc(100% + 70px);
+			// width: calc(100% + 70px);
+			width: calc(100% + 0px);
 			margin-bottom: 14px;
 
 			&:not(:first-of-type) {
