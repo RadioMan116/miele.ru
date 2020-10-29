@@ -235,7 +235,8 @@
 		}
 
 		&:nth-of-type(4) {
-			margin-bottom: 18px;
+			margin-bottom: 24px;
+			padding-bottom: 0;
 
 			p:last-of-type {
 				margin-bottom: 0;
@@ -244,6 +245,7 @@
 
 		&:nth-of-type(5) {
 			margin-bottom: 24px;
+			padding-bottom: 0;
 
 			.seo-text__title {
 				margin-bottom: 10px;
@@ -253,11 +255,16 @@
 		&:nth-of-type(6) {
 			padding-bottom: 0;
 			margin-bottom: 0;
+
+			p:last-of-type {
+				margin-bottom: 0;
+			}
 		}
 
 		.service {
 			display: flex !important;
 			margin-top: 0;
+			padding-top: 24px;
 
 			// .service__item
 			&__item {
@@ -375,6 +382,7 @@
 		.container {
 			display: flex;
 			align-items: baseline;
+			overflow: visible;
 
 			h2 {
 				order: -1;
