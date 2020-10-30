@@ -712,7 +712,7 @@
 			.special-offers__slide {
 				min-height: unset;
 				padding: 31px 15px 13px;
-				height: fit-content;
+				// height: fit-content;
 			}
 
 			.special-offers__sale {
@@ -721,7 +721,7 @@
 		}
 
 		.swiper-container {
-			padding-bottom: 0;
+			// padding-bottom: 0;
 
 			.swiper-slide img {
 				max-height: 169px;
@@ -957,7 +957,7 @@
 
 				.swiper-pagination_2 {
 					top: unset !important;
-					bottom: 21px;
+					bottom: 12px;
 				}
 			}
 
