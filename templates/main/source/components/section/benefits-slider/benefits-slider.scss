@@ -303,12 +303,17 @@
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 22px;
+				position: relative;
+				padding-left: 48px;
 
 				&:not(:nth-last-child(-n+2)) {
 					margin-bottom: 39px;
 				}
 
 				img {
+					position: absolute;
+					left: 0;
+					top: 0;
 					max-width: 32px;
 					margin-right: 16px;
 				}

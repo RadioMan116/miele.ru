@@ -1401,6 +1401,7 @@ $(document).ready(function () {
 			$(this).text("Читать подробнее");
 		}
 	});
+
 	$(function () {
 		if ($("#compare_table").length > 0) {
 			$(function () {
