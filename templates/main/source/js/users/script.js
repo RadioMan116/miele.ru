@@ -41,7 +41,10 @@ $(document).ready(function () {
 	})();
 	var windowWidth2 = $(window).width();
 	// NEW SCRIPT
-	(function () {
+
+	// (function () {
+	// })();
+	function swiperLoad() {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
 		let catalog = document.querySelector(".special-offers.catalog");
 		$(".special-offers .container").each(function (index, element) {
@@ -184,7 +187,8 @@ $(document).ready(function () {
 							},
 						}
 					});
-				} else {
+				}
+				else {
 
 					let mySwiper33 = new Swiper(".instance-" + index, {
 						slidesPerView: 4,
@@ -224,7 +228,7 @@ $(document).ready(function () {
 					});
 				}
 				if (windowWidth2 > 767) {
-					if (element.querySelectorAll(".swiper-slide").length > 4) {
+					if (element.querySelectorAll(".special-offers__slide").length > 4) {
 						element.querySelector(".swiper-button-next").style.display = "block";
 						element.querySelector(".swiper-button-prev").style.display = "block";
 						element.querySelector(".instance-pagination-" + index).style.display = "flex";
@@ -236,7 +240,8 @@ $(document).ready(function () {
 				}
 			});
 		}
-	})();
+	}
+	swiperLoad();
 	if ($(".js-recently-watched").length) {
 		let productCard = document.querySelector(".product-card");
 		let newCatalog = document.querySelector(".special-offers.catalog");
@@ -2459,17 +2464,17 @@ $(window).on("load", function () {
 						$(".comparison thead .js-characteristic__title").eq(index).toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
 					});
 				});
-				$('.js-open-all').click(function () {
+				$(".js-open-all").click(function () {
 
-					if ($(this).hasClass('active')) {
+					if ($(this).hasClass("active")) {
 						$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").addClass("hide-tab").nextUntil(".characteristic__title").addClass("hide-tab");
-						$(this).removeClass('active')
+						$(this).removeClass("active");
 					}
 					else {
 						$(".comparison thead .js-characteristic__title,.comparison tbody .js-characteristic__title").removeClass("hide-tab shadow").nextUntil(".characteristic__title").removeClass("hide-tab shadow");
-						$(this).addClass('active')
+						$(this).addClass("active");
 					}
-				})
+				});
 
 			});
 		}, 500);
@@ -2539,8 +2544,8 @@ $(window).on("load", function () {
 			// 	el: ".swiper-scrollbar"
 			// }
 		});
-		$('.instructions-category__item').matchHeight()
-		$('.instructions-main__list').matchHeight()
+		$(".instructions-category__item").matchHeight();
+		$(".instructions-main__list").matchHeight();
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
 			allowTouchMove: true,
@@ -2669,5 +2674,12 @@ $(window).on("load", function () {
 	// 	}
 	// });
 
-
+	$(".ordering__payment-label").click(function () {
+		//upon clicking of the button do an ajax post
+		$(document).ajaxSuccess(function () {
+			(() => {
+				swiperLoad();
+			})();
+		});
+	});
 });
