@@ -103,7 +103,7 @@
 			color: #000;
 
 			// background: #ffffff;
-			&:hover {
+			&:not(span):hover {
 				color: $base;
 				text-decoration: underline;
 			}
