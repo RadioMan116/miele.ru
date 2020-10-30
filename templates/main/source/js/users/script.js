@@ -240,6 +240,7 @@ $(document).ready(function () {
 				}
 			});
 		}
+		window.swiperLoad = swiperLoad;
 	}
 	swiperLoad();
 	if ($(".js-recently-watched").length) {
