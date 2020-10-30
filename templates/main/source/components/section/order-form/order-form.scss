@@ -202,6 +202,10 @@
 
 		&:hover {
 			box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
+
+			.swiper-slide {
+				box-shadow: unset;
+			}
 		}
 
 		.upsale__parent {
@@ -964,7 +968,7 @@
 			}
 
 			.special-offers__text {
-				padding: 33px 0 27px;
+				// padding: 33px 0 27px;
 				max-height: unset;
 			}
 		}
@@ -1144,8 +1148,26 @@
 				}
 			}
 		}
-		.order-checkout,#order_form_content{
+
+		.order-checkout,
+		#order_form_content {
 			max-width: 100%;
+		}
+
+		.announcing.announcing-mobile {
+			display: flex;
+
+			.announcing__status {
+				margin-left: 0;
+
+				span {
+					display: flex;
+				}
+			}
+
+			.special-offers__price {
+				display: none;
+			}
 		}
 	}
 }
