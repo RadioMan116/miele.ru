@@ -211,6 +211,7 @@
 		transition: 0.4s;
 		box-shadow: 0 2px 25px 0 transparent;
 		min-height: unset;
+		max-width: 100%;
 
 		&:hover {
 			box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
@@ -226,6 +227,11 @@
 			max-width: 150px;
 			width: auto;
 		}
+
+	}
+
+	.announcing .announcing-mobile{
+		display: none;
 	}
 
 	.swiper-button-prev,
