@@ -821,28 +821,9 @@ $(document).ready(function () {
 			content: el.querySelector(".announcing__popup")
 		});
 	});
-	if (windowWidth2 > 767) {
-		if ($("h1.title:contains(\"Корзина\")")) {
-			$("h1.title:contains(\"Корзина\")").css("width", "100%");
-		}
-		$(window).scroll(function () {
-			var scroll = $(window).scrollTop();
-			// var asideHeightSum = asideHeight + asideOffsetTop - 600;
-			if (scroll > 10) {
-				$(".dropdown-menu").removeClass("active");
-				$(".header__overlay").removeClass("header__overlay-open");
-				$(".header .search__popup").removeClass("search__popup-open");
-				$(".header__search").removeClass("header__search-open");
-				$(".header__overlay").removeClass("header__overlay-open");
-			}
-		});
-		// $(".articles .articles__text").matchHeight();
-		$(".catalog__thumb .announcing").matchHeight();
-		// $(".articles").not('.swiper-container').find('.articles__text').matchHeight();
-		$(".catalog .instructions .catalog__item").matchHeight();
-		// (() => {
-		// })();
-		function swiperHover() {
+	function swiperHover() {
+		if (windowWidth2 > 767) {
+
 			let swiperHover = document.querySelectorAll("[data-swiper]");
 			if (document.querySelector("[data-swiper]")) {
 				swiperHover.forEach(function (el, index) {
@@ -875,9 +856,32 @@ $(document).ready(function () {
 					});
 				});
 			}
-			window.swiperHover = swiperHover;
 		}
-		swiperHover();
+		window.swiperHover = swiperHover;
+	}
+	swiperHover();
+	if (windowWidth2 > 767) {
+		if ($("h1.title:contains(\"Корзина\")")) {
+			$("h1.title:contains(\"Корзина\")").css("width", "100%");
+		}
+		$(window).scroll(function () {
+			var scroll = $(window).scrollTop();
+			// var asideHeightSum = asideHeight + asideOffsetTop - 600;
+			if (scroll > 10) {
+				$(".dropdown-menu").removeClass("active");
+				$(".header__overlay").removeClass("header__overlay-open");
+				$(".header .search__popup").removeClass("search__popup-open");
+				$(".header__search").removeClass("header__search-open");
+				$(".header__overlay").removeClass("header__overlay-open");
+			}
+		});
+		// $(".articles .articles__text").matchHeight();
+		$(".catalog__thumb .announcing").matchHeight();
+		// $(".articles").not('.swiper-container').find('.articles__text').matchHeight();
+		$(".catalog .instructions .catalog__item").matchHeight();
+		// (() => {
+		// })();
+
 		tippy("[data-announcing]", {
 			// change these to your liking
 			arrow: true,
