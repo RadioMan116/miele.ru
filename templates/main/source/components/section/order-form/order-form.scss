@@ -10,7 +10,6 @@
 	&__title {
 		width: 100%;
 		margin: 4px 0 32px;
-
 		font-size: 36px;
 		font-weight: 500;
 		font-style: normal;
@@ -75,16 +74,13 @@
 			width: 15%;
 			display: flex;
 			color: #999999;
-			font-family: Arial,sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 
 			strong {
 				color: #333333;
-				font-family: "Roboto Condensed";
 				font-size: 18px;
 				font-weight: 400;
-
 			}
 
 			&.delete {
@@ -96,7 +92,6 @@
 			display: flex;
 			width: 52%;
 			color: #999999;
-			font-family: Arial,sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 		}
@@ -110,7 +105,6 @@
 			display: flex;
 			align-items: center;
 			color: #999999;
-			font-family: Arial,sans-serif;
 			font-size: 12px;
 			font-weight: 700;
 			height: 34px;
@@ -136,7 +130,6 @@
 				padding-right: 10px;
 				text-align: center;
 				color: #333333;
-				font-family: "Roboto Condensed";
 				font-size: 18px;
 				font-weight: 400;
 				border: 1px solid #eeeeee;
@@ -145,7 +138,6 @@
 			.decr,
 			.incr {
 				color: #999999;
-				font-family: Arial,sans-serif;
 				font-size: 19px;
 				font-weight: 700;
 				position: absolute;
@@ -168,7 +160,6 @@
 			align-items: center;
 			padding: 0;
 			color: #333333;
-			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 24px;
@@ -189,14 +180,11 @@
 			display: flex;
 			justify-content: flex-end;
 			color: #333333;
-			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
 
-
 			strong {
 				color: #333333;
-				font-family: "Roboto Condensed";
 				font-size: 30px;
 				font-weight: 400;
 				margin-right: 4%;
@@ -204,7 +192,6 @@
 			}
 		}
 	}
-
 
 	.swiper-slide {
 		padding: 32px 19px 26px;
@@ -227,10 +214,9 @@
 			max-width: 150px;
 			width: auto;
 		}
-
 	}
 
-	.announcing .announcing-mobile{
+	.announcing .announcing-mobile {
 		display: none;
 	}
 
@@ -239,17 +225,13 @@
 		top: 65px !important;
 	}
 
-
-
 	.special-offers__text {
 		padding: 32px 0 6px;
-
 		max-height: unset;
-
 	}
 
 	.swiper-wrapper {
-		padding: 10px 10px;
+		// padding: 10px 10px;
 	}
 
 	.special-offers {
@@ -289,7 +271,6 @@
 				top: 57px;
 				margin-bottom: 1rem;
 			}
-
 		}
 	}
 
@@ -313,7 +294,6 @@
 
 		label:not(.ordering__payment-label) {
 			color: #333333;
-			font-family: Arial,sans-serif;
 			font-size: 14px;
 			line-height: 32px;
 			flex-basis: 199px;
@@ -326,17 +306,14 @@
 
 		.copyright {
 			color: #999999;
-			font-family: Arial,sans-serif;
 			font-size: 14px;
 			line-height: 20px;
 			padding: 8px 0;
 			max-width: 880px;
-
 		}
 	}
 
 	.form__title {
-
 		font-size: 31px;
 		font-weight: 500;
 		font-style: normal;
@@ -368,8 +345,8 @@
 		width: 100%;
 		display: flex;
 		padding: 12px 0 4px;
-		// align-items: center;
 
+		// align-items: center;
 		label {
 			width: unset;
 			margin-top: 8px;
@@ -443,7 +420,6 @@
 			border-radius: 3px;
 			background-color: $base;
 			color: #ffffff;
-			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 24px;
@@ -456,16 +432,12 @@
 		}
 
 		.checkbox__text {
-			font-family: Arial,sans-serif;
 			font-size: 12px;
 			line-height: 18px;
-
 		}
-
 	}
 
 	.ordering {
-
 		&_heading {
 			color: #424242;
 			font-size: 31px;
@@ -478,7 +450,6 @@
 			margin-bottom: 3px;
 			padding-top: 43px;
 			width: 100%;
-
 
 			&-list {
 				display: flex;
@@ -543,8 +514,8 @@
 
 				&:hover {
 					outline: 0px solid transparent;
-					// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 
+					// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 					.ordering__payment-item {
 						padding: 20px 10px 9px;
 						border-color: transparent;
@@ -555,7 +526,6 @@
 				&:last-of-type {
 					margin-left: 0px;
 				}
-
 			}
 
 			&-icon {
@@ -566,7 +536,6 @@
 
 			&-text {
 				color: #333333;
-				font-family: Arial,sans-serif;
 				font-size: 14px;
 				line-height: 20px;
 				margin-bottom: 11px;
@@ -588,15 +557,14 @@
 		}
 	}
 
-	.order.js-basket_props.js-ecom_order-ready{
-		+.ordering__payment-label{
+	.order.js-basket_props.js-ecom_order-ready {
+		+.ordering__payment-label {
 			display: none;
 		}
 	}
 
 	@media screen and (max-width: 767px) {
 		.table {
-
 			&__items {
 				max-height: 130px;
 			}
@@ -633,7 +601,6 @@
 
 				strong {
 					font-size: 16px !important;
-
 				}
 
 				&.how-many {
@@ -663,33 +630,26 @@
 				img {
 					flex-shrink: 0;
 				}
-
 			}
 
 			.table__text {
 				padding-left: 38px;
 			}
 
-
-
 			.special-offers__text {
 				color: #333333;
-				font-family: "Roboto Condensed";
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 24px;
 			}
 
-
 			.how-many {
 				white-space: nowrap;
 				height: unset;
 
-
 				.decr,
 				.incr {
 					color: #999999;
-					font-family: Arial,sans-serif;
 					font-size: 18px;
 					font-weight: 700;
 					position: absolute;
@@ -719,7 +679,6 @@
 			}
 
 			&__link {
-
 				img {
 					// width: 37px;width: 37px;
 					// height: 69px;
@@ -791,8 +750,6 @@
 		.form__payment {
 			padding-left: 0;
 
-
-
 			.form__title {
 				font-size: 23px;
 				margin-top: 12px;
@@ -807,7 +764,6 @@
 		}
 	}
 
-
 	@media screen and (max-width: 767px) {
 		padding-top: 14px;
 
@@ -821,7 +777,6 @@
 			text-align: left;
 			color: #262626;
 		}
-
 
 		.table {
 			&__title {
@@ -848,7 +803,6 @@
 				flex-basis: unset;
 				width: 100% !important;
 				padding: 0 0 17px 0 !important;
-
 
 				&.price {
 					padding-left: 0 !important;
@@ -887,8 +841,6 @@
 					border-left: 0;
 					padding-right: 10px;
 				}
-
-
 			}
 
 			.special-offers__text {
@@ -907,12 +859,9 @@
 				color: #333333;
 			}
 
-
-
 			.item__title {
 				display: flex;
 				color: #999999;
-				font-family: Arial,sans-serif;
 				font-size: 12px;
 				font-weight: 700;
 				flex: 0 1 53%;
@@ -1020,7 +969,6 @@
 			}
 		}
 
-
 		.special-offers__buy {
 			margin-left: 10px;
 		}
@@ -1032,7 +980,6 @@
 		.swiper-slide {
 			margin-left: -1%;
 			padding: 31px 15px 18px !important;
-
 		}
 
 		.delivery_terms {
@@ -1066,7 +1013,6 @@
 				margin-right: auto;
 				width: 100% !important;
 			}
-
 		}
 
 		.form__row {
@@ -1111,15 +1057,12 @@
 
 				flex: 0 0 100% !important;
 				margin-right: 0;
-
 			}
 		}
 
 		.ordering {
-
 			&_heading {
 				color: #2e2e2e;
-				font-family: "Roboto Condensed";
 				font-size: 22px;
 				font-weight: 400;
 				line-height: 24px;
@@ -1131,9 +1074,7 @@
 			&__payment {
 				padding-top: 17px;
 
-
 				&-list {
-
 					// align-items: flex-start;
 				}
 
@@ -1159,8 +1100,8 @@
 					}
 
 					&:nth-of-type(2) {
-						// background: red;
 
+						// background: red;
 						.ordering__payment-text {
 							max-width: 90px;
 						}
@@ -1168,8 +1109,8 @@
 
 					&:hover {
 						outline: 0px solid transparent;
-						// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 
+						// box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 						.ordering__payment-item {
 							padding: 20px 4px 9px;
 							border-color: transparent;
@@ -1184,7 +1125,6 @@
 
 				&-text {
 					color: #2e2e2e;
-					font-family: Arial,sans-serif;
 					font-size: 12px;
 					margin-bottom: 4px;
 					line-height: 14px;
