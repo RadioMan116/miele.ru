@@ -47,7 +47,7 @@ $(document).ready(function () {
 	function swiperLoad() {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
 		let catalog = document.querySelector(".special-offers.catalog");
-		let favorite = document.querySelector(".favorite__items");
+		let favorite = document.querySelector(".js-news");
 
 		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);

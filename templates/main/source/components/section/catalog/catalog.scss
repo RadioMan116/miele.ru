@@ -1,5 +1,5 @@
 .catalog,
-.seach-found,.favorite {
+.seach-found,.js-news {
 	width: calc((100% / 12) * 9) !important;
 	// margin-left: auto;
 	padding-top: 12px;
@@ -2040,7 +2040,7 @@
 		}
 	}
 
-	.special-offers,&__items.favorite__items .special-offers{
+	.special-offers,&[data-list="Избранное"] .special-offers{
 		&__buy {
 
 			// width: 112px;
