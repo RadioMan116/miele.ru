@@ -17,37 +17,58 @@
 						<label>
 							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
 								name="F_SECTIONS[]" value="19">
-							<span class="checkbox-custom">Холодильники</span>
-							<!-- <span class="checkbox-number">3</span> -->
+							<span class="checkbox-custom">Все</span>
+							<span class="checkbox-number">3</span>
 							<div class="checkbox-close">x</div>
 						</label>
 						<label>
 							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
 								name="F_SECTIONS[]" value="19">
-							<span class="checkbox-custom">Души</span>
-							<!-- <span class="checkbox-number">3</span> -->
+							<span class="checkbox-custom">Холодильники</span>
+							<span class="checkbox-number">3</span>
+							<div class="checkbox-close">x</div>
+						</label>
+						<label>
+							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
+								name="F_SECTIONS[]" value="19">
+							<span class="checkbox-custom">Стиральные машины</span>
+							<span class="checkbox-number">31</span>
 							<div class="checkbox-close">x</div>
 						</label>
 						<label>
 							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
 								name="F_SECTIONS[]" value="19">
 							<span class="checkbox-custom">Мойки</span>
-							<!-- <span class="checkbox-number">3</span> -->
+							<span class="checkbox-number">23</span>
 							<div class="checkbox-close">x</div>
 						</label>
 						<label>
 							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
 								name="F_SECTIONS[]" value="19">
 							<span class="checkbox-custom">Аксессуары</span>
-							<!-- <span class="checkbox-number">3</span> -->
+							<span class="checkbox-number">13</span>
 							<div class="checkbox-close">x</div>
 						</label>
 						<label>
 							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
 								name="F_SECTIONS[]" value="19">
 							<span class="checkbox-custom">Холодильники Side-by-Side</span>
-							<!-- <span class="checkbox-number">3</span> -->
+							<span class="checkbox-number">153</span>
 							<div class="checkbox-close">x</div>
+						</label>
+						<label>
+							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
+								name="F_SECTIONS[]" value="534">
+							<span class="checkbox-custom">Духовые шкафы</span>
+							<span class="checkbox-number">153</span>
+							<div class="checkbox-close js-favorite_category-remove" >x</div>
+						</label>
+						<label>
+							<input class="checkbox filter_checkbox pers_data_check js-art_type-change" type="checkbox"
+								name="F_SECTIONS[]" value="533">
+							<span class="checkbox-custom">Посудомоечные машины</span>
+							<span class="checkbox-number">23</span>
+							<div class="checkbox-close js-favorite_category-remove">x</div>
 						</label>
 					</div>
 				</div>
@@ -97,705 +118,1361 @@
 				</div>
 			</div>
 		</form> -->
-		<ul class="work-link">
-			<li class="work-link__item"><a class="work-link__a" href="/service/">Сервисные центры</a></li>
-			<li class="work-link__item"><a class="work-link__a" href="/documentation/">Техническая документация</a>
-			</li>
-			<li class="work-link__item"><a class="work-link__a" href="/warranty/">Официальная гарантия</a></li>
-		</ul>
-		<div class="yandex">
-			<div class="yandex__inner">
-				<div class="yandex__logo">
-					<img src="images/ylogo.png" alt="" srcset="" class="yandex__img">
-				</div>
-				<div class="yandex__ratings">
-					<img src="images/5-stars.png" alt="" srcset="">
-				</div>
-				<a href="#" target="_blank" class="yandex__button">Оставить отзыв</a>
-				<a href="#" target="_blank" class="yandex__button">Читать все отзывы</a>
-			</div>
-		</div>
-		<div class="quality">
-			<span class="quality__title">Контроль качества</span>
-			<span class="quality__text">Номер для претензий и предложений:</span>
-			<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
-			<span class="quality__worktime">с 9:00 до 18:00</span>
-			<a href="#" class="quality__button" id="js-quality-opener">Написать</a>
-		</div>
+		{% include 'section/sidebar/sidebar.html' %}
 	</div>
 	<div class="col-md-9">
 		<a href="#" class="favorite__reset">Сбросить избранное</a>
 		<div class="js-favorite_list js-ecom_product-list favorite__items" data-list="Избранное">
 			<div class="favorite__items catalog__items">
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_3.jpg"
-							srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw
-						3583
-						Vinidor</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">134 200<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile active"></a>
-						<a href="#" class="catalog__favorite active"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="Бесплатная доставка">
-						</div>
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
 					</div>
-				</div>
-				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_1.jpg"
-							srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2
-						Premium NoFrost (SICN 3386 + ICN 3386)</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item" data-announcing="Cделано в Германия">
+								<img data-src="images/small/flag_ger.svg" src="images/small/flag_ger.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
 						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale price__dashed">
-						<span class="special-offers__price catalog__price">
-							199 000
-							<i class="special-offers__rub catalog__rub">руб.</i>
-							<span class="price__absolute">
-								250 000 руб.
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
 							</span>
-						</span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_2.jpg"
-							srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort
-						NoFrost</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
+						</div>
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
 					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
 						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale price__dashed">
-						<span class="special-offers__price catalog__price">
-							115 000
-							<i class="special-offers__rub catalog__rub">руб.</i>
-							<span class="price__absolute">
-								122 750 руб.
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
 							</span>
-						</span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии"
-								title="сделано в Австрии">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_4.jpg"
-							srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost
-						(SICN
-						3386 + ICN 3386)</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">134 200<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить в 1 клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price catalog__price price__dashed">
+								199 000
+								<i class="special-offers__rub catalog__rub">руб.</i>
+								<span class="price__absolute">
+									250 000 руб.
+									<div class="price__cheaper">
+										-10%
+									</div>
+									<!-- /.catalog__cheaper -->
+								</span>
+								<div class="announcing__popup">
+									Цена действует при покупке комплекта техники Miele
+									<a href="#">
+										Подробнее
+									</a>
+								</div>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_3.jpg"
-							srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="#" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw 3583 Vinidor</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
+						</div>
+						<a href="#" class="swiper-pagination">
 						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
 						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">134 200<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<!-- <span class="catalog__presence grey">под заказ</span> -->
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_3.jpg"
-							srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="product-card.html" class="special-offers__text  catalog__text">Винный шкаф Liebherr EWTgw
-						3583
-						Vinidor</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">134 200<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag_ger.svg" alt="сделано в Германии" title="сделано в Германии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_1.jpg"
-							srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="product-card.html" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2
-						Premium NoFrost (SICN 3386 + ICN 3386)</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">98 400<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_2.jpg"
-							srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="#" class="special-offers__text catalog__text">Морозильник Liebherr GN 2723 Comfort
-						NoFrost</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale price__dashed">
-						<span class="special-offers__price catalog__price">115 000<i
-								class="special-offers__rub catalog__rub">руб.</i><span class="price__absolute">122 750
-								руб.</span></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag_austria_small.svg" alt="сделано в Австрии"
-								title="сделано в Австрии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
 				</div>
 				<div class="catalog__item">
-					<a class="catalog__pic" href="#">
-						<img src="images/new-items_4.jpg"
-							srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x"
-							class="special-offers__img catalog__img">
-					</a>
-					<a href="#" class="special-offers__text catalog__text">Холодильник Liebherr SBS 66I2 Premium NoFrost
-						(SICN
-						3386 + ICN 3386)</a>
-					<span class="catalog__presence">В наличии</span>
-					<div class="catalog__specification">
-						<span class="catalog__feature">Цвет:<span class="catalog__bold">белый</span></span>
-						<span class="catalog__feature">Габариты (см):<span class="catalog__bold">
-								63x55.4x62.4</span></span>
-						<span class="catalog__feature">Полезный объем холодильной камеры (л): <span
-								class="catalog__bold">107</span></span>
-						<span class="catalog__feature">Полезный объем морозильной камеры (л):<span
-								class="catalog__bold">15</span></span>
-						<span class="catalog__feature">Тип размораживания:<span
-								class="catalog__bold">ручная</span></span>
-					</div>
-					<div class="catalog__prop">
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-						<a href="/glossary/nofrost.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties.png" class="icons-prop-item"
-								title="NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея&nbsp;&nbsp;на стенках морозильного отделения, и тем самым забыть о процедуре размораживания.">
-						</a>
-						<a href="/glossary/holidaymode.html#popup-glossary" class="link-pop-glossary">
-							<img src="images/icons-properties2.png" class="icons-prop-item"
-								title="HolidayMode – выбор данного режима обеспечивает поддержание постоянной температуры на уровне +15 °С. В случае длительного отсутствия владельцев установка режима HolidayMode гарантирует экономию электроэнергии и защиту от образования посторонних запахов в пустой камере.">
-						</a>
-						<a href="/glossary/klassy-energopotrebleniya-a-i-a-.html#popup-glossary"
-							class="link-pop-glossary">
-							<img src="images/icons-properties-appp.png" class="icons-prop-item"
-								title="Классы энергопотребления A+ и A++ – экономия энергии. Потребление энергии в холодильном и морозильном оборудовании этих классов заметно снижено. Экономичность моделей данной серии убеждает даже самых бережливых хозяев и вносит активный вклад в охрану окружающей среды.">
-						</a>
-					</div>
-					<div class="special-offers__sale catalog__sale">
-						<span class="special-offers__price catalog__price">134 200<i
-								class="special-offers__rub catalog__rub">руб.</i></span>
-						<a href="#" data-url="ajax/add-cart.html" data-ajax class="special-offers__buy">В корзину</a>
-					</div>
-					<div class="catalog__existence">
-						<a href="#" class="catalog__simile"></a>
-						<a href="#" class="catalog__favorite"></a>
-						<a href="#" class="catalog__oneclick">Купить в 1 клик</a>
-					</div>
-					<div class="announcing">
-						<div class="announcing__item">
-							<img src="images/small/flag.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
 						</div>
-						<div class="announcing__item">
-							<img src="images/small/tools.svg" alt="Бесплатное подключение"
-								title="Бесплатное подключение">
-						</div>
-						<div class="announcing__item">
-							<img src="images/small/truck.svg" alt="Бесплатная доставка" title="сделано в Германии">
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
 						</div>
 					</div>
+					<!-- /.special-offers__content -->
+				</div>
+				<div class="catalog__item">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
+						</div>
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
+						</div>
+					</div>
+					<!-- /.special-offers__content -->
+				</div>
+				<div class="catalog__item">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
+						</div>
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
+						</div>
+					</div>
+					<!-- /.special-offers__content -->
+				</div>
+				<div class="catalog__item">
+					<div class="swiper" data-swiper>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_1.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_2.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a class="special-offers__pic" href="#">
+										<img src="images/foto_3.jpg" class="special-offers__img">
+									</a>
+								</div>
+								<div class="swiper-slide swiper-slide-text">
+									<a href="#" class="special-offers__new">
+										<div class="special-offers__caption">
+											Характеристики
+										</div>
+										<!-- /.special-offers__caption -->
+										<div class="special-offers__desc">
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+											<ul>
+												<li>
+													Тип загрузки:
+													<b>фронтальная</b>
+												</li>
+												<li>
+													Макс. загрузка при стирке, кг:
+													<b>9</b>
+												</li>
+												<li>
+													Габариты (В х Ш х Г), см:
+													<b>
+														85 х 59.6 х 63.6
+													</b>
+												</li>
+											</ul>
+										</div>
+										<!-- /.special-offers__desc -->
+										<div class="special-offers__info">
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+											Полновстраиваемая посудомоечная машина XXL Универсальная модель для кухонь с
+											фасадами без ручек
+										</div>
+										<!-- /.special-offers__info -->
+									</a>
+									<!-- /.special-offers__new -->
+								</div>
+							</div>
+						</div>
+						<a href="#" class="swiper-pagination">
+						</a>
+						<!-- /.swper-pagination -->
+					</div>
+					<div class="special-offers__content">
+						<div class="announcing">
+							<div class="announcing__item"
+								data-announcing="Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/sale.svg" src="images/small/sale.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__item"
+								data-announcing="Специальное-Специальное предложение при покупке комплекта <a href='#'>Подробнее</a>">
+								<img data-src="images/small/hit.svg" src="images/small/hit.svg">
+							</div>
+							<!-- /.announcing__item -->
+							<div class="announcing__status">
+								<span>
+									В наличии
+								</span>
+								<div class="ratings">
+									<div class="ratings__star">
+									</div>
+									<b class="ratings__number">4,5</b>
+									<a href="" class="ratings__link">(5)</a>
+								</div>
+							</div>
+							<!-- /.announcing__status -->
+						</div>
+						<!-- /.announcing -->
+						<a href="#" class="special-offers__text">
+							<p>Стиральная машина</p>
+							Miele WWD120 WCS
+						</a>
+						<div class="special-offers__sale">
+							<span class="special-offers__price">64 900<i class="special-offers__rub">руб.</i>
+							</span>
+							<div class="special-offers__fav tooltip" data-tippy-content="Добавить в избранное">
+							</div>
+							<!-- /.special-offers__fav -->
+							<div class="special-offers__compare tooltip" data-tippy-content="Добавить в сравнение">
+							</div>
+							<!-- /.special-offers__compare -->
+							<a href="#" data-url="ajax/add-cart.html " data-tippy-content="Добавить в корзину" data-ajax
+								class="special-offers__buy tooltip">купить</a>
+						</div>
+					</div>
+					<!-- /.special-offers__content -->
 				</div>
 			</div>
 			<div class="favorite__bottom">

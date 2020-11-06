@@ -47,11 +47,13 @@ $(document).ready(function () {
 	function swiperLoad() {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
 		let catalog = document.querySelector(".special-offers.catalog");
+		let favorite = document.querySelector(".favorite__items");
+
 		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);
 			$this.find(".swiper-pagination_2").addClass("instance-pagination-" + index);
 		});
-		if (catalog) {
+		if (catalog || favorite) {
 			mainCollection.forEach(function (element, index) {
 				let $this = $(this);
 				element.querySelector(".swiper-container").classList.add("instance-" + index);
@@ -141,7 +143,9 @@ $(document).ready(function () {
 					}
 				})();
 			}
-		} else {
+		}
+
+		else {
 			mainCollection.forEach(function (element, index) {
 				let $this = $(this);
 
@@ -646,13 +650,13 @@ $(document).ready(function () {
 	$(".js-delete__table").click(function () {
 		$(this).parent().remove();
 	});
-	$(".js-filter__title").click(function (e) {
-		if ($(this).parent().hasClass("filter__close") == false) {
-			$(this).parent().addClass("filter__close");
-		} else {
-			$(this).parent().removeClass("filter__close");
-		}
-	});
+	// $(".js-filter__title").click(function (e) {
+	// 	if ($(this).parent().hasClass("filter__close") == false) {
+	// 		$(this).parent().addClass("filter__close");
+	// 	} else {
+	// 		$(this).parent().removeClass("filter__close");
+	// 	}
+	// });
 	$(".js-item__close").click(function () {
 		if ($(".filter__form").hasClass("closed") == false) {
 			$(".filter__form").addClass("closed");
@@ -2343,30 +2347,27 @@ $(window).on("load", function () {
 		$(".filter__form.js-form .filter__checkbox").each(function () {
 			if ($(this).find("label").length > 4) {
 				$(this).addClass("more");
-				$(this).find("label").eq(2).addClass("js-autoHeight");
-				$(".js-autoHeight").each(function () {
-					var elHeight = $(this).offset().top;
-					var elHeightParent = $(this).parent().offset().top;
-					var summ = elHeight - elHeightParent;
-					$(this).closest(".filter__checkbox").css("height", summ + 27);
-				});
+				$(this).find("label").eq(3).addClass("js-autoHeight");
+				$(this).find(".js-autoHeight").hide();
+				$(this).find(".js-autoHeight").nextAll("label").hide();
+
+
 			}
 		});
-		$("<span class=\"more-text js-more-text\">Показать еще</span>").prependTo($(".more"));
+		let number = $(".filter__checkbox label").not(':visible').length;
+		$("<span class=\"more-text js-more-text\">Показать еще<b>" + number + "</b></span>").prependTo($(".more"));
+
 		$(".js-more-text").click(function () {
 			if ($(this).parent().hasClass("more")) {
 				$(this).parent().removeClass("more");
-				$(this).parent().css("height", "auto");
 				$(this).text("Свернуть");
+				$(this).siblings(".js-autoHeight").show();
+				$(this).siblings(".js-autoHeight").nextAll("label").show();
 			} else {
 				$(this).parent().addClass("more");
-				$(this).text("Показать еще");
-				$(this).siblings(".js-autoHeight").each(function () {
-					var elHeight = $(this).offset().top;
-					var elHeightParent = $(this).parent().offset().top;
-					var summ = elHeight - elHeightParent;
-					$(this).closest(".filter__checkbox").css("height", summ + 27);
-				});
+				$(this).text("Показать еще").append("<b>" + number + "</b");
+				$(this).siblings(".js-autoHeight").hide();
+				$(this).siblings(".js-autoHeight").nextAll("label").hide();
 			}
 		});
 	}

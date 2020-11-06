@@ -1,5 +1,5 @@
 .catalog,
-.seach-found {
+.seach-found,.favorite {
 	width: calc((100% / 12) * 9) !important;
 	// margin-left: auto;
 	padding-top: 12px;
@@ -233,7 +233,7 @@
 
 			&__item,
 			&__item.special-offers__slide,
-			.catalog__item {
+			.catalog__item,&__items.favorite__items {
 				flex: 1 0 100%;
 				width: 100%;
 				max-width: 100%;
@@ -916,7 +916,7 @@
 		}
 
 		&.catalog__thumb,
-		&.catalog__list {
+		&.catalog__list,&__items.favorite__items  {
 			position: unset;
 
 			.swiper-container {
@@ -2040,7 +2040,7 @@
 		}
 	}
 
-	.special-offers {
+	.special-offers,&__items.favorite__items .special-offers{
 		&__buy {
 
 			// width: 112px;
