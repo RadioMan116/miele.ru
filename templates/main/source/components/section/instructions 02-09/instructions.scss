@@ -146,7 +146,7 @@
 	}
 
 	.special-offers__text {
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
 		order: -2;
 		width: calc(100% - 72px);

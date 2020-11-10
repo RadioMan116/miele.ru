@@ -56,7 +56,7 @@ $(document).ready(function () {
 			var $this = $(this);
 			$this.find(".swiper-pagination_2").addClass("instance-pagination-" + index);
 		});
-		if (catalog || favorite) {
+		if (catalog) {
 			mainCollection.forEach(function (element, index) {
 				let $this = $(this);
 				element.querySelector(".swiper-container").classList.add("instance-" + index);
@@ -147,7 +147,6 @@ $(document).ready(function () {
 				})();
 			}
 		}
-
 		else {
 			mainCollection.forEach(function (element, index) {
 				let $this = $(this);
