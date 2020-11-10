@@ -938,7 +938,7 @@
 		/* Style for "Oval" */
 		top: -6px;
 		left: 27px;
-		min-width: 20px;
+		min-width: 21px;
 		min-height: 19px;
 		border: 2px solid white;
 		padding: 1px 3px;
@@ -949,6 +949,7 @@
 		text-align: center;
 		background-color: $base;
 		border-radius: 50%;
+		border-radius: 15px;
 		// background: url("../images/amoint-notification.svg") no-repeat;
 	}
 

@@ -2846,6 +2846,9 @@
 			margin-right: 8px;
 			margin-bottom: 8px;
 			border-radius: 12px;
+			&:nth-of-type(10)~.link-pop-glossary{
+				display: none;
+			}
 		}
 
 		.icons-prop-item {
@@ -3748,7 +3751,7 @@
 				flex-grow: 0;
 				align-items: center;
 				margin-top: 0;
-				margin-bottom: 21px;
+				margin-bottom: 41px;
 				padding-right: 0;
 
 				hr {
