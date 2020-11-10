@@ -604,7 +604,7 @@
 					-ms-transform: rotate(-14deg);
 					-o-transform: rotate(-14deg);
 					transform: rotate(-14deg);
-					background: #f70000;
+					background: #8c0014;
 				}
 			}
 
@@ -684,6 +684,7 @@
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
+		width: 100%;
 	}
 
 	&__fav {

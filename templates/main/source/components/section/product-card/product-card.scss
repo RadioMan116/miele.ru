@@ -3968,7 +3968,7 @@
 			// flex-direction: column;
 			align-items: center;
 			justify-content: flex-end;
-			margin-right: 12px;
+			margin-right: 24px;
 			font-family: "HelveticaNeueCyr-Medium";
 			font-size: 12px;
 			font-weight: 400;
@@ -4342,9 +4342,9 @@
 			margin-left: 2px;
 			cursor: pointer;
 			margin-right: 14px;
-			border: 2px solid #8c0014;
+			// border: 2px solid #8c0014;
 			overflow: hidden;
-			border-radius: 12px;
+			// border-radius: 12px;
 
 			&:last-child {
 				margin-right: 0;
@@ -4361,12 +4361,12 @@
 			width: auto;
 			height: auto;
 			padding: 0;
-			border-radius: 3px;
+			// border-radius: 3px;
 			margin-bottom: 0;
-			clip-path: polygon(21% 5%, 81% 5%, 95% 19%, 95% 81%, 79% 96%, 20% 96%, 5% 80%, 5% 21%);
-			margin: -2px;
-			max-width: calc(100% + 4px);
-			max-height: calc(100% + 4px);
+			// clip-path: polygon(21% 5%, 81% 5%, 95% 19%, 95% 81%, 79% 96%, 20% 96%, 5% 80%, 5% 21%);
+			// margin: -2px;
+			max-width:100%;
+			max-height:100%;
 		}
 
 		.popup-prop {
@@ -4533,7 +4533,7 @@
 			justify-content: flex-end;
 			position: absolute;
 			top: 13px;
-			right: 119px;
+			right: 90px;
 			width: auto;
 		}
 
