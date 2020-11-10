@@ -721,8 +721,8 @@
 		}
 
 		.swiper-container {
-			// padding-bottom: 0;
 
+			// padding-bottom: 0;
 			.swiper-slide img {
 				max-height: 169px;
 				max-width: 150px;
@@ -1177,6 +1177,9 @@
 		text-align: left !important;
 	}
 }
-.bx_order_make,#order_form_content{
-max-width: 100%;
+
+.bx_order_make,
+#order_form_content,
+#order_form_div {
+	max-width: 100%;
 }
