@@ -5,7 +5,7 @@ $(document).ready(function () {
 			menu = document.getElementById(menu),
 			menuList = document.querySelector(".menu"),
 			menuBottom = document.getElementById("js-header__block_bottom"),
-			menuParent = document.querySelector('.header__blocks');
+			menuParent = document.querySelector(".header__blocks");
 		// menuBlock = document.getElementById('js-header__block_menu');
 		button.onclick = function () {
 			// Toggle class "opened". Set also aria-expanded to true or false.
@@ -887,7 +887,10 @@ $(document).ready(function () {
 		// $(".catalog .instructions .catalog__item").matchHeight();
 		// (() => {
 		// })();
+		$(function () {
 
+			$(".d-flex .articles__items .articles__text").matchHeight();
+		});
 		tippy("[data-announcing]", {
 			// change these to your liking
 			arrow: true,
@@ -2356,7 +2359,7 @@ $(window).on("load", function () {
 
 			}
 		});
-		let number = $(".filter__checkbox label").not(':visible').length;
+		let number = $(".filter__checkbox label").not(":visible").length;
 		$("<span class=\"more-text js-more-text\">Показать еще<b>" + number + "</b></span>").prependTo($(".more"));
 
 		$(".js-more-text").click(function () {
