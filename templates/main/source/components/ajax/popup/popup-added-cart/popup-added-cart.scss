@@ -331,7 +331,7 @@
 
 @media screen and (max-width: 767px) {
 	.basket__items {
-		// overflow-x: scroll;
+		overflow-x: auto;
 		// max-width: 100%;
 		// height: fit-content;
 	}

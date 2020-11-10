@@ -21,7 +21,8 @@
 				}
 			}
 
-			.benefits-slider-next, .benefits-slider-prev {
+			.benefits-slider-next,
+			.benefits-slider-prev {
 				display: none;
 			}
 
@@ -91,6 +92,7 @@
 						// right: 6px;
 						// bottom: 10px;
 					}
+
 					&:before {
 						content: "";
 						position: absolute;
@@ -100,6 +102,17 @@
 						height: 230px;
 						background: #fff;
 					}
+				}
+			}
+
+			&-slide {
+				max-height: 0;
+				opacity: 0;
+				transition: max-height .5s, opacity .5s;
+
+				&-active {
+					max-height: 8880px;
+					opacity: 1;
 				}
 			}
 		}
@@ -133,17 +146,19 @@
 				padding-top: 16px;
 
 				li {
-					display: -webkit-box;
 					width: 100%;
-					width: 100%;
-					overflow: hidden;
 					margin-bottom: 22px;
-					margin-bottom: 22px;
-					-webkit-box-orient: vertical;
-					-webkit-line-clamp: 4;
 
 					&:not(:nth-last-child(-n+2)) {
 						margin-bottom: 22px;
+					}
+
+					p {
+						display: -webkit-box;
+						width: 100%;
+						overflow: hidden;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 4;
 					}
 				}
 			}
@@ -304,7 +319,6 @@
 				font-weight: 400;
 				line-height: 22px;
 
-
 				&:not(:nth-last-child(-n+2)) {
 					margin-bottom: 39px;
 				}
@@ -322,16 +336,16 @@
 
 	// .benefits-slider__caption
 	&__caption {
+		display: flex;
+		align-items: center;
+		position: relative;
+		min-height: 34px;
 		margin-bottom: 16px;
 		font-family: "HelveticaNeueCyr-Light";
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 24px;
-		position: relative;
 		padding-left: 48px;
-		min-height: 34px;
-		display: flex;
-		align-items: center;
 	}
 
 	&__link {
