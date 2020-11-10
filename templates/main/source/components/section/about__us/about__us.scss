@@ -78,7 +78,7 @@
 			line-height: 30px;
 		}
 
-		p {
+		p,.about-us__block-text {
 			margin-bottom: 9px;
 
 			&:last-of-type {
@@ -194,7 +194,7 @@
 	// 		width: calc(100% - 304px);
 	// 	}
 	// }
-	p {
+	p,.about-us__block-text {
 		font-size: 14px;
 		line-height: 22px;
 
