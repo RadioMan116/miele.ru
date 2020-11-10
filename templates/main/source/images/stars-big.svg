@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="96px" height="16px" viewbox="0 0 96 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <rect width="96" height="16" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="stars-big" clip-path="url(#clip_1)">
+    <g id="star">
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#F59B00" fill-rule="evenodd" stroke="none" />
+    </g>
+    <g id="star" transform="translate(20 0)">
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#F59B00" fill-rule="evenodd" stroke="none" />
+    </g>
+    <g id="star" transform="translate(40 0)">
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#F59B00" fill-rule="evenodd" stroke="none" />
+    </g>
+    <g id="star" transform="translate(60 0)">
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#F59B00" fill-rule="evenodd" stroke="none" />
+    </g>
+    <g id="star" transform="translate(80 0)">
+      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" fill-rule="evenodd" stroke="none" />
+      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#F59B00" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

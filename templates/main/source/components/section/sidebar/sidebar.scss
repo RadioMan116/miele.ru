@@ -13,9 +13,7 @@
 		justify-content: center !important;
 		margin-top: 0;
 
-		.work-link,
-		.yandex,
-		.quality {
+		.work-link, .yandex, .quality {
 			// width: calc(((100% / 12) * 4)-16px);
 			height: unset !important;
 			height: auto;
@@ -23,8 +21,7 @@
 			margin-right: 0 !important;
 		}
 
-		.work-link,
-		.yandex {
+		.work-link, .yandex {
 			margin-right: 24px;
 		}
 
@@ -638,6 +635,10 @@
 	text-decoration: none !important;
 	margin-bottom: 8px;
 
+	@media screen and (max-width: 767px) {
+		padding: 4px 18px;
+	}
+
 	&:hover {
 		background-color: #ececec;
 	}
@@ -648,10 +649,6 @@
 
 	&:last-child {
 		margin-bottom: 2px;
-	}
-
-	@media screen and (max-width: 767px) {
-		padding: 4px 18px;
 	}
 }
 
@@ -692,8 +689,17 @@
 .yandex__logo {
 	// background: url("../images/yamarket.svg") no-repeat;
 	width: 150px;
-	height: 29px;
-	margin: 0 auto 22px;
+	// height: 29px;
+	margin: 0 auto 16px;
+	&:after {
+		content: "";
+		display: flex;
+		width: 100%;
+		height: 24px;
+		background: url("../images/stars-big.svg") no-repeat center;
+		background-size: 100% auto;
+		margin: 12px 0 0;
+	}
 }
 
 .quality {
@@ -705,14 +711,10 @@
 	padding: 22px 22px 24px;
 	background-color: #ffffff;
 
+	@media screen and (max-width: 767px) {}
+
 	&:hover {
 		box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
-	}
-
-	span,
-	a {
-		width: 100%;
-		text-align: center;
 	}
 
 	&__title {
@@ -780,18 +782,21 @@
 		border-radius: 3px;
 		text-decoration: none !important;
 
-		&:hover {
-			background-color: #ececec;
-		}
-
 		@media screen and (max-width: 767px) {
 			width: fit-content !important;
 			padding: 2px 40px;
 			font-size: 14px;
 		}
+
+		&:hover {
+			background-color: #ececec;
+		}
 	}
 
-	@media screen and (max-width: 767px) {}
+	span, a {
+		width: 100%;
+		text-align: center;
+	}
 }
 
 .download-catalogs {
