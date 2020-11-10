@@ -6,7 +6,8 @@
 	@media screen and (max-width: 767px) {
 		.table {
 
-			.title__span, .table__item {
+			.title__span,
+			.table__item {
 				&.price {
 					// padding-left: 15px;
 				}
@@ -37,7 +38,8 @@
 				white-space: nowrap;
 				height: unset;
 
-				.decr, .incr {
+				.decr,
+				.incr {
 					display: flex;
 					align-items: center;
 					position: absolute;
@@ -66,6 +68,7 @@
 			.delete__table {
 				width: 40px;
 			}
+
 			&__items {
 				max-height: 130px;
 			}
@@ -155,6 +158,9 @@
 		}
 
 		.swiper-container {
+			margin: 0;
+			width: 100%;
+			padding: 0;
 
 			// padding-bottom: 0;
 			.swiper-slide img {
@@ -164,7 +170,8 @@
 			}
 		}
 
-		.swiper-button-next, .swiper-button-prev {
+		.swiper-button-next,
+		.swiper-button-prev {
 			top: 54px !important;
 		}
 
@@ -182,6 +189,7 @@
 
 		.border {
 			margin: 0 0 63px !important;
+			border: unset;
 		}
 
 		.form__payment {
@@ -205,7 +213,6 @@
 		padding-top: 14px;
 
 		.table {
-
 			.name {
 				width: 100%;
 			}
@@ -219,7 +226,8 @@
 				margin-bottom: 4px;
 			}
 
-			.special-offers__text, .strong__price {
+			.special-offers__text,
+			.strong__price {
 				font-size: 14px;
 				font-weight: 500;
 				font-style: normal;
@@ -268,6 +276,7 @@
 					background: url("../images/order__color.png") 95% no-repeat;
 				}
 			}
+
 			&__title {
 				display: none;
 			}
@@ -284,7 +293,8 @@
 				width: 100% !important;
 				padding: 0 0 17px 0 !important;
 
-				.decr, .incr {
+				.decr,
+				.incr {
 					position: unset !important;
 					z-index: 99;
 					height: 35px;
@@ -452,7 +462,8 @@
 				padding-top: 0;
 			}
 
-			input, select {
+			input,
+			select {
 				max-width: unset;
 			}
 
@@ -463,7 +474,6 @@
 			}
 
 			label {
-
 				flex: 0 0 100% !important;
 				margin-bottom: 6px !important;
 				margin-top: 0 !important;
@@ -484,7 +494,6 @@
 		}
 
 		.ordering {
-
 			&__payment {
 				padding-top: 17px;
 
@@ -557,6 +566,7 @@
 					}
 				}
 			}
+
 			&_heading {
 				color: #2e2e2e;
 				font-size: 22px;
@@ -568,7 +578,8 @@
 			}
 		}
 
-		.order-checkout, #order_form_content {
+		.order-checkout,
+		#order_form_content {
 			max-width: 100%;
 		}
 
@@ -608,7 +619,8 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		.title__span, .table__item {
+		.title__span,
+		.table__item {
 			display: flex;
 			align-items: center;
 			width: 15%;
@@ -646,7 +658,8 @@
 			font-weight: 700;
 			border-radius: 2px;
 
-			.decr, .incr {
+			.decr,
+			.incr {
 				position: absolute;
 				color: #999999;
 				font-size: 19px;
@@ -708,7 +721,9 @@
 			}
 		}
 
-		&__title, &__items, &__total {
+		&__title,
+		&__items,
+		&__total {
 			justify-content: space-between;
 			width: 100%;
 			padding: 0 33px;
@@ -804,7 +819,8 @@
 		display: none;
 	}
 
-	.swiper-button-prev, .swiper-button-next {
+	.swiper-button-prev,
+	.swiper-button-next {
 		top: 65px !important;
 	}
 
@@ -953,7 +969,9 @@
 			height: 124px;
 		}
 
-		input, textarea, select {
+		input,
+		textarea,
+		select {
 			border: 1px solid #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
@@ -1019,7 +1037,6 @@
 	}
 
 	.ordering {
-
 		&__payment {
 			margin-bottom: 3px;
 			padding-top: 43px;
@@ -1129,6 +1146,7 @@
 				}
 			}
 		}
+
 		&_heading {
 			color: #424242;
 			font-size: 31px;
@@ -1164,6 +1182,8 @@
 	}
 }
 
-.bx_order_make, #order_form_content, #order_form_div {
+.bx_order_make,
+#order_form_content,
+#order_form_div {
 	max-width: 100%;
 }
