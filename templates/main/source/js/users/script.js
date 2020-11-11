@@ -51,6 +51,7 @@ $(document).ready(function () {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
 		let catalog = document.querySelector(".special-offers.catalog");
 		let favorite = document.querySelector(".js-news");
+		let article = document.querySelector('.articles-main')
 
 		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);
@@ -160,10 +161,15 @@ $(document).ready(function () {
 					return;
 				}
 				if ($(element.closest(".product-card"))) {
+					console.log(article)
+					let slidesPerGroupslide = 1;
+					if (article){
+						slidesPerGroupslide = 4;
+					}
 					let mySwiper33 = new Swiper(".instance-" + index, {
 						slidesPerView: 4,
 						spaceBetween: 25,
-						// slidesPerGroup: 4,
+						slidesPerGroup: slidesPerGroupslide,
 						allowTouchMove: false,
 						// loop: true,
 						// loopFillGroupWithBlank: true,

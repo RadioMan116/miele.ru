@@ -3976,7 +3976,7 @@
 			text-decoration: none;
 			background-repeat: no-repeat !important;
 			background-position: left !important;
-			background-size: 24px !important;
+			background-size: 14px !important;
 
 			&:last-child {
 				margin-right: 0;
@@ -6073,7 +6073,7 @@
 		display: flex;
 		align-items: center;
 		color: #a6a6a6;
-		margin-left: auto;
+		// margin-left: auto;
 		margin-right: 10px;
 
 		// margin-left: auto;
@@ -6093,7 +6093,7 @@
 		// margin-right: 2rem;
 		// margin-left: 26px;
 		margin-left: 0;
-		margin-right: auto;
+		margin-right: 14px;
 		white-space: nowrap;
 	}
 
@@ -6102,7 +6102,7 @@
 		font-size: 32px;
 		font-weight: 400;
 		line-height: 44px;
-		margin-right: auto;
+		margin-right: 14px;
 
 		.price__absolute {
 			position: absolute;
