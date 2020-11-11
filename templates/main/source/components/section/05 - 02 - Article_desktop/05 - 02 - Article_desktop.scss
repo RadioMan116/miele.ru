@@ -7,7 +7,6 @@
 	@media screen and (max-width: 767px) {
 		.special-offers__title {
 			color: #212121;
-			font-family: "Roboto Condensed";
 			font-size: 24px;
 			font-weight: 400;
 			margin-bottom: 22px;
@@ -599,7 +598,7 @@
 		// }
 		.article-back {
 			color: $base;
-			font-family: Arial, sans-serif;
+			// font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 	}

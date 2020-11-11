@@ -104,17 +104,19 @@
 					}
 				}
 			}
+&:not(.benefits-slider-thumbs){
 
-			&-slide {
-				max-height: 0;
-				opacity: 0;
-				transition: max-height .5s, opacity .5s;
+	&-slide {
+		max-height: 0;
+		opacity: 0;
+		transition: max-height .5s, opacity .5s;
 
-				&-active {
-					max-height: 8880px;
-					opacity: 1;
-				}
-			}
+		&-active {
+			max-height: 8880px;
+			opacity: 1;
+		}
+	}
+}
 		}
 
 		&__title {
