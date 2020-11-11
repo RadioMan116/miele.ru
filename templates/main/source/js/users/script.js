@@ -2212,7 +2212,7 @@ $(window).on("load", function () {
 					if (windowWidth2 <= 767) {
 
 						setTimeout(function () {
-							var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 25;
+							var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 14;
 							// console.log(offestpagination)
 							$(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
 						}, 300);
