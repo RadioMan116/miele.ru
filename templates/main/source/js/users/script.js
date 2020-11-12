@@ -161,9 +161,9 @@ $(document).ready(function () {
 					return;
 				}
 				if ($(element.closest(".product-card"))) {
-					console.log(article)
+					// console.log(article)
 					let slidesPerGroupslide = 1;
-					if (article){
+					if (article) {
 						slidesPerGroupslide = 4;
 					}
 					let mySwiper33 = new Swiper(".instance-" + index, {
@@ -2219,17 +2219,30 @@ $(window).on("load", function () {
 
 						setTimeout(function () {
 							// var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 14;
-							// // console.log(offestpagination)
-							// $(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
+							// console.log(offestpagination)
 
 							var mh = 0;
-							$(".js-swiper-main .swiper__item").each(function () {
-								var h_block = parseInt($(this).height());
-								if(h_block > mh) {
-								   mh = h_block;
-								   console.log(mh)
-								};
-							});
+							// $(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
+
+							$.fn.equivalent = function () {
+
+								var $blocks = $(this),
+
+									maxH = $blocks.eq(0).height();
+
+
+								$blocks.each(function () {
+									maxH = ($(this).height() > maxH) ? $(this).height() : maxH;
+
+								});
+
+								mh = maxH
+								// $blocks.height(maxH);
+
+							}
+
+							$('.js-swiper-main .swiper__item').equivalent();
+
 
 							$(".js-swiper-main").find(".swiper-pagination").css("bottom", mh + 14 + "px");
 						}, 600);
