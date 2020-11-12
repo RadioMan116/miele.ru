@@ -161,9 +161,9 @@ $(document).ready(function () {
 					return;
 				}
 				if ($(element.closest(".product-card"))) {
-					// console.log(article)
+
 					let slidesPerGroupslide = 1;
-					if (article) {
+					if (article){
 						slidesPerGroupslide = 4;
 					}
 					let mySwiper33 = new Swiper(".instance-" + index, {
@@ -2218,33 +2218,19 @@ $(window).on("load", function () {
 					if (windowWidth2 <= 767) {
 
 						setTimeout(function () {
-							// var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 14;
+							var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 14;
 							// console.log(offestpagination)
+							$(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
+						}, 600);
+					}
+				},
+				slideChange: function () {
+					if (windowWidth2 <= 767) {
 
-							var mh = 0;
-							// $(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
-
-							$.fn.equivalent = function () {
-
-								var $blocks = $(this),
-
-									maxH = $blocks.eq(0).height();
-
-
-								$blocks.each(function () {
-									maxH = ($(this).height() > maxH) ? $(this).height() : maxH;
-
-								});
-
-								mh = maxH
-								// $blocks.height(maxH);
-
-							}
-
-							$('.js-swiper-main .swiper__item').equivalent();
-
-
-							$(".js-swiper-main").find(".swiper-pagination").css("bottom", mh + 14 + "px");
+						setTimeout(function () {
+							var offestpagination = $(".js-swiper-main .swiper__item").outerHeight() + 14;
+							// console.log(offestpagination)
+							$(".js-swiper-main").find(".swiper-pagination").css("bottom", offestpagination + "px");
 						}, 600);
 					}
 				},
