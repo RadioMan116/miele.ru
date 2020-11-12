@@ -2225,7 +2225,7 @@ $(window).on("load", function () {
 							}).get());
 
 							$(".js-swiper-main").find(".swiper-pagination").css("bottom", mh + 14 + "px");
-						}, 600);
+						}, 1000);
 					}
 
 				},
