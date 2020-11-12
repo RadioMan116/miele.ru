@@ -2758,7 +2758,9 @@
 		}
 
 		// .articles__items
-		&__items {}
+		&__items {
+			justify-content: unset;
+		}
 
 		// .articles__item
 		&__item {
@@ -2770,7 +2772,7 @@
 			margin-bottom: 29px;
 
 			&:not(:last-of-type) {
-				margin-right: 15px;
+				margin-right: 22px;
 			}
 		}
 
