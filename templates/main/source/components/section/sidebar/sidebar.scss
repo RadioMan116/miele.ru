@@ -908,3 +908,68 @@
 		}
 	}
 }
+
+.credit-mini {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	padding: 24px;
+	background: #ffffff;
+	border: solid 1px #dfeff7;
+	box-shadow: 0px 2px 25px rgba(42, 145, 202, .1);
+
+	// .credit-mini__title
+	&__title {
+		margin-bottom: 6px;
+		color: #2a91ca;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	// .credit-mini__desc
+	&__desc {
+		margin-bottom: 17px;
+		color: #333333;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+
+		span {
+			margin-left: 4px;
+		}
+	}
+
+	// .credit-mini__list
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 9px;
+	}
+
+	// .credit-mini__item
+	&__item {
+		width: calc(50% - 17px);
+		margin-bottom: 15px;
+	}
+
+	// .credit-mini__link
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+		height: 34px;
+		margin-bottom: 8px;
+		color: #2a91ca;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+		text-transform: uppercase;
+		border: solid 1px #2a91ca;
+		border-radius: 3px;
+	}
+}

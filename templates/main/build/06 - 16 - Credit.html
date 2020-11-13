@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<!-- <link rel="icon" type="image/png" href="images/Icon-16.png"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+
+<body>
+	<div class="wrapper" id="js-wrapper">
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change ">
+								<div class="city-change__title">Санкт-Петербург</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
+									<a class="city-change__link" href="#">Регионы</a>
+								</div>
+							</div>
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Акции</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link active">После приобретения</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Доставка и оплата</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Подключение</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Гарантия</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+							<!-- <a href="#" data-url="ajax/abuse.html" data-ajax="" class="abuse__button js-abuse__button"
+		id="js-abuse-opener">Обратиться к руководству
+	</a> -->
+							<div class="menu-mobile">
+								<a href="tel:+74959297076" class="menu-mobile__tel">+7 495 929-70-76</a>
+								<div class="menu-mobile__text">Пн-Пт: 08:00—22:00; Сб-Вс: 09:00—22:00</div>
+								<a href="tel:+78003331936" class="menu-mobile__tel">+7 (800) 333-19-36</a>
+								<div class="menu-mobile__text">Бесплатно по России</div>
+								<a href="" class="menu-mobile__call-phone-button" data-action="callback">
+									<span>Заказать звонок
+									</span>
+								</a>
+								<!-- </div> -->
+								<div class="menu-mobile__col">
+									<div class="menu-mobile__title">Мир Miele</div>
+									<ul class="menu-mobile__list">
+										<li class="menu-mobile__item">
+											<a href="/o_miele/" title="О Miele" class="menu-mobile__link">О Miele</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/sales/" title="Акции" class="menu-mobile__link">Акции</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/news/" title="Статьи" class="menu-mobile__link">Статьи</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/services/" title="Сервис" class="menu-mobile__link">Сервис</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu-mobile__link">Сотрудничество</a>
+										</li>
+									</ul>
+									<ul class="menu-mobile__list">
+										<li class="menu-mobile__item">
+											<a href="/glossary/" title="" class="menu-mobile__link">Доставка и оплата</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/kachestvo/" title="" class="menu-mobile__link">Установка</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/help/" title="" class="menu-mobile__link">Возврат и обмен</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/contacts/" title="" class="menu-mobile__link">Глоссарий</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="/contacts/" title="" class="menu-mobile__link">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--end menu-->
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="header__telephones">
+							<div class="telephones">
+								<a href="tel:+74955404475" class="header__phone">7 (495) 540-44-75</a>
+								<a href="tel:+78003331936" class="header__phone">7 (800) 333-19-36</a>
+							</div>
+							<div class="time-work">
+								<div class="time-work__text">Время работы</div>
+								<div class="time-work__text">Пн-Пт: 08:00—22:00
+									<br>Сб-Вс: 09:00—22:00</div>
+								<div class="telephones__info">Бесплатно по РФ</div>
+								<a href="mailto:shop@sm-rus.ru" class="time-work__email">
+									<i>Email:</i>shop@sm-rus.ru</a>
+							</div>
+							<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок
+							</a>
+						</div>
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__icons">
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare active">
+								<span class="header__number">2</span>
+							</a>
+							<a title="Перейти в избранное" href="#" class="header__favorite  active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в корзину" href=# class="header__basket  active">
+								<div class="header__basket-info">В корзине
+									<!-- <div class="header__basket-link">5 товаров</div> -->
+									<!-- /.header__basket-link -->
+									<!-- <div class="header__basket-price">137 545 руб.</div> -->
+									<!-- /.header__basket-price -->
+								</div>
+								<!-- /.header__basket-info -->
+								<span class="header__number">3</span>
+							</a>
+							<div class="header__search js-header__search">Поиск…</div>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_menu" id='js-header__block_menu'>
+					<div class="container">
+						<div class="header__dropdown-menu" id="js-menu">
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">УХОД ЗА БЕЛЬЁМ</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='images/stir.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Стиральные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Стирально-сушильные машины Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Стиральные машины Miele Classic
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Узкие стиральные машины Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Вертикальные стиральные машины Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/sush.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Сушильные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Сушильные машины с тепловым насосом Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Сушильные машины с функцией пара Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/glad.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Гладильные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Гладильный каток Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Гладильная система Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu ">
+								<span class="dropdown-menu__title js-dropdown-menu__title">ТЕХНИКА ДЛЯ КУХНИ</span>
+								<div class="dropdown-menu__parent column">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='images/duh.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Духовые шкафы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Электрические духовые шкафы Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Духовые шкафы с СВЧ Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Духовые шкафы с пароваркой Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/varki.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Варочные панели</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Индукционные варочные панели Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Газовые варочные панели Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Электрические варочные панели Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/kombi.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Комби-панели</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Индукционные WOK Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Тепан-яки Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/posud.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Посудомоечные машины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые посудомоечные машины Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие посудомоечные машины Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/vyt.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Вытяжки</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые вытяжки Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Островные вытяжки Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Настенные вытяжки Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/par.png'>
+											<a class="dropdown-menu__link" href="/smeg/kofevarki/" title="Пароварки">Пароварки</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Комби-пароварки Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые пароварки Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Пароварки с СВЧ Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/kofe.png'>
+											<a class="dropdown-menu__link" href="/smeg/kofemolki/" title="Кофемашины">Кофемашины</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые кофемашины Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие кофемашины Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/mikr.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Микроволновые печи</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Встраиваемые микроволновые печи Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Отдельностоящие микроволновые печи Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/plity.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Плиты</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Комбинированные плиты Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Плиты с СВЧ Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/holod.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Холодильники</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Двухкамерные холодильники Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Морозильные камеры Miele
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Винные шкафы Miele
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/kompact.png'>
+											<a class="dropdown-menu__link" href="/smeg/chainiki/" title="Плиты">Компактные приборы</a>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Вакууматоры
+													</a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link" href="#">
+														Подогреватели
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item button">
+											<a class="dropdown-menu__link" href="#">руководство пользователя Miele</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">ТЕХНИКА ДЛЯ ДОМА</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='images/bezmesh.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Безмешковые пылесосы</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/mesh.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Пылесосы с мешком</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/vert.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Вертикальные беспроводные пылесосы
+											</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/robot.png'>
+											<a class="dropdown-menu__link" href="catalog.html">Роботы-пылесосы</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">ПРОФЕССИОНАЛЬНАЯ ТЕХНИКА</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='images/pr-stir.png'>
+											<a class="dropdown-menu__link" href="/smeg/pechi/">
+												Профессиональные стиральные машины
+											</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg="images/pr-sush.png">
+											<a class="dropdown-menu__link" href="/smeg/posudomoechnye-mashiny-pro/">
+												Профессиональные сушильные машины
+											</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/pr-glad.png'>
+											<a class="dropdown-menu__link" href="/smeg/stakanomoechnye-mashiny/">
+												Профессиональные гладильные машины
+											</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/pr-posud.png'>
+											<a class="dropdown-menu__link" href="/smeg/kotlomoechnye-mashiny-pro/">
+												Профессиональные посудомоечные машины
+											</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/pr-aks.png'>
+											<a class="dropdown-menu__link" href="/smeg/kholodilnoe-oborudovanie/">
+												Аксессуары для профтехники
+											</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">АКСЕССУАРЫ И БЫТОВАЯ ХИМИЯ</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item" data-bg='images/aks-byt.png'>
+											<a class="dropdown-menu__link" href="#" title="Аксессуары для бытовой техники">Аксессуары для бытовой техники</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/aks-him.png'>
+											<a class="dropdown-menu__link" href="#" title="Моющие и чистящие средства">Моющие и чистящие средства</a>
+										</li>
+										<li class="dropdown-menu__item" data-bg='images/aks-warranty.png'>
+											<a class="dropdown-menu__link" href="#" title="Моющие и чистящие средства">
+												Дополнительная гарантия
+											</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- /.header__main-menu -->
+			</div>
+			<!-- <div class="search__popup">
+		<form action="/search/" class="header__form">
+			<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+			<div class="header__button js-header__button"></div>
+		</form>
+	</div>
+	<div class="header__overlay"></div> -->
+			<div class="header-search header-search_inputtype">
+				<div class="header-search__close js-header-search__close"></div>
+				<div class="header-search__inner">
+					<div class="header-search__logo"></div>
+					<div class="header-search__middle">
+						<form action="#" class="header-search__form">
+							<input type="text" class="header-search__input js-header-search__input" value="">
+							<input type="submit" class="header-search__submit" value="">
+						</form>
+					</div>
+					<div class="header-search__section header-search__section_top">
+						<div class="header-search__searchTable">
+							<table>
+								<tr>
+									<td>
+										<img src="images/foto_1.jpg" alt="" />
+									</td>
+									<td>
+										<a href="#">Духовой шкаф Miele H2265-1B EDST/CLST сталь CleanSteel</a>
+									</td>
+									<td>
+										<span class="header-search__price special-offers__price">64 900
+											<i class="special-offers__rub">руб.</i>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="images/foto_2.jpg" alt="" />
+									</td>
+									<td>
+										<a href="#">Встраиваемый хлодильник Miele KE DS2901Vi</a>
+									</td>
+									<td>
+										<span class="header-search__price special-offers__price catalog__price price__dashed">
+											199 000
+											<i class="special-offers__rub catalog__rub">руб.</i>
+											<span class="price__absolute">
+												250 000 руб.
+												<div class="price__cheaper">
+													-10%
+												</div>
+												<!-- /.catalog__cheaper -->
+											</span>
+											<div class="announcing__popup">
+												Цена действует при покупке комплекта техники Miele
+												<a href="#">
+													Подробнее
+												</a>
+											</div>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="images/foto_3.jpg" alt="" />
+									</td>
+									<td>
+										<a href="#">Встраиваемая вытяжка MieleDA1260 сталь</a>
+									</td>
+									<td>
+										<span class="header-search__price special-offers__price">64 900
+											<i class="special-offers__rub">руб.</i>
+										</span>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<!-- /.header-search__section header-search__section_top -->
+					<div class="header-search__section header-search__section_bottom">
+						<div class="header-search__products">
+							<div class="header-search__popularTitle">Спецпредложения и акции</div>
+							<div class="header-search__hints">
+								<a href="#" class="header-search__link">
+									Вертикальный беспроводной пылесос Triflex по выгодной цене.
+								</a>
+								<a href="#" class="header-search__link">
+									Блестящие результаты с выгодой 25%
+								</a>
+							</div>
+						</div>
+						<a href="#" class="header-search__more">Посмотреть все РЕЗУЛЬТАТЫ</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="section">
+			<div class="content">
+				<div class="container">
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs__link">Grohe</a>
+						<span class="breadcrumbs__sep">/</span>
+						<span class="breadcrumbs__text">Купить в кредит - это просто</span>
+					</div>
+					<h1 class="title">Купить в кредит - это просто</h1>
+					<div class="credit">
+						<div class="credit__inner">
+							<div class="credit__subtitle red first-subtitle">
+								Оформите потребительский кредит или кредитную карту и оплатите ею товар
+							</div>
+							<!-- /.credit__subtitle -->
+							<div class="credit__list consumer ">
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-1.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										Оформляйте кредит, не&nbsp;выходя&nbsp;из&nbsp;дома
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-2.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										3-5 минут на ожидание ответа&nbsp;от&nbsp;банков
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-3.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										8 из 10 заявок одобряются
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-4.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										15 минут на заполнение анкеты
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-5.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										Выберите лучшее предложение&nbsp;от&nbsp;банков
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/block-1-6.svg" alt="">
+									</div>
+									<!-- /.credit__pic -->
+									<div class="credit__text">
+										Оплатите покупку дома кредитными средствами
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+							</div>
+							<!-- /.credit__list -->
+						</div>
+						<!-- /.credit__inner -->
+						<div class="credit__inner">
+							<div class="credit__subtitle">Кредитные организации</div>
+							<!-- /.credit__subtitle -->
+							<div class="credit__list organizations">
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/Otkr_logo_bank.svg" alt="">
+									</div>
+									<div class="credit__text">
+										ПАО Банк «ФК Открытие»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/logo-raif.svg" alt="">
+									</div>
+									<div class="credit__text">
+										АО «Райффайзенбанк»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/mtsabank_new_logo.svg" alt="">
+									</div>
+									<div class="credit__text">
+										ПАО «МТС-Банк»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/alfa.svg" alt="">
+									</div>
+									<div class="credit__text">
+										АО «АЛЬФА-БАНК»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/tinkoff.svg" alt="">
+									</div>
+									<div class="credit__text">
+										АО «Тинькофф Банк»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/ros.svg" alt="">
+									</div>
+									<div class="credit__text">
+										ПАО «РОСБАНК»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/sov-com.svg" alt="">
+									</div>
+									<div class="credit__text">
+										ПАО «Совкомбанк»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__pic">
+										<img src="images/logo-hc.svg" alt="">
+									</div>
+									<div class="credit__text">
+										ООО «ХКФ Банк»
+									</div>
+									<!-- /.credit__text -->
+									<a href="#" class="credit__link">
+										Подать заявку
+									</a>
+									<!-- /.credit__link -->
+								</div>
+								<!-- /.credit__item -->
+							</div>
+							<!-- /.credit__list organizations -->
+						</div>
+						<!-- /.credit__inner -->
+						<div class="credit__inner pay">
+							<div class="credit__subtitle red">Покупайте сейчас, платите потом!</div>
+							<!-- /.credit__subtitle -->
+							<div class="credit__list">
+								<div class="credit__item">
+									<div class="credit__text">
+										<span>До 100 дней</span>
+										и более без % по кредиту
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__text">
+										<span>от 11% годовых</span>
+										Процентная ставка
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__text">
+										<span>
+											до 800 000 руб.
+										</span>
+										Сумма кредита без залога и&nbsp;поручителей
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+								<div class="credit__item">
+									<div class="credit__text">
+										<span>
+											~490 руб.
+										</span>
+										Годовое обслуживание кредитной&nbsp;карты
+									</div>
+									<!-- /.credit__text -->
+								</div>
+								<!-- /.credit__item -->
+							</div>
+							<!-- /.credit__list -->
+						</div>
+						<!-- /.credit__inner -->
+					</div>
+					<!-- /.credit -->
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+	</div>
+	<!-- /.wrapper -->
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__logo">
+				<img src="images/logo-new.svg" alt="">
+			</div>
+			<!-- /.footer__logo -->
+			<div class="footer__inner">
+				<div class="footer__col">
+					<!-- <div class="footer__half"> -->
+					<a href="tel:+74959297015" class="footer__tel">+7 495 929-70-15</a>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00; Сб-Вс: 09:00—22:00</div>
+					<a href="tel:+78003331936" class="footer__tel">+7 (800) 333-19-36</a>
+					<div class="footer__text footer__text_three">Бесплатно по России</div>
+					<a href="#" data-url="ajax/callback.html" data-ajax="" class="footer__call-phone-button js-callback">
+						<span>
+							Заказать звонок
+						</span>
+					</a>
+					<!-- </div> -->
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<div class="menu-footer__title js-menu-footer__title">Мир Miele</div>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									О Miele
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">
+									Акции
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Статьи
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сервис
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Сотрудничество
+								</a>
+							</li>
+						</ul>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Доставка и оплата
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Установка
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Возврат и обмен
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Глоссарий
+								</a>
+							</li>
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="#">Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="social-title">Miele в социальных сетях</div>
+					<div class="social-items">
+						<a target="_blank" href="#" class="social-link">
+							<img src="images/facebook.svg" alt="">
+						</a>
+						<a target="_blank" href="#" class="social-link">
+							<img src="images/inst.svg" alt="">
+						</a>
+						<a target="_blank" href="#" class="social-link">
+							<img src="images/yt.svg" alt="">
+						</a>
+					</div>
+					<a href="mailto:shop@sm-rus.ru" class="footer__email">shop@ml-russia.ru</a>
+					<div class="footer__telephones">
+						<div class="l-abuse">
+							<a href="#" data-url="ajax/abuse.html" data-ajax class="footer__button abuse__button js-abuse__button" id="js-abuse-opener">Пожаловаться руководству
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2020 Официальный магазин Miele
+				</div>
+				<a class="privacy-policy" href="https://lbhr.ret-team.ru/personal-data/">Политика конфиденциальности</a>
+			</div>
+			<!-- /.footer__row -->
+		</div>
+		<!-- /.footer__inner -->
+	</div>
+	<!-- /.footer -->
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script src="js/script.min.js"></script>
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>
