@@ -660,8 +660,10 @@
 		}
 
 		&_menu {
-			height: 40px;
+			height: 48px;
 			background: #f6f6f6;
+			position: relative;
+			transform: translateX(0);
 		}
 	}
 

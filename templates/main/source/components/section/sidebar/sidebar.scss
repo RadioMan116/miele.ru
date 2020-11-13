@@ -13,7 +13,9 @@
 		justify-content: center !important;
 		margin-top: 0;
 
-		.work-link, .yandex, .quality {
+		.work-link,
+		.yandex,
+		.quality {
 			// width: calc(((100% / 12) * 4)-16px);
 			height: unset !important;
 			height: auto;
@@ -21,7 +23,8 @@
 			margin-right: 0 !important;
 		}
 
-		.work-link, .yandex {
+		.work-link,
+		.yandex {
 			margin-right: 24px;
 		}
 
@@ -690,6 +693,7 @@
 	width: 150px;
 	// height: 29px;
 	margin: 0 auto 16px;
+
 	&:after {
 		content: "";
 		display: flex;
@@ -792,7 +796,8 @@
 		}
 	}
 
-	span, a {
+	span,
+	a {
 		width: 100%;
 		text-align: center;
 	}
@@ -968,5 +973,10 @@
 		text-transform: uppercase;
 		border: solid 1px $base;
 		border-radius: 3px;
+
+		&:hover {
+			background: #ececec;
+			text-decoration: unset;
+		}
 	}
 }

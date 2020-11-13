@@ -163,7 +163,7 @@ $(document).ready(function () {
 				if ($(element.closest(".product-card"))) {
 
 					let slidesPerGroupslide = 1;
-					if (article){
+					if (article) {
 						slidesPerGroupslide = 4;
 					}
 					let mySwiper33 = new Swiper(".instance-" + index, {
@@ -876,17 +876,17 @@ $(document).ready(function () {
 		if ($("h1.title:contains(\"Корзина\")")) {
 			$("h1.title:contains(\"Корзина\")").css("width", "100%");
 		}
-		$(window).scroll(function () {
-			var scroll = $(window).scrollTop();
-			// var asideHeightSum = asideHeight + asideOffsetTop - 600;
-			if (scroll > 10) {
-				$(".dropdown-menu").removeClass("active");
-				$(".header__overlay").removeClass("header__overlay-open");
-				$(".header .search__popup").removeClass("search__popup-open");
-				$(".header__search").removeClass("header__search-open");
-				$(".header__overlay").removeClass("header__overlay-open");
-			}
-		});
+		// $(window).scroll(function () {
+		// 	var scroll = $(window).scrollTop();
+		// 	// var asideHeightSum = asideHeight + asideOffsetTop - 600;
+		// 	if (scroll > 10) {
+		// 		$(".dropdown-menu").removeClass("active");
+		// 		$(".header__overlay").removeClass("header__overlay-open");
+		// 		$(".header .search__popup").removeClass("search__popup-open");
+		// 		$(".header__search").removeClass("header__search-open");
+		// 		$(".header__overlay").removeClass("header__overlay-open");
+		// 	}
+		// });
 		$(".articles .articles__text").matchHeight();
 		$(".catalog__thumb .announcing").matchHeight();
 		// $(".articles").not('.swiper-container').find('.articles__text').matchHeight();
@@ -2715,4 +2715,25 @@ $(window).on("load", function () {
 			})();
 		});
 	});
+
+	(() => {
+		let dropMenu = document.querySelectorAll(".js-dropdown-menu__title");
+		if (dropMenu.length > 0) {
+			dropMenu.forEach(function(el) {
+				$(el).siblings().find('.dropdown-menu__item').eq(0).addClass('active')
+				$(el).siblings().find('.dropdown-menu__inner').eq(0).addClass('active')
+				console.log($(el).siblings())
+				el.addEventListener("click", function () {
+					console.log(el)
+					el.closest('#js-menu').classList.toggle("active");
+					el.classList.toggle("active");
+					document.body.classList.toggle('menu-show');
+
+					$('ul.dropdown-menu__list').on('mouseover', 'li:not(.active)', function () {
+						$(this).addClass('active').siblings().removeClass('active').closest('.dropdown-menu__parent').find('.dropdown-menu__inner').removeClass('active').eq($(this).index()).addClass('active');
+					});
+				});
+			})
+		}
+	})();
 });
