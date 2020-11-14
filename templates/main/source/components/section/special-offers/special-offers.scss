@@ -388,8 +388,12 @@
 				width: 24px;
 				height: 24px;
 				overflow: hidden;
-				clip-path: circle(50%);
+				// clip-path: circle(50%);
 				border-radius: 50%;
+
+				&[alt^="Сделано"] {
+					clip-path: circle(45%);
+				}
 			}
 		}
 

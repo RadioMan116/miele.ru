@@ -953,6 +953,11 @@
 		border-radius: 50%;
 		border-radius: 15px;
 		// background: url("../images/amoint-notification.svg") no-repeat;
+		display: none;
+
+		.active & {
+			display: flex;
+		}
 	}
 
 	&__mobile-tel {
