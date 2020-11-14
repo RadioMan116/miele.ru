@@ -2186,6 +2186,14 @@ $(document).ready(function () {
 			return title;
 		},
 	});
+
+	window.onload = function () {
+		document.body.classList.add('loading-ajax');
+		window.setTimeout(function () {
+
+		  document.body.classList.remove('loading-ajax');
+		}, 500);
+	  }
 });
 $(window).on("load", function () {
 	var windowWidth2 = $(window).width();
@@ -2752,4 +2760,17 @@ $(window).on("load", function () {
 			}
 		}
 	})();
+
+
+	function loadingAjax() {
+		$.ajax({
+			beforeSend: function() {
+				$("body").addClass('loading-ajax');
+			},
+			success: function(msg) {
+				$("body").removeClass('loading-ajax')
+			}
+		});
+	};
+	$('#load-items').click(loadingAjax);
 });
