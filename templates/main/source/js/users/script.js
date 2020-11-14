@@ -1,14 +1,6 @@
 //Доступный hamburger https://foxland.fi/simple-accessible-svg-menu-hamburger-animation
 $(document).ready(function () {
-	window.onload = function () {
 
-		window.setTimeout(function () {
-
-			document.body.classList.add("loaded");
-
-		}, 500);
-
-	};
 
 
 	function hamburger(element, menu) {
@@ -49,7 +41,7 @@ $(document).ready(function () {
 		if (bgAttr) {
 			bgAttr.forEach(element => {
 				let url = element.getAttribute("data-bg");
-				element.style.background = `url('${url}')`;
+				element.querySelector('.dropdown-menu__link').style.background = `url('${url}')`;
 			});
 		}
 	})();
@@ -2201,6 +2193,7 @@ $(document).ready(function () {
 
 });
 $(window).on("load", function () {
+	document.body.classList.add("loaded");
 	var windowWidth2 = $(window).width();
 	setTimeout(function () {
 		var mySwiper = new Swiper(".js-swiper-main", {
