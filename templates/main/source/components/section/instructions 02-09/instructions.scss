@@ -1,4 +1,4 @@
-.instructions-category {
+.instructions-category,.js-news .instructions-category {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -123,7 +123,7 @@
 				}
 			}
 
-			&:nth-child(n+6) {
+			&:nth-child(n+4) {
 				display: none;
 			}
 		}
