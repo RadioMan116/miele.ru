@@ -1,5 +1,16 @@
 //Доступный hamburger https://foxland.fi/simple-accessible-svg-menu-hamburger-animation
 $(document).ready(function () {
+	window.onload = function () {
+
+		window.setTimeout(function () {
+
+			document.body.classList.add("loaded");
+
+		}, 500);
+
+	};
+
+
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
@@ -51,7 +62,7 @@ $(document).ready(function () {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
 		let catalog = document.querySelector(".special-offers.catalog");
 		let favorite = document.querySelector(".js-news");
-		let article = document.querySelector('.articles-main')
+		let article = document.querySelector(".articles-main");
 
 		$(".special-offers .container").each(function (index, element) {
 			var $this = $(this);
@@ -2187,13 +2198,7 @@ $(document).ready(function () {
 		},
 	});
 
-	window.onload = function () {
-		document.body.classList.add('loading-ajax');
-		window.setTimeout(function () {
 
-		  document.body.classList.remove('loading-ajax');
-		}, 500);
-	  }
 });
 $(window).on("load", function () {
 	var windowWidth2 = $(window).width();
@@ -2587,7 +2592,7 @@ $(window).on("load", function () {
 		$(".instructions-category__item").matchHeight(
 			{
 				byRow: false,
-				property: 'height',
+				property: "height",
 				target: null,
 				remove: false
 			}
@@ -2738,24 +2743,24 @@ $(window).on("load", function () {
 
 
 				if (windowWidth2 > 767) {
-					$(el).siblings().find('.dropdown-menu__item').eq(0).addClass('active')
-					$(el).siblings().find('.dropdown-menu__inner').eq(0).addClass('active')
+					$(el).siblings().find(".dropdown-menu__item").eq(0).addClass("active");
+					$(el).siblings().find(".dropdown-menu__inner").eq(0).addClass("active");
 					el.addEventListener("click", function () {
-						el.closest('#js-menu').classList.toggle("active");
+						el.closest("#js-menu").classList.toggle("active");
 						el.classList.toggle("active");
-						document.body.classList.toggle('menu-show');
+						document.body.classList.toggle("menu-show");
 
-						$('ul.dropdown-menu__list').on('mouseover', 'li:not(.active)', function () {
-							$(this).addClass('active').siblings().removeClass('active').closest('.dropdown-menu__parent').find('.dropdown-menu__inner').removeClass('active').eq($(this).index()).addClass('active');
+						$("ul.dropdown-menu__list").on("mouseover", "li:not(.active)", function () {
+							$(this).addClass("active").siblings().removeClass("active").closest(".dropdown-menu__parent").find(".dropdown-menu__inner").removeClass("active").eq($(this).index()).addClass("active");
 						});
 					});
 
 				}
 
-			})
+			});
 			if (windowWidth2 <= 767) {
-				$('.dropdown-menu__item').each(function () {
-					$(this).append($(this).closest('.dropdown-menu__parent').find('.sub-menu__list').eq($(this).index()));
+				$(".dropdown-menu__item").each(function () {
+					$(this).append($(this).closest(".dropdown-menu__parent").find(".sub-menu__list").eq($(this).index()));
 				});
 			}
 		}
@@ -2764,13 +2769,13 @@ $(window).on("load", function () {
 
 	function loadingAjax() {
 		$.ajax({
-			beforeSend: function() {
-				$("body").addClass('loading-ajax');
+			beforeSend: function () {
+				$("body").addClass("loading-ajax");
 			},
-			success: function(msg) {
-				$("body").removeClass('loading-ajax')
+			success: function (msg) {
+				$("body").removeClass("loading-ajax");
 			}
 		});
-	};
-	$('#load-items').click(loadingAjax);
+	}
+	$("#load-items").click(loadingAjax);
 });
