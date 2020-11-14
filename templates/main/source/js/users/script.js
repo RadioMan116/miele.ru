@@ -2,7 +2,6 @@
 $(document).ready(function () {
 
 
-
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu),
@@ -2193,7 +2192,6 @@ $(document).ready(function () {
 
 });
 $(window).on("load", function () {
-	document.body.classList.add("loaded");
 	var windowWidth2 = $(window).width();
 	setTimeout(function () {
 		var mySwiper = new Swiper(".js-swiper-main", {
@@ -2772,3 +2770,13 @@ $(window).on("load", function () {
 	}
 	$("#load-items").click(loadingAjax);
 });
+
+window.onload = function () {
+
+	window.setTimeout(function () {
+
+		document.body.classList.add("loaded");
+
+	}, 500);
+
+};
