@@ -2504,8 +2504,8 @@ $(window).on("load", function () {
 				});
 				$(".comparison tbody .js-characteristic__title").each(function (index, el) {
 					$(this).find("td").click(function () {
-						$(this).parent().toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
-						$(".comparison thead .js-characteristic__title").eq(index).toggleClass("hide").nextUntil(".characteristic__title").toggleClass("hide");
+						$(this).parent().toggleClass("hide-tab shadow").nextUntil(".characteristic__title").toggleClass("hide-tab shadow");
+						$(".comparison thead .js-characteristic__title").eq(index).toggleClass("hide-tab shadow").nextUntil(".characteristic__title").toggleClass("hide-tab shadow");
 					});
 				});
 				$(".js-open-all").click(function () {
