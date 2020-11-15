@@ -2588,15 +2588,15 @@
 						overflow: visible;
 						background: white;
 
-						&:after {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: 96vw;
-							height: 146px;
-							background: #ffffffde;
-						}
+						// &:after {
+						// 	content: "";
+						// 	position: absolute;
+						// 	top: 0;
+						// 	left: 0;
+						// 	width: 96vw;
+						// 	height: 146px;
+						// 	background: #ffffffde;
+						// }
 
 						.ui-tabs-tab[aria-selected=true]:after {
 							content: "";

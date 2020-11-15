@@ -2591,10 +2591,7 @@ $(window).on("load", function () {
 		});
 		$(".instructions-category__item").matchHeight(
 			{
-				byRow: false,
-				property: "height",
-				target: null,
-				remove: false
+				byRow: false
 			}
 		);
 		$(".instructions-main__list").matchHeight();
@@ -2682,6 +2679,10 @@ $(window).on("load", function () {
 			returnExchangeForm.querySelectorAll(".MultiFile-remove").forEach(element => element.click());
 		});
 	}
+
+	$(".catalog .instructions .special-offers__text.catalog__text").matchHeight(
+
+	);
 	(function () {
 		let moreText = document.querySelector(".js-button");
 		let mainTags = document.querySelector(".tags__list");
