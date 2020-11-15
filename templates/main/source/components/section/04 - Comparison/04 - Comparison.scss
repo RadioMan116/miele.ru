@@ -835,8 +835,9 @@
 			background: #f6f6f6;
 			cursor: pointer;
 
+
 			td {
-				color: black;
+				color: $base;
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 24px;
@@ -857,7 +858,7 @@
 
 			&.shadow {
 				td {
-					color: $base;
+				color: black;
 				}
 			}
 		}
@@ -1276,21 +1277,21 @@
 
 	.shadow {
 		+.characteristic__title {
-			margin-top: 16px;
+			// margin-top: 16px;
 
-			td {
-				position: relative;
+			// td {
+			// 	position: relative;
 
-				&:before {
-					content: "";
-					position: absolute;
-					top: -17px;
-					left: 0;
-					width: 110%;
-					height: 16px;
-					background: white;
-				}
-			}
+			// 	&:before {
+			// 		content: "";
+			// 		position: absolute;
+			// 		top: -17px;
+			// 		left: 0;
+			// 		width: 110%;
+			// 		height: 16px;
+			// 		background: white;
+			// 	}
+			// }
 		}
 	}
 

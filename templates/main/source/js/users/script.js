@@ -2476,6 +2476,7 @@ $(window).on("load", function () {
 			console.log(el.length)
 			if(el.length <= 1){
 				$('.comparison__button').addClass('hidden')
+				$(".js-comparison__select[compare='ALL']").trigger("click");
 				return
 			}
 			$(".js-comparison__select.active").trigger("click");
