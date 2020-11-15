@@ -35,12 +35,13 @@ $(document).ready(function () {
 			}
 		};
 	}
+
 	(function () {
 		let bgAttr = document.querySelectorAll(".dropdown-menu__item");
 		if (bgAttr) {
 			bgAttr.forEach(element => {
 				let url = element.getAttribute("data-bg");
-				element.querySelector('.dropdown-menu__link').style.background = `url('${url}')`;
+				element.querySelector(".dropdown-menu__link").style.background = `url('${url}')`;
 			});
 		}
 	})();
@@ -636,14 +637,14 @@ $(document).ready(function () {
 		} else {
 			$(this).parent().removeClass("active");
 		}
-		$(".dropdown-menu.active ul.dropdown-menu__list").on("mouseover", function (event) {
-			// $('body').css('overflow','hidden');
-			$("body").addClass("fixed");
-		});
-		$(".dropdown-menu.active ul.dropdown-menu__list").on("mouseout", function (event) {
-			// $('body').css('overflow','visible');
-			$("body").removeClass("fixed");
-		});
+		// $(".dropdown-menu.active ul.dropdown-menu__list").on("mouseover", function (event) {
+		// 	// $('body').css('overflow','hidden');
+		// 	$("body").addClass("fixed");
+		// });
+		// $(".dropdown-menu.active ul.dropdown-menu__list").on("mouseout", function (event) {
+		// 	// $('body').css('overflow','visible');
+		// 	$("body").removeClass("fixed");
+		// });
 		// document.querySelectorAll('.dropdown-menu__item').forEach(element => {
 		// 	let url = element.getAttribute('data-bg');
 		// 	element.style.background = `url('${url}')`;
@@ -2730,32 +2731,62 @@ $(window).on("load", function () {
 	(() => {
 		let dropMenu = document.querySelectorAll(".js-dropdown-menu__title");
 		if (dropMenu.length > 0) {
+
+			let menu1 = $(".header__dropdown-menu.active"),
+				menu2 = $(".dropdown-menu.active"),
+				menu3 = $(".dropdown-menu__title.active"),
+				body = $(".menu-show");
 			dropMenu.forEach(function (el, index) {
-
-
 				if (windowWidth2 > 767) {
 					$(el).siblings().find(".dropdown-menu__item").eq(0).addClass("active");
 					$(el).siblings().find(".dropdown-menu__inner").eq(0).addClass("active");
 					el.addEventListener("click", function () {
 						el.closest("#js-menu").classList.toggle("active");
 						el.classList.toggle("active");
-						document.body.classList.toggle("menu-show");
-
+						setTimeout(() => {
+							document.body.classList.toggle("menu-show");
+						}, 200);
 						$("ul.dropdown-menu__list").on("mouseover", "li:not(.active)", function () {
 							$(this).addClass("active").siblings().removeClass("active").closest(".dropdown-menu__parent").find(".dropdown-menu__inner").removeClass("active").eq($(this).index()).addClass("active");
 						});
 					});
-
 				}
-
 			});
 			if (windowWidth2 <= 767) {
 				$(".dropdown-menu__item").each(function () {
 					$(this).append($(this).closest(".dropdown-menu__parent").find(".sub-menu__list").eq($(this).index()));
 				});
 			}
+			if (windowWidth2 > 767) {
+
+				$(document).mouseup(function (e) { // событие клика по веб-документу
+					let menu1 = $(".header__dropdown-menu.active"),
+						menu2 = $(".dropdown-menu.active"),
+						menu3 = $(".dropdown-menu__title.active"),
+						body = $(".menu-show");
+					var div = $("#js-header__block_menu"); // тут указываем ID элемента
+					if (!div.is(e.target) // если клик был не по нашему блоку
+						&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+						menu1.removeClass("active");
+						menu2.removeClass("active");
+						menu3.removeClass("active");
+						body.removeClass("menu-show");
+					}
+				});
+			}
+			$(".js-dropdown-menu__hide").click(() => {
+				let menu1 = $(".header__dropdown-menu.active"),
+					menu2 = $(".dropdown-menu.active"),
+					menu3 = $(".dropdown-menu__title.active"),
+					body = $(".menu-show");
+				menu1.removeClass("active");
+				menu2.removeClass("active");
+				menu3.removeClass("active");
+				body.removeClass("menu-show");
+			});
 		}
 	})();
+
 
 
 	function loadingAjax() {
@@ -2769,9 +2800,6 @@ $(window).on("load", function () {
 		});
 	}
 	$("#load-items").click(loadingAjax);
-});
-
-window.onload = function () {
 
 	window.setTimeout(function () {
 
@@ -2779,4 +2807,4 @@ window.onload = function () {
 
 	}, 500);
 
-};
+});
