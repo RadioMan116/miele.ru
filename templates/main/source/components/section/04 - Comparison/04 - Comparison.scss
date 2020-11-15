@@ -89,11 +89,13 @@
 				width: 100%;
 				margin-bottom: 10px;
 			}
-			.special-offers__buy,.special-offers__fav {
-				display: none;
 
+			.special-offers__buy,
+			.special-offers__fav {
+				display: none;
 			}
-			.price__absolute{
+
+			.price__absolute {
 				display: none !important;
 			}
 		}
@@ -570,6 +572,10 @@
 					font-weight: 700;
 					line-height: 24px;
 				}
+
+				.price__absolute:before {
+					bottom: -1px;
+				}
 			}
 		}
 
@@ -625,7 +631,8 @@
 
 		.shadow+.characteristic__title {
 			margin-top: 0px;
-			td:before{
+
+			td:before {
 				display: none;
 			}
 		}
