@@ -89,6 +89,13 @@
 				width: 100%;
 				margin-bottom: 10px;
 			}
+			.special-offers__buy,.special-offers__fav {
+				display: none;
+
+			}
+			.price__absolute{
+				display: none !important;
+			}
 		}
 
 		.swiper-container-comparison .comparison__diagram,
@@ -445,18 +452,22 @@
 			// color: #ffffff;
 			// width: 100%;
 			margin: 0;
+			opacity: 1;
 		}
 
 		.special-offers__compare {
 			margin: 0 auto;
+			opacity: 1;
 		}
 
 		.special-offers__fav {
 			margin: 0;
+			opacity: 1;
 		}
 
 		.special-offers__sale {
 			flex-direction: row;
+			margin-bottom: 0;
 		}
 
 		.comparison .swiper__comparison {
@@ -551,6 +562,7 @@
 				margin-top: 0;
 				flex-wrap: nowrap;
 				margin-bottom: 10px;
+				height: 40px;
 
 				.special-offers__rub {
 					color: #333333;
