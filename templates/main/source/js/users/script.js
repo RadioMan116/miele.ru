@@ -2472,6 +2472,12 @@ $(window).on("load", function () {
 
 		});
 		setTimeout(function () {
+			let el = $('.products-line .swiper-slide');
+			console.log(el.length)
+			if(el.length <= 1){
+				$('.comparison__button').addClass('hidden')
+				return
+			}
 			$(".js-comparison__select.active").trigger("click");
 
 		}, 200);

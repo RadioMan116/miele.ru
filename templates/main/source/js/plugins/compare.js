@@ -9,7 +9,7 @@ var compareArray = {
 			table: o.table || null, // Сама таблица сравнение
 			button: o.button || null, // Кнопки переключатели
 			activeClass: o.activeClass || "active", // Класс для активной ссылки
-			indexCols: o.indexCols || 1, // Индекс с которого начинается перебор столбцов в строке
+			indexCols: o.indexCols || 0, // Индекс с которого начинается перебор столбцов в строке
 			indexRows: o.indexRows || 0, // Индекс с которого начинается перебор строк
 			zebra: o.zebra || false, // Включение зебры таблцы при переключении кнопок
 			zebraClass: o.zebraClass || "odd", // Класс строки для фона зебры таблицы
