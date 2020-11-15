@@ -2473,6 +2473,7 @@ $(window).on("load", function () {
 		});
 		setTimeout(function () {
 			$(".js-comparison__select.active").trigger("click");
+
 		}, 200);
 		setTimeout(function () {
 			$(function () {
@@ -2512,6 +2513,7 @@ $(window).on("load", function () {
 						$(this).addClass("active");
 					}
 				});
+				$(".js-open-all").trigger("click");
 
 			});
 		}, 500);
@@ -2731,11 +2733,6 @@ $(window).on("load", function () {
 	(() => {
 		let dropMenu = document.querySelectorAll(".js-dropdown-menu__title");
 		if (dropMenu.length > 0) {
-
-			let menu1 = $(".header__dropdown-menu.active"),
-				menu2 = $(".dropdown-menu.active"),
-				menu3 = $(".dropdown-menu__title.active"),
-				body = $(".menu-show");
 			dropMenu.forEach(function (el, index) {
 				if (windowWidth2 > 767) {
 					$(el).siblings().find(".dropdown-menu__item").eq(0).addClass("active");
