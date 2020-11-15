@@ -1496,7 +1496,7 @@ $(document).ready(function () {
 						"top": ($(".thead__comparison").height() + 48 + "px")
 					});
 					$(".comparison__main .characteristic__row").each(function (index, el) {
-						if ($(this).text().length > 53) {
+						if ($(this).text().length > 50) {
 							$(this).addClass("level");
 							$(".js-swiper-comparison .characteristic__row").eq(index).addClass("level");
 						}
@@ -2435,14 +2435,14 @@ $(window).on("load", function () {
 				"top": ($(".thead__comparison").height() + 48 + "px")
 			});
 			$(".comparison__main .characteristic__row").each(function (index, el) {
-				if ($(this).text().length > 53) {
+				if ($(this).text().length > 50) {
 					$(this).addClass("level");
 					$(".js-swiper-comparison .characteristic__row").eq(index).addClass("level");
 				}
 			});
 		}
 		$(".comparison__main .characteristic__row").each(function (index, el) {
-			if ($(this).text().length > 53) {
+			if ($(this).text().length > 50) {
 				$(this).addClass("level");
 				$(".js-swiper-comparison .characteristic__row").eq(index).addClass("level");
 			}
