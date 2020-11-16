@@ -74,7 +74,7 @@
 		margin-top: 18px;
 	}
 
-	p,.about-us__block-text {
+	p,.about-us__block-text,[style="text-align: justify;"] {
 		// display: block;
 		width: 100%;
 		font-size: 14px;
@@ -544,7 +544,7 @@
 			line-height: 24px;
 		}
 
-		p {
+		p,[style="text-align: justify;"]  {
 			font-size: 14px;
 			line-height: 22px;
 			margin-bottom: 24px;

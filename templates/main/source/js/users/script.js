@@ -668,6 +668,7 @@ $(document).ready(function () {
 	// 		$(this).parent().removeClass("filter__close");
 	// 	}
 	// });
+
 	$(".js-item__close").click(function () {
 		if ($(".filter__form").hasClass("closed") == false) {
 			$(".filter__form").addClass("closed");
@@ -2189,7 +2190,6 @@ $(document).ready(function () {
 			return title;
 		},
 	});
-
 
 });
 $(window).on("load", function () {
