@@ -3928,25 +3928,33 @@
 			line-height: 24px;
 			white-space: nowrap;
 			margin-left: 0;
-			margin-right: 21px;
+			margin-right: 23px;
 		}
 
 		&_top {
 			align-items: center;
 			// justify-content: space-between;
-			margin-bottom: 14px;
+			margin-bottom: 16px;
 		}
 
 		&_middle {
-			margin-bottom: 12px;
+			margin-bottom: 14px;
+			@media (min-width: 768px) {
+				padding-left: 2px;
+
+			}
 		}
 
 		&_bottom {
 			flex-wrap: wrap;
 			align-items: flex-start;
 			margin-bottom: 16px;
-			padding-bottom: 24px;
+			padding-bottom: 27px;
 			border-bottom: 1px solid #f1f1f1;
+			@media (min-width: 768px) {
+				padding-left: 2px;
+				padding-right: 2px;
+			}
 		}
 
 		div:first-child {
@@ -6086,6 +6094,7 @@
 		line-height: 44px;
 		margin-right: 14px;
 
+
 		.price__absolute {
 			position: absolute;
 			bottom: -23px;
@@ -6149,6 +6158,10 @@
 			// padding-bottom: 20px;
 			margin-bottom: 24px;
 			line-height: 30px;
+			margin-top: 4px;
+			b{
+				margin-left: 10px;
+			}
 		}
 
 		&.specify-price {
@@ -6202,7 +6215,7 @@
 	}
 
 	&__buy {
-		@include button($margin: 0, $padding:12px 16px);
+		@include button($margin: 0, $padding:12px 15px);
 		height: 40px;
 		color: #ffffff;
 		font-size: 14px;
@@ -6229,7 +6242,7 @@
 	}
 
 	&__icons {
-		width: 136px;
+		width: 134px;
 		height: 40px;
 		border: 1px solid $base;
 		padding: 7px 13px;
