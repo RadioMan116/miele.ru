@@ -2792,11 +2792,11 @@ $(window).on("load", function () {
 
 				$(".js-sub-menu__link").hover(function () {
 					let el = $(this).data("bgSrc");
-					let way = $(this).closest(".dropdown-menu__inner.active").find(".dropdown-menu__banner source");
+					let way = $(this).closest(".dropdown-menu__inner.active").find(".js-dropdown-menu__banner source");
 					way.attr("srcset", el);
 				}, function () {
-					let orig = $(this).closest(".dropdown-menu__inner.active").find(".dropdown-menu__banner source").data("srcset");
-					let way = $(this).closest(".dropdown-menu__inner.active").find(".dropdown-menu__banner source");
+					let orig = $(this).closest(".dropdown-menu__inner.active").find(".js-dropdown-menu__banner source").data("srcset");
+					let way = $(this).closest(".dropdown-menu__inner.active").find(".js-dropdown-menu__banner source");
 					way.attr("srcset", orig);
 				});
 			}
