@@ -918,7 +918,6 @@
 					&:nth-child(odd) {
 						background: #f6f6f6;
 					}
-
 				}
 
 				.characteristic__title {
@@ -1088,6 +1087,10 @@
 				margin-left: 0 !important;
 			}
 
+			&__more {
+				margin-right: unset;
+			}
+
 			&-list {
 				.reviews-list__item:last-of-type {
 					border-bottom: unset;
@@ -1135,10 +1138,6 @@
 				&:last-of-type {
 					padding-bottom: 10px;
 				}
-			}
-
-			&__more {
-				margin-right: unset;
 			}
 		}
 
@@ -1977,6 +1976,13 @@
 					}
 				}
 
+				&__item {
+					img {
+						width: 20px;
+						height: 20px;
+					}
+				}
+
 				&-mobile {
 					display: flex;
 					justify-content: space-between;
@@ -1992,13 +1998,6 @@
 
 					.special-offers__price {
 						color: #000;
-					}
-				}
-
-				&__item {
-					img {
-						width: 20px;
-						height: 20px;
 					}
 				}
 			}
@@ -2581,6 +2580,7 @@
 					padding: 0;
 					background: #ffffff;
 					margin-bottom: 16px;
+					border-bottom: 0;
 
 					&.active {
 						position: relative;
@@ -2597,7 +2597,6 @@
 						// 	height: 146px;
 						// 	background: #ffffffde;
 						// }
-
 						.ui-tabs-tab[aria-selected=true]:after {
 							content: "";
 							position: absolute;
@@ -2619,6 +2618,10 @@
 							// opacity: 0;
 						}
 					}
+
+					&.tags__list-first {
+						height: auto;
+					}
 				}
 
 				&-tab {
@@ -2633,6 +2636,25 @@
 
 					&.ui-tabs-active {
 						border: 1px solid #c4c4c4;
+					}
+
+					&.tags__item-first {
+						border: unset !important;
+						padding-left: 0;
+						padding-bottom: 0;
+						margin-bottom: 0;
+
+						&:after {
+							display: none;
+						}
+
+						a {
+							font-size: 16px;
+							font-weight: 400;
+							line-height: 24px;
+							text-overflow: unset !important;
+							white-space: normal !important;
+						}
 					}
 
 					&[aria-selected="true"] {
@@ -2706,6 +2728,10 @@
 			font-size: 14px;
 			line-height: 17px;
 			text-align: center;
+		}
+
+		.description__caption {
+			padding: 0 16px;
 		}
 
 		&__slider {
@@ -3347,8 +3373,7 @@
 					padding: 4px 27px 0;
 
 					// cursor: pointer;
-
-					@media screen and (min-width: 768px){
+					@media screen and (min-width: 768px) {
 						&:hover {
 							background: rgba(238, 238, 238, 0.4);
 						}

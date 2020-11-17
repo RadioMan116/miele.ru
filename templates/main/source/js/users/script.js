@@ -163,12 +163,14 @@ $(document).ready(function () {
 
 					return;
 				}
-				if ($(element.closest(".product-card"))) {
+
+				if ($(element).closest(".product-card").length) {
 
 					let slidesPerGroupslide = 1;
 					if (article) {
 						slidesPerGroupslide = 4;
 					}
+
 					let mySwiper33 = new Swiper(".instance-" + index, {
 						slidesPerView: 4,
 						spaceBetween: 25,
@@ -938,6 +940,8 @@ $(document).ready(function () {
 		})();
 	}
 	if (windowWidth2 <= 767) {
+
+		$(".catalog__list .catalog__items .catalog__item .special-offers__text").matchHeight();
 		$(".logo").appendTo(".header__block_top .container");
 		// $(".catalog-view").appendTo(".bx-filter-section");
 		$(".labels").appendTo(".product-card .product__header_top");
@@ -1991,6 +1995,7 @@ $(document).ready(function () {
 	}
 	$(function () {
 		$("#tabs").tabs();
+
 		// $(".benefits .swiper").each(function(index, element) {
 		// 	var $this = $(this);
 		// 	$this.find('[class ^=swiper-pagination]').addClass("benefits-pagination-" + index);
@@ -2048,6 +2053,11 @@ $(document).ready(function () {
 			// 	// $(this).addClass('active')
 			// 	// $(this).parent().removeClass('active')
 			// })
+
+			if($('.product-card__collection .tags__item').length <= 1){
+				$('.product-card__collection .tags__item').addClass('tags__item-first')
+				$('.product-card__collection .tags__list').addClass('tags__list-first')
+			}
 		}
 	});
 	$(function () {
