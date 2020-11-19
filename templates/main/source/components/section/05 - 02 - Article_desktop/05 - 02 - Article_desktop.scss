@@ -89,6 +89,10 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		&.articles{
+
+			margin-bottom: 0;
+		}
 		.articles-main__name {
 			font-size: 16px;
 			font-weight: 500;
@@ -101,12 +105,16 @@
 			margin: 28px 0 22px;
 		}
 
-		.special-offers .container {
-			padding-left: 0 !important;
-			padding-right: 0 !important;
+		.special-offers {
+			margin: 0;
+			padding-bottom: 0;
+			.container {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
 
-			.special-offers__title {
-				font-size: 22px;
+				.special-offers__title {
+					font-size: 22px;
+				}
 			}
 		}
 
@@ -198,7 +206,6 @@
 	// 	text-align: left;
 	// 	color: #b0b0b0;
 	// }
-
 	.articles {
 		&__items {
 			display: flex;
@@ -262,7 +269,8 @@
 				top: 61px;
 			}
 
-			.swiper-button-prev.special-offers_prev, .swiper-button-next.special-offers_next {
+			.swiper-button-prev.special-offers_prev,
+			.swiper-button-next.special-offers_next {
 				top: 68px;
 			}
 
@@ -367,7 +375,8 @@
 			width: unset;
 		}
 
-		input, select {
+		input,
+		select {
 			width: 100%;
 			max-width: 372px;
 			height: 46px;
@@ -378,7 +387,9 @@
 			max-width: 450px;
 		}
 
-		input, textarea, select {
+		input,
+		textarea,
+		select {
 			border: solid 1px #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
@@ -437,11 +448,9 @@
 		// margin-bottom: 10px;
 		// background-color: #ffffff;
 		// box-shadow: 0 2px 21px rgba(0, 0, 0, 0);
-
 		// &:hover {
 		// 	box-shadow: 0 2px 21px rgba(0, 0, 0, 0.1);
 		// }
-
 		// .catalog__specification {
 		// 	height: unset;
 		// }
@@ -469,12 +478,14 @@
 		}
 
 		.swiper-button {
-			&-prev,&-next {
+
+			&-prev,
+			&-next {
 				top: 23px;
 			}
 		}
 
-		.announcing-mobile{
+		.announcing-mobile {
 			display: none;
 		}
 	}
@@ -631,7 +642,8 @@
 			}
 		}
 
-		.add-comment__row input, .add-comment__row textarea {
+		.add-comment__row input,
+		.add-comment__row textarea {
 			width: 49%;
 		}
 
@@ -706,11 +718,13 @@
 				left: 16px;
 			}
 
-			input, textarea {
+			input,
+			textarea {
 				width: 100%;
 			}
 
-			input::placeholder, textarea::placeholder {
+			input::placeholder,
+			textarea::placeholder {
 				// opacity: 0;
 				color: #a6a6a6;
 				font-family: "HelveticaNeueCyr-Roman";
@@ -834,7 +848,8 @@
 		width: 100%;
 		margin-top: 4px;
 
-		input, textarea {
+		input,
+		textarea {
 			width: 55%;
 			border: solid 1px #cbcbcb;
 			padding: 10px 19px;
@@ -844,7 +859,8 @@
 			background-color: #ffffff;
 		}
 
-		input::placeholder, textarea::placeholder {
+		input::placeholder,
+		textarea::placeholder {
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
