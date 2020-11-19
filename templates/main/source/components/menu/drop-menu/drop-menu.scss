@@ -164,6 +164,7 @@
 				.dropdown-menu__item {
 					background-position: 0 50% !important;
 					background-size: 48px !important;
+					background-repeat: no-repeat !important;
 					height: 48px;
 					margin-bottom: 19px;
 				}
@@ -299,12 +300,14 @@
 				right: 0;
 				left: 0;
 				width: 90vw;
-				min-width: 1176px;
+
 				max-width: 1308px;
 				// overflow: hidden;
 				box-shadow: 0 2px 21px rgba(0, 0, 0, 0.16);
 				background: #ffffff;
-
+				@media (min-width: 768px) {
+					min-width: 1176px;
+				}
 				&:before {
 					content: "";
 					position: absolute;
@@ -687,6 +690,9 @@
 	.sub-menu__link {
 		@media (min-width: 768px) {
 			margin-bottom: 8px;
+			padding-right: 28px;
+			width: 100%;
+
 		}
 	}
 
