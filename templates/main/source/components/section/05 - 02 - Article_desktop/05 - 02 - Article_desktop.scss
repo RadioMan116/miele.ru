@@ -730,6 +730,7 @@
 			letter-spacing: normal;
 			text-align: left;
 			color: #666666;
+			display: none;
 			align-items: baseline;
 
 			.abuse-popup__req {
@@ -836,7 +837,7 @@
 		input, textarea {
 			width: 55%;
 			border: solid 1px #cbcbcb;
-			padding: 15px 19px 11px;
+			padding: 10px 19px;
 			margin-bottom: 8px;
 			resize: none;
 			border-radius: 2px;
