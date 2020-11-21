@@ -207,6 +207,11 @@
 				padding: 30px 21px 15px;
 			}
 		}
+		.ratings{
+			&__number,&__link{
+				line-height: 16px;
+			}
+		}
 	}
 
 	.container {
@@ -407,7 +412,7 @@
 				// clip-path: circle(50%);
 				border-radius: 50%;
 
-				&[alt^="Сделано"] {
+				&[alt^="Сделано"],&[alt^="Производство"] {
 					clip-path: circle(46%);
 				}
 			}
@@ -668,7 +673,7 @@
 		height: 30px;
 		font-size: 0;
 		background: url("../images/buy02.svg");
-		margin-left: 8px;
+		margin-left: 12px;
 
 		// @media screen and (max-width: 1128px) {
 		//     font-size: 11px;
@@ -720,7 +725,7 @@
 		background: url("../images/fav.svg");
 		cursor: pointer;
 		margin-left: auto;
-		margin-right: 8px;
+		margin-right: 12px;
 
 		&:hover {
 			background: url("../images/fav-c.svg");

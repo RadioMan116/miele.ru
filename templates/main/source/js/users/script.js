@@ -711,6 +711,7 @@ $(document).ready(function () {
 			firstAllParent.forEach(point => {
 				let firstParent = point.querySelectorAll(".gallery__parent");
 				firstParent[0].classList.add("active");
+
 			});
 			point.forEach((el) => {
 				el.addEventListener("mouseover", function (e) {
@@ -762,9 +763,30 @@ $(document).ready(function () {
 			}
 			buttonNext.addEventListener("click", plusSlide);
 			buttonPrev.addEventListener("click", minusSlide);
-			paginationDots.forEach((el, index) => el.addEventListener("click", function () {
-				currentSlide(index + 1);
-			}));
+			if (windowWidth2 > 767) {
+				paginationDots.forEach((el, index) => el.addEventListener("click", function () {
+					currentSlide(index + 1);
+				}));
+
+			}
+			if (windowWidth2 <= 767) {
+				let galleryItem = gallery.querySelectorAll(".gallery__parent");
+
+				galleryItem.forEach(el => {
+					el.outerHTML = `<div class ='swiper-slide gallery-slide'>${el.outerHTML}</div>`;
+				});
+				$(".swiper-slide.gallery-slide").wrapAll("<div class=\"swiper-container new-gallery-slider\"><div class=\"swiper-wrapper\"></div></div>");
+				var newGallery = new Swiper(".new-gallery-slider"  ,{
+					spaceBetween: 20,
+					slidesPerView: 1,
+					// effect: "fade",
+					// speed: 0,
+					pagination: {
+						el: ".gallery__pagination",
+						clickable: true,
+					},
+				});
+			}
 		}
 	})();
 	$(document).on("click", "a[href='#'].js-close", function (e) {
@@ -946,8 +968,8 @@ $(document).ready(function () {
 	if (windowWidth2 <= 767) {
 		(() => {
 			let creditMini = document.querySelector(".credit-mini");
-			let catalogSidebar = document.querySelector(".catalog .sidebar")
-			if(creditMini) {
+			let catalogSidebar = document.querySelector(".catalog .sidebar");
+			if (catalogSidebar) {
 				catalogSidebar.appendChild(creditMini.cloneNode(true));
 
 			}
