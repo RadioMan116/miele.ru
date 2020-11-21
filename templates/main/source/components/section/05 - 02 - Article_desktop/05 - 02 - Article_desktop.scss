@@ -121,9 +121,13 @@
 			.announcing-mobile {
 				display: flex;
 			}
-			.announcing__status {
 
+			.announcing__status {
 				margin-left: 0;
+
+				span {
+					display: block;
+				}
 			}
 		}
 
@@ -209,7 +213,6 @@
 				background: $base !important;
 			}
 		}
-
 	}
 
 	// .price__absolute {
@@ -286,7 +289,8 @@
 				top: 61px;
 			}
 
-			.swiper-button-prev.special-offers_prev, .swiper-button-next.special-offers_next {
+			.swiper-button-prev.special-offers_prev,
+			.swiper-button-next.special-offers_next {
 				top: 68px;
 			}
 
@@ -391,7 +395,8 @@
 			width: unset;
 		}
 
-		input, select {
+		input,
+		select {
 			width: 100%;
 			max-width: 372px;
 			height: 46px;
@@ -402,7 +407,9 @@
 			max-width: 450px;
 		}
 
-		input, textarea, select {
+		input,
+		textarea,
+		select {
 			border: solid 1px #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
@@ -492,7 +499,8 @@
 
 		.swiper-button {
 
-			&-prev, &-next {
+			&-prev,
+			&-next {
 				top: 23px;
 			}
 		}
@@ -654,7 +662,8 @@
 			}
 		}
 
-		.add-comment__row input, .add-comment__row textarea {
+		.add-comment__row input,
+		.add-comment__row textarea {
 			width: 49%;
 		}
 
@@ -729,11 +738,13 @@
 				left: 16px;
 			}
 
-			input, textarea {
+			input,
+			textarea {
 				width: 100%;
 			}
 
-			input::placeholder, textarea::placeholder {
+			input::placeholder,
+			textarea::placeholder {
 				// opacity: 0;
 				color: #a6a6a6;
 				font-family: "HelveticaNeueCyr-Roman";
@@ -857,7 +868,8 @@
 		width: 100%;
 		margin-top: 4px;
 
-		input, textarea {
+		input,
+		textarea {
 			width: 55%;
 			border: solid 1px #cbcbcb;
 			padding: 10px 19px;
@@ -867,7 +879,8 @@
 			background-color: #ffffff;
 		}
 
-		input::placeholder, textarea::placeholder {
+		input::placeholder,
+		textarea::placeholder {
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
