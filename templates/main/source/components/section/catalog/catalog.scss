@@ -742,6 +742,9 @@
 		.sidebar {
 			display: flex;
 			margin-bottom: 9px;
+			.quality{
+				margin-bottom: 16px;
+			}
 		}
 
 		.marking {
@@ -975,13 +978,6 @@
 						padding-bottom: 15px !important;
 						position: relative;
 
-						span {
-							font-size: 12px;
-							font-weight: 400;
-							line-height: 14px;
-							margin-bottom: 4px;
-						}
-
 						&:after {
 							content: "";
 							position: absolute;
@@ -991,6 +987,13 @@
 							width: 100%;
 							height: 15px;
 							background: white;
+						}
+
+						span {
+							font-size: 12px;
+							font-weight: 400;
+							line-height: 14px;
+							margin-bottom: 4px;
 						}
 					}
 				}
@@ -1772,14 +1775,18 @@
 	}
 
 	.load-more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		min-width: 100px;
+		height: 36px;
 		margin: 0 auto 10px;
 		border: 1px solid $base;
 		padding: 5px 39px;
 		color: $base;
 		font-size: 14px;
 		font-weight: 400;
-		line-height: 24px;
+		line-height: 1;
 		text-transform: uppercase;
 		white-space: nowrap;
 		border-radius: 3px;
@@ -2833,6 +2840,9 @@
 	.swiper-slide {}
 
 	.swiper-pagination-articles {}
+	.js-news {
+		margin: 0;
+	}
 
 	&__sorting {
 		display: flex;
@@ -3439,7 +3449,7 @@
 				flex-grow: 0;
 				width: calc((100%/3) - 12px);
 				min-width: unset;
-				height: 158px;
+				height: 164px;
 				// margin-right: 16px;
 				border: unset;
 				padding: 0;
@@ -3492,9 +3502,11 @@
 
 			&__all {
 				color: $base;
-				border-bottom: 1px dashed;
 				text-decoration: none;
 				z-index: 10;
+				p,span{
+					border-bottom: 1px dashed;
+				}
 			}
 		}
 
@@ -4135,6 +4147,7 @@
 		&__link {
 			color: #000;
 			display: flex;
+			align-items: center;
 			border: solid 1px #f6f6f6;
 			border-bottom: unset;
 			background: #ffffff;

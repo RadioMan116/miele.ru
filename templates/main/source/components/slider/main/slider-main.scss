@@ -250,7 +250,7 @@
 				// -webkit-transform: skewX(-50deg);
 				transform: skewX(-50deg);
 				border-radius: 3px;
-				background: linear-gradient(to left, rgba(255, 255, 255, .0), rgba(255, 255, 255, .8), rgba(255, 255, 255, .0)) no-repeat -2em 0%;
+				background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, .8), rgba(255, 255, 255, 1)) no-repeat -2em 0%;
 				background-size: 2em 100%;
 			}
 
@@ -713,7 +713,7 @@
 			font-size: 18px;
 			font-weight: 400;
 			line-height: 24px;
-			padding: 2px 15px 6px;
+			padding: 8px 15px 6px;
 		}
 
 		&__text {
@@ -744,7 +744,7 @@
 			}
 
 			.gallery__text {
-				padding: 0 12px 5px 12px;
+				padding: 0 12px 8px 12px;
 			}
 
 			&.swiper-slide {

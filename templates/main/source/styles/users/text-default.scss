@@ -599,7 +599,7 @@
 		}
 
 		&.seo-text {
-			padding-bottom: 32px;
+			padding-bottom: 12px;
 
 			h2 {
 				font-family: "HelveticaNeueCyr-Light";
@@ -641,6 +641,9 @@
 					// 	// }
 					// }
 				}
+			}
+			p:last-of-type{
+				margin-bottom: 0;
 			}
 		}
 

@@ -69,9 +69,14 @@
 		margin-top: 6px;
 		max-width: 100%;
 
+		.js-news {
+			margin: 0;
+			padding-bottom: 0;
+		}
+
 		.reviews__section {
-			padding-bottom: 9px;
-			margin-bottom: 2px !important;
+			padding-bottom: 0px;
+			margin-bottom: 0px !important;
 
 			.ratings {
 				align-content: baseline;
@@ -127,7 +132,7 @@
 			width: 100%;
 			height: auto;
 			margin-left: 0;
-			margin-bottom: 24px;
+			margin-bottom: 16px;
 			border-bottom: 1px solid #eeeeee;
 			padding-bottom: 21px;
 		}
@@ -357,7 +362,7 @@
 			}
 		}
 
-		~*{
+		~* {
 			display: none !important;
 		}
 	}
@@ -1068,6 +1073,7 @@
 		text-transform: uppercase;
 		border-radius: 3px;
 		text-decoration: none !important;
+
 		&:hover {
 			background: #ececec;
 		}

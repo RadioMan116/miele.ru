@@ -38,14 +38,21 @@
 				min-width: 13px;
 				min-height: 13px;
 				border: 1px solid #ffffff;
-				padding: 1px;
-				background-color: $base;
+				padding: 2px;
+				// background-color: $base;
 				color: #ffffff !important;
 				font-size: 8px;
-				border-radius: 50%;
-				line-height: 1;
+				border-radius: 100%;
+				line-height: 8px;
+				text-align: center;
+				vertical-align: middle;
 				// min-width: unset;
 				// min-height: unset;
+				background: url("../images/Oval.svg") 50%;
+				background-size: cover;
+
+			/* may require vendor prefixes */
+
 			}
 
 			&__basket-link {

@@ -13,9 +13,7 @@
 		justify-content: center !important;
 		margin-top: 0;
 
-		.work-link,
-		.yandex,
-		.quality {
+		.work-link, .yandex, .quality {
 			// width: calc(((100% / 12) * 4)-16px);
 			height: unset !important;
 			height: auto;
@@ -23,8 +21,7 @@
 			margin-right: 0 !important;
 		}
 
-		.work-link,
-		.yandex {
+		.work-link, .yandex {
 			margin-right: 24px;
 		}
 
@@ -624,12 +621,17 @@
 }
 
 .yandex__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 188.47px;
+	height: 34px;
 	border: 1px solid $base;
 	padding: 4px 14px;
 	font-family: "HelveticaNeueCyr-Roman";
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 24px;
+	line-height: 1;
 	text-align: center;
 	text-transform: uppercase;
 	color: $base;
@@ -796,8 +798,7 @@
 		}
 	}
 
-	span,
-	a {
+	span, a {
 		width: 100%;
 		text-align: center;
 	}
@@ -917,11 +918,11 @@
 .credit-mini {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 15px;
-	padding: 24px;
-	background: #ffffff;
 	border: solid 1px #ececec;
-	box-shadow: 0px 2px 25px rgba(42, 145, 202, .1);
+	padding: 24px;
+	margin-bottom: 15px;
+	background: #ffffff;
+	box-shadow: 0 2px 25px rgba(42, 145, 202, .1);
 
 	// .credit-mini__title
 	&__title {
@@ -964,6 +965,7 @@
 		justify-content: center;
 		width: auto;
 		height: 34px;
+		border: solid 1px $base;
 		margin-bottom: 8px;
 		color: $base;
 		font-weight: 400;
@@ -971,7 +973,6 @@
 		line-height: 24px;
 		text-align: center;
 		text-transform: uppercase;
-		border: solid 1px $base;
 		border-radius: 3px;
 
 		&:hover {
