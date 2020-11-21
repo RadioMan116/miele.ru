@@ -1,5 +1,4 @@
-.instructions-category,
-.instructions-category .js-news {
+.instructions-category, .instructions-category .js-news {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -42,6 +41,17 @@
 			}
 		}
 
+		.instructions-category__items {
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+		.js-news {
+			padding-top: 0;
+		}
+
 		// .instructions__item
 		&__item {
 			flex-grow: 1;
@@ -64,23 +74,11 @@
 
 			&:nth-child(4n+4) {}
 
-			&:nth-of-type(3n-1),
-			&:nth-child(odd) {
+			&:nth-of-type(3n-1), &:nth-child(odd) {
 				margin-left: 0;
 				margin-right: 0;
 				margin-bottom: 16px;
 			}
-		}
-
-		.instructions-category__items {
-			padding: 0;
-
-			&:before {
-				display: none;
-			}
-		}
-		.js-news{
-			padding-top: 0;
 		}
 	}
 
@@ -240,8 +238,7 @@
 		margin-bottom: 16px;
 		margin-right: 28px;
 
-		&:nth-of-type(3n-1),
-		&:nth-child(odd) {
+		&:nth-of-type(3n-1), &:nth-child(odd) {
 			margin-left: unset;
 			margin-bottom: 16px;
 		}

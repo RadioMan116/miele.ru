@@ -117,6 +117,14 @@
 					font-size: 22px;
 				}
 			}
+
+			.announcing-mobile {
+				display: flex;
+			}
+			.announcing__status {
+
+				margin-left: 0;
+			}
 		}
 
 		.swiper-container {
@@ -128,14 +136,17 @@
 		}
 
 		.articles-main__info h2 {
-			font-size: 16px;
-			font-weight: 500;
-			line-height: 23px;
-			color: #333;
+			font-family: "HelveticaNeueCyr-Light";
+			font-size: 20px;
+			font-weight: 400;
+			line-height: 26px;
 			margin-bottom: 9px;
 		}
 
 		.articles-main__info p {
+			font-family: "HelveticaNeueCyr-Roman";
+			font-size: 14px;
+			font-weight: 400;
 			line-height: 22px;
 			margin-bottom: 26px;
 		}
@@ -184,7 +195,7 @@
 			bottom: 10px !important;
 			bottom: -21px !important;
 			width: 100%;
-			margin-top: 0px !important;
+			margin-top: 0 !important;
 		}
 
 		.swiper-scrollbar {
@@ -198,6 +209,7 @@
 				background: $base !important;
 			}
 		}
+
 	}
 
 	// .price__absolute {
@@ -274,8 +286,7 @@
 				top: 61px;
 			}
 
-			.swiper-button-prev.special-offers_prev,
-			.swiper-button-next.special-offers_next {
+			.swiper-button-prev.special-offers_prev, .swiper-button-next.special-offers_next {
 				top: 68px;
 			}
 
@@ -380,8 +391,7 @@
 			width: unset;
 		}
 
-		input,
-		select {
+		input, select {
 			width: 100%;
 			max-width: 372px;
 			height: 46px;
@@ -392,9 +402,7 @@
 			max-width: 450px;
 		}
 
-		input,
-		textarea,
-		select {
+		input, textarea, select {
 			border: solid 1px #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
@@ -475,8 +483,8 @@
 		}
 
 		.swiper-pagination_2 {
-			align-items: center;
 			flex-wrap: wrap;
+			align-items: center;
 			top: 3px;
 			max-width: 690px;
 			height: 34px;
@@ -484,8 +492,7 @@
 
 		.swiper-button {
 
-			&-prev,
-			&-next {
+			&-prev, &-next {
 				top: 23px;
 			}
 		}
@@ -647,8 +654,7 @@
 			}
 		}
 
-		.add-comment__row input,
-		.add-comment__row textarea {
+		.add-comment__row input, .add-comment__row textarea {
 			width: 49%;
 		}
 
@@ -723,13 +729,11 @@
 				left: 16px;
 			}
 
-			input,
-			textarea {
+			input, textarea {
 				width: 100%;
 			}
 
-			input::placeholder,
-			textarea::placeholder {
+			input::placeholder, textarea::placeholder {
 				// opacity: 0;
 				color: #a6a6a6;
 				font-family: "HelveticaNeueCyr-Roman";
@@ -853,8 +857,7 @@
 		width: 100%;
 		margin-top: 4px;
 
-		input,
-		textarea {
+		input, textarea {
 			width: 55%;
 			border: solid 1px #cbcbcb;
 			padding: 10px 19px;
@@ -864,8 +867,7 @@
 			background-color: #ffffff;
 		}
 
-		input::placeholder,
-		textarea::placeholder {
+		input::placeholder, textarea::placeholder {
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
