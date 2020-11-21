@@ -270,11 +270,11 @@
 				text-align: center;
 				color: #b0b0b0;
 				padding-right: 33px;
-				background: url("../images/order__pic.png") 95% no-repeat;
+				background: url("../images/comparison-delete-2.svg") 95% no-repeat;
 				margin-left: auto;
 
 				&:hover {
-					background: url("../images/order__color.png") 95% no-repeat;
+					background: url("../images/comparison-delete.svg") 95% no-repeat;
 				}
 			}
 
@@ -470,6 +470,10 @@
 				width: 100%;
 				max-width: unset;
 				height: 80px;
+
+				p{
+
+				}
 			}
 
 			label {
@@ -957,10 +961,13 @@
 			height: 46px;
 		}
 
-		textarea {
+		textarea,.basket-form__field_address textarea {
 			width: 100%;
 			max-width: 472px;
 			height: 124px;
+			padding-top: 14px;
+			padding-bottom: 6px;
+			line-height: 1.2;
 		}
 
 		input, textarea, select {
