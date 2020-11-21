@@ -396,7 +396,7 @@
 			color: #2e2e2e;
 			flex: 1 0 calc(50% - 8px) !important;
 			width: 50%;
-			padding-left: 5px;
+			padding-left: 0px;
 			height: 100%;
 			margin-right: 16px;
 			justify-content: flex-start !important;
@@ -644,7 +644,7 @@
 					&:before {
 						content: '';
 						width: calc(100% + 20px);
-						height: 1px;
+						height: 3px;
 						background: white;
 						margin-top: -40px;
 						position: absolute;

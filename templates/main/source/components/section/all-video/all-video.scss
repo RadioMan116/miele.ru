@@ -14,9 +14,11 @@
 		}
 
 		&__item {
+			flex-grow: 1;
 			flex-shrink: 0;
 			width: 288px !important;
 			margin-bottom: 26px;
+			height: auto;
 
 			@media screen and (max-width: 560px) {
 				// width: 100% !important;
