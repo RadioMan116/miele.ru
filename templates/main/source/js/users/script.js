@@ -969,7 +969,7 @@ $(document).ready(function () {
 		(() => {
 			let creditMini = document.querySelector(".credit-mini");
 			let catalogSidebar = document.querySelector(".catalog .sidebar");
-			if (catalogSidebar) {
+			if (catalogSidebar && creditMini) {
 				catalogSidebar.appendChild(creditMini.cloneNode(true));
 
 			}

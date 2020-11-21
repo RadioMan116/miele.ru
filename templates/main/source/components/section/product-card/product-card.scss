@@ -954,6 +954,7 @@
 
 					&:hover {
 						background: unset;
+						box-shadow: unset;
 					}
 
 					&:last-of-type {
@@ -962,10 +963,11 @@
 
 					&.active {
 						margin: 0 0 10px 0;
-						box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
+						// box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
+						box-shadow: unset;
 						background-color: #ffffff;
 						color: $base !important;
-						background: url("https://icongr.am/entypo/chevron-up.svg?color=8c0014") 94%/18px no-repeat !important;
+						background: url("https://icongr.am/entypo/chevron-up.svg?color=8c0014") 94% 50%/18px no-repeat !important;
 					}
 				}
 
@@ -1001,6 +1003,7 @@
 
 				.characteristic__property {
 					justify-content: flex-end;
+					margin-top: 0;
 				}
 			}
 
@@ -1061,10 +1064,18 @@
 					background-size: contain;
 					margin-right: 6px;
 				}
+
+				+p {}
 			}
 
 			.reviews__link {
 				margin-left: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 34px;
+				flex-shrink: 0;
+				line-height: 1;
 			}
 
 			.reviews-list__col:first-child {
@@ -1085,12 +1096,18 @@
 				justify-content: center;
 				order: -2;
 				width: auto;
-				padding: 8px 10px;
+				padding: 3px 10px;
 				// padding: 0 3px;
 				margin-top: 8px;
 				margin-bottom: 6px;
 				margin-left: 3px;
 				margin-right: 3px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 34px;
+				flex-shrink: 0;
+				line-height: 1;
 			}
 
 			&__title {
@@ -1206,7 +1223,7 @@
 				}
 
 				&__button {
-					padding: 4px 20px;
+					padding: 4px 8px;
 					margin-bottom: 9px;
 				}
 			}
@@ -1438,8 +1455,13 @@
 				// .articles__link
 				&__link {
 					width: 100%;
-					padding: 9px 12px;
+					padding: 8px 12px;
 					margin-left: 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 36px;
+					flex-shrink: 0;
 				}
 
 				// .articles__items
@@ -1485,7 +1507,7 @@
 					font-weight: 400;
 					line-height: 20px;
 					// display: block;
-					margin-bottom: 46px;
+					margin-bottom: 12px;
 				}
 			}
 
@@ -1591,9 +1613,9 @@
 			&__title {
 				padding: 23px 0 14px;
 				font-family: "HelveticaNeueCyr-Light";
-				font-size: 20px;
+				font-size: 18px;
 				font-weight: 400;
-				line-height: 26px;
+				line-height: 24px;
 				border-top: 1px solid #eeeeee;
 				margin-top: 32px;
 
@@ -1604,10 +1626,11 @@
 
 			p {
 				margin-bottom: 14px;
+				line-height: 20px;
 			}
 
 			&:not(.active) {
-				*:nth-child(3)~* {
+				*:nth-child(2)~* {
 					display: none;
 					// height: 0;
 					// width: 0;
@@ -2413,7 +2436,8 @@
 			width: 100%;
 			overflow: auto;
 			margin-bottom: 10px;
-			padding-top: 30px;
+			padding-top: 0px;
+			flex-direction: column;
 
 			.link-pop-glossary {
 				flex-shrink: 0;
@@ -2428,7 +2452,7 @@
 			}
 
 			h6 {
-				position: absolute;
+				position: sticky;
 				top: 0;
 				left: 0;
 				font-size: 15px;
@@ -2439,6 +2463,20 @@
 				flex-wrap: nowrap;
 				width: 100%;
 				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+				-ms-overflow-style: none;
+				/* IE 10+ */
+				scrollbar-width: none;
+
+				/* Firefox */
+				&::-webkit-scrollbar {
+					/* chrome based */
+					width: 0px;
+					/* ширина scrollbar'a */
+					background: transparent;
+					/* опционально */
+					display: none;
+				}
 			}
 		}
 
@@ -2744,7 +2782,7 @@
 				display: none !important;
 			}
 
-			 .special-offers {
+			.special-offers {
 				&__fav {
 					margin-right: 0;
 				}
