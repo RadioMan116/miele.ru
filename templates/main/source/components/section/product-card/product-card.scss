@@ -6332,8 +6332,10 @@
 				width: 40px;
 				height: 40px;
 				margin-right: 12px;
-				clip-path: circle(48%);
 				border-radius: 50%;
+				&[alt^="Сделано"] {
+					clip-path: circle(46%);
+				}
 			}
 
 			&:not(:last-of-type) {
