@@ -23,8 +23,8 @@
 	&-popup {
 		@media screen and (max-width: 767px) {
 			&__text {
-				// max-width: 288px;
 
+				// max-width: 288px;
 				&-last {
 					max-width: 100%;
 					padding-right: 0;
@@ -61,7 +61,8 @@
 				line-height: 18px;
 			}
 
-			&__input, &__textarea {
+			&__input,
+			&__textarea {
 				width: 100%;
 				height: 46px;
 			}
@@ -74,7 +75,6 @@
 
 		@media screen and (max-width: 767px) {
 			.checkbox.checkbox_oferta {
-
 				margin: 0 0 24px 0;
 			}
 		}
@@ -127,6 +127,10 @@
 			}
 		}
 
+		.checkbox_oferta {
+			margin-right: 16px;
+		}
+
 		&__name {
 			width: 40%;
 			padding-right: 5%;
@@ -135,7 +139,8 @@
 			line-height: 22px;
 		}
 
-		&__input, &__textarea {
+		&__input,
+		&__textarea {
 			width: 60%;
 			height: 100%;
 			border-radius: 2px;
@@ -148,6 +153,10 @@
 
 			&:required {
 				box-shadow: none;
+			}
+
+			&[placeholder="Телефон"]::placeholder {
+				opacity: 0;
 			}
 		}
 
@@ -177,7 +186,8 @@
 			font-weight: 500;
 		}
 
-		a, &__req {
+		a,
+		&__req {
 			@include link;
 			padding-right: 5px;
 		}

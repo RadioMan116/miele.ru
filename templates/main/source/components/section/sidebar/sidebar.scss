@@ -922,7 +922,10 @@
 	padding: 24px;
 	margin-bottom: 15px;
 	background: #ffffff;
-	box-shadow: 0 2px 25px rgba(42, 145, 202, .1);
+
+	&:hover {
+		box-shadow: 0 2px 25px rgba(42, 145, 202, .1);
+	}
 
 	// .credit-mini__title
 	&__title {
