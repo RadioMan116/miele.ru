@@ -1184,7 +1184,7 @@ $(document).ready(function () {
 				let productHeaderBottom = productCard.querySelector(".product__header_bottom");
 				productHeaderBottom.append(favorite);
 				let catalogProp = $(".catalog__prop-inner");
-				if(catalogProp.length = 0){
+				if(!catalogProp.length){
 					$(".link-pop-glossary").wrapAll($("<div class=\"catalog__prop-inner\"></div>"));
 				}
 			}
