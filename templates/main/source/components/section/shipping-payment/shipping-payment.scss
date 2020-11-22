@@ -153,8 +153,7 @@
 			}
 
 			// .shipping-payment__item
-			&__item,
-			&__item.more {
+			&__item, &__item.more {
 				flex-direction: column;
 				align-items: baseline;
 				height: auto;
@@ -314,6 +313,10 @@
 
 					&:nth-of-type(even) {
 						margin: 10px 16px 0;
+					}
+
+					&:last-of-type {
+						margin-right: 16px;
 					}
 				}
 

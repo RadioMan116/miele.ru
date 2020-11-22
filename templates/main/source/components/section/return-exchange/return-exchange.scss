@@ -201,6 +201,12 @@
 			align-items: baseline;
 		}
 	}
+	&__info{
+		color: #a6a6a6;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 22px;
+	}
 
 	@media screen and (max-width: 767px) {
 		&__form {
@@ -278,6 +284,13 @@
 		&__textarea {
 			height: 81px;
 			resize: none;
+		}
+
+		&__info{
+			font-size: 11px;
+			font-weight: 400;
+			line-height: 16px;
+			margin-top: 16px;
 		}
 	}
 }

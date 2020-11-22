@@ -74,7 +74,9 @@
 		margin-top: 18px;
 	}
 
-	p,.about-us__block-text,[style="text-align: justify;"] {
+	p,
+	.about-us__block-text,
+	[style="text-align: justify;"] {
 		// display: block;
 		width: 100%;
 		font-size: 14px;
@@ -514,6 +516,10 @@
 		}
 	}
 
+	&.repair {
+		margin-bottom: 0;
+	}
+
 	@media screen and (max-width: 767px) {
 		margin-bottom: 17px;
 
@@ -544,7 +550,8 @@
 			line-height: 24px;
 		}
 
-		p,[style="text-align: justify;"]  {
+		p,
+		[style="text-align: justify;"] {
 			font-size: 14px;
 			line-height: 22px;
 			margin-bottom: 24px;
@@ -642,7 +649,8 @@
 					// }
 				}
 			}
-			p:last-of-type{
+
+			p:last-of-type {
 				margin-bottom: 0;
 			}
 		}
