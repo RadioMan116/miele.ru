@@ -45,8 +45,7 @@
 
 		&__item {
 
-			&.last,
-			&.js-tags_data {
+			&.last, &.js-tags_data {
 				display: flex;
 				align-items: center;
 				height: 32px;
@@ -150,6 +149,7 @@
 		&.last {
 			display: flex;
 			align-items: center;
+			height: 40px;
 			border: none;
 			border: 0 !important;
 			padding: 0;

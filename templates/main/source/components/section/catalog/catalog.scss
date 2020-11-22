@@ -1761,7 +1761,8 @@
 			p {
 				margin-bottom: 22px;
 			}
-			li{
+
+			li {
 				margin-left: 16px;
 			}
 		}
@@ -2533,9 +2534,11 @@
 			padding-top: 16px;
 		}
 
-		&__bottom{
-			+.instructions{
-			    margin-top: 36px;
+		&__bottom {
+			@media screen and (min-width: 768px) {
+				+.instructions {
+					margin-top: 36px;
+				}
 			}
 		}
 	}
@@ -3473,7 +3476,7 @@
 						margin-bottom: 0;
 					}
 
-					&:nth-of-type(2)~.doc_loading {
+					&:nth-of-type(3)~.doc_loading {
 						display: none;
 					}
 				}
@@ -3484,7 +3487,7 @@
 				flex-grow: 0;
 				width: calc((100%/3) - 12px);
 				min-width: unset;
-				height: 164px;
+				// height: 200px;
 				// margin-right: 16px;
 				border: unset;
 				padding: 0;
