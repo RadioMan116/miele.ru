@@ -631,7 +631,7 @@
 	}
 
 	&__blocks {
-		z-index: 999;
+		z-index: 1000;
 		width: 100%;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
 	}
@@ -969,11 +969,26 @@
 		line-height: 1.1;
 		text-align: center;
 		background-color: $base;
+		z-index: 2;
 		border-radius: 50%;
-		border-radius: 15px;
+		// border-radius: 15px;
 		// background: url("../images/amoint-notification.svg") no-repeat;
 		display: none;
 
+		&:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			// top: 0;
+			// left: 0;
+			width: 100%;
+			height: auto;
+
+			padding-top: 100%;
+			border-radius: 50%;
+			// background: url("../images/amoint-notification.svg") no-repeat;
+			background-color: $base;
+		}
 		.active & {
 			display: flex;
 		}

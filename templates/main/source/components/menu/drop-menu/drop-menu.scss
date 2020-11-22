@@ -107,7 +107,7 @@
 		&:not(:last-of-type) {
 			flex-grow: 1;
 			background: url("../images/menu-oval.svg") 100%/9px no-repeat;
-			background-position-x: calc(100% + -16px);
+			background-position-x: calc(100% + -14px);
 			padding-right: 16px;
 		}
 
@@ -133,9 +133,7 @@
 			}
 		}
 
-		&:nth-child(3),
-		&:nth-child(4),
-		&:nth-child(5) {
+		&:nth-child(3), &:nth-child(4), &:nth-child(5) {
 			.dropdown-menu__item {
 				display: flex;
 				justify-content: center;
@@ -154,8 +152,7 @@
 			}
 		}
 
-		&:nth-child(3),
-		&:nth-child(4) {
+		&:nth-child(3), &:nth-child(4) {
 			.dropdown-menu__list {
 				padding: 17px 11px 0;
 			}
@@ -674,8 +671,7 @@
 		padding-right: 16px;
 	}
 
-	.sub-menu__link,
-	.sub-menu__item {
+	.sub-menu__link, .sub-menu__item {
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.6;
@@ -692,7 +688,6 @@
 			margin-bottom: 8px;
 			padding-right: 28px;
 			width: 100%;
-
 		}
 	}
 
@@ -795,8 +790,7 @@
 				left: 0;
 				height: auto;
 
-				.dropdown-menu__list,
-				.dropdown-menu__parent {
+				.dropdown-menu__list, .dropdown-menu__parent {
 					position: unset;
 					width: 100%;
 					max-height: unset;
@@ -859,9 +853,7 @@
 					}
 				}
 
-				&:nth-child(3),
-				&:nth-child(4),
-				&:nth-child(5) {
+				&:nth-child(3), &:nth-child(4), &:nth-child(5) {
 					.dropdown-menu__item {
 						// display: flex;
 						// justify-content: flex-start;
@@ -916,8 +908,7 @@
 				&.active {
 					.header {
 
-						&__favorite,
-						&__compare {
+						&__favorite, &__compare {
 							display: flex;
 							position: relative;
 						}
