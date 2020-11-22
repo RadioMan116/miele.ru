@@ -2644,6 +2644,12 @@ $(window).on("load", function () {
 			}
 		);
 		$(".instructions-main__list").matchHeight();
+		$(".articles.articles-main .special-offers .announcing").matchHeight(
+			{
+				byRow: false
+			}
+		);
+
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
 			allowTouchMove: true,
@@ -2732,6 +2738,8 @@ $(window).on("load", function () {
 	$(".catalog .instructions .special-offers__text.catalog__text").matchHeight(
 
 	);
+
+
 	(function () {
 		let moreText = document.querySelector(".js-button");
 		let mainTags = document.querySelector(".tags__list");
