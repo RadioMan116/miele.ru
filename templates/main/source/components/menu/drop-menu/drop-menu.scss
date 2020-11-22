@@ -834,6 +834,8 @@
 				.dropdown-menu__item {
 					width: 100% !important;
 					background-position: 14px 11px !important;
+					background-repeat: no-repeat!important;
+					background: unset !important;
 
 					&.button {
 						height: 48px;

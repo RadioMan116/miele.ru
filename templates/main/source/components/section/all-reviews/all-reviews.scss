@@ -75,8 +75,8 @@
 		}
 
 		.reviews__section {
-			padding-bottom: 0px;
-			margin-bottom: 0px !important;
+			padding-bottom: 0;
+			margin-bottom: 0 !important;
 
 			.ratings {
 				align-content: baseline;
@@ -132,13 +132,13 @@
 			width: 100%;
 			height: auto;
 			margin-left: 0;
-			margin-bottom: 16px;
-			border-bottom: 1px solid #eeeeee;
+			margin-bottom: 0px;
+			// border-bottom: 1px solid #eeeeee;
 			padding-bottom: 21px;
 		}
 
 		.reviews__link {
-			margin-top: 14px;
+			margin-top: 16px;
 			margin-bottom: 10px;
 		}
 
@@ -958,7 +958,9 @@
 			justify-content: center;
 			order: 5;
 			width: 100%;
-			padding: 8px 12px;
+			// padding: 8px 12px;
+			height: 42px;
+			padding: 9px 12px 7px;
 		}
 
 		.reviews-list__col_desc {
