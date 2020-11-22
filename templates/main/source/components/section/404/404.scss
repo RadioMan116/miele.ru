@@ -7,11 +7,11 @@
 	margin-top: 8px;
 	margin-bottom: 35px;
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 767px) {
 		&__button {}
 
 		h1 {
-			color: #333333;
+
 			font-size: 101px;
 			font-weight: 400;
 		}
@@ -50,6 +50,7 @@
 		line-height: 24px;
 		text-transform: uppercase;
 		text-decoration: none !important;
+		padding-top: 2px;
 
 		&:hover {
 			background-color: #b90c24;
@@ -59,21 +60,21 @@
 	}
 
 	h1 {
-		color: #333333;
+
 		font-size: 170px;
 		font-weight: 400;
 		line-height: normal;
 	}
 
 	h2 {
-		color: #333333;
+
 		font-size: 24px;
 		font-weight: 400;
 		margin-bottom: 1rem;
 	}
 
 	p {
-		color: #333333;
+
 		// font-family: Arial, sans-serif;
 		font-size: 14px;
 		line-height: 24px;

@@ -45,9 +45,11 @@
 
 		&__item {
 
-			&.last, &.js-tags_data {
+			&.last,
+			&.js-tags_data {
 				display: flex;
 				align-items: center;
+				height: 32px;
 				border: none;
 				background-color: transparent;
 				color: $base;
@@ -69,7 +71,7 @@
 				}
 			}
 
-			a{
+			a {
 				padding-bottom: 0;
 			}
 		}
@@ -225,6 +227,7 @@
 		line-height: 24px;
 		text-transform: uppercase;
 		text-decoration: none !important;
+
 		&:hover {
 			background: #ececec;
 		}

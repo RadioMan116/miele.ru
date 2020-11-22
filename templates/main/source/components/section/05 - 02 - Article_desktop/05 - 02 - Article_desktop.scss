@@ -639,7 +639,7 @@
 	max-width: 872px;
 	margin-bottom: 34px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		padding-top: 40px;
 
 		.reviews {
@@ -677,7 +677,7 @@
 		}
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 767px) {
 		padding-top: 34px;
 
 		.reviews__top {
