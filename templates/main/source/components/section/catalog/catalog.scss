@@ -3502,18 +3502,18 @@
 				padding: 0;
 				margin-bottom: 25px;
 
-				&:hover {
-					z-index: 11;
-					box-shadow: unset;
+				// &:hover {
+				// 	z-index: 11;
+				// 	box-shadow: unset;
 
-					.doc_loading~.doc_loading {
-						display: flex !important;
-					}
+				// 	.doc_loading~.doc_loading {
+				// 		display: flex !important;
+				// 	}
 
-					.instructions__inner {
-						box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
-					}
-				}
+				// 	.instructions__inner {
+				// 		box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
+				// 	}
+				// }
 
 				&:nth-child(3n-1) {
 					margin: 0 28px 25px;
