@@ -675,7 +675,7 @@
 							background: url(../images/com.svg);
 						}
 
-						&:hover {
+						&:hover,&.active {
 							color: $base;
 
 							&:before {
