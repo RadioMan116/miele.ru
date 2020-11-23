@@ -2500,6 +2500,7 @@ $(window).on("load", function () {
 			if (windowWidth2 >= 768) {
 				var height = $(".js-swiper-comparison .characteristic__row").eq(index).outerHeight();
 				$(el).outerHeight(height);
+
 			} else {
 				setTimeout(function () {
 					var height = $(".js-swiper-comparison .characteristic__row").eq(index).outerHeight();
