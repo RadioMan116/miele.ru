@@ -6,7 +6,8 @@
 	@media screen and (max-width: 767px) {
 		.table {
 
-			.title__span, .table__item {
+			.title__span,
+			.table__item {
 				&.price {
 					// padding-left: 15px;
 				}
@@ -37,7 +38,8 @@
 				white-space: nowrap;
 				height: unset;
 
-				.decr, .incr {
+				.decr,
+				.incr {
 					display: flex;
 					align-items: center;
 					position: absolute;
@@ -174,7 +176,8 @@
 			}
 		}
 
-		.swiper-button-next, .swiper-button-prev {
+		.swiper-button-next,
+		.swiper-button-prev {
 			top: 54px !important;
 		}
 
@@ -229,7 +232,8 @@
 				margin-bottom: 4px;
 			}
 
-			.special-offers__text, .strong__price {
+			.special-offers__text,
+			.strong__price {
 				font-size: 14px;
 				font-weight: 500;
 				font-style: normal;
@@ -295,7 +299,8 @@
 				width: 100% !important;
 				padding: 0 0 17px 0 !important;
 
-				.decr, .incr {
+				.decr,
+				.incr {
 					position: unset !important;
 					z-index: 99;
 					height: 35px;
@@ -463,7 +468,8 @@
 				padding-top: 0;
 			}
 
-			input, select {
+			input,
+			select {
 				max-width: unset;
 			}
 
@@ -580,7 +586,8 @@
 			}
 		}
 
-		.order-checkout, #order_form_content {
+		.order-checkout,
+		#order_form_content {
 			max-width: 100%;
 		}
 
@@ -620,7 +627,8 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		.title__span, .table__item {
+		.title__span,
+		.table__item {
 			display: flex;
 			align-items: center;
 			width: 15%;
@@ -660,7 +668,8 @@
 			font-weight: 700;
 			border-radius: 2px;
 
-			.decr, .incr {
+			.decr,
+			.incr {
 				position: absolute;
 				color: #999999;
 				font-size: 19px;
@@ -723,7 +732,9 @@
 			}
 		}
 
-		&__title, &__items, &__total {
+		&__title,
+		&__items,
+		&__total {
 			justify-content: space-between;
 			width: 100%;
 		}
@@ -822,7 +833,8 @@
 		display: none;
 	}
 
-	.swiper-button-prev, .swiper-button-next {
+	.swiper-button-prev,
+	.swiper-button-next {
 		top: 73px !important;
 	}
 
@@ -855,6 +867,7 @@
 
 				.swiper-pagination-bullet {
 					margin-left: 8px;
+					clip-path: circle(48%);
 				}
 			}
 
@@ -972,7 +985,8 @@
 			height: 46px;
 		}
 
-		textarea, .basket-form__field_address textarea {
+		textarea,
+		.basket-form__field_address textarea {
 			width: 100%;
 			max-width: 472px;
 			height: 124px;
@@ -981,7 +995,9 @@
 			line-height: 1.2;
 		}
 
-		input, textarea, select {
+		input,
+		textarea,
+		select {
 			border: 1px solid #cbcbcb;
 			border-radius: 2px;
 			background-color: #ffffff;
@@ -1196,6 +1212,8 @@
 	}
 }
 
-.bx_order_make, #order_form_content, #order_form_div {
+.bx_order_make,
+#order_form_content,
+#order_form_div {
 	max-width: 100%;
 }
