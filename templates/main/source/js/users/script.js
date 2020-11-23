@@ -921,7 +921,7 @@ $(document).ready(function () {
 		$(".articles .articles__text").matchHeight();
 		$(".catalog__thumb .announcing").matchHeight();
 		// $(".articles").not('.swiper-container').find('.articles__text').matchHeight();
-		$(".catalog .instructions .catalog__item").matchHeight();
+
 		// (() => {
 		// })();
 		$(function () {
@@ -2646,6 +2646,7 @@ $(window).on("load", function () {
 				byRow: false
 			}
 		);
+		$(".catalog .instructions .catalog__item").matchHeight();
 
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
