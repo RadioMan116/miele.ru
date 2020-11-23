@@ -928,11 +928,14 @@
 				display: none;
 
 				&.mobile {
-					display: flex;
+					display: inline;
 					padding-left: 24px;
 					font-size: 14px;
 					align-items: baseline;
 					margin-top: 10px;
+					span{
+						display: inline-block;
+					}
 				}
 			}
 
