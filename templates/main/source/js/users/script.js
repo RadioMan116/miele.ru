@@ -2646,7 +2646,10 @@ $(window).on("load", function () {
 				byRow: false
 			}
 		);
-		$(".catalog .instructions .catalog__item").matchHeight();
+		setTimeout(() => {
+			$(".catalog .instructions .catalog__item").matchHeight();
+
+		}, 200);
 
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {
