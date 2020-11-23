@@ -897,8 +897,9 @@
 			.ratings__number {
 				font-size: 14px;
 				font-weight: 700;
-				line-height: 18px;
+				line-height: 1px;
 				margin-left: 2px;
+				padding-top: 4px;
 			}
 		}
 
@@ -907,6 +908,7 @@
 			font-size: 14px;
 			line-height: 24px;
 			margin-left: auto;
+			padding-top: 4px;
 		}
 
 		.reviews-list {

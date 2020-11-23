@@ -2498,8 +2498,11 @@ $(window).on("load", function () {
 		});
 		$(".comparison__main .characteristic__row").each(function (index, el) {
 			if (windowWidth2 >= 768) {
-				var height = $(".js-swiper-comparison .characteristic__row").eq(index).outerHeight();
-				$(el).outerHeight(height);
+				setTimeout(() => {
+					var height = $(".js-swiper-comparison .characteristic__row").eq(index).outerHeight();
+					$(el).outerHeight(height);
+
+				}, 100);
 
 			} else {
 				setTimeout(function () {
