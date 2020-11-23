@@ -56,8 +56,11 @@
 			margin-top: 0;
 			text-align: center;
 			height: 36px;
-			padding: 10px 0 0;
+			padding: 3px 0 0;
 			line-height: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		&__title {
@@ -145,6 +148,9 @@
 		color: $base;
 		text-transform: uppercase;
 		text-decoration: none !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		&:hover {
 			background: #ececec;

@@ -521,6 +521,9 @@
 					margin-left: 0;
 					border-radius: 3px;
 					line-height: 1;
+					@media screen and (max-width: 767px) {
+						padding: 12px 0 8px;
+					}
 
 					&:first-child {
 						margin: 0 0 6px;

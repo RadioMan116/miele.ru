@@ -442,6 +442,7 @@
 		display: flex;
 		align-items: center;
 		margin-left: auto;
+		align-content: center;
 
 		&__star {
 			width: 16px;
@@ -449,6 +450,7 @@
 			background: url(../images/star.svg) no-repeat;
 			background-position: 50%;
 			background-size: 16px 16px;
+			margin-top: -5px;
 
 			&.ratings__none {
 				background: url(../images/rectangle-2.svg) no-repeat;
@@ -457,12 +459,13 @@
 			}
 		}
 
-		&__number {
-			margin: 0 2px 0 8px;
+		.ratings__number {
+			margin: 2px 2px 0 8px;
 			font-family: "HelveticaNeueCyr-Bold";
 			font-size: 14px;
 			font-weight: 400;
-			line-height: 24px;
+			line-height: 1;
+			display: inline-flex;
 		}
 
 		&__link {

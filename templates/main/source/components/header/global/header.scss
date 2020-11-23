@@ -27,32 +27,39 @@
 			}
 
 			&__number {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				position: absolute;
+				// display: flex;
+				// align-items: center;
+				// justify-content: center;
+				// position: absolute;
 				top: 0;
 				right: -4px;
 				left: unset;
 				/* Style for "Oval" */
-				min-width: 15px;
-				min-height: 15px;
-				border: 1px solid #ffffff;
-				padding: 2px;
+				min-width: 16px;
+				min-height: 16px;
+				// border: 1px solid #ffffff;
+				// padding: 1px 3px;
 				// background-color: $base;
-				color: #ffffff !important;
+				// color: #ffffff !important;
 				font-size: 8px;
-				border-radius: 100%;
+				// border-radius: 100%;
 				line-height: 8px;
-				text-align: center;
-				vertical-align: middle;
+				background: unset;
+
+				// text-align: center;
+				// vertical-align: middle;
 				// min-width: unset;
 				// min-height: unset;
-				background: url("../images/Oval.svg") 50%;
-				background-size: cover;
+				// background: url("../images/Oval.svg") 50%;
+				// background-size: cover;
+				&::before {
+					// margin-top: -1px;
+					// top: -1px;
+					top: calc(50%);
+					transform: translate(-50%, -50%);
+				}
 
-			/* may require vendor prefixes */
-
+				/* may require vendor prefixes */
 			}
 
 			&__basket-link {
@@ -93,7 +100,7 @@
 					// display: flex;
 					// align-items: baseline;
 					// position: fixed;
-					top: 0px;
+					top: 0;
 					left: 0;
 					width: 100%;
 					height: auto;
@@ -113,9 +120,9 @@
 			}
 
 			&__blocks.active {
-				overflow-y: auto;
-				height: 100vh;
 				display: block;
+				height: 100vh;
+				overflow-y: auto;
 			}
 
 			&__block_top {
@@ -156,8 +163,7 @@
 				&.active {
 
 					// height: 112px;
-					.header__favorite,
-					.header__compare {
+					.header__favorite, .header__compare {
 						// display: flex;
 						display: none;
 					}
@@ -176,9 +182,7 @@
 				padding-right: 0;
 			}
 
-			&__favorite,
-			&__compare,
-			&__basket {
+			&__favorite, &__compare, &__basket {
 				display: flex;
 				align-items: center;
 				justify-content: flex-end;
@@ -266,8 +270,7 @@
 				}
 			}
 
-			&__favorite,
-			&__compare {
+			&__favorite, &__compare {
 				display: none;
 				align-items: center;
 				position: absolute;
@@ -673,9 +676,9 @@
 		}
 
 		&_menu {
+			position: relative;
 			height: 48px;
 			background: #f6f6f6;
-			position: relative;
 
 			.container {
 				transform: translateX(0);
@@ -855,10 +858,7 @@
 		// }
 	}
 
-	&__favorite,
-	&__compare,
-	&__basket,
-	&__search {
+	&__favorite, &__compare, &__basket, &__search {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -953,42 +953,51 @@
 
 	&__number {
 		display: flex;
+		// border-radius: 15px;
+		// background: url("../images/amoint-notification.svg") no-repeat;
+		display: none;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
+		// background-color: $base;
+		z-index: 2;
 		/* Style for "Oval" */
 		top: -6px;
 		left: 27px;
 		min-width: 21px;
-		min-height: 19px;
+		min-height: 21px;
 		border: 2px solid white;
-		padding: 1px 3px;
+		padding: 0;
+		border-radius: 50%;
 		color: #ffffff;
 		font-size: 13px;
 		font-weight: 400;
-		line-height: 1.1;
+		line-height: 13px;
 		text-align: center;
-		background-color: $base;
-		z-index: 2;
-		border-radius: 50%;
-		// border-radius: 15px;
-		// background: url("../images/amoint-notification.svg") no-repeat;
-		display: none;
+		// display: table-cell !important;
+		// vertical-align: middle;
+		// text-align: center;
+
 
 		&:before {
 			content: "";
 			position: absolute;
 			z-index: -1;
-			// top: 0;
-			// left: 0;
+			top: 50%;
+			left: 50%;
 			width: 100%;
-			height: auto;
-
+			transform: translate(-50%, -50%);
+			// height: 100%;
+			// padding-top: 0%;
+			// border-radius: 50%;
+			background: url("../images/amoint-notification.svg") no-repeat;
+			// background-color: $base;
 			padding-top: 100%;
-			border-radius: 50%;
-			// background: url("../images/amoint-notification.svg") no-repeat;
-			background-color: $base;
+
+
+			background-size: 100%;
 		}
+
 		.active & {
 			display: flex;
 		}
