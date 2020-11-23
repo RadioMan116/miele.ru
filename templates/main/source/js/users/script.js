@@ -40,12 +40,9 @@ $(document).ready(function () {
 		let bgAttr = document.querySelectorAll(".dropdown-menu__item");
 		if (bgAttr) {
 			bgAttr.forEach(element => {
-				let url = element.getAttribute("data-bg");
-				let dataBgCustom = element.getAttribute("data-bg");
-				if(url || dataBgCustom){
+				let url = element.getAttribute("data-bg") ? element.getAttribute("data-bg") : element.getAttribute("data-bg-custom");
 
-					element.querySelector(".dropdown-menu__link").style.background = `url('${url}')`;
-				}
+				element.querySelector(".dropdown-menu__link").style.background = `url('${url}')`;
 			});
 		}
 	})();
