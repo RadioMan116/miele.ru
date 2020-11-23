@@ -41,7 +41,11 @@ $(document).ready(function () {
 		if (bgAttr) {
 			bgAttr.forEach(element => {
 				let url = element.getAttribute("data-bg");
-				element.querySelector(".dropdown-menu__link").style.background = `url('${url}')`;
+				let dataBgCustom = element.getAttribute("data-bg");
+				if(url || dataBgCustom){
+
+					element.querySelector(".dropdown-menu__link").style.background = `url('${url}')`;
+				}
 			});
 		}
 	})();
