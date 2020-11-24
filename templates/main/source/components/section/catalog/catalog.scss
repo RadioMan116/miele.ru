@@ -1400,7 +1400,7 @@
 								font-size: 12px;
 								font-weight: 400;
 								line-height: 19px;
-								margin-bottom: auto;
+								// margin-bottom: auto;
 							}
 						}
 
@@ -1520,12 +1520,13 @@
 				background: #ffffff;
 				top: 8px;
 				bottom: 0;
+				left: 0;
 
 				span {
 					font-size: 13px;
 					font-weight: 400;
 					line-height: 19px;
-					padding-right: 6px;
+					padding:0 6px;
 					-webkit-line-clamp: 17;
 				}
 			}
