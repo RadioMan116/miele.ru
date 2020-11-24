@@ -53,7 +53,7 @@ $(document).ready(function () {
 	// })();
 	function swiperLoad() {
 		let mainCollection = document.querySelectorAll(".special-offers .container");
-		let catalog = document.querySelector(".special-offers.catalog");
+		let catalog = document.querySelector(".special-offers.catalog") ? document.querySelector(".special-offers.catalog") : document.querySelector(".js-favorite_list") ;
 		let favorite = document.querySelector(".js-news");
 		let article = document.querySelector(".articles-main");
 
