@@ -977,6 +977,7 @@ $(document).ready(function () {
 		})();
 
 		$(".catalog__list .catalog__items .catalog__item .special-offers__text").matchHeight();
+		$(".catalog__list .catalog__items .catalog__item .special-offers__text p").matchHeight();
 		$(".logo").appendTo(".header__block_top .container");
 		// $(".catalog-view").appendTo(".bx-filter-section");
 		$(".labels").appendTo(".product-card .product__header_top");
