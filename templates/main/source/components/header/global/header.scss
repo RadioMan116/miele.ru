@@ -869,6 +869,7 @@
 		background: #f6f6f6;
 		border-radius: 50%;
 		cursor: pointer;
+		transition: .3s;
 
 		&:before {
 			content: "";
@@ -883,6 +884,10 @@
 		}
 
 		&.active {}
+
+		&:hover {
+			background: #c0c1c1;
+		}
 	}
 
 	&__favorite {
@@ -972,7 +977,7 @@
 		color: #ffffff;
 		font-size: 13px;
 		font-weight: 400;
-		line-height: 1ю1;
+		line-height: 1.1;
 		text-align: center;
 		// display: table-cell !important;
 		// vertical-align: middle;

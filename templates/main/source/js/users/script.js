@@ -2819,9 +2819,22 @@ $(window).on("load", function () {
 						setTimeout(() => {
 							document.body.classList.toggle("menu-show");
 						}, 200);
-						$("ul.dropdown-menu__list").on("mouseover", "li:not(.active)", function () {
-							$(this).addClass("active").siblings().removeClass("active").closest(".dropdown-menu__parent").find(".dropdown-menu__inner").removeClass("active").eq($(this).index()).addClass("active");
+						// $("ul.dropdown-menu__list").on("mouseover", "li:not(.active)", function () {
+						// 	$(this).addClass("active").siblings().removeClass("active").closest(".dropdown-menu__parent").find(".dropdown-menu__inner").removeClass("active").eq($(this).index()).addClass("active");
+						// });
+						$("ul.dropdown-menu__list li").hoverIntent({
+							sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)
+							interval: 100,  // number = milliseconds for onMouseOver polling interval
+							// timeout: 800,   // number = milliseconds delay before onMouseOut
+							over:function(){
+								$(this).addClass("active").siblings().removeClass("active").closest(".dropdown-menu__parent").find(".dropdown-menu__inner").removeClass("active").eq($(this).index()).addClass("active");
+							},
+							// out: function(){
+							// 	$(this)
+							// 		.removeClass("hoverIn").toggleClass("hoverOut");
+							// }
 						});
+
 					});
 				}
 			});

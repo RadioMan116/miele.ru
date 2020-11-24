@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="41px" height="41px" viewbox="0 0 41 41" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <g id="Cart" transform="translate(0.5 0.5)">
-    <g id="shopping-cart">
-      <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" id="Oval" fill="#F6F6F6" fill-rule="evenodd" stroke="none" />
-      <g id="icon-close" transform="translate(8 8)">
-        <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" transform="translate(5 5)" id="Shape" fill="#4B4B4B" fill-rule="evenodd" stroke="none" />
-      </g>
-    </g>
+<svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="icon-close">
+    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" transform="translate(5 5)" id="Shape" fill="#4B4B4B" fill-rule="evenodd" stroke="none" />
   </g>
 </svg>

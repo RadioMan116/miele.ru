@@ -133,7 +133,9 @@
 			}
 		}
 
-		&:nth-child(3), &:nth-child(4), &:nth-child(5) {
+		&:nth-child(3),
+		&:nth-child(4),
+		&:nth-child(5) {
 			.dropdown-menu__item {
 				display: flex;
 				justify-content: center;
@@ -152,7 +154,8 @@
 			}
 		}
 
-		&:nth-child(3), &:nth-child(4) {
+		&:nth-child(3),
+		&:nth-child(4) {
 			.dropdown-menu__list {
 				padding: 17px 11px 0;
 			}
@@ -297,14 +300,16 @@
 				right: 0;
 				left: 0;
 				width: 90vw;
-
 				max-width: 1308px;
 				// overflow: hidden;
 				box-shadow: 0 2px 21px rgba(0, 0, 0, 0.16);
 				background: #ffffff;
+
 				@media (min-width: 768px) {
 					min-width: 1176px;
+					min-height: 410px;
 				}
+
 				&:before {
 					content: "";
 					position: absolute;
@@ -393,7 +398,7 @@
 				width: 481px;
 				// flex-grow: 1;
 				padding-left: 70px;
-				padding-top: 36px;
+				padding-top: 43px;
 			}
 
 			.dropdown-menu__banner {
@@ -436,7 +441,20 @@
 				z-index: 2;
 				top: 24px;
 				right: 35px;
+				width: 40px;
+				height: 40px;
+				text-decoration: none !important;
+				background: #f6f6f6;
+				border-radius: 50%;
 				cursor: pointer;
+				transition: .3s;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				&:hover {
+					background: #c0c1c1;
+				}
 			}
 		}
 
@@ -621,7 +639,6 @@
 				z-index: 4;
 				margin: 16px 0;
 				color: $base;
-
 				font-size: 13px;
 				font-weight: 400;
 				line-height: 18px;
@@ -671,7 +688,8 @@
 		padding-right: 16px;
 	}
 
-	.sub-menu__link, .sub-menu__item {
+	.sub-menu__link,
+	.sub-menu__item {
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 1.4;
@@ -790,7 +808,8 @@
 				left: 0;
 				height: auto;
 
-				.dropdown-menu__list, .dropdown-menu__parent {
+				.dropdown-menu__list,
+				.dropdown-menu__parent {
 					position: unset;
 					width: 100%;
 					max-height: unset;
@@ -800,7 +819,6 @@
 					margin-top: 0;
 					margin-right: 0;
 				}
-
 
 				.dropdown-menu__title {
 					display: flex;
@@ -828,7 +846,7 @@
 				.dropdown-menu__item {
 					width: 100% !important;
 					background-position: 14px 11px !important;
-					background-repeat: no-repeat!important;
+					background-repeat: no-repeat !important;
 					background: unset !important;
 
 					&.button {
@@ -853,7 +871,9 @@
 					}
 				}
 
-				&:nth-child(3), &:nth-child(4), &:nth-child(5) {
+				&:nth-child(3),
+				&:nth-child(4),
+				&:nth-child(5) {
 					.dropdown-menu__item {
 						// display: flex;
 						// justify-content: flex-start;
@@ -908,7 +928,8 @@
 				&.active {
 					.header {
 
-						&__favorite, &__compare {
+						&__favorite,
+						&__compare {
 							display: flex;
 							position: relative;
 						}
@@ -933,7 +954,8 @@
 					font-size: 14px;
 					align-items: baseline;
 					margin-top: 10px;
-					span{
+
+					span {
 						display: inline-block;
 					}
 				}
