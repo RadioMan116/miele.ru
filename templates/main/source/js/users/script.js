@@ -1110,6 +1110,10 @@ $(document).ready(function () {
 			$(".js-favorite_filter").prependTo($(".col-md-9"));
 			$(".title").prependTo($(".col-md-9"));
 			$(".breadcrumbs").prependTo($(".col-md-9"));
+
+			$('.js-add2favorite').click(()=>{
+				swiperHover();
+			})
 		}
 		if ($(".filter-new").length) {
 			$(".filter-new ").append("<div class=\"filter-new__button js-filter-new__button\"><span>фильтр</span></div>");
