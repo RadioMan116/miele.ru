@@ -1103,17 +1103,7 @@ $(document).ready(function () {
 				},
 			}
 		});
-		if ($(".js-favorite_list").length) {
-			$(".js-add2favorite").click(() => {
 
-				$(document).ajaxSuccess(function () {
-					setTimeout(() => {
-console.log(1111)
-						swiperHover();
-					}, 100);
-				});
-			});
-		}
 		if ($(".js-favorite_list[data-list=\"Избранное\"]").length) {
 			var favorite = $(".js-favorite_list[data-list=\"Избранное\"]");
 			favorite.addClass("favorite__items");
@@ -2926,5 +2916,15 @@ $(window).on("load", function () {
 		document.body.classList.add("loaded");
 
 	}, 500);
+	if ($(".js-favorite_list").length) {
+		$(".js-add2favorite").click(() => {
 
+			$(document).ajaxSuccess(function () {
+				setTimeout(() => {
+					console.log(1111)
+					swiperHover();
+				}, 100);
+			});
+		});
+	}
 });
