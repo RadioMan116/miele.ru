@@ -1,6 +1,4 @@
-.catalog,
-.seach-found,
-.js-news .catalog__items {
+.catalog, .seach-found, .js-news .catalog__items {
 	width: calc((100% / 12) * 9) !important;
 	// margin-left: auto;
 	padding-top: 12px;
@@ -198,8 +196,7 @@
 
 		.pagination {}
 
-		.catalog,
-		&__items {
+		.catalog, &__items {
 			margin-right: 0;
 
 			&__items {
@@ -231,10 +228,7 @@
 				}
 			}
 
-			&__item,
-			&__item.special-offers__slide,
-			.catalog__item,
-			&__items.favorite__items {
+			&__item, &__item.special-offers__slide, .catalog__item, &__items.favorite__items {
 				flex: 1 0 100%;
 				width: 100%;
 				max-width: 100%;
@@ -462,8 +456,7 @@
 				margin-bottom: 24px;
 			}
 
-			.advantages__next,
-			.advantages__prev {
+			.advantages__next, .advantages__prev {
 				display: none !important;
 			}
 
@@ -583,8 +576,7 @@
 				font-weight: 400;
 			}
 
-			.swiper-button-next,
-			.swiper-button-prev {
+			.swiper-button-next, .swiper-button-prev {
 				display: none !important;
 			}
 
@@ -725,8 +717,7 @@
 				margin-bottom: 15px;
 			}
 
-			.recently-watched__next,
-			.recently-watched__prev {
+			.recently-watched__next, .recently-watched__prev {
 				display: none !important;
 			}
 
@@ -756,8 +747,7 @@
 			}
 
 			// .recently-watched__close
-			&__close,
-			.recently-watched__buy {
+			&__close, .recently-watched__buy {
 				opacity: 1;
 			}
 		}
@@ -808,8 +798,7 @@
 			padding: 15px 24px 56px;
 			margin-bottom: 24px;
 
-			.upsale__next,
-			.upsale__prev {
+			.upsale__next, .upsale__prev {
 				display: none !important;
 			}
 
@@ -833,8 +822,7 @@
 		.download-catalogs {
 			margin-bottom: 23px;
 
-			.download-catalogs__next,
-			.download-catalogs__prev {
+			.download-catalogs__next, .download-catalogs__prev {
 				display: none !important;
 			}
 
@@ -913,12 +901,12 @@
 
 			&__pic {
 				display: flex;
+				align-items: baseline;
 				order: -5;
 				width: 100%;
 				height: auto;
 				min-height: 140px;
 				margin-bottom: 12px;
-				align-items: baseline;
 
 				picture {
 					display: flex;
@@ -930,8 +918,8 @@
 					width: 100%;
 					max-width: 100%;
 					height: 100%;
-					object-fit: cover;
 					max-height: 176px;
+					object-fit: cover;
 				}
 			}
 		}
@@ -955,9 +943,7 @@
 			margin-bottom: 8px;
 		}
 
-		&.catalog__thumb,
-		&.catalog__list,
-		&__items.favorite__items {
+		&.catalog__thumb, &.catalog__list, &__items.favorite__items {
 			position: unset;
 
 			.swiper-container {
@@ -1192,8 +1178,7 @@
 					border-radius: 3px;
 					margin-bottom: 0;
 
-					p,
-					span {
+					p, span {
 						margin-bottom: 10px;
 						border-bottom: 1px dashed $base;
 
@@ -1204,8 +1189,7 @@
 
 					&:hover {
 
-						p,
-						span {
+						p, span {
 							border-bottom: 1px solid $base;
 						}
 					}
@@ -1313,8 +1297,7 @@
 						}
 					}
 
-					.catalog__sale,
-					.special-offers__sale {
+					.catalog__sale, .special-offers__sale {
 						align-items: center;
 						justify-content: unset;
 						height: auto;
@@ -1337,14 +1320,11 @@
 							display: none;
 						}
 
-						&__specification,
-						&__prop,
-						&__existence {
+						&__specification, &__prop, &__existence {
 							display: none;
 						}
 
-						&__favorite,
-						&__simile {
+						&__favorite, &__simile {
 							margin-left: 0;
 							margin-right: 20px;
 						}
@@ -1456,8 +1436,7 @@
 							}
 						}
 
-						&__fav,
-						&__compare {
+						&__fav, &__compare {
 							width: 30px;
 							height: 30px;
 						}
@@ -1526,7 +1505,7 @@
 					font-size: 13px;
 					font-weight: 400;
 					line-height: 19px;
-					padding:0 6px;
+					padding: 0 6px;
 					-webkit-line-clamp: 17;
 				}
 			}
@@ -1579,8 +1558,7 @@
 
 	@media screen and (max-width: 550px) {
 
-		.stock,
-		.stock__info {
+		.stock, .stock__info {
 			padding: 0;
 		}
 
@@ -1819,8 +1797,7 @@
 		display: none;
 	}
 
-	.price__dashed,
-	&__items .price__dashed {
+	.price__dashed, &__items .price__dashed {
 		position: relative;
 
 		.catalog__price {
@@ -2130,8 +2107,7 @@
 		}
 	}
 
-	.special-offers,
-	&[data-list="Избранное"] .special-offers {
+	.special-offers, &[data-list="Избранное"] .special-offers {
 		&__buy {
 
 			// width: 112px;
@@ -3429,8 +3405,7 @@
 		}
 	}
 
-	&.catalog__thumb,
-	&.catalog__list {
+	&.catalog__thumb, &.catalog__list {
 		.instructions {
 			align-items: flex-start;
 			padding-top: 12px;
@@ -3536,12 +3511,12 @@
 				flex-grow: 0;
 				width: calc((100%/3) - 12px);
 				min-width: unset;
+				min-height: 153px;
 				// height: 200px;
 				// margin-right: 16px;
 				border: unset;
 				padding: 0;
 				margin-bottom: 25px;
-				min-height: 153px;
 
 				// &:hover {
 				// 	z-index: 11;
@@ -3592,22 +3567,20 @@
 				color: $base;
 				text-decoration: none;
 
-				p,
-				span {
+				p, span {
 					margin-bottom: 10px;
 					border-bottom: 1px dashed $base;
 					line-height: 1;
 					padding-right: 6px;
 
-					&:not(:last-of-type){
+					&:last-of-type {
 						padding-right: 0;
 					}
 				}
 
 				&:hover {
 
-					p,
-					span {
+					p, span {
 						border-bottom: 1px solid $base;
 					}
 				}
@@ -3633,12 +3606,12 @@
 				margin-bottom: 28px;
 				box-shadow: unset !important;
 
-				p,span {
+				p, span {
 					margin-bottom: 0;
 					border-bottom: 1px dashed $base;
 					padding-right: 6px;
 
-					&:not(:last-of-type){
+					&:last-of-type {
 						padding-right: 0;
 					}
 				}
@@ -3994,9 +3967,7 @@
 			}
 		}
 
-		.special-offers__buy,
-		.special-offers__compare,
-		.special-offers__fav {
+		.special-offers__buy, .special-offers__compare, .special-offers__fav {
 			opacity: 1;
 			text-decoration: none !important;
 		}
@@ -4005,8 +3976,7 @@
 			margin: 0 auto 0 5px;
 		}
 
-		.special-offers__compare,
-		.special-offers__fav {
+		.special-offers__compare, .special-offers__fav {
 			width: 24px;
 			height: 24px;
 		}
@@ -4021,8 +3991,7 @@
 			margin-left: 21px;
 		}
 
-		.catalog__sale,
-		.catalog__prop {
+		.catalog__sale, .catalog__prop {
 			flex-grow: 0;
 		}
 
@@ -4081,8 +4050,7 @@
 				display: none;
 			}
 
-			.recently-watched__text,
-			.recently-watched__price {
+			.recently-watched__text, .recently-watched__price {
 				font-size: 12px;
 			}
 
