@@ -576,10 +576,13 @@
 
 		.product__header {
 			.ratings {
-				.ratings__star {}
+				.ratings__star {
+					margin-top: -1px;
+				}
 
 				&__number {
 					margin-left: 6px;
+					line-height: 1;
 				}
 			}
 
@@ -591,6 +594,7 @@
 				.reviews__all {
 					margin-left: 0;
 					margin-right: 0;
+					line-height: 1;
 				}
 			}
 
