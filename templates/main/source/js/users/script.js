@@ -1103,14 +1103,7 @@ $(document).ready(function () {
 				},
 			}
 		});
-		if ($(".favorite__items").length) { }
-		if ($(".js-favorite_list[data-list=\"Избранное\"]").length) {
-			var favorite = $(".js-favorite_list[data-list=\"Избранное\"]");
-			favorite.addClass("favorite__items");
-			$(".js-favorite_filter").prependTo($(".col-md-9"));
-			$(".title").prependTo($(".col-md-9"));
-			$(".breadcrumbs").prependTo($(".col-md-9"));
-
+		if ($(".js-favorite_list").length) {
 			$(".js-add2favorite").click(() => {
 
 				$(document).ajaxSuccess(function () {
@@ -1120,6 +1113,15 @@ $(document).ready(function () {
 					}, 100);
 				});
 			});
+		}
+		if ($(".js-favorite_list[data-list=\"Избранное\"]").length) {
+			var favorite = $(".js-favorite_list[data-list=\"Избранное\"]");
+			favorite.addClass("favorite__items");
+			$(".js-favorite_filter").prependTo($(".col-md-9"));
+			$(".title").prependTo($(".col-md-9"));
+			$(".breadcrumbs").prependTo($(".col-md-9"));
+
+
 		}
 		if ($(".filter-new").length) {
 			$(".filter-new ").append("<div class=\"filter-new__button js-filter-new__button\"><span>фильтр</span></div>");
