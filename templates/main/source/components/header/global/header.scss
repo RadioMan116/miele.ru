@@ -908,13 +908,13 @@
 			}
 		}
 
-		&.active {
-			position: relative;
+		// &.active {
+		// 	position: relative;
 
-			&:before {
-				background: url("../images/header-fav-active.svg") no-repeat;
-			}
-		}
+		// 	&:before {
+		// 		background: url("../images/header-fav-active.svg") no-repeat;
+		// 	}
+		// }
 	}
 
 	&__compare {
