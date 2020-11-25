@@ -1,8 +1,4 @@
-.special-offers,
-.favorite__items .special-offers,
-.favorite__items,
-.js-news,
-.js-news .special-offers {
+.special-offers, .favorite__items .special-offers, .favorite__items, .js-news, .js-news .special-offers {
 	display: flex;
 	flex-direction: column;
 	// overflow: hidden;
@@ -53,10 +49,7 @@
 
 		.swiper-pagination-bullet {}
 
-		.new-items_prev,
-		.swiper-button-prev,
-		.new-items_next,
-		.swiper-button-next {
+		.new-items_prev, .swiper-button-prev, .new-items_next, .swiper-button-next {
 			display: none;
 		}
 
@@ -65,8 +58,7 @@
 			text-align: center;
 		}
 
-		.swiper-button-prev,
-		.swiper-button-next {
+		.swiper-button-prev, .swiper-button-next {
 			display: none !important;
 		}
 
@@ -94,9 +86,7 @@
 			}
 		}
 
-		.special-offers__buy,
-		.special-offers__compare,
-		.special-offers__fav {
+		.special-offers__buy, .special-offers__compare, .special-offers__fav {
 			opacity: 1;
 			background-repeat: no-repeat;
 		}
@@ -138,8 +128,7 @@
 			padding-right: 4px;
 		}
 
-		.swiper-pagination_2,
-		.swiper-pagination {
+		.swiper-pagination_2, .swiper-pagination {
 			display: flex;
 			justify-content: center;
 			top: unset;
@@ -163,7 +152,6 @@
 
 			&__number {
 				margin-left: 6px;
-
 			}
 		}
 
@@ -173,6 +161,11 @@
 					bottom: unset;
 					height: auto;
 				}
+			}
+		}
+		.ratings {
+			&__number, &__link {
+				line-height: 16px;
 			}
 		}
 
@@ -209,11 +202,6 @@
 				padding: 30px 21px 15px;
 			}
 		}
-		.ratings{
-			&__number,&__link{
-				line-height: 16px;
-			}
-		}
 	}
 
 	.container {
@@ -226,9 +214,7 @@
 		display: none;
 	}
 
-	.swiper-pagination,
-	.swiper-pagination_2,
-	.swiper-pagination_3 {
+	.swiper-pagination, .swiper-pagination_2, .swiper-pagination_3 {
 		display: flex;
 		justify-content: flex-end;
 		top: 23px;
@@ -239,8 +225,7 @@
 		margin-left: 16px;
 	}
 
-	.swiper-button-prev,
-	.new-items_prev {
+	.swiper-button-prev, .new-items_prev {
 		position: absolute;
 		top: 30px;
 		right: 48px;
@@ -261,8 +246,7 @@
 		background: url("../images/new-items_prev.png") 0/34px no-repeat;
 	}
 
-	.swiper-button-next,
-	.new-items_next {
+	.swiper-button-next, .new-items_next {
 		top: 30px;
 		right: 3px;
 		width: 34px;
@@ -375,8 +359,7 @@
 				transform: unset !important;
 			}
 
-			&-wrapper,
-			&-container {
+			&-wrapper, &-container {
 				position: unset;
 			}
 
@@ -413,7 +396,7 @@
 				// clip-path: circle(50%);
 				border-radius: 50%;
 
-				&[alt^="Сделано"],&[alt^="Производство"] {
+				&[alt^="Сделано"], &[alt^="Производство"] {
 					clip-path: circle(46%);
 				}
 			}
@@ -442,9 +425,18 @@
 
 	.ratings {
 		display: flex;
+		align-content: center;
 		align-items: center;
 		margin-left: auto;
-		align-content: center;
+
+		.ratings__number {
+			display: inline-flex;
+			margin: 0 2px 0 8px;
+			font-family: "HelveticaNeueCyr-Bold";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1;
+		}
 
 		&__star {
 			width: 16px;
@@ -460,15 +452,6 @@
 				background-position: 50%;
 				background-size: 16px 16px;
 			}
-		}
-
-		.ratings__number {
-			margin: 0px 2px 0 8px;
-			font-family: "HelveticaNeueCyr-Bold";
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 1;
-			display: inline-flex;
 		}
 
 		&__link {
@@ -648,6 +631,7 @@
 
 			.price__cheaper {
 				position: absolute;
+				bottom: 0;
 				left: calc(100% + 6px);
 				padding: 2px 4px;
 				border-radius: 11px;
@@ -748,8 +732,7 @@
 		background: url("../images/com.svg");
 		cursor: pointer;
 
-		&:hover,
-		&.active {
+		&:hover, &.active {
 			background: url("../images/com-c.svg");
 		}
 	}
@@ -826,21 +809,16 @@
 		-webkit-line-clamp: 4;
 	}
 
-	&__fav,
-	&__compare,
-	&__buy {
+	&__fav, &__compare, &__buy {
 		opacity: 0;
 		background-repeat: no-repeat;
 		background-size: contain !important;
 	}
 
-	&__slide:hover,
-	.catalog__item:hover {
+	&__slide:hover, .catalog__item:hover {
 		.special-offers {
 
-			&__fav,
-			&__compare,
-			&__buy {
+			&__fav, &__compare, &__buy {
 				opacity: 1;
 			}
 		}
@@ -853,14 +831,11 @@
 	&.new-items {
 		margin-bottom: 46px;
 
-		.swiper-button-prev,
-		.swiper-button-next {
+		.swiper-button-prev, .swiper-button-next {
 			top: 21px;
 		}
 
-		.swiper-pagination,
-		.swiper-pagination_2,
-		.swiper-pagination_3 {
+		.swiper-pagination, .swiper-pagination_2, .swiper-pagination_3 {
 			top: 14px;
 		}
 	}
