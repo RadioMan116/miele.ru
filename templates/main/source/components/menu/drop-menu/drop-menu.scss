@@ -454,7 +454,17 @@
 				align-items: center;
 
 				&:hover {
-					background: #c0c1c1;
+					// background: #c0c1c1;
+
+					img {
+						display: none;
+					}
+
+					&:before {
+						content: url('../images/menu-hide-h.svg');
+						width: 24px;
+						height: 24px;
+					}
 				}
 			}
 		}
@@ -769,7 +779,8 @@
 			.dropdown-menu__parent {
 				// margin-left: -31px;
 				margin: 0;
-				&:after{
+
+				&:after {
 					display: none;
 				}
 			}
@@ -823,7 +834,8 @@
 					margin-top: 0;
 					margin-right: 0;
 				}
-				.dropdown-menu__list{
+
+				.dropdown-menu__list {
 					padding-bottom: 50px;
 				}
 
