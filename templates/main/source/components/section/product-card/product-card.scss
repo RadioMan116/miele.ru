@@ -189,7 +189,7 @@
 				}
 
 				.special-offers__buy, .special-offers__compare, .special-offers__fav {
-					opacity: 1;
+					opacity: 1 !important;
 				}
 			}
 		}
@@ -318,11 +318,11 @@
 			z-index: 3;
 			right: 11px;
 			bottom: 14px;
-			width: 32px;
-			height: 30px;
+			width: 32px !important;
+			height: 30px !important;
 			font-size: 0;
 			background: url(../images/buy02.svg);
-			opacity: 0;
+			opacity: 0 !important;
 			background-size: contain;
 		}
 	}
