@@ -163,8 +163,7 @@
 				&.active {
 
 					// height: 112px;
-					.header__favorite,
-					.header__compare {
+					.header__favorite, .header__compare {
 						// display: flex;
 						display: none;
 					}
@@ -183,9 +182,7 @@
 				padding-right: 0;
 			}
 
-			&__favorite,
-			&__compare,
-			&__basket {
+			&__favorite, &__compare, &__basket {
 				display: flex;
 				align-items: center;
 				justify-content: flex-end;
@@ -273,8 +270,7 @@
 				}
 			}
 
-			&__favorite,
-			&__compare {
+			&__favorite, &__compare {
 				display: none;
 				align-items: center;
 				position: absolute;
@@ -852,18 +848,14 @@
 			background: url("../images/search.svg") no-repeat;
 		}
 
-		&-open,
-		&:hover {
+		&-open, &:hover {
 			&:before {
 				background: url("../images/search-h.svg") no-repeat;
 			}
 		}
 	}
 
-	&__favorite,
-	&__compare,
-	&__basket,
-	&__search {
+	&__favorite, &__compare, &__basket, &__search {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -902,7 +894,7 @@
 			background: url("../images/header-fav.svg") no-repeat;
 		}
 
-		&:hover,&.active {
+		&:hover{
 			&:before {
 				background: url("../images/header-fav-h.svg") no-repeat;
 			}
@@ -924,8 +916,7 @@
 			background: url("../images/header-compare.svg") no-repeat;
 		}
 
-		&:hover,
-		&.active {
+		&:hover{
 			&:before {
 				background: url("../images/header-compare-active.svg") no-repeat;
 			}
@@ -967,8 +958,7 @@
 			line-height: 26px;
 		}
 
-		&:hover,
-		&.active {
+		&:hover{
 			&:before {
 				background: url("../images/shopping-cart-h.svg") no-repeat;
 			}
