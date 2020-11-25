@@ -1101,6 +1101,7 @@
 				// .instructions__all
 				&__all {
 					margin-top: 17px;
+					line-height: 20px;
 				}
 
 				&__content {
@@ -1177,6 +1178,7 @@
 					background-color: white;
 					border-radius: 3px;
 					margin-bottom: 0;
+					line-height: 20px;
 
 					p, span {
 						margin-bottom: 10px;
@@ -3561,17 +3563,19 @@
 			}
 
 			&__all {
-				display: flex;
+				display: block;
 				flex-wrap: wrap;
 				z-index: 10;
 				color: $base;
 				text-decoration: none;
+				border-bottom: 1px dashed $base;
 
 				p, span {
 					margin-bottom: 10px;
-					border-bottom: 1px dashed $base;
+
 					line-height: 1;
-					padding-right: 6px;
+					// padding-right: 6px;
+					display: inline;
 
 					&:last-of-type {
 						padding-right: 0;
@@ -3580,9 +3584,9 @@
 
 				&:hover {
 
-					p, span {
+
 						border-bottom: 1px solid $base;
-					}
+
 				}
 			}
 		}
@@ -3595,25 +3599,32 @@
 			}
 
 			&__link {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: left;
-				width: fit-content;
+
+				display: block;
+
 				padding: 0;
 				background-color: unset;
 				color: $base;
-				text-align: left;
+
 				margin-bottom: 28px;
 				box-shadow: unset !important;
+				border-bottom: 1px dashed $base;
 
 				p, span {
 					margin-bottom: 0;
-					border-bottom: 1px dashed $base;
-					padding-right: 6px;
+
+					// padding-right: 6px;
+					display: inline;
 
 					&:last-of-type {
 						padding-right: 0;
 					}
+				}
+				&:hover {
+
+
+						border-bottom: 1px solid $base;
+
 				}
 			}
 		}
