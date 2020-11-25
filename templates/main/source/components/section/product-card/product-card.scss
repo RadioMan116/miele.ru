@@ -178,7 +178,7 @@
 			align-items: center;
 			position: relative;
 			border: 1px solid #f1f1f1;
-			padding: 6px 10px 13px 6px;
+			padding: 6px 10px 13px 10px;
 			background-color: #ffffff;
 
 			&:hover {
@@ -196,6 +196,8 @@
 
 		.special-offers__compare, .special-offers__fav {
 			opacity: 0;
+			width: 30px !important;
+			height: 30px !important;
 		}
 
 		.special-offers__fav {
@@ -314,7 +316,7 @@
 		}
 
 		.special-offers__buy {
-			position: absolute;
+			// position: absolute;
 			z-index: 3;
 			right: 11px;
 			bottom: 14px;
