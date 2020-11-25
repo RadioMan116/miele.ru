@@ -215,6 +215,7 @@
 				justify-content: center;
 				min-height: 41px;
 				margin-bottom: 7px;
+				background: unset !important;
 
 				&.button {
 					display: flex;
@@ -259,7 +260,7 @@
 				}
 
 				&.active {
-					background-color: #f6f6f6 !important;
+					background: #f6f6f6 !important;
 				}
 			}
 
