@@ -2759,6 +2759,9 @@ $(window).on("load", function () {
 	$(".catalog .instructions .special-offers__text.catalog__text").matchHeight(
 
 	);
+	$(".articles.articles-main .announcing:not(.announcing-mobile)").matchHeight(
+
+	);
 
 
 	(function () {

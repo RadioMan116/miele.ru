@@ -500,8 +500,10 @@
 				line-height: 24px;
 				text-transform: uppercase;
 				margin-bottom: 20px;
-				padding-left: 0;
-				text-align: right;
+				// padding-left: 0;
+				padding-left: 80px;
+				text-align: left;
+				white-space: nowrap;
 
 				b {
 					font-size: inherit;

@@ -76,7 +76,7 @@
 
 		.reviews__section {
 			padding-bottom: 0;
-			margin-bottom: 0 !important;
+			margin-bottom: 16px !important;
 
 			.ratings {
 				align-content: baseline;
@@ -90,7 +90,7 @@
 					flex-wrap: wrap;
 					width: 100%;
 					height: auto;
-					margin-bottom: 20px;
+
 				}
 
 				&+.reviews__all {
@@ -119,6 +119,9 @@
 				}
 			}
 		}
+		&__tag{
+			margin-top: 10px;
+		}
 
 		.reviews__all {
 			margin-right: 0;
@@ -132,7 +135,7 @@
 			width: 100%;
 			height: auto;
 			margin-left: 0;
-			margin-bottom: 0px;
+			margin-bottom: 0;
 			// border-bottom: 1px solid #eeeeee;
 			padding-bottom: 21px;
 		}
