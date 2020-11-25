@@ -902,7 +902,7 @@
 			background: url("../images/header-fav.svg") no-repeat;
 		}
 
-		&:hover {
+		&:hover,&.active {
 			&:before {
 				background: url("../images/header-fav-h.svg") no-repeat;
 			}
