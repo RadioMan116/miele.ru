@@ -3597,9 +3597,10 @@
 					margin-bottom: 10px;
 					border-bottom: 1px dashed $base;
 					line-height: 1;
+					padding-right: 6px;
 
-					+p {
-						padding-left: 0;
+					&:not(:last-of-type){
+						padding-right: 0;
 					}
 				}
 
@@ -3632,12 +3633,13 @@
 				margin-bottom: 28px;
 				box-shadow: unset !important;
 
-				p {
+				p,span {
 					margin-bottom: 0;
 					border-bottom: 1px dashed $base;
+					padding-right: 6px;
 
-					+p {
-						padding-left: 6px;
+					&:not(:last-of-type){
+						padding-right: 0;
 					}
 				}
 			}
