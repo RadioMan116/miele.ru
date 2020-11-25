@@ -1066,6 +1066,7 @@
 				height: 34px;
 				margin-left: 0;
 				line-height: 1;
+				padding: 11px 0 9px;
 			}
 
 			.reviews-list__col:first-child {
@@ -2862,6 +2863,8 @@
 			order: 4;
 			margin-left: 0;
 			font-size: 14px;
+			width: fit-content;
+			background-position: 0 4px;
 		}
 
 		&__key {
@@ -6158,18 +6161,20 @@
 		margin-left: auto;
 		// margin-right: 10px;
 		font-size: 14px;
-
+		background: url("../images/price_updated.svg") no-repeat;
+		background-position: left center;
+		padding-left: 25px;
 		// margin-left: auto;
-		&:before {
-			content: "";
-			flex-shrink: 0;
-			width: 16px;
-			height: 16px;
-			background: url("../images/price_updated.svg");
-			margin-right: 9px;
-			background-size: 16px;
-			background-repeat: no-repeat;
-		}
+		// &:before {
+		// 	content: "";
+		// 	flex-shrink: 0;
+		// 	width: 16px;
+		// 	height: 16px;
+		// 	background: url("../images/price_updated.svg");
+		// 	margin-right: 9px;
+		// 	background-size: 16px;
+		// 	background-repeat: no-repeat;
+		// }
 	}
 
 	&__key {

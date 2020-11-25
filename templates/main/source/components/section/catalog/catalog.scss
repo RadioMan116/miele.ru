@@ -3801,7 +3801,7 @@
 				flex-direction: row;
 				width: 100%;
 				max-width: 100%;
-				padding-bottom: 4px;
+				padding-bottom: 16px;
 				margin-bottom: 15px;
 
 				&:hover {
@@ -3868,6 +3868,7 @@
 
 				.swiper-pagination {
 					top: -14px;
+					max-height: calc(100% + 14px);
 				}
 
 				.swiper-slide {
