@@ -1108,7 +1108,7 @@ $(document).ready(function () {
 
 				$(document).ajaxSuccess(function () {
 					setTimeout(() => {
-
+console.log(1111)
 						swiperHover();
 					}, 100);
 				});
