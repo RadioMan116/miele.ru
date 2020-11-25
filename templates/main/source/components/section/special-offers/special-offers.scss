@@ -158,10 +158,12 @@
 				width: 21px;
 				height: 21px;
 				background-size: 21px;
+				// margin-top: -5px;
 			}
 
 			&__number {
 				margin-left: 6px;
+
 			}
 		}
 
@@ -450,7 +452,7 @@
 			background: url(../images/star.svg) no-repeat;
 			background-position: 50%;
 			background-size: 16px 16px;
-			margin-top: -5px;
+
 
 			&.ratings__none {
 				background: url(../images/rectangle-2.svg) no-repeat;
@@ -460,7 +462,7 @@
 		}
 
 		.ratings__number {
-			margin: 2px 2px 0 8px;
+			margin: 0px 2px 0 8px;
 			font-family: "HelveticaNeueCyr-Bold";
 			font-size: 14px;
 			font-weight: 400;

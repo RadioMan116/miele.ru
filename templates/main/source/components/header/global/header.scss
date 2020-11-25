@@ -44,7 +44,7 @@
 				font-size: 8px;
 				// border-radius: 100%;
 				line-height: 8px;
-				background: unset;
+				// background: unset;
 
 				// text-align: center;
 				// vertical-align: middle;
@@ -964,44 +964,44 @@
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		// background-color: $base;
+		background-color: $base;
 		z-index: 2;
 		/* Style for "Oval" */
 		top: -6px;
 		left: 27px;
-		min-width: 21px;
-		min-height: 21px;
-		border: 2px solid white;
-		padding: 0;
+		min-width: 22px;
+		min-height: 22px;
+		border: 2px solid #fff;
+		padding:1px 2px;
 		border-radius: 50%;
 		color: #ffffff;
-		font-size: 13px;
+		font-size: 12px;
 		font-weight: 400;
-		line-height: 1.1;
+		line-height: 12px;
 		text-align: center;
 		// display: table-cell !important;
 		// vertical-align: middle;
 		// text-align: center;
 
 
-		&:before {
-			content: "";
-			position: absolute;
-			z-index: -1;
-			top: 50%;
-			left: 50%;
-			width: 100%;
-			transform: translate(-50%, -50%);
-			// height: 100%;
-			// padding-top: 0%;
-			// border-radius: 50%;
-			background: url("../images/amoint-notification.svg") no-repeat;
-			// background-color: $base;
-			padding-top: 100%;
+		// &:before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	top: 50%;
+		// 	left: 50%;
+		// 	width: 100%;
+		// 	transform: translate(-50%, -50%);
+		// 	// height: 100%;
+		// 	// padding-top: 0%;
+		// 	// border-radius: 50%;
+		// 	// background: url("../images/amoint-notification.svg") no-repeat;
+		// 	// background-color: $base;
+		// 	padding-top: 100%;
 
 
-			background-size: 100%;
-		}
+		// 	background-size: 100% 100%;
+		// }
 
 		.active & {
 			display: flex;

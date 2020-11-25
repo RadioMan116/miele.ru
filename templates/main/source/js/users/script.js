@@ -2747,7 +2747,15 @@ $(window).on("load", function () {
 			returnExchangeForm.querySelectorAll(".MultiFile-remove").forEach(element => element.click());
 		});
 	}
-
+	(() => {
+		let returnSelect = $(".return-exchange__form select");
+		if (returnSelect.length) {
+			returnSelect.selectric({
+				disableOnMobile: false,
+				nativeOnMobile: false
+			});
+		}
+	})();
 	$(".catalog .instructions .special-offers__text.catalog__text").matchHeight(
 
 	);
