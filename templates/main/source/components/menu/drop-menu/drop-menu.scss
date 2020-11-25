@@ -769,6 +769,9 @@
 			.dropdown-menu__parent {
 				// margin-left: -31px;
 				margin: 0;
+				&:after{
+					display: none;
+				}
 			}
 
 			.dropdown-menu__title {
