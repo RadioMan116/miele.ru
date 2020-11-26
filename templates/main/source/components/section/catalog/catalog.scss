@@ -3583,6 +3583,9 @@
 
 					p, span {
 						border-bottom: 1px solid $base;
+						&:not(:last-of-type) {
+							margin-right: 4px;
+						}
 					}
 				}
 			}
