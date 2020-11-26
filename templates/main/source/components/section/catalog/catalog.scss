@@ -3571,7 +3571,7 @@
 					margin-bottom: 10px;
 					border-bottom: 1px dashed $base;
 					line-height: 1;
-					// padding-right: 6px;
+					padding-right: 3px;
 					display: inline;
 
 					&:last-of-type {
@@ -3583,9 +3583,6 @@
 
 					p, span {
 						border-bottom: 1px solid $base;
-						&:not(:last-of-type) {
-							margin-right: 4px;
-						}
 					}
 				}
 			}
