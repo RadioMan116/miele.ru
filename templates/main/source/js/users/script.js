@@ -1500,8 +1500,8 @@ $(document).ready(function () {
 					// $(ul).slideUp(200);
 				});
 			});
-			$(".js-comparison__select").removeClass("active");
-			$(".js-comparison__select[compare='DIFF']").addClass("active");
+			// $(".js-comparison__select").removeClass("active");
+			// $(".js-comparison__select[compare='DIFF']").addClass("active");
 			$(".js-comparison-height").parent().parent().addClass("thead__comparison");
 			$(".js-comparison__link").click(function (e) {
 				e.preventDefault();
