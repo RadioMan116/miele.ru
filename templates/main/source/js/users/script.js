@@ -2737,7 +2737,10 @@ $(window).on("load", function () {
 			if (select.length) {
 				select.selectric({
 					disableOnMobile: false,
-					nativeOnMobile: false
+					nativeOnMobile: false,
+					onInit: function() {
+						$('.selectric-input').addClass("noCheck")
+					},
 				});
 			}
 		})();
@@ -2754,7 +2757,10 @@ $(window).on("load", function () {
 		if (returnSelect.length) {
 			returnSelect.selectric({
 				disableOnMobile: false,
-				nativeOnMobile: false
+				nativeOnMobile: false,
+				onInit: function() {
+					$('.selectric-input').addClass("noCheck")
+				},
 			});
 		}
 	})();
