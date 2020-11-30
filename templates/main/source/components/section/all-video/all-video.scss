@@ -50,6 +50,14 @@
 		}
 	}
 
+	@media screen and (min-width: 768px) {
+		.js-news & {
+			&.js-news__inner {
+				margin-bottom: -47px;
+			}
+		}
+	}
+
 	// .all-video__item
 	&__item {
 		// margin-right: 20px;
@@ -114,9 +122,11 @@
 				border-color: $base;
 			}
 		}
+
 		&:nth-last-child(2) {
 			margin-bottom: 24px;
 		}
+
 		// +.sidebar{
 		// 	margin-bottom: 24px;
 		// }
@@ -129,7 +139,8 @@
 	// 	height: 220px;
 	// 	pointer-events: none;
 	// }
-	iframe, img {
+	iframe,
+	img {
 		max-height: 170px;
 		margin-bottom: 0;
 		object-fit: cover;
