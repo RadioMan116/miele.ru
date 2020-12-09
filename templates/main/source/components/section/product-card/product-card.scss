@@ -7021,14 +7021,18 @@
 
 		&-text {
 			overflow: hidden;
+			transition: all 0.2s ease-in-out 0s;
 		}
 
 		&-more {
+			display: none;
 			color: #8c0014;
 			font-size: 14px;
 			cursor: pointer;
-			max-width: 170px;
-			display: none;
+			width: fit-content;
+			padding-right: 24px;
+			background: url("../images/arrow-down.svg") no-repeat;
+			background-position-x: right;
 		}
 	}
 
