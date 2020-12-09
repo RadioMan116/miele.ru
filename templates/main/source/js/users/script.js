@@ -847,6 +847,61 @@ $(document).ready(function () {
 			content: el.querySelector(".popup-gloss")
 		});
 	});
+	$(".js-product-card__stock-info").each(function (i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: "top", // top, right, bottom, left
+			// trigger: 'click',
+			// maxWidth: 300, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			hideOnClick: true,
+			theme: "light",
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content: el.querySelector(".product-card__stock-desc")
+		});
+	});
+
+	(function () {
+		let parentDesc = document.querySelector(".product-card__desc");
+		let paragraph = parentDesc.querySelectorAll(".desc-paragraph");
+		let buttonMore = parentDesc.querySelector(".product-card__desc-more");
+		let heightParagraph = 0;
+		let heightParagraphNext = 0;
+		let parentParagraph = parentDesc.querySelector(".product-card__desc-text");
+
+		if (paragraph.length > 3) {
+			buttonMore.style.display = "block";
+
+			let arrParagraph = [];
+
+			for (let prop of paragraph) {
+				arrParagraph.push(prop);
+			}
+
+			for (let prop of arrParagraph.slice(0, 3)) {
+				heightParagraph += prop.offsetHeight;
+			}
+
+			parentParagraph.style.height = heightParagraph + 42 + "px";
+
+			for (let prop of arrParagraph) {
+				heightParagraphNext += prop.offsetHeight;
+			}
+
+			buttonMore.addEventListener("click", () => {
+				parentParagraph.style.height = heightParagraphNext + 42 + "px";
+			});
+
+		} else {
+			return;
+		}
+	}());
+
+
 	$(".catalog__price.price__dashed").each(function (i, el) {
 
 		tippy(el, {
@@ -2738,7 +2793,7 @@ $(window).on("load", function () {
 				select.selectric({
 					disableOnMobile: false,
 					nativeOnMobile: false,
-					onInit: function() {
+					onInit: function () {
 						$('.selectric-input').addClass("noCheck")
 					},
 				});
@@ -2758,7 +2813,7 @@ $(window).on("load", function () {
 			returnSelect.selectric({
 				disableOnMobile: false,
 				nativeOnMobile: false,
-				onInit: function() {
+				onInit: function () {
 					$('.selectric-input').addClass("noCheck")
 				},
 			});
