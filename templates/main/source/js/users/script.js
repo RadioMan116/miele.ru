@@ -865,10 +865,10 @@ $(document).ready(function () {
 		});
 	});
 	(function () {
-		let parentDesc = document.querySelector(".product-card__desc");
-		let paragraph = parentDesc.querySelectorAll(".desc-paragraph");
-		let buttonMore = parentDesc.querySelector(".product-card__desc-more");
-		let parentParagraph = parentDesc.querySelector(".product-card__desc-text");
+		let parentDesc = document.querySelector(".js-product-card__desc");
+		let paragraph = parentDesc.querySelectorAll(".js-desc-paragraph");
+		let buttonMore = parentDesc.querySelector(".js-product-card__desc-more");
+		let parentParagraph = parentDesc.querySelector(".js-product-card__desc-text");
 		let heightParagraph = 0;
 		let heightParagraphNext = 0;
 		let arrParagraph = [];

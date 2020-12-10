@@ -1,0 +1,45 @@
+.card-accessories {
+	&__delivery {
+		color: #4b4b4b;
+		font-family: "HelveticaNeueCyr-Roman";
+		font-size: 14px;
+		font-weight: 400;
+		max-width: 217px;
+		margin-left: auto;
+		line-height: 18px;
+	}
+
+	.product {
+		&__header {
+			margin-bottom: 32px;
+		}
+	}
+
+	.product-card {
+		&__announcing {
+			.announcing {
+				&__item {
+					&:not(:last-of-type) {
+						margin: 0;
+					}
+
+					margin-left: 32px;
+				}
+			}
+		}
+
+		.tabs {
+			.characteristic__copyright {
+				border: none;
+			}
+		}
+
+		.reviews {
+			&-list {
+				&:last-child {
+					border: none;
+				}
+			}
+		}
+	}
+}
