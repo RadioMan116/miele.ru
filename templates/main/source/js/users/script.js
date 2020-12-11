@@ -898,8 +898,50 @@ $(document).ready(function () {
 						buttonMore.innerHTML = "Читать подробнее";
 					}
 				});
-			} else {
-				return;
+			}
+		}
+	}());
+
+	(function () {
+		let parentDesc = document.querySelector(".js-product-card__desc");
+		if (parentDesc) {
+			let paragraph = parentDesc.querySelectorAll(".js-desc-paragraph");
+			let buttonMore = parentDesc.querySelector(".js-product-card__desc-more");
+			let parentParagraph = parentDesc.querySelector(".js-product-card__desc-text");
+			let heightParagraph = 0;
+			let heightParagraphNext = 0;
+			let arrParagraph = [];
+			let paragraphFlag = true;
+
+			if (windowWidth2 < 768) {
+
+				if (paragraph.length > 1) {
+					buttonMore.style.display = "block";
+					for (let prop of paragraph) {
+						arrParagraph.push(prop);
+					}
+					for (let prop of arrParagraph.slice(0, 2)) {
+						heightParagraph += prop.offsetHeight;
+					}
+
+					parentParagraph.style.height = heightParagraph + 28 + "px";
+
+					for (let prop of arrParagraph) {
+						heightParagraphNext += prop.offsetHeight;
+					}
+
+					buttonMore.addEventListener("click", () => {
+						if (paragraphFlag) {
+							parentParagraph.style.height = heightParagraphNext + (arrParagraph.length * 14) + "px";
+							paragraphFlag = false;
+							buttonMore.innerHTML = "Свернуть";
+						} else {
+							parentParagraph.style.height = heightParagraph + 28 + "px";
+							paragraphFlag = true;
+							buttonMore.innerHTML = "Читать подробнее";
+						}
+					});
+				}
 			}
 		}
 	}());
@@ -2859,42 +2901,42 @@ $(window).on("load", function () {
 				}
 			});
 		});
-		(function () {
-			let moreText = document.querySelector(".description.text-default");
-			if (moreText) {
-				let check = moreText.querySelectorAll("p").length > 1;
+		// (function () {
+		// 	let moreText = document.querySelector(".description.text-default");
+		// 	if (moreText) {
+		// 		let check = moreText.querySelectorAll("p").length > 1;
 
-				if (check) {
-					let button = document.createElement("div");
-					let openText = "Читать подробнее",
-						closeText = "Свернуть";
-					moreText.append(button);
-					button.classList.add("js-switch", "description__switch");
-					button.innerHTML = openText;
-					button.onclick = function () {
-						this.parentElement.classList.toggle("active");
-						button.innerHTML == "Читать подробнее" ? button.innerHTML = closeText : button.innerHTML = openText;
-					};
-				}
+		// 		if (check) {
+		// 			let button = document.createElement("div");
+		// 			let openText = "Читать подробнее",
+		// 				closeText = "Свернуть";
+		// 			//moreText.append(button);
+		// 			button.classList.add("js-switch", "description__switch");
+		// 			button.innerHTML = openText;
+		// 			button.onclick = function () {
+		// 				this.parentElement.classList.toggle("active");
+		// 				button.innerHTML == "Читать подробнее" ? button.innerHTML = closeText : button.innerHTML = openText;
+		// 			};
+		// 		}
 
 
-			}
-		})();
-		(function () {
-			let moreText = document.querySelector(".catalog__description.description");
-			if (moreText) {
-				let button = document.createElement("div");
-				let openText = "Читать подробнее",
-					closeText = "Свернуть";
-				moreText.prepend(button);
-				button.classList.add("js-switch", "description__switch");
-				button.innerHTML = openText;
-				button.onclick = function () {
-					this.classList.toggle("active");
-					button.innerHTML == "Читать подробнее" ? button.innerHTML = closeText : button.innerHTML = openText;
-				};
-			}
-		})();
+		// 	}
+		// })();
+		// (function () {
+		// 	let moreText = document.querySelector(".catalog__description.description");
+		// 	if (moreText) {
+		// 		let button = document.createElement("div");
+		// 		let openText = "Читать подробнее",
+		// 			closeText = "Свернуть";
+		// 		moreText.prepend(button);
+		// 		button.classList.add("js-switch", "description__switch");
+		// 		button.innerHTML = openText;
+		// 		button.onclick = function () {
+		// 			this.classList.toggle("active");
+		// 			button.innerHTML == "Читать подробнее" ? button.innerHTML = closeText : button.innerHTML = openText;
+		// 		};
+		// 	}
+		// })();
 		(() => {
 			let select = $(".js-mob-sort");
 			if (select.length) {
