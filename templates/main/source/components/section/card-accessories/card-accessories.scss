@@ -1,4 +1,6 @@
 .card-accessories {
+	max-width: 100%;
+
 	&__delivery {
 		color: #4b4b4b;
 		font-family: "HelveticaNeueCyr-Roman";
@@ -39,6 +41,104 @@
 				&:last-child {
 					border: none;
 				}
+			}
+		}
+
+		.product-card__collection {
+			margin: 25px 0 48px;
+
+			.ui-tabs-nav {
+				border-bottom: none;
+				margin-bottom: 24px;
+			}
+
+			.tags__item {
+				font-size: 26px;
+				font-weight: 400;
+			}
+
+			.swiper {
+				&-pagination-collection {
+					position: absolute;
+					top: 10px;
+					right: 84px;
+				}
+			}
+
+			.collection {
+				&__prev {
+					position: absolute;
+					top: 0;
+					right: 36px;
+				}
+
+				&__next {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+		}
+
+		.similar-accessories {
+			max-width: 100%;
+			position: relative;
+
+			&__title {
+				font-size: 26px;
+				font-weight: 400;
+				margin-bottom: 24px;
+			}
+
+			&__slide {
+				border: solid 1px #f6f6f6;
+				background: #ffffff;
+				padding: 20px;
+			}
+
+			&__desc {
+				&-title {
+					display: flex;
+					flex-direction: column;
+					color: #4b4b4b;
+					font-size: 13px;
+					margin-bottom: 32px;
+
+					span {
+						font-size: 18px;
+						font-weight: 400;
+					}
+				}
+			}
+
+			&__price {
+				font-size: 18px;
+			}
+
+			&__pagination {
+				display: block;
+				top: 0;
+				right: 84px;
+			}
+
+			&__next,
+			&__prev {
+				position: absolute;
+				width: 24px;
+				height: 24px;
+			}
+
+			&__next {
+				top: 23px;
+				right: 0;
+				background: url("../images/special-offers_next.svg") 0/24px no-repeat;
+			}
+
+			&__prev {
+				top: 23px;
+				right: 36px;
+				background: url("../images/special-offers_prev.svg") 0/24px no-repeat;
+				left: auto;
 			}
 		}
 	}
