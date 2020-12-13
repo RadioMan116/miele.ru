@@ -18,14 +18,23 @@
 	}
 
 	.product-card {
+		.product__header_bottom {
+			border: none;
+			padding-bottom: 0;
+		}
+
 		&__announcing {
 			.announcing {
 				&__item {
 					&:not(:last-of-type) {
-						margin: 0;
+						margin-right: 0;
 					}
 
 					margin-left: 32px;
+
+					&:first-child {
+						margin-left: 0;
+					}
 				}
 			}
 		}
@@ -41,6 +50,15 @@
 				&:last-child {
 					border: none;
 				}
+			}
+
+			&__top {
+				max-width: 700px;
+				flex-wrap: wrap;
+			}
+
+			&-no {
+				margin-top: 24px;
 			}
 		}
 
@@ -139,6 +157,104 @@
 				right: 36px;
 				background: url("../images/special-offers_prev.svg") 0/24px no-repeat;
 				left: auto;
+			}
+		}
+	}
+
+	@media screen and (max-width: 797px) {
+		.product-card {
+			.product__header_bottom {
+				.card-accessories__delivery {
+					margin-left: 0;
+					text-align: center;
+					order: 1;
+				}
+
+				.product-card__button {
+					order: 0;
+					margin-bottom: 24px;
+				}
+
+				.product-card__social {
+					margin-top: 24px;
+				}
+			}
+
+			.product-card__announcing {
+				.announcing {
+					&__item {
+						margin: 0 0 24px 0;
+					}
+				}
+			}
+
+			.product-card__collection {
+				padding: 0 12px 12px;
+
+				.tags__item {
+					font-size: 24px;
+					line-height: 32px;
+
+					&:hover {
+						line-height: 32px;
+						color: black;
+					}
+				}
+
+				.swiper-pagination-collection {
+					top: unset;
+					right: unset;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom: -7px;
+					display: flex !important;
+				}
+			}
+
+			.similar-accessories {
+				margin-bottom: 47px;
+				padding: 0 12px;
+
+				&__title {
+					font-size: 20px;
+				}
+
+				&__prev,
+				&__next {
+					display: none;
+				}
+
+				&__pagination {
+					display: flex;
+					top: unset;
+					right: unset;
+					bottom: -24px;
+				}
+			}
+
+			.reviews {
+				.reviews__top {
+					flex-direction: column;
+				}
+
+				.reviews__link {
+					order: 1;
+				}
+
+				&__section {
+					margin-bottom: 0;
+				}
+
+				&-no {
+					margin: 16px 0 18px;
+					font-size: 14px;
+				}
+			}
+
+			.sidebar-right {
+				.yandex {
+					order: 0;
+				}
 			}
 		}
 	}

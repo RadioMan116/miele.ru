@@ -861,7 +861,24 @@ $(document).ready(function () {
 			theme: "light",
 			appendTo: () => document.body,
 			// ignoreAttributes: true,
-			content: el.querySelector(".product-card__stock-desc")
+			content: el.querySelector(".stock-popup")
+		});
+	});
+	$(".js-link-pop-glossary").each(function (i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: "top", // top, right, bottom, left
+			// trigger: 'click',
+			// maxWidth: 300, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			hideOnClick: true,
+			theme: "light",
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content: el.querySelector(".popup-prop")
 		});
 	});
 	(function () {
@@ -900,51 +917,55 @@ $(document).ready(function () {
 				});
 			}
 		}
-	}());
 
-	(function () {
-		let parentDesc = document.querySelector(".js-product-card__desc");
-		if (parentDesc) {
-			let paragraph = parentDesc.querySelectorAll(".js-desc-paragraph");
-			let buttonMore = parentDesc.querySelector(".js-product-card__desc-more");
-			let parentParagraph = parentDesc.querySelector(".js-product-card__desc-text");
-			let heightParagraph = 0;
-			let heightParagraphNext = 0;
-			let arrParagraph = [];
-			let paragraphFlag = true;
+		if (windowWidth2 < 768) {
+			(function () {
+				let parentDesc = document.querySelector(".js-product-card__desc");
+				if (parentDesc) {
+					let paragraph = parentDesc.querySelectorAll(".js-desc-paragraph");
+					let buttonMore = parentDesc.querySelector(".js-product-card__desc-more");
+					let parentParagraph = parentDesc.querySelector(".js-product-card__desc-text");
+					let heightParagraph = 0;
+					let heightParagraphNext = 0;
+					let arrParagraph = [];
+					let paragraphFlag = true;
 
-			if (windowWidth2 < 768) {
+					if (windowWidth2 < 768) {
 
-				if (paragraph.length > 1) {
-					buttonMore.style.display = "block";
-					for (let prop of paragraph) {
-						arrParagraph.push(prop);
-					}
-					for (let prop of arrParagraph.slice(0, 2)) {
-						heightParagraph += prop.offsetHeight;
-					}
+						if (paragraph.length > 1) {
+							buttonMore.style.display = "block";
+							for (let prop of paragraph) {
+								arrParagraph.push(prop);
+							}
+							for (let prop of arrParagraph.slice(0, 1)) {
+								heightParagraph += prop.offsetHeight;
+							}
 
-					parentParagraph.style.height = heightParagraph + 28 + "px";
+							parentParagraph.style.height = heightParagraph + 14 + "px";
 
-					for (let prop of arrParagraph) {
-						heightParagraphNext += prop.offsetHeight;
-					}
+							for (let prop of arrParagraph) {
+								heightParagraphNext += prop.offsetHeight;
+							}
 
-					buttonMore.addEventListener("click", () => {
-						if (paragraphFlag) {
-							parentParagraph.style.height = heightParagraphNext + (arrParagraph.length * 14) + "px";
-							paragraphFlag = false;
-							buttonMore.innerHTML = "Свернуть";
-						} else {
-							parentParagraph.style.height = heightParagraph + 28 + "px";
-							paragraphFlag = true;
-							buttonMore.innerHTML = "Читать подробнее";
+							buttonMore.addEventListener("click", () => {
+								if (paragraphFlag) {
+									parentParagraph.style.height = heightParagraphNext + (arrParagraph.length * 14) + "px";
+									paragraphFlag = false;
+									buttonMore.innerHTML = "Свернуть";
+								} else {
+									parentParagraph.style.height = heightParagraph + 14 + "px";
+									paragraphFlag = true;
+									buttonMore.innerHTML = "Читать подробнее";
+								}
+							});
 						}
-					});
+					}
 				}
-			}
+			}());
 		}
 	}());
+
+
 	$(".catalog__price.price__dashed").each(function (i, el) {
 
 		tippy(el, {
@@ -1274,10 +1295,24 @@ $(document).ready(function () {
 				let favorite = productCard.querySelector(".product-card__social");
 				let productHeaderBottom = productCard.querySelector(".product__header_bottom");
 				productHeaderBottom.append(favorite);
+
+				let descriptionMini = productCard.querySelector(".product-card__description");
+				let descriptionMax = productCard.querySelector(".product-card__desc-text");
+				if (descriptionMax) {
+					descriptionMax.before(descriptionMini);
+				}
+
 				let catalogProp = $(".catalog__prop-inner");
 				if (!catalogProp.length) {
 					$(".link-pop-glossary").wrapAll($("<div class=\"catalog__prop-inner\"></div>"));
 				}
+
+				let catalogPropParent = productCard.querySelector(".catalog__prop");
+				let tabsLink = productCard.querySelector(".tabs__link");
+				if (catalogPropParent) {
+					tabsLink.before(catalogPropParent);
+				}
+
 			}
 		})();
 		tippy("[data-announcing]", {
@@ -2343,7 +2378,7 @@ $(document).ready(function () {
 				});
 				collectionChild.forEach((element, index) => {
 					element.classList.add("collection-" + index);
-					var mySwiper71 = new Swiper(".product-card__collection .swiper-tabs.collection-" + index, {
+					var mySwiper71 = new Swiper(".card-accessories .product-card__collection .swiper-tabs.collection-" + index, {
 						// Optional parameters
 						// slidesPerGroup: 1,
 						slidesPerView: 3,
@@ -2353,11 +2388,11 @@ $(document).ready(function () {
 						// loop: true,
 						// If we need pagination
 						navigation: {
-							nextEl: ".collection__next.collection-button-" + index,
-							prevEl: ".collection__prev.collection-button-" + index
+							nextEl: ".card-accessories__next",
+							prevEl: ".card-accessories__prev"
 						},
 						pagination: {
-							el: ".swiper-pagination-collection.collection-pagination-" + index,
+							el: ".swiper-pagination-card-accessories",
 							// clickable: true
 						},
 						breakpoints: {
@@ -2366,52 +2401,48 @@ $(document).ready(function () {
 							// 	allowTouchMove: true,
 							// 	slidesPerView: 1,
 							// },
-							600: {
-								allowTouchMove: true,
-								slidesPerView: "auto",
-								spaceBetween: 8,
-							},
 							767: {
 								allowTouchMove: true,
+								// slidesPerGroup: 1,
 								slidesPerView: "auto",
-								spaceBetween: 8,
+								spaceBetween: 12,
 							}
 						}
 					});
 				});
-				if (windowWidth2 <= 767) {
-					(() => {
-						let tabsProduct = $("#tabs [aria-controls=\"tabs-2\"] a");
-						if (tabsProduct.length) {
-							tabsProduct.trigger("click").closest(".active").removeClass("active");
+				// if (windowWidth2 <= 767) {
+				// 	(() => {
+				// 		let tabsProduct = $("#tabs [aria-controls=\"tabs-2\"] a");
+				// 		if (tabsProduct.length) {
+				// 			tabsProduct.trigger("click").closest(".active").removeClass("active");
 
-						}
-					})();
+				// 		}
+				// 	})();
 
-				}
+				// }
 			}
 
 		})();
-	}, 100);
-	tippy(".link-pop-glossary .icons-prop-item", {
-		// change these to your liking
-		arrow: true,
-		placement: "top", // top, right, bottom, left
-		// trigger: 'click',
-		// maxWidth: 300, //px or string
-		interactive: true,
-		// leave these as they are
-		// followCursor: true,
-		allowHTML: true,
-		theme: "light",
-		appendTo: () => document.body,
-		// ignoreAttributes: true,
-		content(reference) {
-			const title = reference.getAttribute("title");
-			reference.removeAttribute("title");
-			return title;
-		},
-	});
+	}, 200);
+	// tippy(".link-pop-glossary .icons-prop-item", {
+	// 	// change these to your liking
+	// 	arrow: true,
+	// 	placement: "top", // top, right, bottom, left
+	// 	// trigger: 'click',
+	// 	// maxWidth: 300, //px or string
+	// 	interactive: true,
+	// 	// leave these as they are
+	// 	// followCursor: true,
+	// 	allowHTML: true,
+	// 	theme: "light",
+	// 	appendTo: () => document.body,
+	// 	// ignoreAttributes: true,
+	// 	content(reference) {
+	// 		const title = reference.getAttribute("title");
+	// 		reference.removeAttribute("title");
+	// 		return title;
+	// 	},
+	// });
 
 	setTimeout(function () {
 		(function () {
@@ -2443,7 +2474,25 @@ $(document).ready(function () {
 				})
 			}
 		}());
-	}, 100)
+	}, 100);
+
+	(function () {
+		let descriptionVideoMob = document.querySelector(".description__video.mob");
+		if (descriptionVideoMob) {
+			if (windowWidth2 < 768) {
+				var swiperDescription = new Swiper(".swiper-container.description__inner", {
+					slidesPerView: 1,
+					spaceBetween: 12,
+					pagination: {
+						el: ".swiper-pagination.description__pagination"
+						// clickable: true
+					},
+				})
+			}
+		}
+	}());
+
+
 
 });
 $(window).on("load", function () {
@@ -2564,7 +2613,7 @@ $(window).on("load", function () {
 			},
 			thumbs: {
 				swiper: practicalThumbs
-			}
+			},
 		});
 		var benefitsSliderThumbs = new Swiper(".benefits-slider-thumbs", {
 			spaceBetween: 28,
@@ -2863,6 +2912,8 @@ $(window).on("load", function () {
 			$(".catalog .instructions .catalog__item").matchHeight();
 
 		}, 200);
+
+
 
 	} else {
 		var mySwiper444 = new Swiper(".category-container", {

@@ -499,9 +499,9 @@
 
 		.product-card__description {
 			height: auto;
-			margin-bottom: 7px;
+			margin-bottom: 0;
 			border-bottom: 1px solid #fff;
-			padding-bottom: 12px;
+			padding-bottom: 0;
 
 			h2 {
 				margin-top: 0;
@@ -510,6 +510,7 @@
 				font-weight: 400;
 				line-height: 24px;
 				margin-bottom: 8px;
+				display: none;
 			}
 
 			p {
@@ -1223,7 +1224,7 @@
 			}
 
 			.yandex {
-				order: 10;
+				order: 0;
 				padding: 7%;
 				padding: 20px 15px 15px !important;
 
@@ -1583,7 +1584,7 @@
 		.description {
 			width: 100%;
 			padding: 0 12px;
-			margin-bottom: 17px;
+			margin-bottom: 24px;
 
 			.description__switch {
 				display: -webkit-box !important;
@@ -1624,13 +1625,12 @@
 			}
 
 			&__title {
-				padding: 23px 0 14px;
+				padding: 24px 0 14px;
 				font-family: "HelveticaNeueCyr-Light";
 				font-size: 18px;
 				font-weight: 400;
 				line-height: 24px;
-				border-top: 1px solid #eeeeee;
-				margin-top: 32px;
+				margin-top: 0;
 
 				span {
 					display: block;
@@ -1668,10 +1668,70 @@
 					}
 				}
 			}
+
+			&__video {
+				display: none;
+
+				&.mob {
+					display: block;
+
+					.description {
+						&__caption {
+							padding: 0;
+							margin: 0 0 16px 0;
+
+							&-button {
+								display: block;
+								width: 100%;
+								text-align: center;
+							}
+						}
+
+						&__link {
+							picture {
+								position: relative;
+
+								&:after {
+									content: "";
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: 100%;
+									height: 100%;
+									background-image: url("../images/play.svg");
+									background-repeat: no-repeat;
+									background-size: 40px 40px;
+									background-position: 50%;
+								}
+							}
+
+							&:after {
+								display: none;
+							}
+
+							&:hover {
+								text-decoration: none;
+							}
+						}
+
+						&__text {
+							position: static;
+							background: none;
+							color: #000;
+							padding: 16px 0 30px;
+							font-size: 18px;
+						}
+
+						&__pagination {
+							margin-bottom: 16px;
+						}
+					}
+				}
+			}
 		}
 
 		.practical-features {
-			display: none;
+			// display: none;
 			width: 100%;
 			padding: 0 12px 16px;
 			border-bottom: 0;
@@ -1729,6 +1789,10 @@
 
 			.practical-features__text {
 				margin-bottom: 18px;
+			}
+
+			.practical-thumbs {
+				display: none;
 			}
 		}
 
@@ -2162,6 +2226,20 @@
 			.recently-watched__buy {
 				opacity: 1;
 			}
+
+			.special-offers {
+				&__buy {
+					opacity: 1 !important;
+				}
+
+				&__fav {
+					opacity: 1 !important;
+				}
+
+				&__compare {
+					opacity: 1 !important;
+				}
+			}
 		}
 
 		.download-catalogs {
@@ -2364,7 +2442,7 @@
 		&__stock {
 			width: 113%;
 			padding: 8px 20px 8px 16px;
-			margin: -4px -16px 23px -16px;
+			margin: -4px -16px 0;
 			font-size: 18px;
 
 			&-desc {
@@ -2496,8 +2574,8 @@
 			position: relative;
 			width: 100%;
 			overflow: auto;
-			margin-bottom: 10px;
-			padding-top: 0;
+			margin-bottom: 24px;
+			padding: 0 12px;
 
 			.link-pop-glossary {
 				flex-shrink: 0;
@@ -2515,8 +2593,8 @@
 				position: sticky;
 				top: 0;
 				left: 0;
-				font-size: 15px;
-				font-weight: 700;
+				font-size: 14px;
+				font-weight: 400;
 			}
 
 			&-inner {
@@ -2984,7 +3062,7 @@
 
 	.swiper-pagination-bullet {
 		margin: 0 16px 0 0 !important;
-		background: #000 !important;
+		background: #ececec !important;
 
 		&-active {
 			box-sizing: border-box;
@@ -4540,7 +4618,7 @@
 		}
 
 		.popup-prop {
-			display: none;
+			// display: none;
 			position: absolute;
 			z-index: 100;
 			bottom: 100%;
@@ -4669,6 +4747,10 @@
 					font-size: 20px;
 					font-weight: 400;
 				}
+			}
+
+			&.mob {
+				display: none;
 			}
 		}
 
