@@ -48,7 +48,7 @@
 			margin-right: 0px;
 		}
 
-		.swiper-wrapper{
+		.swiper-wrapper {
 			flex-wrap: nowrap;
 		}
 
@@ -135,7 +135,8 @@
 
 	.swiper-wrapper {
 		flex-wrap: wrap;
-		.swiper-wrapper{
+
+		.swiper-wrapper {
 			flex-wrap: nowrap;
 		}
 	}
@@ -200,10 +201,13 @@
 		text-decoration: none !important;
 
 		&:hover {
-			background: #ececec;
+			background: #8c0014;
+			color: #fff;
 		}
 	}
-	.swiper-button-next, .swiper-button-prev {
+
+	.swiper-button-next,
+	.swiper-button-prev {
 		display: none;
 	}
 }

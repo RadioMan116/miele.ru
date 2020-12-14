@@ -45,7 +45,8 @@
 
 		&__item {
 
-			&.last, &.js-tags_data {
+			&.last,
+			&.js-tags_data {
 				display: flex;
 				align-items: center;
 				height: 32px;
@@ -182,7 +183,7 @@
 
 		&.active {
 			border: solid 1px #ba1212;
-			background: #ececec;
+			// background: #ececec;
 			line-height: 28px;
 
 			a {
@@ -229,7 +230,8 @@
 		text-decoration: none !important;
 
 		&:hover {
-			background: #ececec;
+			background: #8c0014;
+			color: #fff;
 		}
 	}
 
