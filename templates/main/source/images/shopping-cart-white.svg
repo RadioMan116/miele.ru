@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <defs>
-    <path d="M3 0L2 0L2 2L0 2L0 3L2 3L2 5L3 5L3 3L5 3L5 2L3 2L3 0Z" transform="translate(13 2)" id="path_1" />
-  </defs>
-  <g id="Group" transform="translate(1 1)">
-    <g id="shopping-cart">
-      <path d="M3.59374 0L0 0L0 1.5L2.4138 1.5L4.4904 11.0082L4.5 11.0082L4.5 11.25L14.25 11.25L14.25 11.0639L15.8949 3.81821L16.1481 3L4.2414 3L3.81364 1.04139L3.59374 0ZM14.2402 4.5L4.569 4.5L5.71561 9.75L13.0484 9.75L14.2402 4.5ZM6.75 15C7.57845 15 8.25 14.3285 8.25 13.5C8.25 12.6715 7.57845 12 6.75 12C5.92157 12 5.25 12.6715 5.25 13.5C5.25 14.3285 5.92157 15 6.75 15ZM12 15C12.8285 15 13.5 14.3285 13.5 13.5C13.5 12.6715 12.8285 12 12 12C11.1715 12 10.5 12.6715 10.5 13.5C10.5 14.3285 11.1715 15 12 15Z" transform="translate(0.75 1.5)" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-    </g>
-    <g id="Combined-Shape">
-      <use xlink:href="#path_1" fill="none" stroke="#8C0014" stroke-width="2" />
-      <use stroke="none" fill="#FFFFFF" xlink:href="#path_1" fill-rule="evenodd" />
-    </g>
-  </g>
-</svg>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><path d="M3 0H2v2H0v1h2v2h1V3h2V2H3V0z" transform="translate(13 2)" id="path_1"/></defs><g id="Group" transform="translate(1 1)"><g id="shopping-cart"><path d="M3.594 0H0v1.5h2.414l2.076 9.508h.01v.242h9.75v-.186l1.645-7.246.253-.818H4.241l-.427-1.959L3.594 0zM14.24 4.5H4.57l1.147 5.25h7.332L14.24 4.5zM6.75 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM12 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" transform="translate(.75 1.5)" id="Combined-Shape" fill="#FFF" fill-rule="evenodd" stroke="none"/></g><g id="Combined-Shape"><use xlink:href="#path_1" fill="none" stroke="#8C0014" stroke-width="2"/><use fill="#FFF" xlink:href="#path_1" fill-rule="evenodd"/></g></g></svg>

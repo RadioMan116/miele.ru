@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="shopping-cart">
-    <g id="shopping-cart">
-      <path d="M0 0L24 0L24 24L0 24L0 0Z" id="Rectangle-5" fill="none" stroke="none" />
-      <path d="M4.79166 0L0 0L0 2L3.2184 2L5.9872 14.6776L6 14.6776L6 15L19 15L19 14.7519L21.1932 5.09095L21.5308 4L5.6552 4L5.08485 1.38852L4.79166 0ZM18.9869 6L6.092 6L7.62081 13L17.3978 13L18.9869 6ZM9 20C10.1046 20 11 19.1046 11 18C11 16.8954 10.1046 16 9 16C7.89543 16 7 16.8954 7 18C7 19.1046 7.89543 20 9 20ZM16 20C17.1046 20 18 19.1046 18 18C18 16.8954 17.1046 16 16 16C14.8954 16 14 16.8954 14 18C14 19.1046 14.8954 20 16 20Z" transform="translate(1 2)" id="Combined-Shape" fill="#8C0014" fill-rule="evenodd" stroke="none" />
-    </g>
-  </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="shopping-cart"><g id="shopping-cart" stroke="none"><path d="M0 0h24v24H0V0z" id="Rectangle-5" fill="none"/><path d="M4.792 0H0v2h3.218l2.77 12.678H6V15h13v-.248l2.193-9.661L21.531 4H5.655l-.57-2.611L4.792 0zm14.195 6H6.092l1.529 7h9.777l1.589-7zM9 20a2 2 0 100-4 2 2 0 000 4zm7 0a2 2 0 100-4 2 2 0 000 4z" transform="translate(1 2)" id="Combined-Shape" fill="#8C0014" fill-rule="evenodd"/></g></g></svg>

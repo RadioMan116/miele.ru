@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="hit">
-    <g id="new" transform="translate(10.434782 16.521738)" />
-    <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" id="Oval" fill="#8C0014" stroke="none" />
-    <path d="M3.03106 4.27329L0 8.69565L2.17391 8.69565L4.13665 5.71429L6.08696 8.69565L8.32298 8.69565L5.29193 4.24845L8.19876 0L6.02484 0L4.18634 2.81988L2.36025 0L0.124224 0L3.03106 4.27329ZM17.2422 0L17.2422 8.69565L15.354 8.69565L15.354 2.99379L11.5528 8.69565L9.75155 8.69565L9.75155 0L11.6398 0L11.6398 5.70186L15.4658 0L17.2422 0ZM21.354 1.76397L21.354 8.69565L23.2671 8.69565L23.2671 1.76397L25.913 1.76397L25.913 0L18.7081 0L18.7081 1.76397L21.354 1.76397Z" transform="translate(6.9565215 15.652173)" id="ХИТ" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
-</svg>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="hit" stroke="none"><path d="M20 40c11.046 0 20-8.954 20-20S31.046 0 20 0 0 8.954 0 20s8.954 20 20 20z" id="Oval" fill="#8C0014"/><path d="M3.031 4.273L0 8.696h2.174l1.963-2.982 1.95 2.982h2.236L5.292 4.248 8.199 0H6.025L4.186 2.82 2.36 0H.124l2.907 4.273zM17.242 0v8.696h-1.888V2.994l-3.801 5.702H9.752V0h1.888v5.702L15.466 0h1.776zm4.112 1.764v6.932h1.913V1.764h2.646V0h-7.205v1.764h2.646z" transform="translate(6.957 15.652)" id="ХИТ" fill="#FFF" fill-rule="evenodd"/></g></svg>

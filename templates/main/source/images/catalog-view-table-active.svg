@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <path d="M0 0L4.04945 0L4.04945 4L0 4L0 0ZM7.97461 0L12.0241 0L12.0241 4L7.97461 4L7.97461 0ZM20.0006 0L15.9512 0L15.9512 4L20.0006 4L20.0006 0ZM0 8L4.04945 8L4.04945 12L0 12L0 8ZM12.0241 8L7.97461 8L7.97461 12L12.0241 12L12.0241 8ZM15.9512 8L20.0006 8L20.0006 12L15.9512 12L15.9512 8ZM4.04945 16L0 16L0 20L4.04945 20L4.04945 16ZM7.97461 16L12.0241 16L12.0241 20L7.97461 20L7.97461 16ZM20.0006 16L15.9512 16L15.9512 20L20.0006 20L20.0006 16Z" id="view2" fill="#8C0014" fill-rule="evenodd" stroke="none" />
-</svg>
+<svg width="20" height="20" viewBox="0 0 20 20" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h4.05v4H0V0zm7.975 0h4.05v4h-4.05V0zM20 0h-4.05v4H20V0zM0 8h4.05v4H0V8zm12.024 0h-4.05v4h4.05V8zm3.927 0h4.05v4h-4.05V8zM4.05 16H0v4h4.05v-4zm3.926 0h4.05v4h-4.05v-4zM20 16h-4.05v4H20v-4z" id="view2" fill="#8C0014" fill-rule="evenodd" stroke="none"/></svg>

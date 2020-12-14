@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="Bounding_Boxes">
-    <g id="Bounding_Boxes">
-      <path d="M0 0L24 0L24 24L0 24L0 0Z" id="Shape" fill="none" stroke="none" />
-    </g>
-    <g id="Rounded" transform="translate(8 10)">
-      <path d="M0.296477 1.71L2.88648 4.3C3.27648 4.69 3.90648 4.69 4.29648 4.3L6.88648 1.71C7.51648 1.08 7.06648 0 6.17648 0L0.996477 0C0.106477 0 -0.333523 1.08 0.296477 1.71Z" transform="translate(0.4135228 0)" id="Shape" fill="#4B4B4B" stroke="none" />
-    </g>
-  </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="Bounding_Boxes"><g id="Bounding_Boxes"><path d="M0 0h24v24H0V0z" id="Shape" fill="none" stroke="none"/></g><g id="Rounded" transform="translate(8 10)"><path d="M.296 1.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H.996c-.89 0-1.33 1.08-.7 1.71z" transform="translate(.414)" id="Shape" fill="#4B4B4B" stroke="none"/></g></g></svg>

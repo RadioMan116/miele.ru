@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="icon/-arrow/-up" transform="matrix(-1 -8.742278E-08 8.742278E-08 -1 48 48)" opacity="0.40459913">
-    <path d="M3.425 0.585L11.185 8.345L18.945 0.585C19.725 -0.195 20.985 -0.195 21.765 0.585L21.765 0.585C22.545 1.365 22.545 2.625 21.765 3.405L12.585 12.585C11.805 13.365 10.545 13.365 9.765 12.585L0.585 3.405C-0.195 2.625 -0.195 1.365 0.585 0.585L0.585 0.585C1.365 -0.175 2.645 -0.195 3.425 0.585Z" transform="matrix(1 1.7484555E-07 1.7484555E-07 -1 12.815001 31.165035)" id="Shape" fill="#A6A6A6" stroke="none" />
-  </g>
-</svg>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="icon/-arrow/-up" transform="rotate(-180 24 24)" opacity=".405"><path d="M3.425.585l7.76 7.76 7.76-7.76c.78-.78 2.04-.78 2.82 0 .78.78.78 2.04 0 2.82l-9.18 9.18c-.78.78-2.04.78-2.82 0l-9.18-9.18c-.78-.78-.78-2.04 0-2.82.78-.76 2.06-.78 2.84 0z" transform="matrix(1 0 0 -1 12.815 31.165)" id="Shape" fill="#A6A6A6" stroke="none"/></g></svg>

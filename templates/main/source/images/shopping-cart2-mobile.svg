@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="15px" height="14px" viewBox="0 0 15 14" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <defs>
-    <path d="M5.77125 11.1368C2.295 8.08283 0 6.06866 0 3.59673C0 1.58256 1.6335 0 3.7125 0C4.887 0 6.01425 0.5297 6.75 1.36676C7.48575 0.5297 8.613 0 9.7875 0C11.8665 0 13.5 1.58256 13.5 3.59673C13.5 6.06866 11.205 8.08283 7.72875 11.1433L6.75 12L5.77125 11.1368Z" id="path_1" />
-    <clipPath id="mask_1">
-      <use xlink:href="#path_1" />
-    </clipPath>
-  </defs>
-  <g id="shopping-cart" transform="translate(0.75 0.75)">
-    <path d="M5.77125 11.1368C2.295 8.08283 0 6.06866 0 3.59673C0 1.58256 1.6335 0 3.7125 0C4.887 0 6.01425 0.5297 6.75 1.36676C7.48575 0.5297 8.613 0 9.7875 0C11.8665 0 13.5 1.58256 13.5 3.59673C13.5 6.06866 11.205 8.08283 7.72875 11.1433L6.75 12L5.77125 11.1368Z" id="Icon" fill="none" fill-rule="evenodd" stroke="#8C0014" stroke-width="1.5" />
-  </g>
-</svg>
+<svg width="15" height="14" viewBox="0 0 15 14" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="mask_1"><use xlink:href="#path_1"/></clipPath><path d="M5.771 11.137C2.295 8.083 0 6.069 0 3.597 0 1.583 1.633 0 3.712 0 4.888 0 6.014.53 6.75 1.367A4.096 4.096 0 019.787 0c2.08 0 3.713 1.583 3.713 3.597 0 2.472-2.295 4.486-5.771 7.546L6.75 12l-.979-.863z" id="path_1"/></defs><g id="shopping-cart" transform="translate(.75 .75)"><path d="M5.771 11.137C2.295 8.083 0 6.069 0 3.597 0 1.583 1.633 0 3.712 0 4.888 0 6.014.53 6.75 1.367A4.096 4.096 0 019.787 0c2.08 0 3.713 1.583 3.713 3.597 0 2.472-2.295 4.486-5.771 7.546L6.75 12l-.979-.863z" id="Icon" fill="none" fill-rule="evenodd" stroke="#8C0014" stroke-width="1.5"/></g></svg>

@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="14px" height="14px" viewbox="0 0 14 14" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <g id="icon-close">
-    <path d="M8.16667 0.8225L7.34417 0L4.08333 3.26083L0.8225 0L0 0.8225L3.26083 4.08333L0 7.34417L0.8225 8.16667L4.08333 4.90583L7.34417 8.16667L8.16667 7.34417L4.90583 4.08333L8.16667 0.8225Z" transform="translate(2.9166665 2.9166665)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
-</svg>
+<svg width="14" height="14" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="icon-close"><path d="M8.167.823L7.344 0l-3.26 3.26L.822 0 0 .823l3.26 3.26L0 7.344l.823.823 3.26-3.261 3.261 3.26.823-.822-3.261-3.26L8.166.822z" transform="translate(2.917 2.917)" id="Shape" fill="#FFF" fill-rule="evenodd" stroke="none"/></g></svg>

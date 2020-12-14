@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="star">
-    <g id="star">
-      <path d="M0 0L16 0L16 16L0 16L0 0Z" id="Rectangle-2" fill="none" stroke="none" />
-      <path d="M7.00975 11.0614L2.67749 13.3333L3.49947 8.51104L-9.72798e-17 5.09288L4.84028 4.38446L7.00975 0L9.17922 4.38446L14.0195 5.09288L10.52 8.51104L11.342 13.3333L7.00975 11.0614Z" transform="translate(0.98284596 1.3333334)" id="Star" fill="#ECECEC" stroke="none" />
-    </g>
-  </g>
-</svg>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="star"><g id="star" stroke="none"><path d="M0 0h16v16H0V0z" id="Rectangle-2" fill="none"/><path d="M7.01 11.061l-4.333 2.272.822-4.822L0 5.093l4.84-.709L7.01 0l2.17 4.384 4.84.709-3.5 3.418.822 4.822-4.332-2.272z" transform="translate(.983 1.333)" id="Star" fill="#ECECEC"/></g></g></svg>

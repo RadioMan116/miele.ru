@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <g id="icon/-arrow/-left" transform="matrix(-1 0 0 1 24 0)">
-    <path d="M6.2925 9.4625L2.4125 5.5825L6.2925 1.7025C6.6825 1.3125 6.6825 0.6825 6.2925 0.2925L6.2925 0.2925C5.9025 -0.0975 5.2725 -0.0975 4.8825 0.2925L0.2925 4.8825C-0.0975 5.2725 -0.0975 5.9025 0.2925 6.2925L4.8825 10.8825C5.2725 11.2725 5.9025 11.2725 6.2925 10.8825L6.2925 10.8825C6.6725 10.4925 6.6825 9.8525 6.2925 9.4625Z" transform="translate(8.4175 6.4175)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
-  </g>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g id="icon/-arrow/-left" transform="matrix(-1 0 0 1 24 0)"><path d="M6.293 9.463l-3.88-3.88 3.88-3.88a.996.996 0 10-1.41-1.41l-4.59 4.59a.996.996 0 000 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z" transform="translate(8.418 6.418)" id="Shape" fill="#FFF" fill-rule="evenodd" stroke="none"/></g></svg>

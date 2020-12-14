@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <defs>
-    <path d="M9.61875 18.5613C3.825 13.4714 0 10.1144 0 5.99455C0 2.6376 2.7225 0 6.1875 0C8.145 0 10.0237 0.882834 11.25 2.27793C12.4762 0.882834 14.355 0 16.3125 0C19.7775 0 22.5 2.6376 22.5 5.99455C22.5 10.1144 18.675 13.4714 12.8812 18.5722L11.25 20L9.61875 18.5613Z" transform="translate(3.75 5)" id="path_1" />
-    <clipPath id="mask_1">
-      <use xlink:href="#path_1" />
-    </clipPath>
-  </defs>
-  <g id="compare">
-    <path d="M9.61875 18.5613C3.825 13.4714 0 10.1144 0 5.99455C0 2.6376 2.7225 0 6.1875 0C8.145 0 10.0237 0.882834 11.25 2.27793C12.4762 0.882834 14.355 0 16.3125 0C19.7775 0 22.5 2.6376 22.5 5.99455C22.5 10.1144 18.675 13.4714 12.8812 18.5722L11.25 20L9.61875 18.5613Z" transform="translate(3.75 5)" id="Icon" fill="#8C0014" stroke="none" />
-  </g>
-</svg>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="mask_1"><use xlink:href="#path_1"/></clipPath><path d="M9.619 18.561C3.825 13.471 0 10.114 0 5.995 0 2.638 2.723 0 6.188 0c1.957 0 3.836.883 5.062 2.278C12.476.883 14.355 0 16.313 0 19.777 0 22.5 2.638 22.5 5.995c0 4.12-3.825 7.476-9.619 12.577L11.25 20l-1.631-1.439z" transform="translate(3.75 5)" id="path_1"/></defs><g id="compare"><path d="M9.619 18.561C3.825 13.471 0 10.114 0 5.995 0 2.638 2.723 0 6.188 0c1.957 0 3.836.883 5.062 2.278C12.476.883 14.355 0 16.313 0 19.777 0 22.5 2.638 22.5 5.995c0 4.12-3.825 7.476-9.619 12.577L11.25 20l-1.631-1.439z" transform="translate(3.75 5)" id="Icon" fill="#8C0014" stroke="none"/></g></svg>

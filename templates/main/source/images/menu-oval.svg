@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-  <desc>Created with Lunacy</desc>
-  <path d="M4 8C6.20914 8 8 6.20914 8 4C8 1.79086 6.20914 0 4 0C1.79086 0 0 1.79086 0 4C0 6.20914 1.79086 8 4 8Z" transform="translate(0.5 0.5)" id="Oval" fill="#B2B6B8" fill-opacity="0.372349322" stroke="none" />
-</svg>
+<svg width="9" height="9" viewBox="0 0 9 9" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><path d="M4 8a4 4 0 100-8 4 4 0 000 8z" transform="translate(.5 .5)" id="Oval" fill="#B2B6B8" fill-opacity=".372" stroke="none"/></svg>
