@@ -200,7 +200,9 @@
 				border-top: unset;
 			}
 
-			&:nth-of-type(odd), &:nth-of-type(2), &:nth-of-type(6) {
+			&:nth-of-type(odd),
+			&:nth-of-type(2),
+			&:nth-of-type(6) {
 				border-right: unset;
 			}
 		}
@@ -221,7 +223,7 @@
 		background: #ffffff;
 		box-shadow: 0 2px 21px rgba(0, 0, 0, 0.09);
 		padding: 16px 36px 40px;
-		margin-bottom: 70px;
+		margin-bottom: 24px;
 
 		.credit__subtitle {
 			font-size: 30px;
@@ -343,5 +345,13 @@
 		&:hover {
 			background: #ececec;
 		}
+	}
+
+	&__copyright {
+		display: flex;
+		flex-direction: column;
+		color: #a6a6a6;
+		font-size: 12px;
+		margin-bottom: 48px;
 	}
 }
