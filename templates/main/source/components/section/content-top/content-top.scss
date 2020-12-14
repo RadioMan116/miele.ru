@@ -145,7 +145,8 @@
 			align-items: center;
 		}
 
-		a,span {
+		a,
+		span {
 			color: #ffffff;
 		}
 	}
@@ -176,7 +177,8 @@
 			margin-bottom: 9px;
 		}
 
-		.content-top__title_bottom, span {
+		.content-top__title_bottom,
+		span {
 			color: #ffffff;
 			font-size: 16px;
 			font-weight: 400;
@@ -201,7 +203,7 @@
 			font-size: 30px;
 			font-weight: 400;
 			line-height: 40px;
-			margin-bottom: 20px;
+			margin-bottom: 5px;
 
 			span {
 				color: #ffffff;
@@ -224,6 +226,12 @@
 				display: none;
 			}
 		}
+	}
+
+	&__desc {
+		margin-bottom: 20px;
+		color: #fff;
+		font-size: 14px;
 	}
 
 	br {

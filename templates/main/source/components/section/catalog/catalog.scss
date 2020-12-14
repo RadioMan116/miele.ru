@@ -1575,40 +1575,45 @@
 
 						&__presence,
 						&__specification,
-						&__prop,&__oneclick {
+						&__prop,
+						&__oneclick {
 							display: none;
 						}
 					}
 
 					.announcing {
 						display: none;
-						&.mobile{
+
+						&.mobile {
 							display: flex;
 						}
+
 						&__status {
 							width: 100%;
+
 							span {
 								display: flex;
 							}
 						}
 					}
-					.special-offers{
-						&__fav{
+
+					.special-offers {
+						&__fav {
 							margin-left: auto;
 							margin-right: 12px;
 						}
 
-						&__price{
+						&__price {
 							order: -4;
 						}
 
-						&__buy{
+						&__buy {
 							order: 4;
 							margin-top: 0;
 						}
 
-						&__sale{
-							hr{
+						&__sale {
+							hr {
 								display: none;
 							}
 						}
@@ -3279,7 +3284,7 @@
 		// justify-content: space-between;
 		// flex-grow: 1;
 		font-size: 14px;
-		font-weight: 700;
+		// font-weight: 700;
 		line-height: 24px;
 		text-align: left;
 		color: #000000;
