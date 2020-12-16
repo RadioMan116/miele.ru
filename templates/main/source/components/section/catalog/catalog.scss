@@ -760,6 +760,15 @@
 			.recently-watched__buy {
 				opacity: 1;
 			}
+
+			.special-offers {
+
+				&__fav,
+				&__compare,
+				&__buy {
+					opacity: 1 !important;
+				}
+			}
 		}
 
 		.sidebar {
