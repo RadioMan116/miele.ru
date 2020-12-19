@@ -114,7 +114,14 @@
 				padding: 20px;
 			}
 
+			&__img {
+				display: flex;
+				justify-content: center;
+			}
+
 			&__desc {
+				padding-top: 17px;
+
 				&-title {
 					display: flex;
 					flex-direction: column;
@@ -190,6 +197,7 @@
 
 			.product-card__collection {
 				padding: 0 12px 12px;
+				margin: 0 0 40px 0;
 
 				.tags__item {
 					font-size: 24px;
@@ -208,6 +216,13 @@
 					transform: translateX(-50%);
 					bottom: -7px;
 					display: flex !important;
+				}
+
+				.swiper-pagination-card-accessories {
+					bottom: -14px;
+					// .swiper-pagination-bullet {
+					// 	background: #ececec !important;
+					// }
 				}
 			}
 

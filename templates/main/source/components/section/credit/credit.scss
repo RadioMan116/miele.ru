@@ -354,5 +354,11 @@
 		color: #a6a6a6;
 		font-size: 12px;
 		margin-bottom: 48px;
+
+		span {
+			&:first-child {
+				line-height: 14px;
+			}
+		}
 	}
 }

@@ -852,7 +852,7 @@ $(document).ready(function () {
 			arrow: true,
 			placement: "top", // top, right, bottom, left
 			// trigger: 'click',
-			// maxWidth: 300, //px or string
+			maxWidth: 420, //px or string
 			interactive: true,
 			// leave these as they are
 			// followCursor: true,
@@ -881,6 +881,23 @@ $(document).ready(function () {
 			content: el.querySelector(".popup-prop")
 		});
 	});
+	$(".product-card__payment-item").each(function (i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: "top", // top, right, bottom, left
+			// trigger: 'click',
+			maxWidth: 253, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			hideOnClick: true,
+			theme: "light",
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content: el.querySelector(".popup-payment")
+		});
+	});
 	(function () {
 		let parentDesc = document.querySelector(".js-product-card__desc");
 		if (parentDesc) {
@@ -893,7 +910,7 @@ $(document).ready(function () {
 			let paragraphFlag = true;
 
 			if (paragraph.length > 3) {
-				buttonMore.style.display = "block";
+				buttonMore.style.display = "flex";
 				for (let prop of paragraph) {
 					arrParagraph.push(prop);
 				}
@@ -909,10 +926,12 @@ $(document).ready(function () {
 						parentParagraph.style.height = heightParagraphNext + (arrParagraph.length * 14) + "px";
 						paragraphFlag = false;
 						buttonMore.innerHTML = "Свернуть";
+						buttonMore.classList.add("button-rotate");
 					} else {
 						parentParagraph.style.height = heightParagraph + 42 + "px";
 						paragraphFlag = true;
 						buttonMore.innerHTML = "Читать подробнее";
+						buttonMore.classList.remove("button-rotate");
 					}
 				});
 			}
@@ -933,7 +952,7 @@ $(document).ready(function () {
 					if (windowWidth2 < 768) {
 
 						if (paragraph.length > 1) {
-							buttonMore.style.display = "block";
+							buttonMore.style.display = "flex";
 							for (let prop of paragraph) {
 								arrParagraph.push(prop);
 							}
@@ -952,10 +971,12 @@ $(document).ready(function () {
 									parentParagraph.style.height = heightParagraphNext + (arrParagraph.length * 14) + "px";
 									paragraphFlag = false;
 									buttonMore.innerHTML = "Свернуть";
+									buttonMore.classList.add("button-rotate");
 								} else {
 									parentParagraph.style.height = heightParagraph + 14 + "px";
 									paragraphFlag = true;
 									buttonMore.innerHTML = "Читать подробнее";
+									buttonMore.classList.remove("button-rotate");
 								}
 							});
 						}

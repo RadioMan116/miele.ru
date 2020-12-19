@@ -1054,7 +1054,7 @@
 			flex-direction: column;
 			width: 100%;
 			padding: 0 12px;
-			margin-bottom: 27px;
+			margin-bottom: 32px;
 
 			.reviews__top {
 				flex-wrap: wrap;
@@ -1189,7 +1189,8 @@
 				}
 
 				&:last-of-type {
-					padding-bottom: 10px;
+					padding-bottom: 0;
+					margin-bottom: 0;
 				}
 			}
 		}
@@ -4690,7 +4691,7 @@
 
 	.description {
 		width: 100%;
-		padding-top: 14px;
+		// padding-top: 14px;
 		margin-bottom: 24px;
 
 		// .description__link
@@ -4706,7 +4707,7 @@
 
 		// .description__title
 		&__title {
-			padding: 25px 0 16px;
+			padding: 0 0 16px;
 			color: #262626;
 			font-size: 26px;
 			font-weight: 400;
@@ -4766,7 +4767,7 @@
 		&__caption {
 			margin: 17px 0 24px;
 			font-family: "HelveticaNeueCyr-Light";
-			font-size: 20px;
+			font-size: 26px;
 			font-weight: 400;
 			line-height: 24px;
 
@@ -6598,6 +6599,7 @@
 			font-size: 12px;
 			font-weight: 400;
 			margin-right: 12px;
+			cursor: pointer;
 
 			&:last-child {
 				margin-right: 0;
@@ -7196,9 +7198,19 @@
 			font-size: 14px;
 			cursor: pointer;
 			width: fit-content;
-			padding-right: 24px;
-			background: url("../images/arrow-down.svg") no-repeat;
-			background-position-x: right;
+
+			&:after {
+				content: "";
+				width: 24px;
+				height: 24px;
+				background: url("../images/arrow-down.svg") no-repeat;
+			}
+
+			&.button-rotate {
+				&:after {
+					transform: rotate(180deg);
+				}
+			}
 		}
 	}
 
