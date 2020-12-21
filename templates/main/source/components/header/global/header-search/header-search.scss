@@ -350,6 +350,10 @@
 			background: #4b4b4b;
 			transform-origin: 50% 50%;
 		}
+
+		&:hover {
+			background: #e3e3e3;
+		}
 	}
 
 	&__inner {
@@ -484,7 +488,8 @@
 		text-transform: uppercase;
 
 		&:hover {
-			background-color: #ececec;
+			background-color: #8c0014;
+			color: #fff;
 		}
 	}
 
