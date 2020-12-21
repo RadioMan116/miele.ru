@@ -2263,6 +2263,8 @@ $(document).ready(function () {
 	setTimeout(function () {
 		(function () {
 			let collection = document.querySelector(".product-card__collection");
+			let accessories = document.querySelector(".card-accessories");
+			if (accessories) return;
 			if (collection) {
 				let tabsParent = collection.querySelector(".tags__list");
 				let tabs = collection.querySelectorAll(".tags__list li");
@@ -2425,22 +2427,22 @@ $(document).ready(function () {
 							767: {
 								allowTouchMove: true,
 								// slidesPerGroup: 1,
-								slidesPerView: "auto",
+								slidesPerView: 1,
 								spaceBetween: 12,
 							}
 						}
 					});
 				});
-				// if (windowWidth2 <= 767) {
-				// 	(() => {
-				// 		let tabsProduct = $("#tabs [aria-controls=\"tabs-2\"] a");
-				// 		if (tabsProduct.length) {
-				// 			tabsProduct.trigger("click").closest(".active").removeClass("active");
+				if (windowWidth2 <= 767) {
+					(() => {
+						let tabsProduct = $("#tabs [aria-controls=\"tabs-2\"] a");
+						if (tabsProduct.length) {
+							tabsProduct.trigger("click").closest(".active").removeClass("active");
 
-				// 		}
-				// 	})();
+						}
+					})();
 
-				// }
+				}
 			}
 
 		})();
