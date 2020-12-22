@@ -4479,3 +4479,123 @@
 		flex-direction: column;
 	}
 }
+
+.catalog-reverse {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 24px 0 0;
+	max-width: 100%;
+
+	.catalog__sorting {
+		width: 100%;
+
+		.catalog-sort__mob {
+			display: none;
+		}
+	}
+
+	.filter__date {
+		margin: 0 27px 0 0;
+		padding: 0;
+	}
+
+	.catalog.special-offers {
+		.recently-watched {
+			margin-right: -298px;
+			margin-left: 0;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.catalog__sorting {
+			display: flex;
+			// flex-direction: column;
+			flex-wrap: wrap;
+			border: 0;
+			padding: 0;
+			margin-bottom: 16px;
+
+			&:before {
+				display: none;
+				border: 0;
+			}
+
+			.catalog-sort__mob {
+				display: flex;
+				position: relative;
+				width: calc(100% - 95px);
+				height: 46px;
+				border: solid 1px #c4c4c4;
+				border-radius: 2px;
+				background: #ffffff;
+
+				// &:after {
+				// 	content: "";
+				// 	position: absolute;
+				// 	top: 50%;
+				// 	right: 13px;
+				// 	width: 0;
+				// 	height: 0;
+				// 	-webkit-transform: translateY(-50%);
+				// 	transform: translateY(-50%);
+				// 	pointer-events: none;
+				// 	border-style: solid;
+				// 	border-width: 5px 5px 0;
+				// 	border-color: #4b4b4b transparent transparent;
+				// 	border-radius: 40%;
+				// }
+				select {
+					border: 0;
+					padding: 0 18px 0 15px;
+					appearance: none;
+					border-radius: 0;
+					background: transparent;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 24px;
+
+					option {
+						&:checked {
+							background: transparent;
+						}
+
+						&:hover {
+							background: $base;
+						}
+					}
+				}
+			}
+		}
+
+		.sorting__info {
+			color: #4b4b4b;
+			font-size: 13px;
+			margin-left: unset;
+		}
+
+		.catalog__positions {
+			width: 100%;
+			margin-bottom: 5px;
+		}
+
+		.catalog__ul {
+			display: flex;
+			display: none;
+			flex-wrap: nowrap;
+			align-items: baseline;
+			justify-content: flex-start;
+			width: 100%;
+			overflow: auto;
+			margin-bottom: 0;
+			padding-left: 0;
+		}
+
+		.tags {
+			margin-bottom: 18px;
+		}
+
+		.col-md-3 {
+			order: -1;
+		}
+	}
+}

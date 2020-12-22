@@ -2515,7 +2515,22 @@ $(document).ready(function () {
 		}
 	}());
 
+	(function () {
+		let catalogReverse = document.querySelector(".catalog-reverse");
+		let tagsCatalog = catalogReverse.querySelector(".tags");
+		let catalogSorting = catalogReverse.querySelector(".catalog__sorting");
+		let filterDate = catalogReverse.querySelector(".filter__date");
 
+		if (catalogReverse) {
+			catalogReverse.prepend(catalogSorting)
+			catalogReverse.prepend(tagsCatalog)
+			catalogSorting.prepend(filterDate)
+		}
+
+		if (windowWidth2 < 768) {
+			catalogReverse.prepend(filterDate)
+		}
+	}());
 
 });
 $(window).on("load", function () {
