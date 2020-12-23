@@ -2534,14 +2534,6 @@ $(document).ready(function () {
 
 	}());
 
-	(function () {
-		let headerNumber = document.querySelector(".header__basket .header__number");
-
-		if (Number(headerNumber.innerHTML) < 1) {
-			headerNumber.style.display = "none";
-		}
-	}());
-
 });
 $(window).on("load", function () {
 	var windowWidth2 = $(window).width();
