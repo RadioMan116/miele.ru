@@ -4485,15 +4485,27 @@
 .catalog-reverse {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 24px 0 0;
+	padding: 24px 6px 0 0;
 	max-width: 100%;
 
 	.catalog__sorting {
 		width: 100%;
+		padding: 10px 15px;
+		margin-bottom: 4px;
 
 		.catalog-sort__mob {
 			display: none;
 		}
+
+		&:before {
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.col-md-3 {
+		margin: 12px 0 0;
+		padding: 0 0 0 20px;
 	}
 
 	.filter__date {
@@ -4502,9 +4514,35 @@
 	}
 
 	.catalog.special-offers {
+		padding: 20px 8px 0 0;
+
 		.recently-watched {
 			margin-right: -298px;
 			margin-left: 0;
+		}
+
+		&.catalog__thumb {
+			.catalog__item {
+				padding: 4px 14px 13px;
+			}
+		}
+
+		&.catalog__list {
+			.catalog__item {
+				padding: 20px 13px 3px;
+
+				.catalog__inner {
+					.special-offers {
+						&__sale {
+							margin-bottom: 19px;
+						}
+
+						&__fav {
+							margin: 0 11px 0 8px;
+						}
+					}
+				}
+			}
 		}
 	}
 
