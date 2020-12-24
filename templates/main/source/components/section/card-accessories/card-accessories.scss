@@ -231,6 +231,16 @@
 					.swiper-pagination {
 						display: flex;
 					}
+
+					.swiper {
+						max-width: unset;
+						max-height: unset;
+
+						.special-offers__pic {
+							width: 248px;
+							height: 228px;
+						}
+					}
 				}
 			}
 
