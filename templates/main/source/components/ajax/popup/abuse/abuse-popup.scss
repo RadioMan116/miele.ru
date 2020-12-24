@@ -1,3 +1,7 @@
+.abuse-popup-container {
+	padding: 24px 31px 31px !important;
+}
+
 .abuse {
 	@media screen and (max-width: 767px) {
 		&__title {
@@ -15,7 +19,8 @@
 		font-stretch: normal;
 		line-height: 1;
 		letter-spacing: normal;
-		text-align: left;
+		text-align: center;
+		width: 100%;
 		color: #333333;
 		margin-bottom: 1rem;
 	}
@@ -137,6 +142,7 @@
 			// font-family: Arial, sans-serif;
 			font-size: 14px;
 			line-height: 22px;
+			font-weight: 400;
 		}
 
 		&__input,
