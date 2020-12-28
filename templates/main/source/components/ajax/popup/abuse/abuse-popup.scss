@@ -197,5 +197,9 @@
 			@include link;
 			padding-right: 5px;
 		}
+
+		.abuse-popup__link {
+			padding-right: 0;
+		}
 	}
 }

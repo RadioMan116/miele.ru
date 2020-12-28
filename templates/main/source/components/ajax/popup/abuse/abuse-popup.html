@@ -3,60 +3,72 @@
 		Обращение к руководству
 	</span>
 	<div class="abuse-popup" id="js-abuse-response">
-		<form action="" method="post" id="js-abuse-form" class="abuse-popup__form">
+		<form action="" method="post" class="abuse-popup__form js-form" style="position:relative;">
 			<p class="abuse-popup__text">
-				Руководство интернет-магазина <a href="#" class="abuse-popup__link">Miele</a> уделяет особое
-				внимание качеству обслуживания своих клиентов.
+				Руководство интернет-магазина
+				<a href="/" class="abuse-popup__link">Miele</a>
+				уделяет пристальное внимание качеству обслуживания своих клиентов.
 			</p>
 			<p class="abuse-popup__text">
-				Если вы столкнулись с какими-либо проблемами на любом этапе заказа - мы будем благодарны за подробную
-				информацию.
+				Если вы столкнулись с какими-либо проблемами на любом этапе заказа - мы будем
+				благодарны за подробную информацию.
 			</p>
 			<p class="abuse-popup__text abuse-popup__text-last">
-				Все сообщения рассматриваются лично руководством магазина.
+				Все сообщения рассматриваются лично руководством
+				магазина.
 			</p>
 			<div class="abuse-popup__item">
-				<strong class="abuse-popup__name">Ваше имя:<span class="abuse-popup__req">*</span></strong>
-				<input type="text" name="ABUSE[NAME]" value="" class="abuse-popup__input ffield_validate ffield_req"
-					title="Ваше имя">
-			</div>
-			<div class="abuse-popup__item">
-				<strong class="abuse-popup__name">Номер заказа:</strong>
-				<input type="text" name="ABUSE[ORDER_ID]" value="" class="abuse-popup__input ffield_validate"
-					title="Номер заказа">
-			</div>
-			<div class="abuse-popup__item">
 				<strong class="abuse-popup__name">
-					Телефон
-					<span class="abuse-popup__req">*</span></strong>
-				<input type="tel" placeholder="Телефон" name="ABUSE[PHONE_EMAIL]" value=""
-					class="abuse-popup__input ffield_validate ffield_req" title="Телефон или e-mail связи">
-			</div>
-			<div class="abuse-popup__item">
-				<strong class="abuse-popup__name">
-					Email
+					Ваше имя:
+					<span class="abuse-popup__req">*</span>
 				</strong>
-				<input type="tel" placeholder="Телефон" name="ABUSE[PHONE_EMAIL]" value=""
-					class="abuse-popup__input ffield_validate ffield_req" title="Телефон или e-mail для связи">
+				<input type="text" name="F[NAME]" value="" class="abuse-popup__input" title="Ваше имя">
 			</div>
 			<div class="abuse-popup__item">
-				<strong class="abuse-popup__name">Что произошло?:<span class="abuse-popup__req">*</span></strong>
-				<textarea name="ABUSE[QUESTION]" rows="" cols=""
-					class="abuse-popup__textarea ffield_validate  ffield_req" title="Что произошло?"></textarea>
+				<strong class="abuse-popup__name">
+					Номер заказа:
+				</strong>
+				<input type="text" name="F[ORDER_ID]" value="" class="abuse-popup__input noCheck" title="Номер заказа">
 			</div>
-			<div class="abuse-popup__footer">
-				<span class="abuse-popup__required"><span class="abuse-popup__req">*</span> - поля, обязательные для
-					заполнения</span>
+			<div class="abuse-popup__item"> <strong class="abuse-popup__name">
+					Телефон:
+					<span class="abuse-popup__req">*</span>
+				</strong>
+				<input type="tel" name="F[PHONE]" value="" class="abuse-popup__input js-phone_mask js-input_autocheck"
+					data-action="PHONE" title="Телефон" im-insert="true" placeholder="">
+			</div>
+			<div class="abuse-popup__item"> <strong class="abuse-popup__name">Email:
+					<!-- <span class="abuse-popup__req">*</span> -->
+				</strong>
+				<input type="text" name="F[EMAIL]" value="" class="typeEmail abuse-popup__input js-input_autocheck"
+					data-action="EMAIL" title="E-mail">
+			</div>
+			<div class="abuse-popup__item"> <strong class="abuse-popup__name">
+					Что произошло?:
+					<span class="abuse-popup__req">*</span>
+				</strong>
+				<textarea name="F[TXT]" class="abuse-popup__textarea" title="Что произошло?"></textarea>
+			</div>
+			<div class="abuse-popup__footer"> <span class="abuse-popup__required">
+					<span class="abuse-popup__req">*</span>
+					-поля, обязательные для заполнения </span>
 			</div>
 			<br>
 			<div class="abuse-popup__item">
-				<label class="checkbox checkbox_oferta ">
-					<input type="checkbox" name="" class="checkbox__input" checked="">
-					<span class="checkbox__icon"></span>
-					<span class="checkbox__text">Согласен с <a href="#">использованием персональных данных</a> для
-						обработки обращения</span>
+				<label class="checkbox checkbox_oferta js-checkbox">
+					<input class="checkbox__input js-check" type="checkbox" checked="checked">
+					<span class="checkbox__icon js-check_icon"></span>
+					<span class="checkbox__text">
+						Согласен с
+						<a target="_blank" href="/personal-data/">
+							использованием персональных данных
+						</a>
+						для обработки
+						обращения
+					</span>
 				</label>
-				<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit" name="">
+				<input type="hidden" name="action" value="guideAdd">
+				<input type="submit" value="Отправить" class="btn-sub3 abuse-popup__submit js-go">
 			</div>
 		</form>
 	</div>
